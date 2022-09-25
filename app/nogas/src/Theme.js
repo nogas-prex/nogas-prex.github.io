@@ -15,7 +15,7 @@ export const NOGASTheme = createTheme({
   },
   typography: {
     subtitle: {
-      fontSize: "2em",
+      fontSize: "3em",
     },
 
     h4: {
