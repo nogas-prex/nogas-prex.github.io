@@ -23,7 +23,7 @@ const Img = styled("img")({
         direction={"row"}
         alignItems="center"
         justifyContent="center"
-        spacing={0}
+        spacing={3}
       >
         <Grid
           item
@@ -32,7 +32,8 @@ const Img = styled("img")({
             height: "60vh",
           }}
         >
-            <img src={beforeImage} style={{width: '100%'}}></img>
+          <Button variant="outlined">Case Studies</Button>
+          {/* <img src={beforeImage} style={{width: '100%'}}></img> */}
         </Grid>
         <Grid
           item
@@ -41,7 +42,8 @@ const Img = styled("img")({
             height: "60vh",
           }}
         >
-          <div
+          <Button variant="outlined">Design Engine</Button>
+          {/* <div
             style={{
               height: "100%",
               backgroundImage:
@@ -49,7 +51,7 @@ const Img = styled("img")({
             }}
           >
             
-          </div>
+          </div> */}
         </Grid>
       </Grid>
     );

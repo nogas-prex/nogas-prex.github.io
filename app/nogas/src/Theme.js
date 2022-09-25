@@ -36,5 +36,10 @@ export const NOGASTheme = createTheme({
       fontSize: "1.1em",
       color: "black",
     },
+    h3White: {
+      textAlign: "justify",
+      fontSize: "1.5em",
+      color:'white'
+    },
   },
 });
