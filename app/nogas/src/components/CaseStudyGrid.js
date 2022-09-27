@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
+import {Link} from 'react-router-dom'
 export default function CaseStudyGrid(props) {
   const image = props.image;
   const title = props.title;
@@ -9,7 +9,7 @@ export default function CaseStudyGrid(props) {
     const text = props.text;
     const dir = props.dir
     const button = props.button;
-    
+    console.log(props)
 
     return dir === "img-txt" ? (
       <Grid
@@ -55,6 +55,7 @@ export default function CaseStudyGrid(props) {
           <Typography variant="h5">{subtitle}</Typography>
           <hr color="#EC008C"></hr>
           <Typography variant="body2">{text}</Typography>
+
           <Button
             variant="outlined"
             style={{
@@ -63,9 +64,11 @@ export default function CaseStudyGrid(props) {
               marginTop: "3em",
             }}
             endIcon={<ArrowForwardIcon />}
+            // onClick={console.log(props.navLink)}
           >
-            {" "}
-            Learn More
+            <Link to={{ pathname: `${props.navLink}` }}>
+              Learn More
+            </Link>
           </Button>
         </Grid>
 

@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Carousel from "react-material-ui-carousel";
 import {ImageItem} from '../../components/ImageCarousel'
+import { CardActionArea } from "@mui/material";
 
 import headerImage from '../../img/3_Case Study 01_ Improving Equitable Access/0_Cover/1.png';
 import canopyImage from '../../img/3_Case Study 01_ Improving Equitable Access/1_Metrics/Canopy.png'
@@ -106,7 +107,7 @@ export default function ImprovingEquitableAccess() {
               }}
               elevation={10}
             >
-              <CardContent>
+              <CardContent sx={{ display: "flex", }}>
                 <Grid
                   container
                   direction="row"

@@ -20,21 +20,33 @@ export default function CaseStudies() {
           direction="row"
           alignItems="center"
           justifyContent="center"
-          sx={{ width: "100vw", height: "100vh", backgroundImage:`url(${headerImage})`, backgroundSize:'100vw', backgroundRepeat:'no-repeat' }}
-            >
-                <Grid item xs={12} md={6} sx={{justifyContent:'left', alignItems:'left'}}>                    
-                    <Typography variant='h3'>
-                        FEATURED CASE STUDIES
-                    </Typography>
-                    <Typography variant='h5'>
-                        Designing the Next Generation Autonomous Suburbs
-                    </Typography>
-                    <Typography variant='body2' sx={{margin:'3em'}}>
-                        Since 2018, the NOGAS project has been informed by collaboration and partnerships with municipal planning agencies, private developers, and urban research institutions. This page highlights several case studies that explore optomisation scenarios for various communities in the United States.
-                    </Typography>
-                    
-                </Grid>
-                <Grid item md={6}></Grid>
+          sx={{
+            width: "100vw",
+            height: "100vh",
+            backgroundImage: `url(${headerImage})`,
+            backgroundSize: "100vw",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{ justifyContent: "left", alignItems: "left" }}
+          >
+            <Typography variant="h3">FEATURED CASE STUDIES</Typography>
+            <Typography variant="h5">
+              Designing the Next Generation Autonomous Suburbs
+            </Typography>
+            <Typography variant="body2" sx={{ margin: "3em" }}>
+              Since 2018, the NOGAS project has been informed by collaboration
+              and partnerships with municipal planning agencies, private
+              developers, and urban research institutions. This page highlights
+              several case studies that explore optomisation scenarios for
+              various communities in the United States.
+            </Typography>
+          </Grid>
+          <Grid item md={6}></Grid>
         </Grid>
         <Grid
           container
@@ -69,6 +81,7 @@ export default function CaseStudies() {
             text={`This project looks at some of the challenges facing today's "middle neighborhoods" and proposes block-scale redevelopment strategies that prioritieze the equity of existing residents while reducing impacts on local infrastructure.`}
             image={eqAcImg}
             dir="img-txt"
+            navLink={"improving-equitable-access"}
           />
           <CaseStudyGrid
             title="Preparing for Future Growth"

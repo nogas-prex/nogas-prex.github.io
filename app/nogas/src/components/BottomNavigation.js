@@ -9,7 +9,7 @@ import { Grid } from '@mui/material';
 import beforeImage from "../img/2_Incremental Progress/Slider_Before.png";
 import afterImage from "../img/2_Incremental Progress/Slider_After.png";
 import { styled } from "@mui/material/styles";
-
+import { Link } from 'react-router-dom';
 export default function CardNavigation() { 
 const Img = styled("img")({
   margin: "auto",
@@ -32,7 +32,9 @@ const Img = styled("img")({
             height: "60vh",
           }}
         >
-          <Button variant="outlined">Case Studies</Button>
+          <Button variant="outlined">
+            <Link to={{ pathname: "case-studies" }}>Case Studies</Link>
+          </Button>
           {/* <img src={beforeImage} style={{width: '100%'}}></img> */}
         </Grid>
         <Grid
@@ -42,7 +44,9 @@ const Img = styled("img")({
             height: "60vh",
           }}
         >
-          <Button variant="outlined">Design Engine</Button>
+          <Button variant="outlined">
+            <Link to={{ pathname: "" }}>Design Engine</Link>
+          </Button>
           {/* <div
             style={{
               height: "100%",
