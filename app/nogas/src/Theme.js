@@ -50,10 +50,9 @@ export const NOGASTheme = createTheme({
     bodyBlack: {
       textAlign: "justify",
       fontSize: "1.1em",
-      fontWeight: 500,
+      fontWeight: 300,
       color: "black",
     },
-
     sectionTitleWhite: {
       fontSize: "2.5rem",
       fontWeight: "bold",
@@ -68,7 +67,7 @@ export const NOGASTheme = createTheme({
     bodyWhite: {
       textAlign: "justify",
       fontSize: "1.1em",
-      fontWeight: 500,
+      fontWeight: 300,
       color: "white",
     },
     mdStat: {
@@ -129,33 +128,5 @@ export const NOGASTheme = createTheme({
       fontSize: "2em",
       paddingBottom: "1em",
     },
-    //   h1: {
-    //     fontFace: [AtlasGroteskRegular],
-    //   },
-    //   h4: {
-    //     textDecoration: "underline",
-    //     fontWeight: 700,
-    //   },
-    //   body1: {
-    //     textAlign: "justify",
-    //     fontSize: "1.5em",
-    //     color: "white",
-    //   },
-    //   body2: {
-    //     textAlign: "justify",
-    //     fontSize: "1.5em",
-    //     color: "black",
-    //   },
-    //   body3: {
-    //     fontSize: "1.1em",
-    //     color: "black",
-    //   },
-    //   h3White: {
-    //     textAlign: "justify",
-    //     fontSize: "1.5em",
-    //     color: "white",
-    // },
   },
-
-  //   },
 });

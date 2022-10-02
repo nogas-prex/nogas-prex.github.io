@@ -88,26 +88,26 @@ and disabled residents.`,
         title="Vision"
         subtitle="The Future of Autonomous Suburbs"
         body={[
-          `In the near term, a more integrative approach to zoning
-can help redistribute smaller commercial clusters
-and increased park space throughout residential
-neighborhoods, allowing a finer-grained suburban
-fabric to emerge that caters more explicitly to a mix of
-pedestrians, and micro-transit users. This atomization
-of residential islands, when applied to greenfield
-development, can facilitate a significant reduction of
-long-distance vehicular trips by clustering land uses
-together within a much smaller walk shed. It can also
-increase the environmental benefits of heterogeneity
-by expanding access to public open space areas, which
-has proven to be one of the most valuable neighborhood
-public health assets since the beginning of the
-COVID-19 pandemic.`,
-          `A transition from traditional car-based urbanism to
-autonomous, on-demand mobility paradigms will further
-support a shift towards finer-grained land use planning
-by leveraging new micro-mobility options to grant users
-greater access to services and amenities.`,
+        `In the near term, a more integrative approach to zoning
+        can help redistribute smaller commercial clusters
+        and increased park space throughout residential
+        neighborhoods, allowing a finer-grained suburban
+        fabric to emerge that caters more explicitly to a mix of
+        pedestrians, and micro-transit users. This atomization
+        of residential islands, when applied to greenfield
+        development, can facilitate a significant reduction of
+        long-distance vehicular trips by clustering land uses
+        together within a much smaller walk shed. It can also
+        increase the environmental benefits of heterogeneity
+        by expanding access to public open space areas, which
+        has proven to be one of the most valuable neighborhood
+        public health assets since the beginning of the
+        COVID-19 pandemic.`,
+        `A transition from traditional car-based urbanism to
+        autonomous, on-demand mobility paradigms will further
+        support a shift towards finer-grained land use planning
+        by leveraging new micro-mobility options to grant users
+        greater access to services and amenities.`,
         ]}
         icons={[
           { img: densityImage, alt: "", label: "Smart Density" },
