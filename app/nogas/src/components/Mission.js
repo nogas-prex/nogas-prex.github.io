@@ -14,12 +14,19 @@ export default function Mission() {
       justifyContent="center"
       sx={{ backgroundColor: "#00A360" }}
       //   style={{ minHeight: '100vh' }}
+      id='mission'
     >
       {" "}
       <Box sx={{ width: "70%", margin: "3em" }}>
-        <Typography variant='h4' sx={{color:'white'}}>NOGAS MISSION</Typography>
+        <Typography
+          variant="sectionTitleUnderlineWhite"
+          sx={{ color: "white" }}
+        >
+          NOGAS MISSION
+        </Typography>
         <br></br>
-        <Typography variant='body1'>
+        <br></br>
+        <Typography variant="landingBodyWhite">
           Today, suburban areas are home to an ever-increasing majority of the
           global population. Models indicate that the next generation of
           metropolitan growth will rapidly continue outside of urban cores,
@@ -31,7 +38,9 @@ export default function Mission() {
           through innovative planning and design.
         </Typography>
         <br></br>
-        <Typography>
+        <br></br>
+        <br></br>
+        <Typography variant="landingBodyWhite">
           The NOGAS project uses a unique scenario-based modeling workflow to
           generate optimized suburban land use patterns, mobility frameworks,
           and urban design for a future when autonomous mobility options are
@@ -41,7 +50,8 @@ export default function Mission() {
           parameters.
         </Typography>
         <br></br>
-        <Typography>
+        <br></br>
+        <Typography variant="landingBodyWhite">
           Since 2018, the NOGAS project has been informed by collaborations and
           partnerships with municipal planning agencies, private developers, and
           urban research institutions. NOGAS is a research project of the MIT

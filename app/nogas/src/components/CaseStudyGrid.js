@@ -16,6 +16,7 @@ export default function CaseStudyGrid(props) {
         container
         direction={"row"}
         alignItems="center"
+        textAlign={"left"}
         justifyContent="center"
         sx={{ width: "80vw", marginBottom: "5em" }}
         spacing={7}
@@ -24,10 +25,12 @@ export default function CaseStudyGrid(props) {
           <img src={image} style={{ width: "100%" }}></img>
         </Grid>
         <Grid item sx={12} md={6}>
-          <Typography variant="h3">{title}</Typography>
-          <Typography variant="h5">{subtitle}</Typography>
+          <Typography variant="sectionTitle">{title}</Typography>
+          <br></br>
+          <Typography variant="sectionSubtitle">{subtitle}</Typography>
           <hr color="#EC008C"></hr>
-          <Typography variant="body2">{text}</Typography>
+          <Typography variant="bodyBlack">{text}</Typography>
+          <br></br>
           <Button
             variant="outlined"
             style={{
@@ -37,7 +40,8 @@ export default function CaseStudyGrid(props) {
             }}
             endIcon={<ArrowForwardIcon />}
           >
-            Learn More
+            {/* Learn More */}
+            <Link to={{ pathname: `${props.navLink}` }}>Learn More</Link>
           </Button>
         </Grid>
       </Grid>
@@ -46,15 +50,18 @@ export default function CaseStudyGrid(props) {
         container
         direction={"row"}
         alignItems="center"
+        textAlign={"left"}
         justifyContent="center"
         sx={{ width: "80vw", marginBottom: "5em" }}
         spacing={7}
       >
         <Grid item sx={12} md={6}>
-          <Typography variant="h3">{title}</Typography>
-          <Typography variant="h5">{subtitle}</Typography>
+          <Typography variant="sectionTitle">{title}</Typography>
+          <br></br>
+          <Typography variant="sectionSubtitle">{subtitle}</Typography>
           <hr color="#EC008C"></hr>
-          <Typography variant="body2">{text}</Typography>
+          <Typography variant="bodyBlack">{text}</Typography>
+          <br></br>
 
           <Button
             variant="outlined"
@@ -66,9 +73,7 @@ export default function CaseStudyGrid(props) {
             endIcon={<ArrowForwardIcon />}
             // onClick={console.log(props.navLink)}
           >
-            <Link to={{ pathname: `${props.navLink}` }}>
-              Learn More
-            </Link>
+            <Link to={{ pathname: `${props.navLink}` }}>Learn More</Link>
           </Button>
         </Grid>
 

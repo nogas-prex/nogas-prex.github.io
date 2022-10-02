@@ -27,18 +27,29 @@ export default function CaseStudies() {
             backgroundSize: "100vw",
             backgroundRepeat: "no-repeat",
           }}
+          id='case-studies'
         >
           <Grid
             item
             xs={12}
             md={6}
-            sx={{ justifyContent: "left", alignItems: "left" }}
+            sx={{
+              justifyContent: "left",
+              alignItems: "left",
+              textAlign: "left",
+              paddingLeft: "2em",
+            }}
           >
-            <Typography variant="h3">FEATURED CASE STUDIES</Typography>
-            <Typography variant="h5">
+            <Typography variant="sectionTitle">
+              FEATURED CASE STUDIES
+            </Typography>
+            <br></br>
+            <Typography variant="sectionSubtitle">
               Designing the Next Generation Autonomous Suburbs
             </Typography>
-            <Typography variant="body2" sx={{ margin: "3em" }}>
+            <br></br>
+            <hr color="#EC008C"></hr>
+            <Typography variant="bodyBlack">
               Since 2018, the NOGAS project has been informed by collaboration
               and partnerships with municipal planning agencies, private
               developers, and urban research institutions. This page highlights
@@ -61,7 +72,7 @@ export default function CaseStudies() {
           </Grid>
           <Grid item md={1}></Grid>
           <Grid item md={4}>
-            <Typography variant="h4">
+            <Typography variant="sectionTitleUnderlineWhite">
               WELCOME TO THE NEXT OPTIMIZED GENERATION OF AUTONOMOUS SUBURBS
             </Typography>
           </Grid>
@@ -88,6 +99,8 @@ export default function CaseStudies() {
             subtitle="Land Use Optimization"
             text={`Using an algorithm-based land use optimization model, this project identifies district-scale strategies for future neighborhood development.`}
             image={futGrowImg}
+            navLink={"preparing-future-growth"}
+
             // dir="img-txt"
           />
           <CaseStudyGrid
@@ -96,12 +109,14 @@ export default function CaseStudies() {
             text={`Through comprehensive digitial simulation and analysis, this project coulminates in site-scale proposals for high-performance suburban landscapes, optimized for stormwater capture, heat mitigation, and carbon sequestration.`}
             image={sustImg}
             dir="img-txt"
+            navLink={"layering-sustainability"}
           />
           <CaseStudyGrid
             title="Maximizing Micro-mobility"
             subtitle="Streetscape Adaptation"
             text={`In partnership with a major university campus planning committee, this project identifies spatial frameworks for achieving both short-term and long-term autonomous and micro-mobility goals.`}
             image={maxMicroImg}
+            navLink={"maximize-micromobility"}
             // dir="img-txt"
           />
           <CaseStudyGrid
@@ -110,6 +125,7 @@ export default function CaseStudies() {
             text={`In partnership with a municipal planning agency, this project reimagines the typical suburban employment campus in response to evolving remote work options, housing challenges, and the need for expanded open space provision.`}
             image={futWorkImg}
             dir="img-txt"
+            navLink={"future-of-work"}
           />
         </Grid>
         <Grid
