@@ -18,14 +18,13 @@ export default function FutureOfWork() {
         subtitle="Landscape Optimization"
         body={[
           `Metro areas are searching harder than ever for solutions to mitigate the effects of
-climate change such as extreme heat, drought, flooding, and wildfire. Meanwhile, more
-people are moving in than out of areas facing high risk from climate change, which
-accelerates the urbanization rate in these areas. As the result of urbanization processes
-– more permeable surfaces being paved over. Massive impervious surface further
-exacerbates the extreme heat, urban flooding, and other climate disasters. Hence, a
-vicious circle is formed.`,
-          `remove me
-            `,
+            climate change such as extreme heat, drought, flooding, and wildfire. Meanwhile, more
+            people are moving in than out of areas facing high risk from climate change, which
+            accelerates the urbanization rate in these areas. As the result of urbanization processes
+            – more permeable surfaces being paved over. Massive impervious surface further
+            exacerbates the extreme heat, urban flooding, and other climate disasters. Hence, a
+            vicious circle is formed.`,
+          `second paragraph like this`,
         ]}
       />
 
