@@ -168,7 +168,7 @@ export default function ImprovingEquitableAccess() {
         br > < /br> <
         Typography variant = "sectionSubtitle" >
         Neighborhood Optimization with OASIS <
-        /Typography> <
+        /Typography>  <
         hr color = "EC008C" > < /hr> <
         Typography variant = "bodyBlack" >
         OASIS is a parametric toolbox that can help planners and developers optimize neighborhood - scale land use and mobility frameworks.The access optimization tool of OASIS toolbox can analyze and optimize accessbility index of given neighrohood masterplan to generate the optimal scenario with more equitable access. <
@@ -210,7 +210,7 @@ export default function ImprovingEquitableAccess() {
                 />
             ))
         } <
-        /Carousel> < /
+        /Carousel>   < /
         Grid > <
         Grid item xs = { 0 }
         sm = { 3 } > < /Grid> <
@@ -220,7 +220,7 @@ export default function ImprovingEquitableAccess() {
         Typography variant = "body2" >
         Click through the various scenarios above to see how access optimization tool of OASIS can generate different masterplan scenarios with optimized accessibility performance
         for all population groups. <
-        /Typography> < /
+        /Typography>  < /
         Grid > <
         Grid item xs = { 0 }
         sm = { 3 } > < /Grid> < /

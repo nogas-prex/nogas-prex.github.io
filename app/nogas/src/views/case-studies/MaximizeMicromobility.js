@@ -12,10 +12,10 @@ import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import ImageSlider from "../../components/ImageSlider";
 
-import headerImage from "../../img/4_Case Study 02_ Preparing for Future Growth/0_Cover/1.png";
-import backgroundImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/0_Cover/1.jpg";
-import beforeImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Slider_Before.png'
-import afterImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Slider_After.png";
+import headerImage from "../../img/6_Case Study 04_ Maximizing Micro-mobility/0_Cover/1.png";
+import backgroundImage from "../../img/6_Case Study 04_ Maximizing Micro-mobility/2_Background/0_Cover/1.png";
+import beforeImage from '../../img/6_Case Study 04_ Maximizing Micro-mobility/3_Vision/Section_Existing.png'
+import afterImage from "../../img/6_Case Study 04_ Maximizing Micro-mobility/3_Vision/Section_Long Term.png";
 import densityImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Smart Density.png'
 import vehUsageImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Vehicle Usage.png";
 import envPerfImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Better Envir-performance.png";
@@ -31,7 +31,7 @@ export default function MaximizingMicromobility() {
         <
         ResponsiveAppBar / >
         <
-        CaseStudyLanding image = { '' }
+        CaseStudyLanding image = { headerImage }
         title = "MAXIMIZING MICRO-MOBILITY"
         subtitle = "Streetscape Adaption"
         body = {
@@ -50,7 +50,7 @@ export default function MaximizingMicromobility() {
         <
         CaseStudyBackground title = "BACKGROUND"
         subtitle = "Car-dominated Travel Mode"
-        image = { '' }
+        image = { backgroundImage }
         body = {
             [
                 `The average width of an American residential street is 55 feet, which is three times the average street 
@@ -60,12 +60,12 @@ export default function MaximizingMicromobility() {
         }
         stats = {
             [
-                { pct: "1876", text: "Anual Household Vehicle Trips" },
+                { pct: "55ft", text: "Average Width of Residential Street" },
                 {
-                    pct: "25%+",
-                    text: "Residential Land Devoted to Vehicular Surfaces",
+                    pct: "19642",
+                    text: "miles Annual VMT per Household",
                 },
-                { pct: "35%+", text: "GHG Emissions Reduction Potential" },
+                { pct: "85%+", text: "Workers Drive to Work" },
             ]
         }
         />
@@ -75,8 +75,8 @@ export default function MaximizingMicromobility() {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
         <
-        ImageSlider leftImage = { '' }
-        rightImage = { '' }
+        ImageSlider leftImage = { beforeImage }
+        rightImage = { afterImage }
         /> < /
         Grid > <
         CaseStudyVision title = "VISION"

@@ -12,10 +12,10 @@ import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import ImageSlider from "../../components/ImageSlider";
 
-import headerImage from "../../img/4_Case Study 02_ Preparing for Future Growth/0_Cover/1.png";
-import backgroundImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/0_Cover/1.jpg";
-import beforeImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Slider_Before.png'
-import afterImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Slider_After.png";
+import headerImage from "../../img/5_Case Study 03_ Layering Sustainability/0_Cover/1.png";
+import backgroundImage from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/0_Cover/1.png";
+import beforeImage from '../../img/5_Case Study 03_ Layering Sustainability/3_Vision/Slider_Before.png'
+import afterImage from "../../img/5_Case Study 03_ Layering Sustainability/3_Vision/Slider_After.png";
 import densityImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Smart Density.png'
 import vehUsageImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Vehicle Usage.png";
 import envPerfImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Better Envir-performance.png";
@@ -32,7 +32,7 @@ export default function LayeringSustability() {
         <
         ResponsiveAppBar / >
         <
-        CaseStudyLanding image = { '' }
+        CaseStudyLanding image = { headerImage }
         title = "LAYERING SUSTAINABILITY"
         subtitle = "Landscape Optimization"
         body = {
@@ -50,7 +50,7 @@ export default function LayeringSustability() {
         <
         CaseStudyBackground title = "BACKGROUND"
         subtitle = "Suburban Climate Effects"
-        image = { '' }
+        image = { backgroundImage }
         body = {
             [
                 `Today, communities around the world are facing the dramatic effects of climate change. In 2021, 
@@ -62,12 +62,12 @@ export default function LayeringSustability() {
         }
         stats = {
             [
-                { pct: "1876", text: "Anual Household Vehicle Trips" },
+                { pct: "1300+", text: "Heat-related Death per year in U.S." },
                 {
-                    pct: "25%+",
-                    text: "Residential Land Devoted to Vehicular Surfaces",
+                    pct: "80%+",
+                    text: "Americans Experienced a Heat Wave in 2021",
                 },
-                { pct: "35%+", text: "GHG Emissions Reduction Potential" },
+                { pct: "20°F+", text: "Cooler Temperature under Tree Shade" },
             ]
         }
         />
@@ -77,8 +77,8 @@ export default function LayeringSustability() {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
         <
-        ImageSlider leftImage = { '' }
-        rightImage = { '' }
+        ImageSlider leftImage = { beforeImage }
+        rightImage = { afterImage }
         /> < /
         Grid > <
         CaseStudyVision title = "VISION"

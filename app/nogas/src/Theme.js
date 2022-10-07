@@ -43,13 +43,13 @@ export const NOGASTheme = createTheme({
             color: "black",
         },
         sectionSubtitle: {
-            fontSize: "1.5rem",
+            fontSize: "1.8rem",
             fontWeight: "450",
             color: "black",
         },
         bodyBlack: {
             textAlign: "justify",
-            fontSize: "1.1em",
+            fontSize: "1.3em",
             fontWeight: 300,
             color: "black",
         },
@@ -72,14 +72,14 @@ export const NOGASTheme = createTheme({
         },
         mdStat: {
             textAlign: "justify",
-            fontSize: "1.9em",
+            fontSize: "2.3em",
             fontWeight: "600",
             color: "white",
         },
         mdStatText: {
             textAlign: "justify",
-            fontSize: "1.3em",
-            fontWeight: "400",
+            fontSize: "1em",
+            fontWeight: "250",
             color: "white",
         },
         iconCalloutStat: {
