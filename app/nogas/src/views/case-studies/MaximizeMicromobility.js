@@ -27,7 +27,7 @@ import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/
 
 export default function MaximizingMicromobility() {
     return ( <
-        div >
+        div>
         <
         ResponsiveAppBar / >
         <

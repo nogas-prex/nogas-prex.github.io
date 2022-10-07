@@ -106,15 +106,16 @@ export default function ImprovingEquitableAccess() {
         }
         />
 
-        <
-        Grid container sx = {
+        <Grid container sx = {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
         <
         ImageSlider leftImage = { beforeImage }
         rightImage = { afterImage }
-        /> < /
-        Grid >
+        /> 
+        </Grid>
+
+
 
         <
         CaseStudyVision title = { "VISION" }
@@ -157,24 +158,24 @@ export default function ImprovingEquitableAccess() {
         Grid container direction = "row" >
         <
         Grid item xs = { 0 }
-        md = { 6 } > < /Grid> <
-        Grid item xs = { 12 }
+        md = { 6 } > </Grid> 
+        <Grid item xs = { 12 }
         md = { 6 }
         sx = {
             { padding: "7em", textAlign: "left" }
         } >
         <
-        Typography variant = "sectionTitle" > Equitable Access < /Typography> <
-        br > < /br> <
-        Typography variant = "sectionSubtitle" >
-        Neighborhood Optimization with OASIS <
-        /Typography>  <
-        hr color = "EC008C" > < /hr> <
-        Typography variant = "bodyBlack" >
-        OASIS is a parametric toolbox that can help planners and developers optimize neighborhood - scale land use and mobility frameworks.The access optimization tool of OASIS toolbox can analyze and optimize accessbility index of given neighrohood masterplan to generate the optimal scenario with more equitable access. <
-        /Typography> <
-        br > < /br> <
-        Button variant = "outlined"
+        Typography variant = "sectionTitle" > Equitable Access </Typography> 
+        <br> </br> 
+        <Typography variant = "sectionSubtitle" >
+        Neighborhood Optimization with OASIS 
+        </Typography>  
+        <hr color = "EC008C" > </hr> 
+        <Typography variant = "bodyBlack">
+        OASIS is a parametric toolbox that can help planners and developers optimize neighborhood - scale land use and mobility frameworks.The access optimization tool of OASIS toolbox can analyze and optimize accessbility index of given neighrohood masterplan to generate the optimal scenario with more equitable access. 
+        </Typography> 
+        <br > </br> 
+        <Button variant = "outlined"
         style = {
             {
                 color: "#EC008C",
@@ -183,12 +184,12 @@ export default function ImprovingEquitableAccess() {
             }
         }
         endIcon = { < ArrowForwardIcon / > } >
-        Learn more about OASIS <
-        /Button> < /
-        Grid > <
-        /Grid> < /
-        Grid > <
-        Grid container justifyContent = "center"
+        Learn more about OASIS 
+        </Button> 
+        </Grid> 
+        </Grid> 
+        </Grid> 
+        <Grid container justifyContent = "center"
         alignContent = "center"
         direction = "column"
         sx = {
@@ -209,23 +210,26 @@ export default function ImprovingEquitableAccess() {
                 name = { img.name }
                 />
             ))
-        } <
-        /Carousel>   < /
+        } 
+        </Carousel>   
+        </
         Grid > <
         Grid item xs = { 0 }
-        sm = { 3 } > < /Grid> <
+        sm = { 3 } > </Grid> <
         Grid item xs = { 12 }
         sm = { 6 } >
         <
         Typography variant = "body2" >
         Click through the various scenarios above to see how access optimization tool of OASIS can generate different masterplan scenarios with optimized accessibility performance
-        for all population groups. <
-        /Typography>  < /
+        for all population groups. 
+        </Typography>  
+        </
         Grid > <
         Grid item xs = { 0 }
-        sm = { 3 } > < /Grid> < /
-        Grid > <
-        /Grid>
+        sm = { 3 } > </Grid> 
+        </
+        Grid > 
+        </Grid>
 
         { /* end custom stuff */ }
 
@@ -248,7 +252,7 @@ export default function ImprovingEquitableAccess() {
                 { img: canopyImage, pct: "10%", text: "Increase in tree canopy" },
             ]
         }
-        /> < /
-        div >
+        /> 
+        </div>
     );
 }
