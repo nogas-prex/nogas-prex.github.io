@@ -187,7 +187,6 @@ export default function ImprovingEquitableAccess() {
                 navButtonsAlwaysVisible={true}
                 sx={{ maxWidth: "750px" }}
               >
-                {" "}
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />
                 ))}
