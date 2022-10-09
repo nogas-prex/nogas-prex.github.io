@@ -1,8 +1,6 @@
 import {
   Card,
   CardContent,
-  CardHeader,
-  CardMedia,
   Grid,
   Typography,
 } from "@mui/material";
@@ -28,7 +26,7 @@ export default function CaseStudyVision(props) {
         direction="row"
         alignItems="center"
         justifyContent="center"
-        sx={{ backgroundColor: "#00A360", minHeight: "500px" }}
+        sx={{ backgroundColor: "#00A360", minHeight: "500px",}}
         xs={12}
       >
         <Grid item xs={6} sx={{ padding: "5em", textAlign: "left" }}>
@@ -44,7 +42,7 @@ export default function CaseStudyVision(props) {
             </div>
           ))}
         </Grid>
-        <Grid item xs={6} sx={{ padding: "5em" }}>
+        {/* <Grid item xs={6} sx={{ padding: "5em" }}>
           <Grid container direction="row">
             {icons.map((i) => (
               <Grid item xs={1} md={4}>
@@ -57,7 +55,7 @@ export default function CaseStudyVision(props) {
               </Grid>
             ))}
           </Grid>
-        </Grid>
+        </Grid> */}
       </Grid>
     );
 }

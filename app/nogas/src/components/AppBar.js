@@ -16,7 +16,7 @@ import { Circle } from '@mui/icons-material';
 import { Link } from '@mui/material';
 import { HashLink } from 'react-router-hash-link';
 
-const pages = {'Mission':'/#mission', 'Case Studies':'case-studies', 'Methodology':'', 'Contact':''}
+const pages = {'Mission':'/#mission', 'Case Studies':'/case-studies', 'Methodology':'', 'Contact':''}
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {

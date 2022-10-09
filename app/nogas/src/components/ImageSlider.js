@@ -7,5 +7,7 @@ export default function ImageSlider(props) {
     const rightImage = props.rightImage
 
     return (
-        <ReactCompareImage leftImage={leftImage} rightImage={rightImage} />    )
+        <ReactCompareImage
+            style={{height:'50vh', width:'50vw'}}
+            leftImage={leftImage} rightImage={rightImage} />)
 }
