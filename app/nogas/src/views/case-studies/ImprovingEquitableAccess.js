@@ -47,12 +47,9 @@ export default function ImprovingEquitableAccess() {
         { name: "Mobility Image", img: mobilityImage },
     ];
 
-    return ( <
-        div >
-        <
-        ResponsiveAppBar / >
-        <
-        CaseStudyLanding image = { headerImage }
+    return ( <div>
+        <ResponsiveAppBar />
+        <CaseStudyLanding image = { headerImage }
         title = "IMPROVING EQUITABLE ACCESS"
         subtitle = "Neighborhood Retrofit"
         body = {
@@ -77,8 +74,7 @@ export default function ImprovingEquitableAccess() {
         }
         />
 
-        <
-        CaseStudyBackground title = "BACKGROUND"
+        <CaseStudyBackground title = "BACKGROUND"
         subtitle = "Mobility Access Challenge in Suburbs"
         image = { metricAgingImage }
         body = {
@@ -109,16 +105,14 @@ export default function ImprovingEquitableAccess() {
         <Grid container sx = {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
-        <
-        ImageSlider leftImage = { beforeImage }
+        <ImageSlider leftImage = { beforeImage }
         rightImage = { afterImage }
         /> 
         </Grid>
 
 
 
-        <
-        CaseStudyVision title = { "VISION" }
+        <CaseStudyVision title = { "VISION" }
         subtitle = "Autonomous Suburbs for Equitable Access"
         body = {
             [
@@ -147,34 +141,30 @@ export default function ImprovingEquitableAccess() {
         }
         />
 
-        { /* custom stuff */ } <
-        Grid container direction = "column"
+        { /* custom stuff */ } <Grid container direction = "column"
         sx = {
             { marginTop: "7vh" }
         } >
-        <
-        Grid item >
-        <
-        Grid container direction = "row" >
-        <
-        Grid item xs = { 0 }
+        <Grid item>
+        <Grid container direction = "row">
+        <Grid item xs = { 0 }
         md = { 6 } > </Grid> 
         <Grid item xs = { 12 }
         md = { 6 }
         sx = {
             { padding: "7em", textAlign: "left" }
         } >
-        <
-        Typography variant = "sectionTitle" > Equitable Access </Typography> 
-        <br> </br> 
+                        
+        <Typography variant = "sectionTitle" > Equitable Access </Typography> 
+        <br></br> 
         <Typography variant = "sectionSubtitle" >
         Neighborhood Optimization with OASIS 
         </Typography>  
-        <hr color = "EC008C" > </hr> 
+        <hr color = "EC008C"></hr> 
         <Typography variant = "bodyBlack">
         OASIS is a parametric toolbox that can help planners and developers optimize neighborhood - scale land use and mobility frameworks.The access optimization tool of OASIS toolbox can analyze and optimize accessbility index of given neighrohood masterplan to generate the optimal scenario with more equitable access. 
         </Typography> 
-        <br > </br> 
+        <br></br> 
         <Button variant = "outlined"
         style = {
             {
@@ -183,7 +173,7 @@ export default function ImprovingEquitableAccess() {
                 marginTop: "3em",
             }
         }
-        endIcon = { < ArrowForwardIcon / > } >
+        endIcon = { <ArrowForwardIcon /> } >
         Learn more about OASIS 
         </Button> 
         </Grid> 
@@ -195,15 +185,13 @@ export default function ImprovingEquitableAccess() {
         sx = {
             { marginLeft: "25%", marginRight: "25%", width: "50%" }
         } >
-        <
-        Grid item xs = { 12 }
+        <Grid item xs = { 12 }
         md = { 6 }
         elevation = { 5 } >
-        <
-        Carousel navButtonsAlwaysVisible = { true }
+        <Carousel navButtonsAlwaysVisible = { true }
         sx = {
             { maxWidth: "750px" }
-        } > {
+        }> {
             carouselItems.map((img, i) => ( <
                 ImageItem key = { i }
                 image = { img.img }
@@ -212,29 +200,22 @@ export default function ImprovingEquitableAccess() {
             ))
         } 
         </Carousel>   
-        </
-        Grid > <
-        Grid item xs = { 0 }
-        sm = { 3 } > </Grid> <
-        Grid item xs = { 12 }
+        </Grid> <Grid item xs = { 0 }
+        sm = { 3 } > </Grid> <Grid item xs = { 12 }
         sm = { 6 } >
-        <
-        Typography variant = "body2" >
+        <Typography variant = "body2" >
         Click through the various scenarios above to see how access optimization tool of OASIS can generate different masterplan scenarios with optimized accessibility performance
         for all population groups. 
         </Typography>  
-        </
-        Grid > <
-        Grid item xs = { 0 }
+        </Grid > <Grid item xs = { 0 }
         sm = { 3 } > </Grid> 
-        </
-        Grid > 
+        </Grid> 
         </Grid>
 
         { /* end custom stuff */ }
 
-        { /* stats / summary */ } <
-        CaseStudySummary text = { `Compared with today's average suruban form, long-term optimization
+        { /* stats / summary */}
+        <CaseStudySummary text = { `Compared with today's average suruban form, long-term optimization
           scenarios demonstrate valuable performance benefits including:` }
         icons = {
             [

@@ -27,12 +27,9 @@ import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/
 
 
 export default function FutureOfWork() {
-    return ( <
-        div >
-        <
-        ResponsiveAppBar / >
-        <
-        CaseStudyLanding image = { headerImage }
+    return ( <div>
+        <ResponsiveAppBar / >
+        <CaseStudyLanding image = { headerImage }
         title = "DESIGNING THE FUTURE OF WORK"
         subtitle = "Employment Campus Evolution"
         body = {
@@ -49,8 +46,7 @@ export default function FutureOfWork() {
         }
         />
 
-        <
-        CaseStudyBackground title = "BACKGROUND"
+        <CaseStudyBackground title = "BACKGROUND"
         subtitle = "Outdated Employment Campus Design"
         image = { backgroundImage }
         body = {
@@ -72,16 +68,12 @@ export default function FutureOfWork() {
         }
         />
 
-        <
-        Grid container sx = {
+        <Grid container sx = {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
-        <
-        ImageSlider leftImage = { beforeImage }
+        <ImageSlider leftImage = { beforeImage }
         rightImage = { afterImage }
-        /> < /
-        Grid > <
-        CaseStudyVision title = "VISION"
+        /> </Grid> <CaseStudyVision title = "VISION"
         subtitle = "The Future of Autonomous Suburbs"
         body = {
             [
@@ -104,11 +96,9 @@ export default function FutureOfWork() {
         }
         />
 
-        <
-        div > custom stuff < /div>
+        <div> custom stuff </div>
 
-        <
-        CaseStudySummary text = { `` }
+        <CaseStudySummary text = { `` }
         icons = {
             [
                 { img: "", pct: "50%", text: "Reduction of vehicle tripps" },
@@ -125,7 +115,6 @@ export default function FutureOfWork() {
                 { img: "", pct: "60%", text: "Increase in tree canopy" },
             ]
         }
-        /> < /
-        div >
+        /> </div >
     );
 }

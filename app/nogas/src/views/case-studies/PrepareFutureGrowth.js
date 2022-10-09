@@ -27,12 +27,9 @@ import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/
 
 
 export default function PrepareFutureGrowth() {
-    return ( <
-        div >
-        <
-        ResponsiveAppBar / >
-        <
-        CaseStudyLanding image = { headerImage }
+    return ( <div>
+        <ResponsiveAppBar / >
+        <CaseStudyLanding image = { headerImage }
         title = "PREPARING FOR FUTURE GROWTH"
         subtitle = "Single Family Residential Land Use Optimization"
         body = {
@@ -54,8 +51,7 @@ export default function PrepareFutureGrowth() {
         }
         />
 
-        <
-        CaseStudyBackground title = "BACKGROUND"
+        <CaseStudyBackground title = "BACKGROUND"
         subtitle = "Car-based Single Family Residential"
         image = { backgroundImage }
         body = {
@@ -83,16 +79,12 @@ export default function PrepareFutureGrowth() {
         }
         />
 
-        <
-        Grid container sx = {
+        <Grid container sx = {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
-        <
-        ImageSlider leftImage = { beforeImage }
+        <ImageSlider leftImage = { beforeImage }
         rightImage = { afterImage }
-        /> < /
-        Grid > <
-        CaseStudyVision title = "VISION"
+        /> </Grid > <CaseStudyVision title = "VISION"
         subtitle = "The Future of Autonomous Suburbs"
         body = {
             [
@@ -122,11 +114,9 @@ export default function PrepareFutureGrowth() {
         }
         />
 
-        <
-        div > custom stuff < /div>
+        <div> custom stuff </div>
 
-        <
-        CaseStudySummary text = { `` }
+        <CaseStudySummary text = { `` }
         icons = {
             [
                 { img: carImage, pct: "50%", text: "Reduction of vehicle tripps" },
@@ -135,7 +125,6 @@ export default function PrepareFutureGrowth() {
                 { img: canopyImage, pct: "60%", text: "Increase in tree canopy" },
             ]
         }
-        /> < /
-        div >
+        /> </div >
     );
 }

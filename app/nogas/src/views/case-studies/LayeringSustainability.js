@@ -27,12 +27,9 @@ import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/
 
 
 export default function LayeringSustability() {
-    return ( <
-        div >
-        <
-        ResponsiveAppBar / >
-        <
-        CaseStudyLanding image = { headerImage }
+    return ( <div>
+        <ResponsiveAppBar / >
+        <CaseStudyLanding image = { headerImage }
         title = "LAYERING SUSTAINABILITY"
         subtitle = "Landscape Optimization"
         body = {
@@ -47,8 +44,7 @@ export default function LayeringSustability() {
         }
         />
 
-        <
-        CaseStudyBackground title = "BACKGROUND"
+        <CaseStudyBackground title = "BACKGROUND"
         subtitle = "Suburban Climate Effects"
         image = { backgroundImage }
         body = {
@@ -72,16 +68,12 @@ export default function LayeringSustability() {
         }
         />
 
-        <
-        Grid container sx = {
+        <Grid container sx = {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
-        <
-        ImageSlider leftImage = { beforeImage }
+        <ImageSlider leftImage = { beforeImage }
         rightImage = { afterImage }
-        /> < /
-        Grid > <
-        CaseStudyVision title = "VISION"
+        /> </Grid> <CaseStudyVision title = "VISION"
         subtitle = "The Future of Sustainable Suburbs"
         body = {
             [
@@ -107,11 +99,9 @@ export default function LayeringSustability() {
         }
         />
 
-        <
-        div > custom stuff < /div>
+        <div > custom stuff </div>
 
-        <
-        CaseStudySummary text = { `` }
+        <CaseStudySummary text = { `` }
         icons = {
             [
                 { img: '', pct: "50%", text: "Reduction of vehicle tripps" },
@@ -128,7 +118,6 @@ export default function LayeringSustability() {
                 { img: '', pct: "60%", text: "Increase in tree canopy" },
             ]
         }
-        /> < /
-        div >
+        /> </div>
     );
 }

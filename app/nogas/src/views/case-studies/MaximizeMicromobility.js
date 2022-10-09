@@ -26,12 +26,10 @@ import permImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_
 import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Canopy.png";
 
 export default function MaximizingMicromobility() {
-    return ( <
-        div>
-        <
-        ResponsiveAppBar / >
-        <
-        CaseStudyLanding image = { headerImage }
+    return (
+        <div>
+        <ResponsiveAppBar / >
+        <CaseStudyLanding image = { headerImage }
         title = "MAXIMIZING MICRO-MOBILITY"
         subtitle = "Streetscape Adaption"
         body = {
@@ -47,8 +45,7 @@ export default function MaximizingMicromobility() {
         }
         />
 
-        <
-        CaseStudyBackground title = "BACKGROUND"
+        <CaseStudyBackground title = "BACKGROUND"
         subtitle = "Car-dominated Travel Mode"
         image = { backgroundImage }
         body = {
@@ -70,16 +67,12 @@ export default function MaximizingMicromobility() {
         }
         />
 
-        <
-        Grid container sx = {
+        <Grid container sx = {
             { width: "100vw", height: "70vh", overflowY: "hidden" }
         } >
-        <
-        ImageSlider leftImage = { beforeImage }
+        <ImageSlider leftImage = { beforeImage }
         rightImage = { afterImage }
-        /> < /
-        Grid > <
-        CaseStudyVision title = "VISION"
+        /> </Grid > <CaseStudyVision title = "VISION"
         subtitle = "A Multi-modal Mobility Adapted Street"
         body = {
             [
@@ -106,11 +99,9 @@ export default function MaximizingMicromobility() {
         }
         />
 
-        <
-        div > custom stuff < /div>
+        <div> custom stuff </div>
 
-        <
-        CaseStudySummary text = { `` }
+        <CaseStudySummary text = { `` }
         icons = {
             [
                 { img: '', pct: "50%", text: "Reduction of vehicle tripps" },
@@ -127,7 +118,6 @@ export default function MaximizingMicromobility() {
                 { img: '', pct: "60%", text: "Increase in tree canopy" },
             ]
         }
-        /> < /
-        div >
+        /> </div >
     );
 }
