@@ -21,7 +21,8 @@ export default function CaseStudyVision(props) {
     const subtitle = props.subtitle 
     const body = props.body; 
     const icons = props.icons 
-    return (
+  return (
+      // add same top/bottom padding as the vision section
       <Grid
         container
         direction="row"

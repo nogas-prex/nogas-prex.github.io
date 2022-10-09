@@ -29,10 +29,11 @@ export default function CaseStudyLanding(props) {
           xs={12}
           md={6}
           sx={{
-            justifyContent: "left",
-            alignItems: "left",
+            // justifyContent: "left",
+            // alignItems: "left",
             textAlign: "left",
-            paddingLeft: "2em",
+            paddingLeft: "5em",
+            // width:'70%'
           }}
         >
           <Typography variant="sectionTitle">{title}</Typography>

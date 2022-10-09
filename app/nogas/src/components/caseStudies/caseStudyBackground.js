@@ -20,9 +20,9 @@ export default function CaseStudyBackground(props) {
         direction="row"
         alignItems="center"
         justifyContent="center"
-        sx={{ width: "100vw", backgroundColor: "white", height: "100vh" }}
+        sx={{ width: "100vw", backgroundColor: "white", height: "100vh", }}
       >
-        <Grid item xs={12} md={6} sx={{ padding: "3em" }}>
+        <Grid item xs={12} md={6} sx={{ paddingRight: "3em" }}>
           <Card
             // backgroundImage={`url(${metricAgingImage})`}
             sx={{

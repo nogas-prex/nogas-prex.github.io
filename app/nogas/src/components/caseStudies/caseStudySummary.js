@@ -27,11 +27,16 @@ export default function CaseStudySummary(props) {
         direction="column"
         alignItems="center"
         justifyContent="center"
-        sx={{ backgroundColor: "#00A360", minHeight: "200px", }}
+        sx={{ backgroundColor: "#00A360", minHeight: "200px" }}
       >
-        <Grid item>
+        <Grid item sx={{ width: "70%" }}>
           <Typography variant="summaryStatText">{summText}</Typography>
-          <Grid container direction="row" id='summIcons' sx={{width:'70%',marginLeft:'15%' }}>
+          <Grid
+            container
+            direction="row"
+            id="summIcons"
+            // sx={{ width: "70%", marginLeft: "15%" }}
+          >
             {icons.map((i) => (
               <Grid item xs={12} sm={3}>
                 <Card sx={metricStyle} elevation={0}>
