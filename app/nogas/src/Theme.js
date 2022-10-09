@@ -26,9 +26,10 @@ export const NOGASTheme = createTheme({
     typography: {
         landingTitle: {
             fontWeight: 700,
-            fontSize: "12em",
+            fontSize: "15em",
             color: "#00a360",
             textShadow: "15px 15px #ccc",
+            letterSpacing: '0.1em',            
 
         },
         landingSubtitle: {
