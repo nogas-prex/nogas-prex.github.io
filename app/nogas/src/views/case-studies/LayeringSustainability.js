@@ -1,113 +1,134 @@
+import {
+    CardContent,
+    CardHeader,
+    CardMedia,
+    Grid,
+    Typography,
+} from "@mui/material";
 
 import ResponsiveAppBar from "../../components/AppBar";
-import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
-import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyBackground from "../../components/caseStudies/caseStudyBackground";
-import { Grid } from "@mui/material";
+import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
+import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import ImageSlider from "../../components/ImageSlider";
+
+import headerImage from "../../img/5_Case Study 03_ Layering Sustainability/0_Cover/1.png";
+import backgroundImage from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/0_Cover/1.png";
+import beforeImage from '../../img/5_Case Study 03_ Layering Sustainability/3_Vision/Slider_Before.png'
+import afterImage from "../../img/5_Case Study 03_ Layering Sustainability/3_Vision/Slider_After.png";
+import densityImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Smart Density.png'
+import vehUsageImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Vehicle Usage.png";
+import envPerfImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Better Envir-performance.png";
 import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
+import carImage from '../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Vehicle Trips.png'
+import pedImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Pedestrian Accessibility.png";
+import permImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Permeable.png";
+import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Canopy.png";
+
 
 export default function LayeringSustability() {
-  return (
-    <div>
-      <ResponsiveAppBar />
-      <CaseStudyLanding
-        image={''}
-        title="Layering Sustainability"
-        subtitle="Landscape Optimization"
-        body={[
-          `Metro areas are searching harder than ever for solutions to mitigate the effects of
-climate change such as extreme heat, drought, flooding, and wildfire. Meanwhile, more
-people are moving in than out of areas facing high risk from climate change, which
-accelerates the urbanization rate in these areas. As the result of urbanization processes
-– more permeable surfaces being paved over. Massive impervious surface further
-exacerbates the extreme heat, urban flooding, and other climate disasters. Hence, a
-vicious circle is formed.`,
-          `Autonomous and multi-modal mobility along with related mobility service can be an
-opportunity to break the circle by reducing the size of vehicle fleets and transforming
-the massive impervious surfaces into well-planned green spaces, which has been
-proven as one of the most important methods to mitigate climate change effects.
-            `,
-          `third paragaph`,
-        ]}
-      />
+    return ( <
+        div >
+        <
+        ResponsiveAppBar / >
+        <
+        CaseStudyLanding image = { headerImage }
+        title = "LAYERING SUSTAINABILITY"
+        subtitle = "Landscape Optimization"
+        body = {
+            [
+                `Today, metropolitan areas are increasingly experiencing the effects of climate change, including extreme heat, 
+                drought, flooding, and wildfire. Meanwhile, the intensification of rural land use and the addition of impervious 
+                surfaces – both intrinsic to the process of urbanization itself – are further exacerbating these environmental risks.`,
+                `The widespread adoption of autonomous mobility services may be an opportunity to break this disastrous cycle by reducing 
+                the size of vehicle fleets and transforming massive networks of roadways and other impervious surfaces into multi-functional 
+                green infrastructure.`,
+            ]
+        }
+        />
 
-      <CaseStudyBackground
-        title="Background"
-        subtitle=""
-        image={''}
-        body={[``]}
-        stats={[
-          { pct: "1876", text: "Anual Household Vehicle Trips" },
-          {
-            pct: "25%+",
-            text: "Residential Land Devoted to Vehicular Surfaces",
-          },
-          { pct: "35%+", text: "GHG Emissions Reduction Potential" },
-        ]}
-      />
+        <
+        CaseStudyBackground title = "BACKGROUND"
+        subtitle = "Suburban Climate Effects"
+        image = { backgroundImage }
+        body = {
+            [
+                `Today, communities around the world are facing the dramatic effects of climate change. In 2021, 
+                more than 80 percent of Americans experienced at least one heat wave, which were the primary cause 
+                of more than 1,300 deaths that year in the U.S. Along with these extreme heat events, drought and 
+                wildfire are threatening millions of lives and properties. Meanwhile, increased precipitation intensity, 
+                along with sea-level rise, is causing a sustained increase in billion-dollar flood events each decade.`,
+            ]
+        }
+        stats = {
+            [
+                { pct: "1300+", text: "Heat-related Death per year in U.S." },
+                {
+                    pct: "80%+",
+                    text: "Americans Experienced a Heat Wave in 2021",
+                },
+                { pct: "20°F+", text: "Cooler Temperature under Tree Shade" },
+            ]
+        }
+        />
 
-      <Grid
-        container
-        sx={{ width: "100vw", height: "70vh", overflowY: "hidden" }}
-      >
-        <ImageSlider leftImage={''} rightImage={''} />
-      </Grid>
-      <CaseStudyVision
-        title="Vision"
-        subtitle="The Future of Autonomous Suburbs"
-        body={[
-                `In the near term, a more integrative approach to zoning
-        can help redistribute smaller commercial clusters
-        and increased park space throughout residential
-        neighborhoods, allowing a finer-grained suburban
-        fabric to emerge that caters more explicitly to a mix of
-        pedestrians, and micro-transit users. This atomization
-        of residential islands, when applied to greenfield
-        development, can facilitate a significant reduction of
-        long-distance vehicular trips by clustering land uses
-        together within a much smaller walk shed. It can also
-        increase the environmental benefits of heterogeneity
-        by expanding access to public open space areas, which
-        has proven to be one of the most valuable neighborhood
-        public health assets since the beginning of the
-        COVID-19 pandemic.`,
-                `A transition from traditional car-based urbanism to
-        autonomous, on-demand mobility paradigms will further
-        support a shift towards finer-grained land use planning
-        by leveraging new micro-mobility options to grant users
-        greater access to services and amenities.`,
-        ]}
-        icons={[
-          { img: '', alt: "", label: "Smart Density" },
-          { img: '', alt: "", label: "Reduced Vehicle Usage" },
-          {
-            img: 'envPerfImage',
-            alt: "",
-            label: "Better Environmental Performance",
-          },
-        ]}
-      />
+        <
+        Grid container sx = {
+            { width: "100vw", height: "70vh", overflowY: "hidden" }
+        } >
+        <
+        ImageSlider leftImage = { beforeImage }
+        rightImage = { afterImage }
+        /> < /
+        Grid > <
+        CaseStudyVision title = "VISION"
+        subtitle = "The Future of Sustainable Suburbs"
+        body = {
+            [
+                `In the near term, optimized street design, along with retrofitted parking areas, can reduce excessive pavement 
+                and offer space for expanding the urban canopy. This can simultaneously help sequester atmospheric carbon, while 
+                helping to alleviate pressures related to stormwater management and extreme heat exposure. Alternatively, this 
+                could provide new real estate for housing in order to facilitate more resilient and affordable communities.  `,
+                `In the fully autonomous future, a dramatic reduction of pavement and other vehicular surfaces can allow for a 
+                more flexible and compact block configuration that prioritizes green infrastructure and improved access to 
+                environmental system services. `,
+            ]
+        }
+        icons = {
+            [
+                { img: '', alt: "", label: "Smart Density" },
+                { img: '', alt: "", label: "Reduced Vehicle Usage" },
+                {
+                    img: 'envPerfImage',
+                    alt: "",
+                    label: "Better Environmental Performance",
+                },
+            ]
+        }
+        />
 
-      <div>custom stuff</div>
+        <
+        div > custom stuff < /div>
 
-      <CaseStudySummary
-        text={``}
-        icons={[
-          { img: '', pct: "50%", text: "Reduction of vehicle tripps" },
-          {
-            img: '',
-            pct: "60%",
-            text: "Increase in pedestrian accessibility",
-          },
-          {
-            img: '',
-            pct: "80%",
-            text: "Reduction of impervious surface cover",
-          },
-          { img: '', pct: "60%", text: "Increase in tree canopy" },
-        ]}
-      />
-    </div>
-  );
+        <
+        CaseStudySummary text = { `` }
+        icons = {
+            [
+                { img: '', pct: "50%", text: "Reduction of vehicle tripps" },
+                {
+                    img: '',
+                    pct: "60%",
+                    text: "Increase in pedestrian accessibility",
+                },
+                {
+                    img: '',
+                    pct: "80%",
+                    text: "Reduction of impervious surface cover",
+                },
+                { img: '', pct: "60%", text: "Increase in tree canopy" },
+            ]
+        }
+        /> < /
+        div >
+    );
 }

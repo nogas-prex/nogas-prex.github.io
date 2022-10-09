@@ -5,7 +5,7 @@ import ImageSlider from "../../components/ImageSlider";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Carousel from "react-material-ui-carousel";
-import {ImageItem} from '../../components/ImageCarousel'
+import { ImageItem } from '../../components/ImageCarousel'
 import { CardActionArea } from "@mui/material";
 
 import headerImage from '../../img/3_Case Study 01_ Improving Equitable Access/0_Cover/1.png';
@@ -32,189 +32,227 @@ import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
 // import ImageCarousel from "../../components/ImageCarousel";
 
 const metricStyle = {
-  backgroundColor: "#00A360",
-  alignItems: "center",
-  justifyContent: "center",
-  textAlign: "center",
-  textAlignLast: "center",
+    backgroundColor: "#00A360",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    textAlignLast: "center",
 };
-export default function ImprovingEquitableAccess() { 
-    
+export default function ImprovingEquitableAccess() {
+
     const carouselItems = [
-      { name: "Existing", img: existingImage },
-      { name: "Optimized Scenario", img: optimizedImage },
-      { name: "Proximity Analysis", img: proximityImage },
-      { name: "Mobility Image", img: mobilityImage },
+        { name: "Existing", img: existingImage },
+        { name: "Optimized Scenario", img: optimizedImage },
+        { name: "Proximity Analysis", img: proximityImage },
+        { name: "Mobility Image", img: mobilityImage },
     ];
 
-    return (
-      <div>
-        <ResponsiveAppBar />
-        <CaseStudyLanding
-          image={headerImage}
-          title="Improving Equitable Access"
-          subtitle="Neighborhood Retrofit"
-          body={[
-            `In 1925, barely 17% of households owned cars; today, it's over
-              93%. Only about 5% of the US working population uses public
-              transit to get to work. This dominance is likely to have expanded
-              during the pandemic and remain, as people desire more safe,
-              private space while they travel. However, incompetence of driving
-              brought up by aging and disability has hindered suburban seniors
-              and disabled populatioins from accessing essential mobilities.`,
-            `Fortunately, the proliferation of autonomous mobility can be a
-              solution to solve this issue where the key issues is how to
-              transfer existing private vehicle oriented suburban planning and
-              design paradigm into autonomous mobility adapted form, meanwhile,
-              make sure all population groups have equitable access to these
-              facilities.`,
-          ]}
+    return ( <
+        div >
+        <
+        ResponsiveAppBar / >
+        <
+        CaseStudyLanding image = { headerImage }
+        title = "IMPROVING EQUITABLE ACCESS"
+        subtitle = "Neighborhood Retrofit"
+        body = {
+            [
+                `Since 1925, the number of car-owning households in the United 
+                States has skyrocketed from 17 percent to more than 93 percent. 
+                In the suburbs, where less than five percent of the U.S. workforce 
+                uses public transit to get to work, the configuration of the built 
+                environment is designed to prioritize cars. These car-centric communities 
+                create distinct burdens for an increasing percentage of the suburban 
+                population who are elderly, disabled, or otherwise unable to drive. 
+                And the emphasis on monofunctional vehicular infrastructure often 
+                makes it difficult for pedestrians and those using existing micromobililty 
+                offerings, such as bicycles and scooters.`,
+                `In the near-term, the proliferation of autonomous vehicles (AVs) may offer 
+                a path forward for mobility-challenged people, enabling them to use vehicular
+                infrastructure without driving a car. Eventually, widespread adoption of 
+                autonomous transportation systems and new land use patterns that include 
+                expanded micromobility options could pave the way for radically new suburban 
+                configurations that prioritize equitable mobility for all. `,
+            ]
+        }
         />
 
-        <CaseStudyBackground
-          title="Background"
-          subtitle="Mobility Access Challenge in Suburbs"
-          image={metricAgingImage}
-          body={[
-            `Today, around 55 million Americans are over 65, by 2060 this
-              number will be 100 million. Aging populations usually have more
-              physical difficulty in driving and a higher accident rate.
-              Comapnying with aging, higher ratio of disability has added even
-              more challenge to realize the equitable access, especially given
-              that suburban area has both higher ratio of aging populaton and
-              fewer mobility options than other places.
-          `,
-          ]}
-          stats={[
-            { pct: "25%", text: "Adults have at least one disability" },
-            {
-              pct: "25%+ ",
-              text: "Fewer daily trips made by people with disabilities",
-            },
-            { pct: "14%", text: "Disabled adults with mobility limitations" },
-          ]}
+        <
+        CaseStudyBackground title = "BACKGROUND"
+        subtitle = "Mobility Access Challenge in Suburbs"
+        image = { metricAgingImage }
+        body = {
+            [
+                `Today, nearly 55 million Americans are over age 65. 
+                By 2060, this number is expected to increase to 95 million, 
+                jumping from 16 percent to 23 percent of the total U.S. population. 
+                This aging of the population will create major challenges for 
+                ensuring equitable access to mobility, especially since older 
+                individuals are more likely to have physical difficulty driving 
+                because of changes in hearing, eyesight, and other physical factors. 
+                In the suburbs, where car travel is often the only reliable daily 
+                transportation option, this presents major obstacles for transportation planners.`,
+            ]
+        }
+        stats = {
+            [
+                { pct: "25%", text: "Adults have at least one disability" },
+                {
+                    pct: "25%+ ",
+                    text: "Fewer daily trips made by people with disabilities",
+                },
+                { pct: "14%", text: "Disabled adults with mobility limitations" },
+            ]
+        }
         />
 
-        <Grid
-          container
-          sx={{ width: "100vw", height: "70vh", overflowY: "hidden" }}
-        >
-          <ImageSlider leftImage={beforeImage} rightImage={afterImage} />
+        <Grid container sx = {
+            { width: "100vw", height: "70vh", overflowY: "hidden" }
+        } >
+        <
+        ImageSlider leftImage = { beforeImage }
+        rightImage = { afterImage }
+        /> 
         </Grid>
 
-        <CaseStudyVision
-          title={"Vision"}
-          subtitle="Autonomous Suburbs for Equitable Access"
-          body={[
-            `In the near term, a more comprehensive approach to optimize connectivity and accessibility ration of multi-modal mobility networks is established to generate a more inclusive neighborhood land use patterns and mobility framework, which has equitable amenity access for everyone within a 5-10 min walking despite various moving speeds between younger populations, seniors, and disabled population.`,
-            `A long-term transformation from private car oriented suburban form to autonomous mobility paradigms will further improve the mobility access for aging and disabled populations to a large extent through retrofitting existing residential block. The optimized residential block can accommodate the essential infrastructures of the autonomous mobility and related service for each household.`,
-          ]}
-          icons={[
-            { img: smartDensityImg, alt: "bae", label: "Smart Density" },
-            {
-              img: equityAccessImg,
-              alt: "bar",
-              label: "Equitable Mobility Access",
-            },
-            {
-              img: envPerfImage,
-              alt: "foo",
-              label: "Better Environmental Performance",
-            },
-          ]}
+
+
+        <
+        CaseStudyVision title = { "VISION" }
+        subtitle = "Autonomous Suburbs for Equitable Access"
+        body = {
+            [
+                `The codes, policies, and guidelines used to control suburban form can be expanded to account for 
+                the potential effects of AVs, and to better accommodate increased micromobility and pedestrian modes. 
+                New neighborhood land use patterns can ensure equitable access to local amenities within a five-minute 
+                walkshed of all residents, including those with mobility challenges. `,
+                `Additionally, suburban block configurations can be optimized to further improve mobility access for the 
+                elderly and people with disabilities who can’t drive.`,
+            ]
+        }
+        icons = {
+            [
+                { img: smartDensityImg, alt: "bae", label: "Smart Density" },
+                {
+                    img: equityAccessImg,
+                    alt: "bar",
+                    label: "Equitable Mobility Access",
+                },
+                {
+                    img: envPerfImage,
+                    alt: "foo",
+                    label: "Better Environmental Performance",
+                },
+            ]
+        }
         />
 
-        {/* custom stuff */}
-        <Grid container direction="column" sx={{ marginTop: "7vh" }}>
-          <Grid item>
-            <Grid container direction="row">
-              <Grid item xs={0} md={6}></Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                sx={{ padding: "7em", textAlign: "left" }}
-              >
-                <Typography variant="sectionTitle">Equitable Access</Typography>
-                <br></br>
-                <Typography variant="sectionSubtitle">
-                  Neighborhood Optimization with OASIS
-                </Typography>
-                <hr color="EC008C"></hr>
-                <Typography variant="bodyBlack">
-                  OASIS is a parametric toolbox that can help planners and
-                  developers optimize neighborhood-scale land use and mobility
-                  frameworks. The access optimization tool of OASIS toolbox can
-                  analyze and optimize accessbility index of given neighrohood
-                  masterplan to generate the optimal scenario with more
-                  equitable access.
-                </Typography>
-                <br></br>
-                <Button
-                  variant="outlined"
-                  style={{
-                    color: "#EC008C",
-                    borderColor: "#EC008C",
-                    marginTop: "3em",
-                  }}
-                  endIcon={<ArrowForwardIcon />}
-                >
-                  Learn more about OASIS
-                </Button>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid
-            container
-            justifyContent="center"
-            alignContent="center"
-            direction="column"
-            sx={{ marginLeft: "25%", marginRight: "25%", width: "50%" }}
-          >
-            <Grid item xs={12} md={6} elevation={5}>
-              <Carousel
-                navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "750px" }}
-              >
-                {carouselItems.map((img, i) => (
-                  <ImageItem key={i} image={img.img} name={img.name} />
-                ))}
-              </Carousel>
-            </Grid>
-            <Grid item xs={0} sm={3}></Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography variant="body2">
-                Click through the various scenarios above to see how access
-                optimization tool of OASIS can generate different masterplan
-                scenarios with optimized accessibility performance for all
-                population groups.
-              </Typography>
-            </Grid>
-            <Grid item xs={0} sm={3}></Grid>
-          </Grid>
+        { /* custom stuff */ } <
+        Grid container direction = "column"
+        sx = {
+            { marginTop: "7vh" }
+        } >
+        <
+        Grid item >
+        <
+        Grid container direction = "row" >
+        <
+        Grid item xs = { 0 }
+        md = { 6 } > </Grid> 
+        <Grid item xs = { 12 }
+        md = { 6 }
+        sx = {
+            { padding: "7em", textAlign: "left" }
+        } >
+        <
+        Typography variant = "sectionTitle" > Equitable Access </Typography> 
+        <br> </br> 
+        <Typography variant = "sectionSubtitle" >
+        Neighborhood Optimization with OASIS 
+        </Typography>  
+        <hr color = "EC008C" > </hr> 
+        <Typography variant = "bodyBlack">
+        OASIS is a parametric toolbox that can help planners and developers optimize neighborhood - scale land use and mobility frameworks.The access optimization tool of OASIS toolbox can analyze and optimize accessbility index of given neighrohood masterplan to generate the optimal scenario with more equitable access. 
+        </Typography> 
+        <br > </br> 
+        <Button variant = "outlined"
+        style = {
+            {
+                color: "#EC008C",
+                borderColor: "#EC008C",
+                marginTop: "3em",
+            }
+        }
+        endIcon = { < ArrowForwardIcon / > } >
+        Learn more about OASIS 
+        </Button> 
+        </Grid> 
+        </Grid> 
+        </Grid> 
+        <Grid container justifyContent = "center"
+        alignContent = "center"
+        direction = "column"
+        sx = {
+            { marginLeft: "25%", marginRight: "25%", width: "50%" }
+        } >
+        <
+        Grid item xs = { 12 }
+        md = { 6 }
+        elevation = { 5 } >
+        <
+        Carousel navButtonsAlwaysVisible = { true }
+        sx = {
+            { maxWidth: "750px" }
+        } > {
+            carouselItems.map((img, i) => ( <
+                ImageItem key = { i }
+                image = { img.img }
+                name = { img.name }
+                />
+            ))
+        } 
+        </Carousel>   
+        </
+        Grid > <
+        Grid item xs = { 0 }
+        sm = { 3 } > </Grid> <
+        Grid item xs = { 12 }
+        sm = { 6 } >
+        <
+        Typography variant = "body2" >
+        Click through the various scenarios above to see how access optimization tool of OASIS can generate different masterplan scenarios with optimized accessibility performance
+        for all population groups. 
+        </Typography>  
+        </
+        Grid > <
+        Grid item xs = { 0 }
+        sm = { 3 } > </Grid> 
+        </
+        Grid > 
         </Grid>
 
-        {/* end custom stuff */}
+        { /* end custom stuff */ }
 
-        {/* stats / summary */}
-        <CaseStudySummary
-          text={`Compared with today's average suruban form, long-term optimization
-          scenarios demonstrate valuable performance benefits including:`}
-          icons={[
-            { img: densityImage, pct: "40%", text: "Increase in density" },
-            {
-              img: MODImage,
-              pct: "80%",
-              text: "Increase in mobility on-demand access",
-            },
-            {
-              img: permeableImage,
-              pct: "15%",
-              text: "Reduction of impervious surface cover",
-            },
-            { img: canopyImage, pct: "10%", text: "Increase in tree canopy" },
-          ]}
-        />
-      </div>
+        { /* stats / summary */ } <
+        CaseStudySummary text = { `Compared with today's average suruban form, long-term optimization
+          scenarios demonstrate valuable performance benefits including:` }
+        icons = {
+            [
+                { img: densityImage, pct: "40%", text: "Increase in density" },
+                {
+                    img: MODImage,
+                    pct: "80%",
+                    text: "Increase in mobility on-demand access",
+                },
+                {
+                    img: permeableImage,
+                    pct: "15%",
+                    text: "Reduction of impervious surface cover",
+                },
+                { img: canopyImage, pct: "10%", text: "Increase in tree canopy" },
+            ]
+        }
+        /> 
+        </div>
     );
 }
