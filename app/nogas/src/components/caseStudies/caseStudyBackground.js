@@ -1,4 +1,5 @@
 import {
+  Button,
     Card,
   CardContent,
   CardHeader,
@@ -6,7 +7,9 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 export default function CaseStudyBackground(props) { 
     const image = props.image
     const title = props.title
@@ -20,7 +23,7 @@ export default function CaseStudyBackground(props) {
         direction="row"
         alignItems="center"
         justifyContent="center"
-        sx={{ width: "100vw", backgroundColor: "white", height: "100vh", }}
+        sx={{ width: "100vw", backgroundColor: "white", height: "100vh" }}
       >
         <Grid item xs={12} md={6} sx={{ paddingRight: "3em" }}>
           <Card
@@ -61,6 +64,18 @@ export default function CaseStudyBackground(props) {
           {body.map((b) => (
             <Typography variant="bodyBlack">{b}</Typography>
           ))}
+          <br></br>
+          <br></br>
+          <Button
+            variant="outlined"
+            style={{
+              color: "#EC008C",
+              borderColor: "#EC008C",
+            }}
+            endIcon={<ArrowForwardIcon />}
+          >
+            <Link to={{ pathname: `${props.link}` }}>Learn More</Link>
+          </Button>
         </Grid>
       </Grid>
     );

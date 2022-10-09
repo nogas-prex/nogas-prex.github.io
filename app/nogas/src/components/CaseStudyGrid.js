@@ -31,6 +31,7 @@ export default function CaseStudyGrid(props) {
           <hr color="#EC008C"></hr>
           <Typography variant="bodyBlack">{text}</Typography>
           <br></br>
+
           <Button
             variant="outlined"
             style={{

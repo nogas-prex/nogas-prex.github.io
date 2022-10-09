@@ -66,6 +66,7 @@ export default function FutureOfWork() {
                 { pct: "0", text: "Walkable Access to Public Transit" },
             ]
         }
+            link={'/case-studies/future-of-work-background'}
         />
 
         <Grid container sx = {
