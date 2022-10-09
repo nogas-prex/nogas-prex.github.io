@@ -2,7 +2,10 @@ import { Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import ImageCard from "./ImageCard";
+import ImageSlider from "./ImageSlider";
+import beforeImage from '../img/01_Landing/Before.png'
+import afterImage from "../img/01_Landing/After.png";
+
 
 export default function Mission() {
   return (
@@ -65,18 +68,10 @@ export default function Mission() {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Grid item xs={6}>
-            <ImageCard
-              image={
-                "C:UsersmarioagDropbox (Personal)GSAPPF22Lecturesweek1links\nyt_tulsa.PNG"
-              }
-            />
-          </Grid>
-          <Grid item xs={6}>
-            <ImageCard
-              image={
-                "C:UsersmarioagDropbox (Personal)GSAPPF22Lecturesweek1links\nyt_tulsa.PNG"
-              }
+          <Grid item xs={12} md={8}>
+            <ImageSlider
+              leftImage={beforeImage}
+              rightImage={afterImage}
             />
           </Grid>
         </Grid>
