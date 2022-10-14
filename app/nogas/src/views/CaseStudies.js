@@ -37,7 +37,7 @@ export default function CaseStudies() {
               justifyContent: "left",
               alignItems: "left",
               textAlign: "left",
-              paddingLeft: "2em",
+              paddingLeft: "19em",
             }}
           >
             <Typography variant="sectionTitle">
