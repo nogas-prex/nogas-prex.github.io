@@ -118,11 +118,10 @@ export default function FutureOfWork() {
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                  MIRAGE is a parametric toolbox that can help planners and
-                  developers optimize block-scale configurations. The block
-                  layout optimization tool of MIRAGE toolbox can optimize any
-                  given block layout based on predefined perimeters to generate
-                  more flexible block typologies.
+                MIRAGE is a parametric toolbox that can help planners and developers 
+                optimize block-scale configurations. The modular block layout optimization
+                tool can optimize any given block layout based on predefined parameters to 
+                generate more flexible block typologies.
                 </Typography>
                 <br></br>
                 <br></br>
@@ -162,10 +161,9 @@ export default function FutureOfWork() {
             </Grid>{" "}
             <Grid item xs={12} sm={6}>
               <Typography variant="body2">
-                Click through the various scenarios above to see how access
-                optimization tool of OASIS can generate different masterplan
-                scenarios with optimized accessibility performance for all
-                population groups.
+              Click through the various scenarios above to see how an existing suburban 
+              employment campus can be transformed to meet the demands of a future 
+              employment campus.
               </Typography>
             </Grid>{" "}
             <Grid item xs={0} sm={3}>

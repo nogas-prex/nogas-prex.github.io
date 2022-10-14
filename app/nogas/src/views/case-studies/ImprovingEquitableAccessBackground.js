@@ -15,25 +15,27 @@ return (
       title={"MOBILITY ACCESS CHALLENGE"}
       subtitle={"for aging and disabled populations"}
       body={[
-        `Today, around 55 million Americans is over 65, by 2060 this number will be 100 million.
-Aging populations usually have more physical difficulty in driving and higher accident
-rate. Companying with aging, higher ratio of disability has added even more challenge
-to realize the equitable access, especially given that suburban area has both higher ratio
-of aging population and fewer mobility options than other places.`,
+        `Today, nearly 55 million Americans are over age 65. By 2060, 
+        this number is expected to increase to 95 million, jumping from 
+        16 percent to 23 percent of the total U.S. population. This aging 
+        of the population will create major challenges for ensuring equitable 
+        access to mobility, especially since older individuals are more likely 
+        to have physical difficulty driving because of changes in hearing, eyesight, 
+        and other physical factors. In the suburbs, where car travel is often the only 
+        reliable daily transportation option, this presents major obstacles for 
+        transportation planners.`,
       ]}
     />
     <CaseStudyStat
       title={"GROWING AGING AND DISABLED POPULATIONS IN U.S."}
       body={[
-        `According to U.S. Census bureau (2019), 1 in 6 U.S.
-population (54.1 million) is over age 65, while 1 in 4
-U.S. adults – 61 million Americans – have a disability
-that impacts major life activities. Among all functional
-disability types, serious difficulty walking or climbing
-stairs is at the first rank (13.7%). A study from U.S.
-Department of Transportation has also shown that
-people with disabilities make 28% fewer trips per day on
-average than people without disabilities.`,
+        `Planners and designers need to consider the significant impacts AVs could have 
+        on communities, and include these in their planning. AV technologies and expanded 
+        micromobility offerings are poised to dramatically increase independence and mobility 
+        among the nearly 26 million Americans who experience travel-limiting disabilities and 
+        the estimated 600,000 older adults who stop driving every year. However, without adequate 
+        foresight, these technologies may prove to be unworkable for the very people who would 
+        benefit most from them.`,
       ]}
             chart={statImage}
             orient='chart-text'
@@ -42,14 +44,11 @@ average than people without disabilities.`,
       title={"MOVING SPEED STUDY"}
       subtitle={"Establishing Baseline Metrics"}
       body={[
-        `The moving speed, which directly affects individual
-access scope in given timespan, is an important
-indicator of the accessibility. An awareness of various
-moving speeds related to different population groups
-is essential for realizing equitable access. By analyzing
-moving speeds of different groups, the optimal block
-sizes and travel distances are defined for our tool to
-conduct further design generation and optimization.`,
+        `Unlike vehicles, which are designed to work within a universal set of constraints, such as 
+        traffic lights and speed limits, pedestrians each move through space in different ways. The 
+        average moving speed, along with the need for intermittent rest, can vary widely depending 
+        on age, fitness level, and use of assistive mobility aids, including wheelchairs and walkers. `,
+        'It is essential for urban planners and designers to be aware of moving speed as a key indicator of equitable access. By analyzing the moving speeds of different groups, optimal block sizes and travel distances can be defined, establishing a baseline for further design generation and optimization.',
       ]}
     />
     {/* bespoke */}

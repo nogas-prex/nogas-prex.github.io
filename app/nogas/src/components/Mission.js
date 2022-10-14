@@ -3,8 +3,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import ImageSlider from "./ImageSlider";
-import beforeImage from '../img/01_Landing/Before.png'
-import afterImage from "../img/01_Landing/After.png";
+import beforeImage from '../img/01_Landing/Before2.jpg'
+import afterImage from "../img/01_Landing/After2.jpg";
 
 
 export default function Mission() {
@@ -20,13 +20,14 @@ export default function Mission() {
       id='mission'
     >
       {" "}
-      <Box sx={{ width: "70%", margin: "3em" }}>
+      <Box sx={{ width: "50%", margin: "8em" }}>
         <Typography
           variant="sectionTitleUnderlineWhite"
           sx={{ color: "white" }}
         >
           NOGAS MISSION
         </Typography>
+        <br></br>
         <br></br>
         <br></br>
         <Typography variant="landingBodyWhite">
@@ -68,7 +69,7 @@ export default function Mission() {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={12}>
             <ImageSlider
               leftImage={beforeImage}
               rightImage={afterImage}

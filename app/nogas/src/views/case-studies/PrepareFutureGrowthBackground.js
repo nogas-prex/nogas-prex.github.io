@@ -19,10 +19,9 @@ export default function PrepareFutureGrowthBackground() {
         title={"SINGLE-FAMILY RESIDENTIAL"}
         subtitle={"Land Use Study"}
         body={[
-          `As of October 2021, single-family dwelling units made up over 81 percent of the housing
-stock in the United States. The size of single-family housing units has steadily risen
-since the start of the 21st century, with the average floor plan at about 2600 ft2 (or 3,100
-including two-car garage), using 2016 data.`,
+          `As of October 2021, single-family dwelling units made up over 81 percent of the housing stock in the United States. The size of single-family housing 
+           units has steadily risen since the start of the 21st century, with the average floor plan of a home in 2016 being 2,600 square feet (3,100 square feet 
+           if a two-car garage is included).`,
         ]}
       />
       <CaseStudyStat
@@ -36,9 +35,7 @@ including two-car garage), using 2016 data.`,
         title={"LAND COVER SURVEY"}
         subtitle={"Establishing Baseline Metrics"}
         body={[
-          `Analysis of existing suburban neighborhoods was used
-to calculate average land cover metrics associated with
-single-family residential land uses.`,
+          `An analysis of existing suburban neighborhoods was used to calculate the average land-cover metrics associated with single-family residential land use.`,
         ]}
       />
       {/* bespoke */}

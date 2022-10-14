@@ -26,16 +26,16 @@ export const NOGASTheme = createTheme({
     typography: {
         landingTitle: {
             fontWeight: 700,
-            fontSize: "15em",
+            fontSize: "22em",
             color: "#00a360",
             textShadow: "15px 15px #ccc",
-            letterSpacing: '0.1em',            
+            letterSpacing: '0.25em',            
 
         },
         landingSubtitle: {
             textTransform: "uppercase",
             color: "#ccc",
-            fontSize: "2em",
+            fontSize: "3.7em",
         },
         sectionTitle: {
             fontSize: "2.3rem",
@@ -103,15 +103,15 @@ export const NOGASTheme = createTheme({
         },
         sectionTitleUnderline: {
             textDecoration: "underline",
-            fontWeight: 700,
+            fontWeight: 650,
             color: "black",
-            fontSize: "2.5rem",
+            fontSize: "2.8rem",
         },
         sectionTitleUnderlineWhite: {
             textDecoration: "underline",
-            fontWeight: 700,
+            fontWeight: 650,
             color: "white",
-            fontSize: "2.5rem",
+            fontSize: "2.8rem",
         },
         landingBodyWhite: {
             fontWeight: 400,
@@ -120,6 +120,7 @@ export const NOGASTheme = createTheme({
             color: "white",
             fontSize: "2em",
             paddingBottom: "1em",
+            fontWeight: 250,
         },
         landingBody: {
             fontWeight: 400,
@@ -128,6 +129,7 @@ export const NOGASTheme = createTheme({
             color: "black",
             fontSize: "2em",
             paddingBottom: "1em",
+            fontWeight: 350,
         },
     },
 });

@@ -4,9 +4,16 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import TextCard from "./TextCard";
 import ImageSlider from "./ImageSlider";
-import beforeImage from '../img/2_Incremental Progress/Slider_Before.png'
+import beforeImage from '../img/2_Incremental Progress/Slider_Before.png';
 import afterImage from '../img/2_Incremental Progress/Slider_After.png';
 import CardNavigation from "./BottomNavigation";
+import timeLine from '../img/2_Incremental Progress/Timeline.png'
+import LogoEs from '../img/2_Incremental Progress/Landing Logo_Environmental Sustainability.png';
+import LogoSe from '../img/2_Incremental Progress/Landing Logo_Social Equity.png';
+import LogoMs from '../img/2_Incremental Progress/Landing Logo_15minute Suburb.png';
+import LogoWa from '../img/2_Incremental Progress/Landing Logo_Walkability.png';
+import LogoCm from '../img/2_Incremental Progress/Landing Logo_Climate Mitigation.png';
+
 
 export default function Targets() { 
     var targets = [
@@ -50,8 +57,11 @@ export default function Targets() {
           marginTop: "2em",
         }}
       >
-        <Grid item sx={{ margin: "3em", width: "70vw" }}>
+        <Grid item sx={{ margin: "8em", width: "50vw" }}>
           <Typography variant="sectionTitleUnderline">NOGAS TARGETS</Typography>{" "}
+          <br></br>
+          <br></br>
+          <br></br>
           <Typography variant="landingBody">
             With the adoption of distributed, on-demand autonomous mobility
             services, many of the standardized land use and development patterns
@@ -62,7 +72,7 @@ export default function Targets() {
             challenges:
           </Typography>
           {targets.map((target) => (
-            <Box sx={{ margin: "2em" }}>
+            <Box sx={{ margin: "1em" }}>
               <TextCard
                 title={target.title}
                 text={target.text}
@@ -70,10 +80,19 @@ export default function Targets() {
               />
             </Box>
           ))}
-          <Typography variant="sectionTitleUnderline">
-            MODELING INCREMENTAL PROGRESS
-          </Typography>
-          <Box sx={{}}>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <Box sx={{margin: "0em", width: "50vw"}}>
+            <Typography variant="sectionTitleUnderline">
+              MODELING INCREMENTAL PROGRESS
+            </Typography>
+            <br></br>
+            <br></br>
+            <br></br>
             <Typography variant="landingBody">
               The transition to an autonomous future for the suburbs is already
               underway, but a complete transition will require communities to
@@ -82,6 +101,9 @@ export default function Targets() {
               established, providing end-users with a wide range of
               scenario-based insights.
             </Typography>
+          </Box>
+          <Box sx={{ width: "100%",  marginBottom: "2em" }}>
+          <img src={timeLine} style={{ width: "100%" }}></img> 
           </Box>
           <Box sx={{ width: "100%",  marginBottom: "2em" }}>
             <ImageSlider leftImage={beforeImage} rightImage={afterImage} />

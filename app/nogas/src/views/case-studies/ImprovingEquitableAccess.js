@@ -106,7 +106,7 @@ export default function ImprovingEquitableAccess() {
         </Grid>
         <CaseStudyVision
           title={"VISION"}
-          subtitle="Autonomous Suburbs for Equitable Access"
+          subtitle="Autonomous Suburbs for All"
           body={[
             `The codes, policies, and guidelines used to control suburban form can be expanded to account for 
                 the potential effects of AVs, and to better accommodate increased micromobility and pedestrian modes. 
@@ -144,7 +144,7 @@ export default function ImprovingEquitableAccess() {
               >
                 <Typography variant="sectionTitle">
                   {" "}
-                  Equitable Access{" "}
+                  EQUITABLE ACCESS{" "}
                 </Typography>
                 <br></br>
                 <Typography variant="sectionSubtitle">
@@ -152,12 +152,11 @@ export default function ImprovingEquitableAccess() {
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                  OASIS is a parametric toolbox that can help planners and
-                  developers optimize neighborhood - scale land use and mobility
-                  frameworks.The access optimization tool of OASIS toolbox can
-                  analyze and optimize accessbility index of given neighrohood
-                  masterplan to generate the optimal scenario with more
-                  equitable access.
+                OASIS is a parametric toolbox that can help planners and developers 
+                optimize neighborhood-scale land use configurations and mobility networks. 
+                The accessibility optimization components within the OASIS toolbox can be 
+                used to analyze an existing neighborhood master plan and identify opportunities 
+                for optimizing connectivity ratios through scenario-based modeling. 
                 </Typography>
                 <br></br>
                 <br></br>
@@ -197,10 +196,9 @@ export default function ImprovingEquitableAccess() {
             </Grid>{" "}
             <Grid item xs={12} sm={6}>
               <Typography variant="body2">
-                Click through the various scenarios above to see how access
-                optimization tool of OASIS can generate different masterplan
-                scenarios with optimized accessibility performance for all
-                population groups.
+              Click through the various scenarios above to see how OASIS can generate 
+              different master plan scenarios to determine an optimal configuration based 
+              on predetermined accessibility objectives.
               </Typography>
             </Grid>{" "}
             <Grid item xs={0} sm={3}>

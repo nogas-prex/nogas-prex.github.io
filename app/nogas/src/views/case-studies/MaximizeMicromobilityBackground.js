@@ -15,8 +15,8 @@ export default function MaximizeMicromobilityBackground() {
     <div>
       <CaseStudyBackgroundLanding
         image={headerImage}
-        title={"Car-dominated Travel Mode"}
-        subtitle={"is the largest cause of US GHG emissions"}
+        title={"CAR-DOMINATED TRAVEL MODE"}
+        subtitle={"is the largest source of US GHG emissions"}
         body={[
           `The car-dominated travel mode of U.S. suburbanites and car-oriented suburban street
 design are promoting each other and create a vicious circle. The average width of
@@ -30,14 +30,10 @@ also underuses valuable land resources.`,
           "US VMT is among the highest in the world, but it does not have much to do with density."
         }
         body={[
-          `On average, drivers in the US travel as much as 3.5 times the
-distances in the other countries1. However, some research
-including a recent one2,3 has disrupted a classic argument
-that per capita automobile usage drops off exponentially
-with rising population density from a 1989 book - Cities and
-Automobile Dependence. New research claims that density
-alone can only explain a small fraction of VMT and thus no
-stable link is found between density and VMT.`,
+          `The U.S. has among the highest vehicle miles traveled (VMT)  in the world. On average, 
+          the distance traveled by drivers in the U.S. is as much as 3.5 times greater than in other 
+          countries. While it has long been thought that per capita automobile usage drops off exponentially 
+          with rising population density, density alone explains only a small fraction of VMT.`,
         ]}
         chart={statImage}
         orient="img-text"
@@ -46,15 +42,10 @@ stable link is found between density and VMT.`,
         title={"CARBON MITIGATION"}
         subtitle={"Potential of Micro-mobility"}
         body={[
-          `As the largest source of U.S. domestic GHG emissions,
-transportation sector, especially vehicle trips that are
-smaller than 6 miles, provides a huge opportunity for
-reducing GHG emissions.`,
-          `Hence, if total 5.11 average household daily vehicle trips
-or even partially can be replaced by more environmentalfriendly
-transportation modes such as electrified micromobility,
-then a large fraction of U.S. domestic GHG
-emission can be mitigated.`,
+          `The transportation sector is the largest source of U.S. domestic greenhouse-gas (GHG) emissions. Vehicle 
+          trips that are less than 6 miles provide a huge opportunity for reducing GHG emissions. If even a portion 
+          of household daily vehicle trips can be replaced by more environmentally friendly transportation modes, 
+          such as electrified micromobility, then a large fraction of U.S. domestic GHG emission can be mitigated.`,  
         ]}
       />
       {/* bespoke */}

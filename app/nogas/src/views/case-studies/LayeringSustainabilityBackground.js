@@ -20,25 +20,21 @@ export default function LayeringSustainabilityBackground() {
         title={"SUBURBAN CLIMATE EFFECTS"}
         subtitle={"Extreme Heat and Frequent Flooding"}
         body={[
-          `Climate change is not just around the corner but have already come with dramatic
-effects. In 2021, over 80% of Americans have experienced at least one heat wave, which
-is the primary cause for more than 1300 death per year in U.S. Companying with extreme
-heat, drought and wildfire are threatening millions of people’s life. Meanwhile, increased
-precipitation intensity along with sea level rising has caused more billion-dollar flooding
-events than any year in the previous four decades.`,
+          `Today, communities around the world are facing the dramatic effects of climate change. 
+          In 2021, more than 80 percent of Americans experienced at least one heat wave, which 
+          were the primary cause of more than 1,300 deaths that year in the U.S. Along with these 
+          extreme heat events, drought and wildfire are threatening millions of lives and properties. 
+          Meanwhile, increased precipitation intensity, along with sea-level rise, is causing a 
+          sustained increase in billion-dollar flood events each decade.`,
         ]}
       />
       <CaseStudyStat
-        title={"America's Climate-Endangered Areas Are Becoming More Populous"}
+        title={"America's Climate-Impacted Areas Are Becoming More Populous"}
         body={[
-          `An analysis has shown that America’s climate endangered
-areas are becoming more populous than
-ever, which accelerates the urbanization rate in these
-areas. Massive impervious surfaces, as the result of
-these rapid urbanization processes, further exacerbate
-the negative effects of climate change such as extreme
-heat and frequent flooding that will be explained in the
-following sections.`,
+          `As accelerated urbanization continues to transform the edges of metropolitan areas, 
+          more people are moving into regions with the highest levels of environmental risks. 
+          In a perilous feedback loop, development in these areas further exacerbates the effects 
+          of climate change, such as extreme heat and frequent flooding.`,
         ]}
         chart={statImage}
         orient="img-text"
@@ -47,17 +43,12 @@ following sections.`,
         title={"EXTREME HEAT"}
         subtitle={"Accelerated by Shadeless Streets"}
         body={[
-          `The left map shows that American metropolitan areas
-are becoming hotter and hotter. The impervious surface,
-especially road surfaces paved by material with low
-solar reflectance rate (or Albedo), have made a huge
-contribution to this condition. Some research has shown
-that the temperature of paved street can be 40-60 °F
-warmer than air temperature. Besides the pavement,
-lacking tree shade also worsens the condition. As
-shown in the thermal image(right), the street without
-tree shade can be 20 °F warmer than street covered
-with tree shade.`,
+          `The map on the left shows that American metropolitan areas are becoming hotter and hotter. 
+          The impervious surfaces, especially road surfaces paved by material with low solar reflectance 
+          rate (or albedo), have made a huge contribution to this condition. Some research has shown that 
+          the air temperature on a paved street can be 40 to 60 degrees warmer than nearby air temperatures. 
+          A lack of tree canopy can worsen these conditions. As shown in the thermal image at right, the street 
+          without shade can be 20 degrees warmer than a street with a mature tree canopy.`,
         ]}
       />
       <Grid container>
@@ -73,13 +64,10 @@ with tree shade.`,
         title={"FREQUENT FLOODING"}
         subtitle={"Exacerbated by Paved Surface"}
         body={[
-          `According to the National Oceanic and Atmospheric
-Administration (NOAA), U.S. domestic precipitation
-is increasing in the past 30 years, which brings more
-surface runoffs in urban area. However, a large number
-of paved surfaces in suburban area can only absorb as
-low as 5% of increasing runoffs, which ultimately induce
-the frequent urban flooding.`,
+          `According to the National Oceanic and Atmospheric Administration, precipitation has increased in the U.S. 
+          over the past 30 years. Heavy rainfall events contribute more surface runoff, especially in urbanized areas 
+          with vast amounts of paved surfaces that can’t absorb the increased rainfall. This ultimately causes more 
+          frequent and severe urban flooding.`,
         ]}
       />
       <Grid container>

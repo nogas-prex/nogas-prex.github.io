@@ -125,12 +125,12 @@ export default function MaximizingMicromobility() {
               </Typography>
               <hr color="EC008C"></hr>
               <Typography variant="bodyBlack">
-                OASIS is a parametric toolbox that can help planners and
-                developers optimize neighborhood-scale land use and mobility
-                frameworks. The micro-mobility corridor optimization tool of
-                OASIS toolbox can generate and optimize the overall framework of
-                the micro-mobility corridor based on given land use patterns to
-                maximize the inter-block connectivity and accessibility.
+              OASIS is a parametric toolbox that can help planners and developers 
+              optimize neighborhood-scale land use and mobility frameworks. The 
+              micromobility corridor optimization tool of the OASIS toolbox can 
+              generate and optimize the overall micromobility corridor framework 
+              to maximize the connectivity and accessibility based on given land 
+              use patterns.
               </Typography>
               <br></br>
               <br></br>
@@ -167,10 +167,9 @@ export default function MaximizingMicromobility() {
           </Grid>{" "}
           <Grid item xs={12} sm={6}>
             <Typography variant="body2">
-              Click through the various scenarios above to see how access
-              optimization tool of OASIS can generate different masterplan
-              scenarios with optimized accessibility performance for all
-              population groups.
+            Click through the various scenarios above to see how the micromobility 
+            corridor optimization tool can be applied under different land use settings 
+            to maximize connectivity and accessibility.
             </Typography>
           </Grid>{" "}
           <Grid item xs={0} sm={3}>
