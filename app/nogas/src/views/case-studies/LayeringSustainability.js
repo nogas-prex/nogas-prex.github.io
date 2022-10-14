@@ -11,7 +11,8 @@ import CaseStudyBackground from "../../components/caseStudies/caseStudyBackgroun
 import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import ImageSlider from "../../components/ImageSlider";
-
+import Button from "@mui/material/Button";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import headerImage from "../../img/5_Case Study 03_ Layering Sustainability/0_Cover/1.png";
 import backgroundImage from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/0_Cover/1.png";
 import beforeImage from '../../img/5_Case Study 03_ Layering Sustainability/3_Vision/Slider_Before.png'
@@ -24,6 +25,8 @@ import carImage from '../../img/4_Case Study 02_ Preparing for Future Growth/1_M
 import pedImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Pedestrian Accessibility.png";
 import permImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Permeable.png";
 import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Canopy.png";
+
+import greenSpace from "../../img/5_Case Study 03_ Layering Sustainability/4_Green Space Comtiguity/1.png";
 
 
 export default function LayeringSustability() {
@@ -92,7 +95,60 @@ export default function LayeringSustability() {
             },
           ]}
         />
-        <div> custom stuff </div>
+        {/* <div> custom stuff </div> */}
+        <Grid container direction="column" sx={{ marginTop: "7vh" }}>
+          <Grid item>
+            <Grid container direction="row">
+              <Grid item xs={0} md={6}>
+                {" "}
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                sx={{ padding: "7em", textAlign: "left" }}
+              >
+                <Typography variant="sectionTitle">
+                  {" "}
+                  GREEN SPACE CONTIGUITY{" "}
+                </Typography>
+                <br></br>
+                <Typography variant="sectionSubtitle">
+                  Neighborhood Optimization with OASIS
+                </Typography>
+                <hr color="EC008C"></hr>
+                <Typography variant="bodyBlack">
+                  OASIS is a parametric toolbox that can help planners and
+                  developers optimize neighborhood-scale land use and mobility
+                  frameworks. The green space contiguity optimization tool of
+                  OASIS toolbox can analyze and optimize the contiguity of green
+                  space, one of most efficient methods to mitigate climate
+                  change effects, based on given land use plan. Diagram below
+                  show how green spaces contribute to climate adaptation and
+                  mitigation.
+                </Typography>
+                <br></br>
+                <br></br>
+                <Button
+                  variant="outlined"
+                  style={{
+                    color: "#EC008C",
+                    borderColor: "#EC008C",
+                    marginTop: "3em",
+                  }}
+                  endIcon={<ArrowForwardIcon />}
+                >
+                  Learn more about OASIS
+                </Button>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid container>
+            <Grid item sx={{paddingBottom: '3em'}}>
+              <img src={greenSpace} style={{width:'80%'}} />
+            </Grid>
+          </Grid>
+        </Grid>
         <CaseStudySummary
           text={``}
           icons={[

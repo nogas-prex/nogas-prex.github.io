@@ -12,6 +12,8 @@ import PrepareFutureGrowthBackground from "./views/case-studies/PrepareFutureGro
 import LayeringSustainabilityBackground from "./views/case-studies/LayeringSustainabilityBackground";
 import MaximizeMicromobilityBackground from "./views/case-studies/MaximizeMicromobilityBackground";
 import FutureOfWorkBackground from "./views/case-studies/FutureOfWorkBackground";
+import OASIS from "./views/OASIS";
+import MIRAGE from "./views/MIRAGE";
 
 export default function Urls() { 
     
@@ -21,6 +23,9 @@ export default function Urls() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/case-studies" element={<CaseStudies />} />
+          <Route exact path="/oasis" element={<OASIS />} />
+          <Route exact path="/mirage" element={<MIRAGE />} />
+
           <Route
             exact
             path="/case-studies/improving-equitable-access"
