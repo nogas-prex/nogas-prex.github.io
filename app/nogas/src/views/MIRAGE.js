@@ -24,11 +24,10 @@ export default function MIRAGE() {
         title="MIRAGE"
         subtitle="Multi-Indicator Relation Assesment Generation Engine"
         body={[
-          `OASIS is a parametric tool that can help planners and developers optimize
-neighborhood-scale land use frameworks. Using inputs commonly associated with
-specific land use categories, and a compatibility matrix, the tool automatically
-generates thousands of scenarios for stakeholders to choose from based on
-predetermined objectives.`,
+          `MIRAGE is a parametric toolbox that can help planners and developers optimize 
+          block-scale configurations. Using inputs commonly associated with exiting block 
+          layout, along with user-defined parameters, the tool automatically generates thousands 
+          of scenarios for stakeholders to choose from, based on predetermined objectives.`,
         ]}
       />
       <Grid
@@ -51,33 +50,29 @@ predetermined objectives.`,
           >
             <Grid item sx={{ height: "33%", color: "white" }}>
               <Typography variant="h3">
-                1. Inputting Existing Block Configuration
+                1. INPUTTING EXISTING BLOCK CONFIGURATION
               </Typography>
               <Typography>
-                The first step is to input existing block configuration data
-                along with other information into MIRAGE. The format of required
-                data can vary from numeric to spatial based on different needs.
+              The first step is to input data of existing block configuration, along with other information, 
+              into MIRAGE. Various formats of input data are accepted by MIRAGE, from numeric to spatial.
               </Typography>
             </Grid>
             <Grid item sx={{ height: "33%", color: "white" }}>
               <Typography variant="h3">
-                2. Defining Optimization Objectives and Parameters
+                2. DEFINING OPTIMIZATION OBJECTS AND OBJECTIVES
               </Typography>
               <Typography>
-                The second step is to defining optimizing objects (variables)
-                and related parameters. Users need to select specific objects
-                that they want to optimize among all features of given block
-                configurations. Then, several parameters need to be input to
-                define the range of variables.
+               The second step is to define optimization objects (variables) and objectives. Users need to select 
+               specific objects that they want to optimize among the features of given block configurations. Then, 
+               objectives need to be input to define the goal of the optimization.
               </Typography>
             </Grid>
             <Grid item sx={{ height: "33%", color: "white" }}>
-              <Typography variant="h3">3. Simulating and Optimizing</Typography>
+              <Typography variant="h3">3. SIMULATING AND OPTIMIZING</Typography>
               <Typography>
-                Finally, the MIRAGE will automatically optimize the block
-                configuration based on inputs. Multiple optimized scenarios will
-                be simulated and output for users to choose based on their
-                unique goals and customized trade-offs.
+               Finally, MIRAGE will automatically optimize the block configuration based on the inputs. Multiple 
+               optimized scenarios will be simulated and output for users to choose from, based on their unique 
+               goals and customized trade-offs.
               </Typography>
             </Grid>
           </Grid>
@@ -102,11 +97,9 @@ predetermined objectives.`,
               </Typography>
               <hr color="EC008C"></hr>
               <Typography variant="bodyBlack">
-                Each tool inside MIRAGE toolbox is built upon solid research and
-                algorithms. For instance, as shown below, the access
-                optimization tool of MIRAGE can measure distances in two
-                different way - Euclidean method and Network method based on
-                different conditions and users’ demands.
+               Each tool inside the MIRAGE toolbox is built upon solid research and algorithms. For instance, as 
+               shown below, the accessibility optimization tool of MIRAGE can measure distances through two different 
+               mathematic models — Euclidean method and Network method — based on different conditions and users’ demands.
               </Typography>
               <br></br>
               <br></br>
@@ -142,8 +135,8 @@ predetermined objectives.`,
           </Grid>{" "}
           <Grid item xs={12} sm={6}>
             <Typography variant="body2">
-              Click through various land use arrangements to explore
-              optimization trade-offs.
+             Click through two scenarios to explore how different distance 
+             measurements are employed by MIRAGE.
             </Typography>
           </Grid>{" "}
           <Grid item xs={0} sm={3}>
