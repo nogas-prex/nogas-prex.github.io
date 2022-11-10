@@ -4,8 +4,7 @@ import PageTitle from "../components/PageTitle";
 import Mission from "../components/Mission";
 import Targets from "../components/Targets";
 import CardNavigation from "../components/BottomNavigation";
-import caseStudyImg from "../img/01_Landing/Case Study.png"
-import designEngingImg from "../img/01_Landing/Design Engine.png";
+
 export default function Home() { 
     return (
       <div>
@@ -13,7 +12,12 @@ export default function Home() {
         <PageTitle />
         <Mission />
         <Targets />
-        <CardNavigation imgs={[caseStudyImg, designEngingImg]} />
+        <CardNavigation
+          imgs={[
+            "https://nogas-swar.s3.amazonaws.com/img/01_Landing/Case+Study.png",
+            "https://nogas-swar.s3.amazonaws.com/img/01_Landing/Design+Engine.png",
+          ]}
+        />
       </div>
     );
 }

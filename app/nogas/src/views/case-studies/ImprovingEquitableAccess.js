@@ -8,23 +8,6 @@ import Carousel from "react-material-ui-carousel";
 import { ImageItem } from '../../components/ImageCarousel'
 import { CardActionArea } from "@mui/material";
 
-import headerImage from '../../img/3_Case Study 01_ Improving Equitable Access/0_Cover/1.png';
-import canopyImage from '../../img/3_Case Study 01_ Improving Equitable Access/1_Metrics/Canopy.png'
-import densityImage from "../../img/3_Case Study 01_ Improving Equitable Access/1_Metrics/Density.png";
-import MODImage from "../../img/3_Case Study 01_ Improving Equitable Access/1_Metrics/MOD.png";
-import permeableImage from "../../img/3_Case Study 01_ Improving Equitable Access/1_Metrics/Permeable.png";
-import metricAgingImage from '../../img/3_Case Study 01_ Improving Equitable Access/2_Background/0_Cover/1.png';
-import beforeImage from '../../img/3_Case Study 01_ Improving Equitable Access/3_Vision/Slider_Before.png'
-import afterImage from "../../img/3_Case Study 01_ Improving Equitable Access/3_Vision/Slider_After.png";
-
-import smartDensityImg from '../../img/3_Case Study 01_ Improving Equitable Access/3_Vision/Smart Density.png'
-import equityAccessImg from "../../img/3_Case Study 01_ Improving Equitable Access/3_Vision/Equitable Mobility Access.png";
-import envPerfImage from "../../img/3_Case Study 01_ Improving Equitable Access/3_Vision/Better Environmental Performance.png";
-
-import existingImage from '../../img/3_Case Study 01_ Improving Equitable Access/4_Equitable Access/Existing Scenario.png'
-import optimizedImage from "../../img/3_Case Study 01_ Improving Equitable Access/4_Equitable Access/Proposed Scenario.png";
-import proximityImage from "../../img/3_Case Study 01_ Improving Equitable Access/4_Equitable Access/Proximity Analysis.png";
-import mobilityImage from "../../img/3_Case Study 01_ Improving Equitable Access/4_Equitable Access/Autonomous Ready.png";
 import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyBackground from "../../components/caseStudies/caseStudyBackground";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
@@ -41,17 +24,31 @@ const metricStyle = {
 export default function ImprovingEquitableAccess() {
 
     const carouselItems = [
-        { name: "Existing", img: existingImage },
-        { name: "Optimized Scenario", img: optimizedImage },
-        { name: "Proximity Analysis", img: proximityImage },
-        { name: "Mobility Image", img: mobilityImage },
+      {
+        name: "Existing",
+        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Existing+Scenario.png",
+      },
+      {
+        name: "Optimized Scenario",
+        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Proposed+Scenario.png",
+      },
+      {
+        name: "Proximity Analysis",
+        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Proximity+Analysis.png",
+      },
+      {
+        name: "Mobility Image",
+        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Autonomous+Ready.png",
+      },
     ];
 
     return (
       <div>
         <ResponsiveAppBar />
         <CaseStudyLanding
-          image={headerImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/0_Cover/1.png"
+          }
           title="IMPROVING EQUITABLE ACCESS"
           subtitle="Neighborhood Retrofit"
           body={[
@@ -76,7 +73,9 @@ export default function ImprovingEquitableAccess() {
         <CaseStudyBackground
           title="BACKGROUND"
           subtitle="Mobility Access Challenge in Suburbs"
-          image={metricAgingImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/2_Background/0_Cover/1.png"
+          }
           body={[
             `Today, nearly 55 million Americans are over age 65. 
                 By 2060, this number is expected to increase to 95 million, 
@@ -102,7 +101,14 @@ export default function ImprovingEquitableAccess() {
           container
           sx={{ width: "100vw", height: "70vh", overflowY: "hidden" }}
         >
-          <ImageSlider leftImage={beforeImage} rightImage={afterImage} />
+          <ImageSlider
+            leftImage={
+              "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/3_Vision/Slider_Before.png"
+            }
+            rightImage={
+              "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/3_Vision/Slider_After.png"
+            }
+          />
         </Grid>
         <CaseStudyVision
           title={"VISION"}
@@ -116,14 +122,18 @@ export default function ImprovingEquitableAccess() {
                 elderly and people with disabilities who can’t drive.`,
           ]}
           icons={[
-            { img: smartDensityImg, alt: "bae", label: "Smart Density" },
             {
-              img: equityAccessImg,
+              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/3_Vision/Smart+Density.png",
+              alt: "bae",
+              label: "Smart Density",
+            },
+            {
+              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/3_Vision/Equitable+Mobility+Access.png",
               alt: "bar",
               label: "Equitable Mobility Access",
             },
             {
-              img: envPerfImage,
+              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/3_Vision/Better+Environmental+Performance.png",
               alt: "foo",
               label: "Better Environmental Performance",
             },
@@ -152,11 +162,13 @@ export default function ImprovingEquitableAccess() {
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                OASIS is a parametric toolbox that can help planners and developers 
-                optimize neighborhood-scale land use configurations and mobility networks. 
-                The accessibility optimization components within the OASIS toolbox can be 
-                used to analyze an existing neighborhood master plan and identify opportunities 
-                for optimizing connectivity ratios through scenario-based modeling. 
+                  OASIS is a parametric toolbox that can help planners and
+                  developers optimize neighborhood-scale land use configurations
+                  and mobility networks. The accessibility optimization
+                  components within the OASIS toolbox can be used to analyze an
+                  existing neighborhood master plan and identify opportunities
+                  for optimizing connectivity ratios through scenario-based
+                  modeling.
                 </Typography>
                 <br></br>
                 <br></br>
@@ -196,9 +208,9 @@ export default function ImprovingEquitableAccess() {
             </Grid>{" "}
             <Grid item xs={12} sm={6}>
               <Typography variant="body2">
-              Click through the various scenarios above to see how OASIS can generate 
-              different master plan scenarios to determine an optimal configuration based 
-              on predetermined accessibility objectives.
+                Click through the various scenarios above to see how OASIS can
+                generate different master plan scenarios to determine an optimal
+                configuration based on predetermined accessibility objectives.
               </Typography>
             </Grid>{" "}
             <Grid item xs={0} sm={3}>
@@ -212,18 +224,26 @@ export default function ImprovingEquitableAccess() {
           text={`Compared with today's average suruban form, long-term optimization
           scenarios demonstrate valuable performance benefits including:`}
           icons={[
-            { img: densityImage, pct: "40%", text: "Increase in density" },
             {
-              img: MODImage,
+              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/Density.png",
+              pct: "40%",
+              text: "Increase in density",
+            },
+            {
+              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/MOD.png",
               pct: "80%",
               text: "Increase in mobility on-demand access",
             },
             {
-              img: permeableImage,
+              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/Permeable.png",
               pct: "15%",
               text: "Reduction of impervious surface cover",
             },
-            { img: canopyImage, pct: "10%", text: "Increase in tree canopy" },
+            {
+              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/Canopy.png",
+              pct: "10%",
+              text: "Increase in tree canopy",
+            },
           ]}
         />
       </div>

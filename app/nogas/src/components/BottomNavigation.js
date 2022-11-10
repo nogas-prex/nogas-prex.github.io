@@ -7,12 +7,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
-import beforeImage from "../img/2_Incremental Progress/Slider_Before.png";
-import afterImage from "../img/2_Incremental Progress/Slider_After.png";
 import { styled } from "@mui/material/styles";
 import { Link } from 'react-router-dom';
-
-import ff from '../img/01_Landing/Case Study.png';
 import { HashLink } from 'react-router-hash-link';
 
 

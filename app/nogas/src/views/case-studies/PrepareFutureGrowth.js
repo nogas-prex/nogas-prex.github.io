@@ -18,38 +18,34 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Carousel from "react-material-ui-carousel";
 import { ImageItem } from "../../components/ImageCarousel";
 
-import headerImage from "../../img/4_Case Study 02_ Preparing for Future Growth/0_Cover/1.png";
-import backgroundImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/0_Cover/1.jpg";
-import beforeImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Slider_Before.png'
-import afterImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Slider_After.png";
-import densityImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Smart Density.png'
-import vehUsageImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Vehicle Usage.png";
-import envPerfImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Better Envir-performance.png";
 import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
-
-import carImage from '../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Vehicle Trips.png'
-import pedImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Pedestrian Accessibility.png";
-import permImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Permeable.png";
-import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Canopy.png";
-
-import existingImg from '../../img/4_Case Study 02_ Preparing for Future Growth/5_Compatible Residential/00_SFH_EXISTING.png'
-import sfhImg from "../../img/4_Case Study 02_ Preparing for Future Growth/5_Compatible Residential/01_SFH_AD1.png";
-import sfh2Img from "../../img/4_Case Study 02_ Preparing for Future Growth/5_Compatible Residential/02_SFH_AD2.png";
-import sfhAD2 from "../../img/4_Case Study 02_ Preparing for Future Growth/5_Compatible Residential/03_SFH_AD2_TREE.png";
-import mditem from "../../img/4_Case Study 02_ Preparing for Future Growth/4_Land Use Compatibility/Panel Place Holder.png";
 
 export default function PrepareFutureGrowth() {
     const carouselItems = [
-      { name: "Existing", img: existingImg },
-      { name: "Optimized Scenario", img: sfhImg },
-      { name: "Proximity Analysis", img: sfh2Img },
-      { name: "Mobility Image", img: sfhAD2 },
+      {
+        name: "Existing",
+        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/00_SFH_EXISTING.png",
+      },
+      {
+        name: "Optimized Scenario",
+        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/01_SFH_AD1.png",
+      },
+      {
+        name: "Proximity Analysis",
+        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/02_SFH_AD2.png",
+      },
+      {
+        name: "Mobility Image",
+        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/03_SFH_AD2_TREE.png",
+      },
     ];
     return (
       <div>
         <ResponsiveAppBar />
         <CaseStudyLanding
-          image={headerImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/0_Cover/1.png"
+          }
           title="PREPARING FOR FUTURE GROWTH"
           subtitle="Single Family Residential Land Use Optimization"
           body={[
@@ -71,7 +67,9 @@ export default function PrepareFutureGrowth() {
         <CaseStudyBackground
           title="BACKGROUND"
           subtitle="Car-based Single Family Residential"
-          image={backgroundImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/0_Cover/1.jpg"
+          }
           body={[
             `On average, vehicular surfaces (roadways, driveways,
                 parking areas, etc.) account for almost 30% of singlefamily
@@ -96,7 +94,14 @@ export default function PrepareFutureGrowth() {
           container
           sx={{ width: "100vw", height: "70vh", overflowY: "hidden" }}
         >
-          <ImageSlider leftImage={beforeImage} rightImage={afterImage} />{" "}
+          <ImageSlider
+            leftImage={
+              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/3_Vision/Slider_Before.png"
+            }
+            rightImage={
+              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/3_Vision/Slider_After.png"
+            }
+          />{" "}
         </Grid>{" "}
         <CaseStudyVision
           title="VISION"
@@ -115,10 +120,18 @@ export default function PrepareFutureGrowth() {
                 to grant residents greater access to services and amenities.`,
           ]}
           icons={[
-            { img: densityImage, alt: "", label: "Smart Density" },
-            { img: vehUsageImage, alt: "", label: "Reduced Vehicle Usage" },
             {
-              img: envPerfImage,
+              img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/3_Vision/Smart+Density.png",
+              alt: "",
+              label: "Smart Density",
+            },
+            {
+              img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/3_Vision/Vehicle+Usage.png",
+              alt: "",
+              label: "Reduced Vehicle Usage",
+            },
+            {
+              img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/3_Vision/Better+Envir-performance.png",
               alt: "",
               label: "Better Environmental Performance",
             },
@@ -173,7 +186,12 @@ export default function PrepareFutureGrowth() {
           <Grid container justifyContent="center">
             <Grid item xs={0} md={2} />
             <Grid item xs={12} md={8}>
-              <img src={mditem} style={{ width: "100%" }} />
+              <img
+                src={
+                  "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Panel+Place+Holder.png"
+                }
+                style={{ width: "100%" }}
+              />
               <Typography>
                 The land use compatibility optimization tool of OASIS can
                 optimize a typical neighborhood-scale suburban district made up
@@ -262,18 +280,26 @@ export default function PrepareFutureGrowth() {
         <CaseStudySummary
           text={``}
           icons={[
-            { img: carImage, pct: "50%", text: "Reduction of vehicle tripps" },
             {
-              img: pedImage,
+              img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/1_Metrics/Vehicle+Trips.png",
+              pct: "50%",
+              text: "Reduction of vehicle tripps",
+            },
+            {
+              img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/1_Metrics/Pedestrian+Accessibility.png",
               pct: "60%",
               text: "Increase in pedestrian accessibility",
             },
             {
-              img: permImage,
+              img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/1_Metrics/Permeable.png",
               pct: "80%",
               text: "Reduction of impervious surface cover",
             },
-            { img: canopyImage, pct: "60%", text: "Increase in tree canopy" },
+            {
+              img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/1_Metrics/Canopy.png",
+              pct: "60%",
+              text: "Increase in tree canopy",
+            },
           ]}
         />{" "}
       </div>

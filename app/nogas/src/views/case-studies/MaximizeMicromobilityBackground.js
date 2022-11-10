@@ -4,17 +4,13 @@ import CaseStudyStat from "../../components/caseStudies/background/backgroundSta
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 
-import headerImage from "../../img/6_Case Study 04_ Maximizing Micro-mobility/2_Background/1_Background Page/0_Cover/1.png";
-import statImage from "../../img/6_Case Study 04_ Maximizing Micro-mobility/2_Background/1_Background Page/1_Chart/1.png";
-
-import graphic from "../../img/6_Case Study 04_ Maximizing Micro-mobility/2_Background/1_Background Page/2_Carbon Mitigation/1.png";
-
-
 export default function MaximizeMicromobilityBackground() {
   return (
     <div>
       <CaseStudyBackgroundLanding
-        image={headerImage}
+        image={
+          "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/2_Background/1_Background+Page/0_Cover/1.png"
+        }
         title={"CAR-DOMINATED TRAVEL MODE"}
         subtitle={"is the largest source of US GHG emissions"}
         body={[
@@ -35,7 +31,9 @@ also underuses valuable land resources.`,
           countries. While it has long been thought that per capita automobile usage drops off exponentially 
           with rising population density, density alone explains only a small fraction of VMT.`,
         ]}
-        chart={statImage}
+        chart={
+          "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/2_Background/1_Background+Page/1_Chart/1.png"
+        }
         orient="img-text"
       />
       <CaseStudyBackgroundText
@@ -45,13 +43,19 @@ also underuses valuable land resources.`,
           `The transportation sector is the largest source of U.S. domestic greenhouse-gas (GHG) emissions. Vehicle 
           trips that are less than 6 miles provide a huge opportunity for reducing GHG emissions. If even a portion 
           of household daily vehicle trips can be replaced by more environmentally friendly transportation modes, 
-          such as electrified micromobility, then a large fraction of U.S. domestic GHG emission can be mitigated.`,  
+          such as electrified micromobility, then a large fraction of U.S. domestic GHG emission can be mitigated.`,
         ]}
       />
       {/* bespoke */}
       <Grid container>
         <Grid item xs={12}>
-          <img alt="foo" src={graphic} style={{ width: "80%" }}></img>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/2_Background/1_Background+Page/2_Carbon+Mitigation/1.png"
+            }
+            style={{ width: "80%" }}
+          ></img>
         </Grid>
       </Grid>
     </div>

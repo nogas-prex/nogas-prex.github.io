@@ -13,28 +13,16 @@ import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import ImageSlider from "../../components/ImageSlider";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import headerImage from "../../img/5_Case Study 03_ Layering Sustainability/0_Cover/1.png";
-import backgroundImage from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/0_Cover/1.png";
-import beforeImage from '../../img/5_Case Study 03_ Layering Sustainability/3_Vision/Slider_Before.png'
-import afterImage from "../../img/5_Case Study 03_ Layering Sustainability/3_Vision/Slider_After.png";
-import densityImage from '../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Smart Density.png'
-import vehUsageImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Vehicle Usage.png";
-import envPerfImage from "../../img/4_Case Study 02_ Preparing for Future Growth/3_Vision/Better Envir-performance.png";
 import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
-import carImage from '../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Vehicle Trips.png'
-import pedImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Pedestrian Accessibility.png";
-import permImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Permeable.png";
-import canopyImage from "../../img/4_Case Study 02_ Preparing for Future Growth/1_Metrics/Canopy.png";
-
-import greenSpace from "../../img/5_Case Study 03_ Layering Sustainability/4_Green Space Comtiguity/1.png";
-
 
 export default function LayeringSustability() {
     return (
       <div>
         <ResponsiveAppBar />
         <CaseStudyLanding
-          image={headerImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/0_Cover/1.png"
+          }
           title="LAYERING SUSTAINABILITY"
           subtitle="Landscape Optimization"
           body={[
@@ -49,7 +37,9 @@ export default function LayeringSustability() {
         <CaseStudyBackground
           title="BACKGROUND"
           subtitle="Suburban Climate Effects"
-          image={backgroundImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/0_Cover/1.png"
+          }
           body={[
             `Today, communities around the world are facing the dramatic effects of climate change. In 2021, 
                 more than 80 percent of Americans experienced at least one heat wave, which were the primary cause 
@@ -71,7 +61,14 @@ export default function LayeringSustability() {
           container
           sx={{ width: "100vw", height: "70vh", overflowY: "hidden" }}
         >
-          <ImageSlider leftImage={beforeImage} rightImage={afterImage} />{" "}
+          <ImageSlider
+            leftImage={
+              "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/3_Vision/Slider_Before.png"
+            }
+            rightImage={
+              "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/3_Vision/Slider_After.png"
+            }
+          />{" "}
         </Grid>{" "}
         <CaseStudyVision
           title="VISION"
@@ -144,8 +141,13 @@ export default function LayeringSustability() {
             </Grid>
           </Grid>
           <Grid container>
-            <Grid item sx={{paddingBottom: '3em'}}>
-              <img src={greenSpace} style={{width:'80%'}} />
+            <Grid item sx={{ paddingBottom: "3em" }}>
+              <img
+                src={
+                  "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/4_Green+Space+Comtiguity/1.png"
+                }
+                style={{ width: "80%" }}
+              />
             </Grid>
           </Grid>
         </Grid>

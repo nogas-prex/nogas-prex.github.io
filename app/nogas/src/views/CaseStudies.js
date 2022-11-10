@@ -1,12 +1,5 @@
 import { Grid, Typography } from "@mui/material";
 import CaseStudyGrid from "../components/CaseStudyGrid";
-import eqAcImg from '../img/2_Case Study Home Page/2_Improving Equitable Access.png'
-import futGrowImg from '../img/2_Case Study Home Page/3_Preparing Future Growth.png'
-import sustImg from "../img/2_Case Study Home Page/4_Layering Sustainability.png";
-import maxMicroImg from "../img/2_Case Study Home Page/5_Maximizing Micromobility.png";
-import futWorkImg from "../img/2_Case Study Home Page/6_Designing the Future of Work.png";
-import vidImg from '../img/2_Case Study Home Page/1_Video Placeholder.png'
-import headerImage from "../img/2_Case Study Home Page/0_Cover.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ResponsiveAppBar from "../components/AppBar";
 
@@ -23,11 +16,11 @@ export default function CaseStudies() {
           sx={{
             width: "100vw",
             height: "100vh",
-            backgroundImage: `url(${headerImage})`,
+            backgroundImage: `url(https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/0_Cover.png)`,
             backgroundSize: "100vw",
             backgroundRepeat: "no-repeat",
           }}
-          id='case-studies'
+          id="case-studies"
         >
           <Grid
             item
@@ -68,7 +61,12 @@ export default function CaseStudies() {
           sx={{ width: "100vw", backgroundColor: "#00A360", height: "80vh" }}
         >
           <Grid item xs={12} md={6}>
-            <img src={vidImg} style={{ width: "100%" }}></img>
+            <img
+              src={
+                "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/1_Video+Placeholder.png"
+              }
+              style={{ width: "100%" }}
+            ></img>
           </Grid>
           <Grid item md={1}></Grid>
           <Grid item md={4}>
@@ -90,7 +88,9 @@ export default function CaseStudies() {
             title="Improving Equitable Access"
             subtitle="Neighborhood Retrofit"
             text={`This project looks at some of the challenges facing today's "middle neighborhoods" and proposes block-scale redevelopment strategies that prioritieze the equity of existing residents while reducing impacts on local infrastructure.`}
-            image={eqAcImg}
+            image={
+              "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/2_Improving+Equitable+Access.png"
+            }
             dir="img-txt"
             navLink={"improving-equitable-access"}
           />
@@ -98,7 +98,9 @@ export default function CaseStudies() {
             title="Preparing for Future Growth"
             subtitle="Land Use Optimization"
             text={`Using an algorithm-based land use optimization model, this project identifies district-scale strategies for future neighborhood development.`}
-            image={futGrowImg}
+            image={
+              "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/3_Preparing+Future+Growth.png"
+            }
             navLink={"preparing-future-growth"}
 
             // dir="img-txt"
@@ -107,7 +109,9 @@ export default function CaseStudies() {
             title="Layering Sustainbility"
             subtitle="Landscape Optimization"
             text={`Through comprehensive digitial simulation and analysis, this project coulminates in site-scale proposals for high-performance suburban landscapes, optimized for stormwater capture, heat mitigation, and carbon sequestration.`}
-            image={sustImg}
+            image={
+              "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/4_Layering+Sustainability.png"
+            }
             dir="img-txt"
             navLink={"layering-sustainability"}
           />
@@ -115,7 +119,9 @@ export default function CaseStudies() {
             title="Maximizing Micro-mobility"
             subtitle="Streetscape Adaptation"
             text={`In partnership with a major university campus planning committee, this project identifies spatial frameworks for achieving both short-term and long-term autonomous and micro-mobility goals.`}
-            image={maxMicroImg}
+            image={
+              "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/5_Maximizing+Micromobility.png"
+            }
             navLink={"maximize-micromobility"}
             // dir="img-txt"
           />
@@ -123,7 +129,9 @@ export default function CaseStudies() {
             title="Designing the Future of Work"
             subtitle="Employment Campus Evolution"
             text={`In partnership with a municipal planning agency, this project reimagines the typical suburban employment campus in response to evolving remote work options, housing challenges, and the need for expanded open space provision.`}
-            image={futWorkImg}
+            image={
+              "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/6_Designing+the+Future+of+Work.png"
+            }
             dir="img-txt"
             navLink={"future-of-work"}
           />
