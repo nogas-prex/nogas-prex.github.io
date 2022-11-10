@@ -4,18 +4,13 @@ import CaseStudyStat from "../../components/caseStudies/background/backgroundSta
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 
-import headerImage from "../../img/7_Case Study 05_ Designing the Future of Work/2_Background/1_Background Page/0_Cover/1.png";
-import statImage from "../../img/7_Case Study 05_ Designing the Future of Work/2_Background/1_Background Page/1_Chart/1.png";
-
-import metricImage from "../../img/7_Case Study 05_ Designing the Future of Work/2_Background/1_Background Page/2_Land Cover Survey/Metrics.png";
-import photoPlan from "../../img/7_Case Study 05_ Designing the Future of Work/2_Background/1_Background Page/2_Land Cover Survey/Photo Plan.png";
-import surveyDrawing from "../../img/7_Case Study 05_ Designing the Future of Work/2_Background/1_Background Page/2_Land Cover Survey/Survey Drawing.png";
-
 export default function FutureOfWorkBackground(props) {
   return (
     <div>
       <CaseStudyBackgroundLanding
-        image={headerImage}
+        image={
+          "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/0_Cover/1.jpg"
+        }
         title={"EMPLOYMENT CAMPUS"}
         subtitle={"Land Use Study"}
         body={[
@@ -36,7 +31,9 @@ export default function FutureOfWorkBackground(props) {
           that there is little difference between today’s employment campuses and 
           those designed 70 years ago.`,
         ]}
-        chart={statImage}
+        chart={
+          "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/1_Chart/1.png"
+        }
         orient="img-text"
       />
       <CaseStudyBackgroundText
@@ -51,15 +48,29 @@ export default function FutureOfWorkBackground(props) {
       {/* bespoke */}
       <Grid container>
         <Grid item xs={12} md={6}>
-          <img alt="foo" src={photoPlan} style={{ width: "100%" }}></img>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Photo+Plan.png"
+            }
+            style={{ width: "100%" }}
+          ></img>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img alt="foo" src={metricImage} style={{ width: "80%" }}></img>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Metrics.png"
+            }
+            style={{ width: "80%" }}
+          ></img>
         </Grid>
         <Grid item xs={12}>
           <img
             alt="foo"
-            src={surveyDrawing}
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Survey+Drawing.png"
+            }
             style={{ width: "80%", padding: "5em" }}
           ></img>
         </Grid>

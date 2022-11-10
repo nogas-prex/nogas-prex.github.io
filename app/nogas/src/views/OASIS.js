@@ -4,25 +4,26 @@ import CaseStudyLanding from "../components/caseStudies/caseStudyLanding";
 import Carousel from "react-material-ui-carousel";
 import { ImageItem } from "../components/ImageCarousel";
 
-import headerImage from '../img/9_OASIS/0_Cover/1.png'
-import stepsImg from '../img/9_OASIS/1_Step By Step/1.png'
-
-import img1 from '../img/9_OASIS/2_Planning With Science/Scenario 01.png'
-import img2 from "../img/9_OASIS/2_Planning With Science/Scenario 02.png";
-
 export default function OASIS() {
 
     const carouselItems = [
-      { name: "Existing", img: img1 },
-      { name: "Optimized Scenario", img: img2 },
-      
+      {
+        name: "Existing",
+        img: "https://nogas-swar.s3.amazonaws.com/img/9_OASIS/2_Planning+With+Science/Scenario+01.png",
+      },
+      {
+        name: "Optimized Scenario",
+        img: "https://nogas-swar.s3.amazonaws.com/img/9_OASIS/2_Planning+With+Science/Scenario+02.png",
+      },
     ];
 
     return (
-        <div>
-            <ResponsiveAppBar />
+      <div>
+        <ResponsiveAppBar />
         <CaseStudyLanding
-          image={headerImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/9_OASIS/0_Cover/1.png"
+          }
           title="OASIS"
           subtitle="Optimized Autonomous Suburban Integration System"
           body={[
@@ -39,7 +40,12 @@ export default function OASIS() {
           sx={{ height: "100vh", backgroundColor: "#111120" }}
         >
           <Grid item xs={12} md={8} sx={{ placeSelf: "center" }}>
-            <img src={stepsImg} style={{ width: "75%" }} />
+            <img
+              src={
+                "https://nogas-swar.s3.amazonaws.com/img/9_OASIS/1_Step+By+Step/1.png"
+              }
+              style={{ width: "75%" }}
+            />
           </Grid>
           <Grid item xs={12} md={4} sx={{ backgroundColor: "000" }}>
             <Grid
@@ -56,9 +62,10 @@ export default function OASIS() {
                   1. INPUTTING EXISTING MASTERPLAN DATA
                 </Typography>
                 <Typography>
-                The first step is to input existing data of the master plan, along with
-                all related parameters into OASIS. The required data can be obtained from
-                multiple sources and in multiple formats from numeric to spatial.
+                  The first step is to input existing data of the master plan,
+                  along with all related parameters into OASIS. The required
+                  data can be obtained from multiple sources and in multiple
+                  formats from numeric to spatial.
                 </Typography>
               </Grid>
               <Grid item sx={{ height: "33%", color: "white" }}>
@@ -66,9 +73,11 @@ export default function OASIS() {
                   2. DEFINING OPTIMIZATION OBJECTS AND OBJECTIVES
                 </Typography>
                 <Typography>
-                The second step is to determine the optimizing objects (variables) from the 
-                features of the master plan, and select the corresponding tool from the OASIS 
-                toolbox. Then, objectives need to be input to define the goal of the optimization.
+                  The second step is to determine the optimizing objects
+                  (variables) from the features of the master plan, and select
+                  the corresponding tool from the OASIS toolbox. Then,
+                  objectives need to be input to define the goal of the
+                  optimization.
                 </Typography>
               </Grid>
               <Grid item sx={{ height: "33%", color: "white" }}>
@@ -76,10 +85,11 @@ export default function OASIS() {
                   3. SIMULATING AND OPTIMIZING
                 </Typography>
                 <Typography>
-                Finally, the specific tool in the OASIS toolbox will automatically optimize the 
-                neighborhood-scale master plan based on the inputs. Multiple optimized scenarios 
-                will be simulated for users to choose from, based on their unique goals and 
-                customized trade-offs.
+                  Finally, the specific tool in the OASIS toolbox will
+                  automatically optimize the neighborhood-scale master plan
+                  based on the inputs. Multiple optimized scenarios will be
+                  simulated for users to choose from, based on their unique
+                  goals and customized trade-offs.
                 </Typography>
               </Grid>
             </Grid>
@@ -107,10 +117,12 @@ export default function OASIS() {
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                 Each tool inside the OASIS toolbox is built upon solid research and algorithms. 
-                 For instance, as shown below, the land use compatibility optimization tool of OASIS 
-                 can provide land use compatibility quantitatively through customized algorithms and 
-                 user inputs, which makes visualization of the land use compatibility index easier than ever.
+                  Each tool inside the OASIS toolbox is built upon solid
+                  research and algorithms. For instance, as shown below, the
+                  land use compatibility optimization tool of OASIS can provide
+                  land use compatibility quantitatively through customized
+                  algorithms and user inputs, which makes visualization of the
+                  land use compatibility index easier than ever.
                 </Typography>
                 <br></br>
                 <br></br>

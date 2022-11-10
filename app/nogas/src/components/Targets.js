@@ -4,15 +4,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import TextCard from "./TextCard";
 import ImageSlider from "./ImageSlider";
-import beforeImage from '../img/2_Incremental Progress/Slider_Before.png';
-import afterImage from '../img/2_Incremental Progress/Slider_After.png';
-import CardNavigation from "./BottomNavigation";
-import timeLine from '../img/2_Incremental Progress/Timeline.png'
-import LogoEs from '../img/2_Incremental Progress/Landing Logo_Environmental Sustainability.png';
-import LogoSe from '../img/2_Incremental Progress/Landing Logo_Social Equity.png';
-import LogoMs from '../img/2_Incremental Progress/Landing Logo_15minute Suburb.png';
-import LogoWa from '../img/2_Incremental Progress/Landing Logo_Walkability.png';
-import LogoCm from '../img/2_Incremental Progress/Landing Logo_Climate Mitigation.png';
+
 
 
 export default function Targets() { 
@@ -86,7 +78,7 @@ export default function Targets() {
           <br></br>
           <br></br>
           <br></br>
-          <Box sx={{margin: "0em", width: "50vw"}}>
+          <Box sx={{ margin: "0em", width: "50vw" }}>
             <Typography variant="sectionTitleUnderline">
               MODELING INCREMENTAL PROGRESS
             </Typography>
@@ -102,13 +94,24 @@ export default function Targets() {
               scenario-based insights.
             </Typography>
           </Box>
-          <Box sx={{ width: "100%",  marginBottom: "2em" }}>
-          <img src={timeLine} style={{ width: "100%" }}></img> 
+          <Box sx={{ width: "100%", marginBottom: "2em" }}>
+            <img
+              src={
+                "https://nogas-swar.s3.amazonaws.com/img/2_Incremental+Progress/Timeline.png"
+              }
+              style={{ width: "100%" }}
+            ></img>
           </Box>
-          <Box sx={{ width: "100%",  marginBottom: "2em" }}>
-            <ImageSlider leftImage={beforeImage} rightImage={afterImage} />
+          <Box sx={{ width: "100%", marginBottom: "2em" }}>
+            <ImageSlider
+              leftImage={
+                "https://nogas-swar.s3.amazonaws.com/img/2_Incremental+Progress/Slider_Before.png"
+              }
+              rightImage={
+                "https://nogas-swar.s3.amazonaws.com/img/2_Incremental+Progress/Slider_After.png"
+              }
+            />
           </Box>
-          
         </Grid>
       </Grid>
     );

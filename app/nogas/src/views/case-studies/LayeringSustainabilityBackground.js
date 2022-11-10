@@ -4,19 +4,13 @@ import CaseStudyStat from "../../components/caseStudies/background/backgroundSta
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 
-import headerImage from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/1_Background Page/0_Cover/1.png";
-import statImage from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/1_Background Page/1_Chart/1.png";
-import thermalMap from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/1_Background Page/2_Extreme Heat/Block Thermal Map.png";
-import natlMap from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/1_Background Page/2_Extreme Heat/Nationwide Analysis.png";
-
-import runoffMap from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/1_Background Page/3_Frequent Flooding/Surface Run Off.png";
-import precipMap from "../../img/5_Case Study 03_ Layering Sustainability/2_Background/1_Background Page/3_Frequent Flooding/Nationwide Analysis.png";
-
 export default function LayeringSustainabilityBackground() {
   return (
     <div>
       <CaseStudyBackgroundLanding
-        image={headerImage}
+        image={
+          "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/0_Cover/1.png"
+        }
         title={"SUBURBAN CLIMATE EFFECTS"}
         subtitle={"Extreme Heat and Frequent Flooding"}
         body={[
@@ -36,7 +30,9 @@ export default function LayeringSustainabilityBackground() {
           In a perilous feedback loop, development in these areas further exacerbates the effects 
           of climate change, such as extreme heat and frequent flooding.`,
         ]}
-        chart={statImage}
+        chart={
+          "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/1_Chart/1.png"
+        }
         orient="img-text"
       />
       <CaseStudyBackgroundText
@@ -53,10 +49,22 @@ export default function LayeringSustainabilityBackground() {
       />
       <Grid container>
         <Grid item xs={12} md={6}>
-          <img alt="foo" src={natlMap} style={{ width: "80%" }}></img>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/2_Extreme+Heat/Nationwide+Analysis.png"
+            }
+            style={{ width: "80%" }}
+          ></img>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img alt="foo" src={thermalMap} style={{ width: "80%" }}></img>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/2_Extreme+Heat/Block+Thermal+Map.png"
+            }
+            style={{ width: "80%" }}
+          ></img>
         </Grid>
       </Grid>
 
@@ -72,10 +80,22 @@ export default function LayeringSustainabilityBackground() {
       />
       <Grid container>
         <Grid item xs={12} md={6}>
-          <img alt="foo" src={runoffMap} style={{ width: "80%" }}></img>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/3_Frequent+Flooding/Surface+Run+Off.png"
+            }
+            style={{ width: "80%" }}
+          ></img>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img alt="foo" src={precipMap} style={{ width: "80%" }}></img>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/3_Frequent+Flooding/Nationwide+Analysis.png"
+            }
+            style={{ width: "80%" }}
+          ></img>
         </Grid>
       </Grid>
     </div>

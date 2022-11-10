@@ -3,19 +3,14 @@ import { Grid } from "@mui/material";
 import CaseStudyStat from "../../components/caseStudies/background/backgroundStat";
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
-import headerImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/1_Background Page/0_Cover/1.png";
-import statImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/1_Background Page/1_Chart/2.png";
-import statChart from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/1_Background Page/1_Chart/1.png";
-import metricsImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/1_Background Page/2_Land Cover Survey/Metrics.png";
-import photoPlanImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/1_Background Page/2_Land Cover Survey/Photo Plan.png";
-import surveyDrawingImage from "../../img/4_Case Study 02_ Preparing for Future Growth/2_Background/1_Background Page/2_Land Cover Survey/Survey Drawing.png";
-
 
 export default function PrepareFutureGrowthBackground() {
   return (
     <div>
       <CaseStudyBackgroundLanding
-        image={headerImage}
+        image={
+          "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/0_Cover/1.png"
+        }
         title={"SINGLE-FAMILY RESIDENTIAL"}
         subtitle={"Land Use Study"}
         body={[
@@ -27,8 +22,12 @@ export default function PrepareFutureGrowthBackground() {
       <CaseStudyStat
         title={""}
         body={[``]}
-        chart={statImage}
-        img={statChart}
+        chart={
+          "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/1_Chart/2.png"
+        }
+        img={
+          "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/1_Chart/1.png"
+        }
         orient="img-chart"
       />
       <CaseStudyBackgroundText
@@ -41,16 +40,30 @@ export default function PrepareFutureGrowthBackground() {
       {/* bespoke */}
       <Grid container>
         <Grid item xs={12} md={6}>
-          <img alt="foo" src={photoPlanImage} style={{ width: "100%" }}></img>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <img alt="foo" src={metricsImage} style={{ width: "80%" }}></img>
-        </Grid>
-        <Grid item xs={12} >
           <img
             alt="foo"
-            src={surveyDrawingImage}
-            style={{ width: "80%", padding:'5em' }}
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/2_Land+Cover+Survey/Photo+Plan.png"
+            }
+            style={{ width: "100%" }}
+          ></img>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/2_Land+Cover+Survey/Metrics.png"
+            }
+            style={{ width: "80%" }}
+          ></img>
+        </Grid>
+        <Grid item xs={12}>
+          <img
+            alt="foo"
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/2_Land+Cover+Survey/Survey+Drawing.png"
+            }
+            style={{ width: "80%", padding: "5em" }}
           ></img>
         </Grid>
       </Grid>

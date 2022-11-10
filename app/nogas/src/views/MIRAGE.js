@@ -4,23 +4,25 @@ import CaseStudyLanding from "../components/caseStudies/caseStudyLanding";
 import Carousel from "react-material-ui-carousel";
 import { ImageItem } from "../components/ImageCarousel";
 
-import headerImage from "../img/10_MIRAGE/0_Cover/1.png";
-import stepsImg from "../img/10_MIRAGE/1_Step By Step/1.png";
-
-import img1 from "../img/10_MIRAGE/2_Design With Science/Euclidean Distance.png";
-import img2 from "../img/10_MIRAGE/2_Design With Science/Network Distance.png";
-
 export default function MIRAGE() {
   const carouselItems = [
-    { name: "Existing", img: img1 },
-    { name: "Optimized Scenario", img: img2 },
+    {
+      name: "Existing",
+      img: "https://nogas-swar.s3.amazonaws.com/img/10_MIRAGE/2_Design+With+Science/Euclidean+Distance.png",
+    },
+    {
+      name: "Optimized Scenario",
+      img: "https://nogas-swar.s3.amazonaws.com/img/10_MIRAGE/2_Design+With+Science/Network+Distance.png",
+    },
   ];
 
   return (
     <div>
       <ResponsiveAppBar />
       <CaseStudyLanding
-        image={headerImage}
+        image={
+          "https://nogas-swar.s3.amazonaws.com/img/10_MIRAGE/0_Cover/1.png"
+        }
         title="MIRAGE"
         subtitle="Multi-Indicator Relation Assesment Generation Engine"
         body={[
@@ -36,7 +38,12 @@ export default function MIRAGE() {
         sx={{ height: "100vh", backgroundColor: "#111120" }}
       >
         <Grid item xs={12} md={8} sx={{ placeSelf: "center" }}>
-          <img src={stepsImg} style={{ width: "75%" }} />
+          <img
+            src={
+              "https://nogas-swar.s3.amazonaws.com/img/10_MIRAGE/1_Step+By+Step/1.png"
+            }
+            style={{ width: "75%" }}
+          />
         </Grid>
         <Grid item xs={12} md={4} sx={{ backgroundColor: "000" }}>
           <Grid
@@ -53,8 +60,9 @@ export default function MIRAGE() {
                 1. INPUTTING EXISTING BLOCK CONFIGURATION
               </Typography>
               <Typography>
-              The first step is to input data of existing block configuration, along with other information, 
-              into MIRAGE. Various formats of input data are accepted by MIRAGE, from numeric to spatial.
+                The first step is to input data of existing block configuration,
+                along with other information, into MIRAGE. Various formats of
+                input data are accepted by MIRAGE, from numeric to spatial.
               </Typography>
             </Grid>
             <Grid item sx={{ height: "33%", color: "white" }}>
@@ -62,17 +70,20 @@ export default function MIRAGE() {
                 2. DEFINING OPTIMIZATION OBJECTS AND OBJECTIVES
               </Typography>
               <Typography>
-               The second step is to define optimization objects (variables) and objectives. Users need to select 
-               specific objects that they want to optimize among the features of given block configurations. Then, 
-               objectives need to be input to define the goal of the optimization.
+                The second step is to define optimization objects (variables)
+                and objectives. Users need to select specific objects that they
+                want to optimize among the features of given block
+                configurations. Then, objectives need to be input to define the
+                goal of the optimization.
               </Typography>
             </Grid>
             <Grid item sx={{ height: "33%", color: "white" }}>
               <Typography variant="h3">3. SIMULATING AND OPTIMIZING</Typography>
               <Typography>
-               Finally, MIRAGE will automatically optimize the block configuration based on the inputs. Multiple 
-               optimized scenarios will be simulated and output for users to choose from, based on their unique 
-               goals and customized trade-offs.
+                Finally, MIRAGE will automatically optimize the block
+                configuration based on the inputs. Multiple optimized scenarios
+                will be simulated and output for users to choose from, based on
+                their unique goals and customized trade-offs.
               </Typography>
             </Grid>
           </Grid>
@@ -97,9 +108,11 @@ export default function MIRAGE() {
               </Typography>
               <hr color="EC008C"></hr>
               <Typography variant="bodyBlack">
-               Each tool inside the MIRAGE toolbox is built upon solid research and algorithms. For instance, as 
-               shown below, the accessibility optimization tool of MIRAGE can measure distances through two different 
-               mathematic models — Euclidean method and Network method — based on different conditions and users’ demands.
+                Each tool inside the MIRAGE toolbox is built upon solid research
+                and algorithms. For instance, as shown below, the accessibility
+                optimization tool of MIRAGE can measure distances through two
+                different mathematic models — Euclidean method and Network
+                method — based on different conditions and users’ demands.
               </Typography>
               <br></br>
               <br></br>
@@ -135,8 +148,8 @@ export default function MIRAGE() {
           </Grid>{" "}
           <Grid item xs={12} sm={6}>
             <Typography variant="body2">
-             Click through two scenarios to explore how different distance 
-             measurements are employed by MIRAGE.
+              Click through two scenarios to explore how different distance
+              measurements are employed by MIRAGE.
             </Typography>
           </Grid>{" "}
           <Grid item xs={0} sm={3}>

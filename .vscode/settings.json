@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/8da72816-0323-46c2-b56d-40f27611a281/microsoft.web/sites/subscriptions/8da72816-0323-46c2-b56d-40f27611a281/resourceGroups/nogas-staging_group/providers/Microsoft.Web/sites/nogas-staging",
+    "appService.deploySubpath": "."
 }

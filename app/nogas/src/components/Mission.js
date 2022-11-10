@@ -3,8 +3,6 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import ImageSlider from "./ImageSlider";
-import beforeImage from '../img/01_Landing/Before2.jpg'
-import afterImage from "../img/01_Landing/After2.jpg";
 
 
 export default function Mission() {
@@ -17,7 +15,7 @@ export default function Mission() {
       justifyContent="center"
       sx={{ backgroundColor: "#00A360" }}
       //   style={{ minHeight: '100vh' }}
-      id='mission'
+      id="mission"
     >
       {" "}
       <Box sx={{ width: "50%", margin: "8em" }}>
@@ -71,8 +69,12 @@ export default function Mission() {
         >
           <Grid item xs={12} md={12}>
             <ImageSlider
-              leftImage={beforeImage}
-              rightImage={afterImage}
+              leftImage={
+                "https://nogas-swar.s3.amazonaws.com/img/01_Landing/Before2.jpg"
+              }
+              rightImage={
+                "https://nogas-swar.s3.amazonaws.com/img/01_Landing/After2.jpg"
+              }
             />
           </Grid>
         </Grid>

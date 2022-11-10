@@ -15,33 +15,35 @@ import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import Carousel from "react-material-ui-carousel";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
-import headerImage from "../../img/7_Case Study 05_ Designing the Future of Work/0_Cover/1.png";
-import backgroundImage from "../../img/7_Case Study 05_ Designing the Future of Work/2_Background/0_Cover/1.jpg";
-import beforeImage from '../../img/7_Case Study 05_ Designing the Future of Work/3_Vision/Slider_Before.png'
-import afterImage from "../../img/7_Case Study 05_ Designing the Future of Work/3_Vision/Slider_After.png";
 import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
-
-
-import existing from '../../img/7_Case Study 05_ Designing the Future of Work/4_Modular Workspace/00_PC_EXISTING.png'
-import ntm2 from "../../img/7_Case Study 05_ Designing the Future of Work/4_Modular Workspace/01_PC_AD1.png";
-import ltm1 from "../../img/7_Case Study 05_ Designing the Future of Work/4_Modular Workspace/02_PC_AD2_TREE.png";
-import ltm2 from "../../img/7_Case Study 05_ Designing the Future of Work/4_Modular Workspace/02_PC_AD2.png";
 
 export default function FutureOfWork() {
     const carouselItems = [
-      { name: "Existing", img: existing },
-      { name: "Near Term_mode1", img: ntm2 },
-      { name: "Near Term_mode2", img: ltm1 },
-      { name: "Long Term_mode1", img: ltm2 },
-      
+      {
+        name: "Existing",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/00_PC_EXISTING.png",
+      },
+      {
+        name: "Near Term_mode1",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/01_PC_AD1.png",
+      },
+      {
+        name: "Near Term_mode2",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/02_PC_AD2_TREE.png",
+      },
+      {
+        name: "Long Term_mode1",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/02_PC_AD2.png",
+      },
     ];
 
     return (
       <div>
         <ResponsiveAppBar />
         <CaseStudyLanding
-          image={headerImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/0_Cover/1.png"
+          }
           title="DESIGNING THE FUTURE OF WORK"
           subtitle="Employment Campus Evolution"
           body={[
@@ -58,7 +60,9 @@ export default function FutureOfWork() {
         <CaseStudyBackground
           title="BACKGROUND"
           subtitle="Outdated Employment Campus Design"
-          image={backgroundImage}
+          image={
+            "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/0_Cover/1.jpg"
+          }
           body={[
             `The design of suburban campuses themselves hasn’t evolved much over the past several decades. The 
                 footprint of parking lots designed to support these campuses is often several times larger than the 
@@ -75,7 +79,14 @@ export default function FutureOfWork() {
           link={"/case-studies/future-of-work-background"}
         />
         <Grid container sx={{ width: "100vw", overflowY: "hidden" }}>
-          <ImageSlider leftImage={beforeImage} rightImage={afterImage} />{" "}
+          <ImageSlider
+            leftImage={
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/3_Vision/Slider_Before.png"
+            }
+            rightImage={
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/3_Vision/Slider_After.png"
+            }
+          />{" "}
         </Grid>
         <CaseStudyVision
           title="VISION"
@@ -118,10 +129,11 @@ export default function FutureOfWork() {
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                MIRAGE is a parametric toolbox that can help planners and developers 
-                optimize block-scale configurations. The modular block layout optimization
-                tool can optimize any given block layout based on predefined parameters to 
-                generate more flexible block typologies.
+                  MIRAGE is a parametric toolbox that can help planners and
+                  developers optimize block-scale configurations. The modular
+                  block layout optimization tool can optimize any given block
+                  layout based on predefined parameters to generate more
+                  flexible block typologies.
                 </Typography>
                 <br></br>
                 <br></br>
@@ -161,9 +173,9 @@ export default function FutureOfWork() {
             </Grid>{" "}
             <Grid item xs={12} sm={6}>
               <Typography variant="body2">
-              Click through the various scenarios above to see how an existing suburban 
-              employment campus can be transformed to meet the demands of a future 
-              employment campus.
+                Click through the various scenarios above to see how an existing
+                suburban employment campus can be transformed to meet the
+                demands of a future employment campus.
               </Typography>
             </Grid>{" "}
             <Grid item xs={0} sm={3}>
