@@ -27,10 +27,10 @@ export default function OASIS() {
           subtitle="Optimized Autonomous Suburban Integration System"
           body={[
             `OASIS is a parametric toolbox that can help planners and developers optimize
-neighborhood-scale land use patterns, mobility frameworks and urban design.
-Using inputs commonly associated with specific land use categories, and a
-compatibility matrix, the tool automatically generates thousands of scenarios for
-stakeholders to choose from based on predetermined objectives.`,
+            neighborhood-scale land use patterns, mobility frameworks and urban design configurations. 
+            Using inputs commonly associated with specific land use categories, and a compatibility matrix, 
+            the tool automatically generates thousands of scenarios for stakeholders to choose from based 
+            on predetermined objectives.`,
           ]}
         />
         <Grid
@@ -53,36 +53,33 @@ stakeholders to choose from based on predetermined objectives.`,
             >
               <Grid item sx={{ height: "33%", color: "white" }}>
                 <Typography variant="h3">
-                  1. Inputting Existing Master Planning data
+                  1. INPUTTING EXISTING MASTERPLAN DATA
                 </Typography>
                 <Typography>
-                  The first step is to input existing masterplan data along with
-                  all related information into OASIS. The required data can be
-                  obtained from multiple sources and in multiple formats from
-                  numeric to spatial.
+                The first step is to input existing data of the master plan, along with
+                all related parameters into OASIS. The required data can be obtained from
+                multiple sources and in multiple formats from numeric to spatial.
                 </Typography>
               </Grid>
               <Grid item sx={{ height: "33%", color: "white" }}>
                 <Typography variant="h3">
-                  2. Defining Optimization Objectives and Parameters
+                  2. DEFINING OPTIMIZATION OBJECTS AND OBJECTIVES
                 </Typography>
                 <Typography>
-                  The second step is to determine the optimizing objects
-                  (variables) from all features of masterplan and selected the
-                  corresponding tool from the OASIS toolbox. Then, users need to
-                  enter several parameters to define the range for each
-                  variable.
+                The second step is to determine the optimizing objects (variables) from the 
+                features of the master plan, and select the corresponding tool from the OASIS 
+                toolbox. Then, objectives need to be input to define the goal of the optimization.
                 </Typography>
               </Grid>
               <Grid item sx={{ height: "33%", color: "white" }}>
                 <Typography variant="h3">
-                  3. Simulating and Optimizing
+                  3. SIMULATING AND OPTIMIZING
                 </Typography>
                 <Typography>
-                  Finally, the OASIS will automatically optimize the
-                  neighborhood-scale masterplan based on inputs. Multiple
-                  optimized scenarios will be simulated and output for users to
-                  choose based on their unique goals and customized trade-offs.
+                Finally, the specific tool in the OASIS toolbox will automatically optimize the 
+                neighborhood-scale master plan based on the inputs. Multiple optimized scenarios 
+                will be simulated for users to choose from, based on their unique goals and 
+                customized trade-offs.
                 </Typography>
               </Grid>
             </Grid>
@@ -110,12 +107,10 @@ stakeholders to choose from based on predetermined objectives.`,
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                  Each tool inside OASIS toolbox is built upon solid research
-                  and algorithms. For instance, as shown below, the land use
-                  compatibility optimization tool of OASIS can measure land use
-                  compatibility quantitatively through research-based algorithm
-                  and user inputs, which makes the comparison between different
-                  land use scenarios more easily.
+                 Each tool inside the OASIS toolbox is built upon solid research and algorithms. 
+                 For instance, as shown below, the land use compatibility optimization tool of OASIS 
+                 can provide land use compatibility quantitatively through customized algorithms and 
+                 user inputs, which makes visualization of the land use compatibility index easier than ever.
                 </Typography>
                 <br></br>
                 <br></br>
