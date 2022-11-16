@@ -18,7 +18,7 @@ const Img = styled("img")({
   display: "block",
   maxWidth: "100%",
   maxHeight: "100%",
-});
+});  
     return (
       <Grid
         container
@@ -48,7 +48,7 @@ const Img = styled("img")({
           </Card> */}
           <Button variant="outlined">
             {/* <Link to={{ pathname: "case-studies" }}>Case Studies</Link> */}
-            <HashLink to='case-studies/#case-studies'>Case Studies</HashLink>
+            <HashLink to="case-studies/#case-studies">Case Studies</HashLink>
           </Button>
           {/* <img src={beforeImage} style={{width: '100%'}}></img> */}
         </Grid>
@@ -60,7 +60,9 @@ const Img = styled("img")({
           }}
         >
           <Button variant="outlined">
-            <Link to={{ pathname: "" }}>Design Engine</Link>
+            <HashLink to="/design-engine/#design-engine-landing">
+              Design Engine
+            </HashLink>
           </Button>
           {/* <div
             style={{

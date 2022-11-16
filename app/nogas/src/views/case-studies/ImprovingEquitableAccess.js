@@ -52,22 +52,19 @@ export default function ImprovingEquitableAccess() {
           title="IMPROVING EQUITABLE ACCESS"
           subtitle="Neighborhood Retrofit"
           body={[
-            `Since 1925, the number of car-owning households in the United 
-                States has skyrocketed from 17 percent to more than 93 percent. 
-                In the suburbs, where less than five percent of the U.S. workforce 
-                uses public transit to get to work, the configuration of the built 
-                environment is designed to prioritize cars. These car-centric communities 
-                create distinct burdens for an increasing percentage of the suburban 
-                population who are elderly, disabled, or otherwise unable to drive. 
-                And the emphasis on monofunctional vehicular infrastructure often 
-                makes it difficult for pedestrians and those using existing micromobililty 
-                offerings, such as bicycles and scooters.`,
-            `In the near-term, the proliferation of autonomous vehicles (AVs) may offer 
-                a path forward for mobility-challenged people, enabling them to use vehicular
-                infrastructure without driving a car. Eventually, widespread adoption of 
-                autonomous transportation systems and new land use patterns that include 
-                expanded micromobility options could pave the way for radically new suburban 
-                configurations that prioritize equitable mobility for all. `,
+            `Since 1925, the number of car-owning households in the United States has skyrocketed from 17
+percent to more than 93 percent. In the suburbs, where less than five percent of the U.S.
+workforce uses public transit to get to work, the configuration of the built environment is
+designed to prioritize cars. These car-centric communities create distinct burdens for an
+increasing percentage of the suburban population who are elderly, disabled, or otherwise
+unable to drive. And the emphasis on monofunctional vehicular infrastructure often makes it
+difficult for pedestrians and those using existing micromobililty offerings, such as bicycles and
+scooters.`,
+            `In the near-term, the proliferation of autonomous vehicles (AVs) may offer a path forward for
+mobility-challenged people, enabling them to use vehicular infrastructure without driving a car.
+Eventually, widespread adoption of autonomous transportation systems and new land use
+patterns that include expanded micromobility options could pave the way for radically new
+suburban configurations that prioritize equitable mobility for all. `,
           ]}
         />
         <CaseStudyBackground

@@ -16,7 +16,12 @@ import { Circle } from '@mui/icons-material';
 import { Link } from '@mui/material';
 import { HashLink } from 'react-router-hash-link';
 
-const pages = {'Mission':'/#mission', 'Case Studies':'/case-studies', 'Methodology':'', 'Contact':''}
+const pages = {
+  Mission: "/#mission",
+  "Case Studies": "/case-studies#case-studies",
+  Methodology: "/design-engine#design-engine-landing",
+  Contact: "",
+};
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -121,7 +126,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            NOGAS
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {Object.keys(pages).map((page) => (

@@ -2,13 +2,13 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 export default function CaseStudyLanding(props) {
     const image = props.image
     const title = props.title
     const subtitle = props.subtitle
     const body = props.body 
-
     return (
       <Grid
         container
@@ -18,9 +18,10 @@ export default function CaseStudyLanding(props) {
         justifyContent="center"
         sx={{
           width: "100vw",
-          height: "100vh",
+          height: '90vh',
+          maxHeight: "100vh",
           backgroundImage: `url(${image})`,
-          backgroundSize: "100vw",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -31,7 +32,7 @@ export default function CaseStudyLanding(props) {
           sx={{
             textAlign: "left",
             paddingLeft: "5em",
-            backgroundColor: 'rgba(255,255,255,0.5)'
+            backgroundColor: "rgba(255,255,255,0.5)",
           }}
         >
           <Typography variant="sectionTitle">{title}</Typography>
@@ -40,9 +41,18 @@ export default function CaseStudyLanding(props) {
           <hr color="EC008C"></hr>
           {body.map((b) => (
             <div>
-              <Typography variant="bodyBlack">{b}</Typography><br></br><br></br>
+              <Typography variant="bodyBlack">{b}</Typography>
+              <br></br>
+              <br></br>
             </div>
           ))}
+          {props.button ? (
+            <Button>
+              <a href={props.button.link} target="_blank">
+                {props.button.text}
+              </a>
+            </Button>
+          ) : null}
         </Grid>
         <Grid item md={6}></Grid>
       </Grid>

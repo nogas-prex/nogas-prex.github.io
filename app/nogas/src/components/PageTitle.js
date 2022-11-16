@@ -4,8 +4,8 @@ import Typography from '@mui/material/Typography';
 export default function PageTitle() {
     
     return (
-      <Box sx={{ height: "80vh", alignItems: "center", marginTop: "20em" }}>
-        <Typography variant="landingTitle" sx={{}}>
+      <Box xs={12} sx={{ height: "100vh", width:'100vw', alignItems: "center", marginTop: "10vh" }}>
+        <Typography variant="landingTitle" >
           NOGAS
         </Typography>
         <br></br>

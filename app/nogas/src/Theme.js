@@ -26,7 +26,7 @@ export const NOGASTheme = createTheme({
     typography: {
         landingTitle: {
             fontWeight: 700,
-            fontSize: "22em",
+            fontSize: "18vw",
             color: "#00a360",
             textShadow: "15px 15px #ccc",
             letterSpacing: '0.25em',            
@@ -35,7 +35,7 @@ export const NOGASTheme = createTheme({
         landingSubtitle: {
             textTransform: "uppercase",
             color: "#ccc",
-            fontSize: "3.7em",
+            fontSize: "4vw",
         },
         sectionTitle: {
             fontSize: "2.3rem",
@@ -102,13 +102,13 @@ export const NOGASTheme = createTheme({
             color: "white",
         },
         sectionTitleUnderline: {
-            textDecoration: "underline",
+            // textDecoration: "underline",
             fontWeight: 650,
             color: "black",
             fontSize: "2.8rem",
         },
         sectionTitleUnderlineWhite: {
-            textDecoration: "underline",
+            // textDecoration: "underline",
             fontWeight: 650,
             color: "white",
             fontSize: "2.8rem",

@@ -17,7 +17,7 @@ export default function MIRAGE() {
   ];
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <ResponsiveAppBar />
       <CaseStudyLanding
         image={
@@ -35,14 +35,27 @@ export default function MIRAGE() {
       <Grid
         container
         direction="row"
-        sx={{ height: "100vh", backgroundColor: "#111120" }}
+        sx={{ minHeight: "100vh", backgroundColor: "#111120" }}
       >
-        <Grid item xs={12} md={8} sx={{ placeSelf: "center" }}>
+        <Grid
+          item
+          xs={12}
+          md={8}
+          sx={{
+            overflow: "hidden",
+            display: "block",
+            maxWidth: "80%",
+            textAlign: "center",
+            paddingTop: "2em",
+            paddingBottom: "2em",
+            alignSelf: "center",
+          }}
+        >
           <img
             src={
               "https://nogas-swar.s3.amazonaws.com/img/10_MIRAGE/1_Step+By+Step/1.png"
             }
-            style={{ width: "75%" }}
+            style={{ maxWidth: "70%" }}
           />
         </Grid>
         <Grid item xs={12} md={4} sx={{ backgroundColor: "000" }}>

@@ -14,6 +14,7 @@ import MaximizeMicromobilityBackground from "./views/case-studies/MaximizeMicrom
 import FutureOfWorkBackground from "./views/case-studies/FutureOfWorkBackground";
 import OASIS from "./views/OASIS";
 import MIRAGE from "./views/MIRAGE";
+import DesignEngine from "./views/DesignEngine";
 
 export default function Urls() { 
     
@@ -23,6 +24,7 @@ export default function Urls() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/case-studies" element={<CaseStudies />} />
+          <Route exact path="/design-engine" element={<DesignEngine />} />
           <Route exact path="/oasis" element={<OASIS />} />
           <Route exact path="/mirage" element={<MIRAGE />} />
 

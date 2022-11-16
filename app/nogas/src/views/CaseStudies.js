@@ -32,6 +32,7 @@ export default function CaseStudies() {
               textAlign: "left",
               paddingLeft: "19em",
             }}
+            id='featured-case-studies'
           >
             <Typography variant="sectionTitle">
               FEATURED CASE STUDIES

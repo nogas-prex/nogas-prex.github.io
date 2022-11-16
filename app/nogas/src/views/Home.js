@@ -4,6 +4,7 @@ import PageTitle from "../components/PageTitle";
 import Mission from "../components/Mission";
 import Targets from "../components/Targets";
 import CardNavigation from "../components/BottomNavigation";
+import IncrementalProgres from "../components/IncrementalProgress";
 
 export default function Home() { 
     return (
@@ -11,6 +12,8 @@ export default function Home() {
         <ResponsiveAppBar />
         <PageTitle />
         <Mission />
+        <IncrementalProgres />
+        {/* targets should link to case study that relates to target  */}
         <Targets />
         <CardNavigation
           imgs={[
