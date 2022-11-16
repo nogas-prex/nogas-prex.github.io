@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import AdjustRoundedIcon from "@mui/icons-material/AdjustRounded";
 import { Grid } from "@mui/material";
 import useWindowDimensions from "./windowWidth";
+import { HashLink } from "react-router-hash-link";
 export default function TextCard(props) {
     const icon = props.icon
     const title = props.title
@@ -20,10 +21,7 @@ export default function TextCard(props) {
   return (
     <div>
       {width < 1600 ? (
-        <Card
-          sx={{  }}
-          elevation={0}
-        >
+        <Card sx={{}} elevation={0}>
           <CardContent>
             <Grid
               container
@@ -41,6 +39,11 @@ export default function TextCard(props) {
               </Grid>
               <Grid item xs={6} sx={{ textAlign: "left" }}>
                 <Typography variant="body3">{text}</Typography>
+                <HashLink to={props.caseStudy}>
+                  <Typography sx={{ fontWeight: "700" }}>
+                    See case study.
+                  </Typography>
+                </HashLink>{" "}
               </Grid>
             </Grid>
           </CardContent>
@@ -67,6 +70,11 @@ export default function TextCard(props) {
               </Grid>
               <Grid item xs={6} sx={{ textAlign: "left" }}>
                 <Typography variant="body3">{text}</Typography>
+                <HashLink to={props.caseStudy}>
+                  <Typography sx={{ fontWeight: "700" }}>
+                    See case study.
+                  </Typography>
+                </HashLink>
               </Grid>
             </Grid>
           </CardContent>

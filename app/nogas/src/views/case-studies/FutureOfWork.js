@@ -8,7 +8,7 @@ import {
 import { ImageItem } from "../../components/ImageCarousel";
 import ImageSlider from "../../components/ImageSlider";
 import Button from "@mui/material/Button";
-
+import { HashLink } from "react-router-hash-link";
 import ResponsiveAppBar from "../../components/AppBar";
 import CaseStudyBackground from "../../components/caseStudies/caseStudyBackground";
 import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
@@ -38,7 +38,7 @@ export default function FutureOfWork() {
     ];
 
     return (
-      <div>
+      <div id="fow-main">
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
@@ -47,14 +47,16 @@ export default function FutureOfWork() {
           title="DESIGNING THE FUTURE OF WORK"
           subtitle="Employment Campus Evolution"
           body={[
-            `Since the birth of the suburban employment campus in the 1940s, these developments have provided large, 
-                high-quality, efficient workspaces for big corporations. Today, according to the U.S. Bureau of Labor Statistics, 
-                32 percent of U.S. employment is in the suburbs of large metropolitan areas. However, as people and jobs continue 
-                to suburbanize, the distance between people and jobs is growing, and the geography between people and jobs is changing. `,
-            `The future of work is less certain than ever since the COVID-19 pandemic disrupted conventional working modes. Remote 
-                working or working from home is becoming more popular and necessary than ever. The suburb-to-suburb commuting challenge, 
-                the evolving remote work options, and proliferation of autonomous mobility and micromobility provide a key opportunity to 
-                reimagine the typical suburban employment campus.  `,
+            `Since the birth of the suburban employment campus in the 1940s, these developments have
+provided large, high-quality, efficient workspaces for big corporations. Today, according to the
+U.S. Bureau of Labor Statistics, 32 percent of U.S. employment is in the suburbs of large
+metropolitan areas. However, as people and jobs continue to suburbanize, the distance
+between people and jobs is growing, and the geography between people and jobs is changing.`,
+            `The future of work is less certain than ever since the COVID-19 pandemic disrupted
+conventional working modes. Remote working or working from home is becoming more popular
+and necessary than ever. The suburb-to-suburb commuting challenge, the evolving remote work
+options, and proliferation of autonomous mobility and micromobility provide a key opportunity
+to reimagine the typical suburban employment campus.`,
           ]}
         />
         <CaseStudyBackground
@@ -64,9 +66,11 @@ export default function FutureOfWork() {
             "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/0_Cover/1.jpg"
           }
           body={[
-            `The design of suburban campuses themselves hasn’t evolved much over the past several decades. The 
-                footprint of parking lots designed to support these campuses is often several times larger than the 
-                office buildings, which not only wastes valuable land, but also causes larger-scale environmental degradation.`,
+            `The design of suburban campuses themselves hasn’t evolved
+much over the past several decades. The footprint of parking lots designed to
+support these campuses is often several times larger than the office buildings,
+which not only wastes valuable land, but also causes larger-scale environmental
+degradation.`,
           ]}
           stats={[
             { pct: "30%+", text: "U.S. Employments is in Suburbs" },
@@ -76,9 +80,9 @@ export default function FutureOfWork() {
             },
             { pct: "0", text: "Walkable Access to Public Transit" },
           ]}
-          link={"/case-studies/future-of-work-background"}
+          link={"/case-studies/future-of-work-background/#fow-background"}
         />
-        <Grid container sx={{ width: "100vw", overflowY: "hidden" }}>
+        <Grid container sx={{ width: "100vw", height: '100%',overflowY: "hidden" }}>
           <ImageSlider
             leftImage={
               "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/3_Vision/Slider_Before.png"
@@ -92,10 +96,13 @@ export default function FutureOfWork() {
           title="VISION"
           subtitle="The Future of Autonomous Suburbs"
           body={[
-            `In the near term, evolving remote work options, especially hybrid working modes, will contribute to increased demands for smaller, 
-                more flexible workspaces. Meanwhile, fewer workers on-site at the same time will need fewer parking spaces than before, creating 
-                opportunities to convert large parking areas to housing or to enhance a site’s environmental performance. `,
-            `In the autonomous future, with complete adoption of autonomous mobility services, on-site parking can be further reduced or even eliminated. `,
+            `In the near term, evolving remote work options, especially hybrid working modes, will
+contribute to increased demands for smaller, more flexible workspaces. Meanwhile, fewer
+workers on-site at the same time will need fewer parking spaces than before, creating
+opportunities to convert large parking areas to housing or to enhance a site’s environmental
+performance.`,
+            `In the autonomous future, with complete adoption of autonomous mobility services, on-site
+parking can be further reduced or even eliminated.`,
           ]}
           icons={[
             { img: "", alt: "", label: "Smart Density" },
@@ -146,7 +153,7 @@ export default function FutureOfWork() {
                   }}
                   endIcon={<ArrowForwardIcon />}
                 >
-                  Learn more about MIRAGE
+                  <HashLink to={"/mirage"}>Learn more about MIRAGE</HashLink>
                 </Button>
               </Grid>
             </Grid>

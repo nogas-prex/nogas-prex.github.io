@@ -32,7 +32,7 @@ export default function CaseStudies() {
               textAlign: "left",
               paddingLeft: "19em",
             }}
-            id='featured-case-studies'
+            id="featured-case-studies"
           >
             <Typography variant="sectionTitle">
               FEATURED CASE STUDIES
@@ -64,7 +64,7 @@ export default function CaseStudies() {
           <Grid item xs={12} md={6}>
             <img
               src={
-                "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/1_Video+Placeholder.png"
+                "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/Landing_Video_AdobeExpress_lg.gif"
               }
               style={{ width: "100%" }}
             ></img>
@@ -88,12 +88,12 @@ export default function CaseStudies() {
           <CaseStudyGrid
             title="Improving Equitable Access"
             subtitle="Neighborhood Retrofit"
-            text={`This project looks at some of the challenges facing today's "middle neighborhoods" and proposes block-scale redevelopment strategies that prioritieze the equity of existing residents while reducing impacts on local infrastructure.`}
+            text={`This project looks at some of the challenges facing today's "middle neighborhoods" and proposes block-scale redevelopment strategies that prioritize the equity of existing residents while reducing impacts on local infrastructure.`}
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/2_Improving+Equitable+Access.png"
             }
             dir="img-txt"
-            navLink={"improving-equitable-access"}
+            navLink={"improving-equitable-access/#iea-main"}
           />
           <CaseStudyGrid
             title="Preparing for Future Growth"
@@ -102,19 +102,19 @@ export default function CaseStudies() {
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/3_Preparing+Future+Growth.png"
             }
-            navLink={"preparing-future-growth"}
+            navLink={"preparing-future-growth/#pfg-main"}
 
             // dir="img-txt"
           />
           <CaseStudyGrid
             title="Layering Sustainbility"
             subtitle="Landscape Optimization"
-            text={`Through comprehensive digitial simulation and analysis, this project coulminates in site-scale proposals for high-performance suburban landscapes, optimized for stormwater capture, heat mitigation, and carbon sequestration.`}
+            text={`Through comprehensive digital simulation and analysis, this project culminates in site-scale proposals for high-performance suburban landscapes, optimized for stormwater capture, heat mitigation, and carbon sequestration.`}
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/4_Layering+Sustainability.png"
             }
             dir="img-txt"
-            navLink={"layering-sustainability"}
+            navLink={"layering-sustainability/#ls-main"}
           />
           <CaseStudyGrid
             title="Maximizing Micro-mobility"
@@ -123,7 +123,7 @@ export default function CaseStudies() {
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/5_Maximizing+Micromobility.png"
             }
-            navLink={"maximize-micromobility"}
+            navLink={"maximize-micromobility/#mm-main"}
             // dir="img-txt"
           />
           <CaseStudyGrid
@@ -134,7 +134,7 @@ export default function CaseStudies() {
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/6_Designing+the+Future+of+Work.png"
             }
             dir="img-txt"
-            navLink={"future-of-work"}
+            navLink={"future-of-work/#fow-main"}
           />
         </Grid>
         <Grid

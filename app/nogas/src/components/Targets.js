@@ -11,29 +11,34 @@ export default function Targets() {
     var targets = [
       {
         title: "Environmental Sustainability",
-        text: "Over the past century, suburban development has eroded natural landscaped, damaged ecological systems, and accelerated biodiversity loss. How can new approaches to suburban development reduce impervious surfaces, expand native habitat corridors, and improve stormwater management?",
+        text: "Over the past century, suburban development has eroded natural landscapes, damaged ecosystems, and accelerated biodiversity loss. How can new approaches to suburban development mitigate environmental risks, improve ecosystem services, and expand native habitat areas? ",
         icon: "",
+        caseStudy: "/case-studies/layering-sustainability/#ls-main",
       },
       {
         title: "Social Equity",
-        text: "Since the 1950s, a combination of redlining, urban renewal campaigns, and other planning initiatives have disproportionaly restricted non-white, working class communities from suburban homeownership. How can new approaches to zoning, and community revitilization repair legacies of generational disinvestment and catalyze lasting social agency?",
+        text: "Historically, non-white and working class communities have been disproportionately restricted from suburban homeownership. How can new approaches to zoning, and community revitalization repair these legacies of generational disinvestment and catalyze lasting social agency? ",
         icon: "",
+        caseStudy: "/case-studies/improving-equitable-access/#iea-main",
       },
       {
-        title: "15-minute Suburb",
-        text: "Suburban communities are no longer tethered to a central business district for employment, entertainment, and social services. How will new approaches to land use, new mobility networks, and expanded Work From Home employment scenarios create implementable frameworks for the 15-minute suburb?",
+        title: "Regional Connectivity",
+        text: "Suburban communities are no longer tethered to a central business district for employment, entertainment, or social services. How will new approaches to land use along with new mobility offerings, and expanded Work From Home (WFH) employment scenarios create implementable frameworks for the 15-minute suburb? ",
         icon: "",
+        caseStudy: "/case-studies/future-of-work/#fow-main",
       },
       {
         title: "Walkability and Accessibility",
-        text: "One in four US adults have at least one disability making them less likely to operate a traditional vehicle. How can the emerging technologies of autonomous mobility expand the idea of universal access and barrier-free walkability?",
+        text: "One in four adults in the U.S. have at least one disability, making them less likely to operate a traditional vehicle. How can emerging mobility paradigms be leveraged to help improve universal access and barrier-free walkability? ",
         icon: "",
+        caseStudy: "/case-studies/maximize-micromobility/#mm-main",
       },
       {
         title: "Climate Mitigation",
-        text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design reposition the suburbs as regional carbon sinks?",
+        text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design position the suburbs as key regional carbon sinks? ",
         icon: "",
-      },      
+        caseStudy: "/case-studies/layering-sustainability/#ls-main",
+      },
     ];
 
     return (
@@ -69,6 +74,7 @@ export default function Targets() {
                 title={target.title}
                 text={target.text}
                 icon={target.icon}
+                caseStudy={target.caseStudy}
               />
             </Box>
           ))}

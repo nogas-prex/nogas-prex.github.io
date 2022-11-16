@@ -29,7 +29,7 @@ export default function CaseStudyVision(props) {
         sx={{ backgroundColor: "#00A360", minHeight: "500px",}}
         xs={12}
       >
-        <Grid item xs={6} sx={{ padding: "5em", textAlign: "left" }}>
+      <Grid item xs={12} sm={10} md={6} sx={{ padding: "5%", textAlign: "left" }}>
           <Typography variant="sectionTitleWhite">{title}</Typography>
           <br></br>
           <Typography variant="sectionSubtitleWhite">{subtitle}</Typography>

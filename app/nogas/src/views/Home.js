@@ -13,7 +13,6 @@ export default function Home() {
         <PageTitle />
         <Mission />
         <IncrementalProgres />
-        {/* targets should link to case study that relates to target  */}
         <Targets />
         <CardNavigation
           imgs={[

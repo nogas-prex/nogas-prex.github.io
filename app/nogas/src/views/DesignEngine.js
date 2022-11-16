@@ -79,7 +79,7 @@ export default function DesignEngine() {
                 multi-objective neighborhood-scale land use scenarios.
               </Typography>
               <Button>
-                <HashLink to="/oasis">Learn More</HashLink>
+                <HashLink to="/oasis/#oasis-main">Learn More</HashLink>
               </Button>
             </Grid>
             <Grid item sx={{ height: "33%", color: "white" }}>
@@ -91,7 +91,7 @@ export default function DesignEngine() {
                 objectives and constraints.
               </Typography>
               <Button>
-                <HashLink to="/mirage">Learn More</HashLink>
+                <HashLink to="/mirage/#mirage-main">Learn More</HashLink>
               </Button>
             </Grid>
           </Grid>

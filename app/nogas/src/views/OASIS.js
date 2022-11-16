@@ -18,9 +18,7 @@ export default function OASIS() {
     ];
 
     return (
-      <div
-      style={{overflowX:'hidden'}}
-      >
+      <div id="oasis-main" style={{ overflowX: "hidden" }}>
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
@@ -29,17 +27,21 @@ export default function OASIS() {
           title="OASIS"
           subtitle="Optimized Autonomous Suburban Integration System"
           body={[
-            `OASIS is a parametric toolbox that can help planners and developers optimize
-            neighborhood-scale land use patterns, mobility frameworks and urban design configurations. 
-            Using inputs commonly associated with specific land use categories, and a compatibility matrix, 
-            the tool automatically generates thousands of scenarios for stakeholders to choose from based 
-            on predetermined objectives.`,
+            `OASIS is a parametric toolbox that can help planners and developers optimize neighborhood-
+scale land use patterns, mobility frameworks and urban design configurations. Using inputs
+commonly associated with specific land use categories, and a compatibility matrix, the tool
+automatically generates thousands of scenarios for stakeholders to choose from based on
+predetermined objectives.`,
           ]}
         />
         <Grid
           container
           direction="row"
-          sx={{ minHeight: "100vh", width: "100vw", backgroundColor: "#111120" }}
+          sx={{
+            minHeight: "100vh",
+            width: "100vw",
+            backgroundColor: "#111120",
+          }}
         >
           <Grid
             item
@@ -52,7 +54,7 @@ export default function OASIS() {
               textAlign: "center",
               paddingTop: "2em",
               paddingBottom: "2em",
-              alignSelf:'center'
+              alignSelf: "center",
             }}
           >
             <img
@@ -74,7 +76,7 @@ export default function OASIS() {
             >
               <Grid item sx={{ height: "33%", color: "white" }}>
                 <Typography variant="h3">
-                  1. INPUTTING EXISTING MASTERPLAN DATA
+                  1. INPUTTING EXISTING BLOCK CONFIGURATION
                 </Typography>
                 <Typography>
                   The first step is to input existing data of the master plan,
@@ -85,7 +87,7 @@ export default function OASIS() {
               </Grid>
               <Grid item sx={{ height: "33%", color: "white" }}>
                 <Typography variant="h3">
-                  2. DEFINING OPTIMIZATION OBJECTS AND OBJECTIVES
+                  2. DEFINING OPTIMIZATION OBJECTIVES
                 </Typography>
                 <Typography>
                   The second step is to determine the optimizing objects
@@ -104,7 +106,7 @@ export default function OASIS() {
                   automatically optimize the neighborhood-scale master plan
                   based on the inputs. Multiple optimized scenarios will be
                   simulated for users to choose from, based on their unique
-                  goals and customized trade-offs.
+                  goals and customized trade- offs.
                 </Typography>
               </Grid>
             </Grid>

@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+
 export default function CaseStudyBackground(props) { 
     const image = props.image
     const title = props.title
@@ -25,19 +25,28 @@ export default function CaseStudyBackground(props) {
         justifyContent="center"
         sx={{ width: "100vw", backgroundColor: "white", height: "100vh" }}
       >
-        <Grid item xs={12} md={6} sx={{ paddingRight: "3em" }}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{
+            // paddingRight: "3em",
+            paddingRight: { xs: "0", sm: "0", md: "3em" },
+          }}
+        >
           <Card
             // backgroundImage={`url(${metricAgingImage})`}
             sx={{
-              height: "500px",
+              minHeight: { xs: "100%", sm: "100%", md: "100%" },
+              height: { xs: "100%", sm: "100%", md: "34vw" },
               backgroundImage: `url(${image})`,
               backgroundSize: "100%",
               backgroundRepeat: "no-repeat",
             }}
             elevation={10}
           >
-            <CardHeader sx={{ height: "70%" }}></CardHeader>
-            <CardContent sx={{ display: "flex", color: "white" }}>
+            <CardHeader sx={{ height: { xs: "100%", md: "70%" } }}></CardHeader>
+            <CardContent sx={{ color: "white" }}>
               <Grid
                 container
                 direction="row"
@@ -46,7 +55,7 @@ export default function CaseStudyBackground(props) {
                 spacing={3}
               >
                 {stats.map((stat) => (
-                  <Grid item xs={4}>
+                  <Grid item xs={4} sx={{ marginBottom: "3vw" }}>
                     <Typography variant="mdStat">{stat.pct}</Typography>
                     <br></br>
                     <Typography variant="mdStatText">{stat.text}</Typography>
@@ -74,7 +83,7 @@ export default function CaseStudyBackground(props) {
             }}
             endIcon={<ArrowForwardIcon />}
           >
-            <Link to={{ pathname: `${props.link}` }}>Learn More</Link>
+            <HashLink to={`${props.link}`}>Learn More</HashLink>
           </Button>
         </Grid>
       </Grid>

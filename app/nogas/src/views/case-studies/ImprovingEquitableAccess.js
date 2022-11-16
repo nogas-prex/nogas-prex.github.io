@@ -25,11 +25,11 @@ export default function ImprovingEquitableAccess() {
 
     const carouselItems = [
       {
-        name: "Existing",
+        name: "Typical configuration",
         img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Existing+Scenario.png",
       },
       {
-        name: "Optimized Scenario",
+        name: "Optimized configuration",
         img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Proposed+Scenario.png",
       },
       {
@@ -37,13 +37,13 @@ export default function ImprovingEquitableAccess() {
         img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Proximity+Analysis.png",
       },
       {
-        name: "Mobility Image",
+        name: "Multi-modal circulation analysis",
         img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Autonomous+Ready.png",
       },
     ];
 
     return (
-      <div>
+      <div id="iea-main">
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
@@ -69,7 +69,7 @@ suburban configurations that prioritize equitable mobility for all. `,
         />
         <CaseStudyBackground
           title="BACKGROUND"
-          subtitle="Mobility Access Challenge in Suburbs"
+          subtitle="Challenges to Mobility Access"
           image={
             "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/2_Background/0_Cover/1.png"
           }
@@ -85,18 +85,23 @@ suburban configurations that prioritize equitable mobility for all. `,
                 transportation option, this presents major obstacles for transportation planners.`,
           ]}
           stats={[
-            { pct: "25%", text: "Adults have at least one disability" },
+            { pct: "25%", text: " of adults have at least one disability" },
             {
-              pct: "25%+ ",
-              text: "Fewer daily trips made by people with disabilities",
+              pct: ">25%",
+              text: "Fewer daily trips are made by people with disabilities",
             },
-            { pct: "14%", text: "Disabled adults with mobility limitations" },
+            {
+              pct: "14%",
+              text: "of disabled adults experience mobility limitations",
+            },
           ]}
-          link={"/case-studies/improving-equitable-access-background"}
+          link={
+            "/case-studies/improving-equitable-access-background/#iea-background"
+          }
         />
         <Grid
           container
-          sx={{ width: "100vw", height: "70vh", overflowY: "hidden" }}
+          sx={{ width: "100vw", height: "100%", overflowY: "hidden" }}
         >
           <ImageSlider
             leftImage={
@@ -111,12 +116,13 @@ suburban configurations that prioritize equitable mobility for all. `,
           title={"VISION"}
           subtitle="Autonomous Suburbs for All"
           body={[
-            `The codes, policies, and guidelines used to control suburban form can be expanded to account for 
-                the potential effects of AVs, and to better accommodate increased micromobility and pedestrian modes. 
-                New neighborhood land use patterns can ensure equitable access to local amenities within a five-minute 
-                walkshed of all residents, including those with mobility challenges. `,
-            `Additionally, suburban block configurations can be optimized to further improve mobility access for the 
-                elderly and people with disabilities who can’t drive.`,
+            `The codes, policies, and guidelines used to control suburban form can be expanded to account
+for the potential effects of AVs, and to better accommodate increased micromobility and
+pedestrian modes. New neighborhood land use patterns can ensure equitable access to local
+amenities within a five-minute walkshed of all residents, including those with mobility
+challenges. `,
+            `Additionally, suburban block configurations can be optimized to further improve mobility access
+for the elderly and people with disabilities who can’t drive.`,
           ]}
           icons={[
             {
@@ -160,12 +166,12 @@ suburban configurations that prioritize equitable mobility for all. `,
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
                   OASIS is a parametric toolbox that can help planners and
-                  developers optimize neighborhood-scale land use configurations
-                  and mobility networks. The accessibility optimization
-                  components within the OASIS toolbox can be used to analyze an
-                  existing neighborhood master plan and identify opportunities
-                  for optimizing connectivity ratios through scenario-based
-                  modeling.
+                  developers optimize neighborhood- scale land use
+                  configurations and mobility networks. The accessibility
+                  optimization components within the OASIS toolbox can be used
+                  to analyze an existing neighborhood master plan and identify
+                  opportunities for optimizing connectivity ratios through
+                  scenario-based modeling.
                 </Typography>
                 <br></br>
                 <br></br>
@@ -188,12 +194,22 @@ suburban configurations that prioritize equitable mobility for all. `,
             justifyContent="center"
             alignContent="center"
             direction="column"
-            sx={{ marginLeft: "25%", marginRight: "25%", width: "50%" }}
+            sx={{ marginLeft: "25%", marginRight: "25%", width: "50%", paddingBottom:'2em' }}
           >
+            <Grid item xs={12} md={6} elevation={5}>
+              <Typography variant="sectionSubtitle">
+                Neighborhood Configuration Optimization
+              </Typography>
+              <Typography variant="body2">
+                Click through the various scenarios below to see how OASIS can
+                generate different master plan scenarios to determine an optimal
+                configuration based on predetermined accessibility objectives.
+              </Typography>
+            </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "750px" }}
+                sx={{ maxWidth: "100%" }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />
@@ -203,46 +219,12 @@ suburban configurations that prioritize equitable mobility for all. `,
             <Grid item xs={0} sm={3}>
               {" "}
             </Grid>{" "}
-            <Grid item xs={12} sm={6}>
-              <Typography variant="body2">
-                Click through the various scenarios above to see how OASIS can
-                generate different master plan scenarios to determine an optimal
-                configuration based on predetermined accessibility objectives.
-              </Typography>
-            </Grid>{" "}
+            <Grid item xs={12} sm={6}></Grid>{" "}
             <Grid item xs={0} sm={3}>
               {" "}
             </Grid>
           </Grid>
-        </Grid>
-        {/* end custom stuff */}
-        {/* stats / summary */}
-        <CaseStudySummary
-          text={`Compared with today's average suruban form, long-term optimization
-          scenarios demonstrate valuable performance benefits including:`}
-          icons={[
-            {
-              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/Density.png",
-              pct: "40%",
-              text: "Increase in density",
-            },
-            {
-              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/MOD.png",
-              pct: "80%",
-              text: "Increase in mobility on-demand access",
-            },
-            {
-              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/Permeable.png",
-              pct: "15%",
-              text: "Reduction of impervious surface cover",
-            },
-            {
-              img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/1_Metrics/Canopy.png",
-              pct: "10%",
-              text: "Increase in tree canopy",
-            },
-          ]}
-        />
+        </Grid>       
       </div>
     );
 }

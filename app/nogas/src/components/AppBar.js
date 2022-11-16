@@ -46,7 +46,6 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar
-      
       sx={{ backgroundColor: "white", color: "black" }}
       position="fixed"
       elevation={0}
@@ -100,16 +99,10 @@ const ResponsiveAppBar = () => {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
-            >
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                    {/* </HashLink> */}
-              {/* </MenuItem> */}
-              {/* ))} */}
+            >            
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          
           <Typography
             variant="h5"
             noWrap

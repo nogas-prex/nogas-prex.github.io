@@ -17,7 +17,7 @@ export default function MIRAGE() {
   ];
 
   return (
-    <div style={{ overflowX: "hidden" }}>
+    <div style={{ overflowX: "hidden" }} id="mirage-main">
       <ResponsiveAppBar />
       <CaseStudyLanding
         image={
@@ -26,10 +26,10 @@ export default function MIRAGE() {
         title="MIRAGE"
         subtitle="Multi-Indicator Relation Assesment Generation Engine"
         body={[
-          `MIRAGE is a parametric toolbox that can help planners and developers optimize 
-          block-scale configurations. Using inputs commonly associated with exiting block 
-          layout, along with user-defined parameters, the tool automatically generates thousands 
-          of scenarios for stakeholders to choose from, based on predetermined objectives.`,
+          `MIRAGE is a parametric toolbox that can help planners and developers optimize block-scale
+configurations. Using inputs commonly associated with exiting block layout, along with user-
+defined parameters, the tool automatically generates thousands of scenarios for stakeholders to
+choose from, based on predetermined objectives.`,
         ]}
       />
       <Grid

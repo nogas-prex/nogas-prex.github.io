@@ -1,7 +1,9 @@
 import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { HashLink } from "react-router-hash-link";
+
 export default function CaseStudyGrid(props) {
   const image = props.image;
   const title = props.title;
@@ -42,7 +44,7 @@ export default function CaseStudyGrid(props) {
             endIcon={<ArrowForwardIcon />}
           >
             {/* Learn More */}
-            <Link to={{ pathname: `${props.navLink}` }}>Learn More</Link>
+            <HashLink to={`${props.navLink}`}>Learn More</HashLink>
           </Button>
         </Grid>
       </Grid>
@@ -74,7 +76,9 @@ export default function CaseStudyGrid(props) {
             endIcon={<ArrowForwardIcon />}
             // onClick={console.log(props.navLink)}
           >
-            <Link to={{ pathname: `${props.navLink}` }}>Learn More</Link>
+            <HashLink to={ `${props.navLink}` }>
+              Learn More
+            </HashLink>
           </Button>
         </Grid>
 

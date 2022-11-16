@@ -10,7 +10,7 @@ import { ImageItem } from "../../components/ImageCarousel";
 import Carousel from "react-material-ui-carousel";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Button from "@mui/material/Button";
-
+import { HashLink } from "react-router-hash-link";
 import ResponsiveAppBar from "../../components/AppBar";
 import CaseStudyBackground from "../../components/caseStudies/caseStudyBackground";
 import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
@@ -40,7 +40,7 @@ export default function MaximizingMicromobility() {
   
   
   return (
-    <div>
+    <div id="mm-main">
       <ResponsiveAppBar />
       <CaseStudyLanding
         image={
@@ -49,13 +49,16 @@ export default function MaximizingMicromobility() {
         title="MAXIMIZING MICRO-MOBILITY"
         subtitle="Streetscape Adaption"
         body={[
-          `In the U.S., only about 5 percent of the working population uses public transit to get to work, and 
-                this percentage has changed little since 1995. In many regions, where suburb-to-suburb commute patterns 
-                are steadily replacing their suburb-to-urban core precursors, public transit has become increasingly outmoded.  `,
-          `According to the latest National Household Travel Survey (2017), around 60 percent of domestic light-duty vehicle 
-                trips are shorter than 6 miles. These short trips represent a huge potential for reducing vehicular dependence in 
-                suburban areas, if more micromobility options are implemented. However, current standards and design guidelines for 
-                suburban streets typically lack the essential infrastructure to accommodate large-scale micromobility development. `,
+          `In the U.S., only about 5 percent of the working population uses public transit to get to work,
+and this percentage has changed little since 1995. In many regions, where suburb-to-suburb
+commute patterns are steadily replacing their suburb-to-urban core precursors, public transit
+has become increasingly outmoded.`,
+          `According to the latest National Household Travel Survey (2017), around 60 percent of domestic
+light-duty vehicle trips are shorter than 6 miles. These short trips represent a huge potential for
+reducing vehicular dependence in suburban areas, if more micromobility options are
+
+implemented. However, current standards and design guidelines for suburban streets typically
+lack the essential infrastructure to accommodate large-scale micromobility development.`,
         ]}
       />
       <CaseStudyBackground
@@ -77,11 +80,11 @@ export default function MaximizingMicromobility() {
           },
           { pct: "85%+", text: "Workers Drive to Work" },
         ]}
-        link={"/case-studies/maximize-micromobility-background"}
+        link={"/case-studies/maximize-micromobility-background/#mm-background"}
       />
       <Grid
         container
-        sx={{ width: "100vw", height: "70vh", overflowY: "hidden" }}
+        sx={{ width: "100vw", height: "100%", overflowY: "hidden" }}
       >
         <ImageSlider
           leftImage={
@@ -96,14 +99,15 @@ export default function MaximizingMicromobility() {
         title="VISION"
         subtitle="A Multi-modal Mobility Adapted Street"
         body={[
-          `In the near term, the excessive widths of many suburban right of ways can be narrowed and improved by 
-                incorporating protected micromobility lanes and hubs. Micromobility corridors can then be implemented to 
-                further improve connectivity and pedestrian safety from block to block. `,
-          `In the autonomous future, with the compact design and precise control system of autonomous mobility systems, 
-                the width of a vehicular lane can be reduced dramatically, so that a large number of paved surfaces can be 
-                converted into greenspace or commercial frontages. Meanwhile, an autonomous-delivery infrastructure network 
-                can be built out and connected to the existing micromobility corridors, further reducing the number of daily 
-                household vehicle trips. `,
+          `In the near term, the excessive widths of many suburban right of ways can be narrowed and
+improved by incorporating protected micromobility lanes and hubs. Micromobility corridors can
+then be implemented to further improve connectivity and pedestrian safety from block to block.`,
+          `In the autonomous future, with the compact design and precise control system of autonomous
+mobility systems, the width of a vehicular lane can be reduced dramatically, so that a large
+number of paved surfaces can be converted into greenspace or commercial frontages.
+Meanwhile, an autonomous-delivery infrastructure network can be built out and connected to
+the existing micromobility corridors, further reducing the number of daily household vehicle
+trips.`,
         ]}
         icons={[
           { img: "", alt: "", label: "Smart Density" },
@@ -139,7 +143,7 @@ export default function MaximizingMicromobility() {
               <hr color="EC008C"></hr>
               <Typography variant="bodyBlack">
                 OASIS is a parametric toolbox that can help planners and
-                developers optimize neighborhood-scale land use and mobility
+                developers optimize neighborhood- scale land use and mobility
                 frameworks. The micromobility corridor optimization tool of the
                 OASIS toolbox can generate and optimize the overall
                 micromobility corridor framework to maximize the connectivity
@@ -156,7 +160,7 @@ export default function MaximizingMicromobility() {
                 }}
                 endIcon={<ArrowForwardIcon />}
               >
-                Learn more about OASIS
+                <HashLink to={"/oasis"}>Learn more about OASIS</HashLink>
               </Button>
             </Grid>
           </Grid>
@@ -191,23 +195,7 @@ export default function MaximizingMicromobility() {
           </Grid>
         </Grid>
       </Grid>
-      <CaseStudySummary
-        text={``}
-        icons={[
-          { img: "", pct: "50%", text: "Reduction of vehicle tripps" },
-          {
-            img: "",
-            pct: "60%",
-            text: "Increase in pedestrian accessibility",
-          },
-          {
-            img: "",
-            pct: "80%",
-            text: "Reduction of impervious surface cover",
-          },
-          { img: "", pct: "60%", text: "Increase in tree canopy" },
-        ]}
-      />{" "}
+  
     </div>
   );
 }
