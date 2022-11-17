@@ -18,11 +18,12 @@ export default function CaseStudyLanding(props) {
         justifyContent="center"
         sx={{
           width: "100vw",
-          height: '90vh',
-          maxHeight: "100vh",
+          // height: '90vh',
+          // maxHeight: "100vh",
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          // marginBottom:'2em'
         }}
       >
         <Grid
@@ -31,8 +32,11 @@ export default function CaseStudyLanding(props) {
           md={6}
           sx={{
             textAlign: "left",
-            paddingLeft: "5em",
+            paddingLeft: { xs: '2em', sm:'2em', md:'2em', lg: "5em" },
+            paddingRight: {xs:'2em', lg:'0'},
             backgroundColor: "rgba(255,255,255,0.5)",
+            marginTop: '5em',
+            marginBottom:'2em'
           }}
         >
           <Typography variant="sectionTitle">{title}</Typography>

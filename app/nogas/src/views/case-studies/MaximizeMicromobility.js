@@ -130,7 +130,7 @@ trips.`,
               item
               xs={12}
               md={6}
-              sx={{ padding: "7em", textAlign: "left" }}
+              sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
             >
               <Typography variant="sectionTitle">
                 {" "}
@@ -170,10 +170,14 @@ trips.`,
           justifyContent="center"
           alignContent="center"
           direction="column"
-          sx={{ marginLeft: "25%", marginRight: "25%", width: "50%" }}
+          sx={{
+            paddingLeft: { xs: "2em", md: "25%" },
+            paddingRight: { xs: "2em", md: "25%" },
+            marginBottom: "2em",
+          }}
         >
           <Grid item xs={12} md={6} elevation={5}>
-            <Carousel navButtonsAlwaysVisible={true} sx={{ maxWidth: "75vw" }}>
+            <Carousel navButtonsAlwaysVisible={true} sx={{ maxWidth: "100%" }}>
               {carouselItems.map((img, i) => (
                 <ImageItem key={i} image={img.img} name={img.name} />
               ))}
@@ -195,7 +199,6 @@ trips.`,
           </Grid>
         </Grid>
       </Grid>
-  
     </div>
   );
 }

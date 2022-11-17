@@ -31,10 +31,22 @@ return (
     sx={{ backgroundColor: "#000000", minHeight: "500px" }}
     xs={12}
   >
-    <Grid item xs={6} sx={{ padding: "5em", maxWidth: "100%" }}>
+    <Grid
+      item
+      xs={12}
+      sm={12}
+      md={6}
+      sx={{ padding: { xs: "2em", md: "5em" }, maxWidth: "100%" }}
+    >
       <img src={chart} alt="foo" style={{ width: "100%" }}></img>
     </Grid>
-    <Grid item xs={6} sx={{ padding: "5em", textAlign: "left" }}>
+    <Grid
+      item
+      xs={12}
+      sm={12}
+      md={6}
+      sx={{ padding: { xs: "2em", md: "5em" }, textAlign: "left" }}
+    >
       <Typography variant="sectionTitleWhite">{title}</Typography>
       <br></br>
       <br></br>
@@ -58,10 +70,22 @@ return (
         sx={{ backgroundColor: "#000000", minHeight: "500px" }}
         xs={12}
       >
-        <Grid item xs={6} sx={{ padding: "5em", maxWidth: "100%" }}>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          sx={{ padding: { xs: "2em", md: "5em" }, maxWidth: "100%" }}
+        >
           <img src={img} alt="foo" style={{ width: "100%" }}></img>
         </Grid>
-        <Grid item xs={6} sx={{ padding: "5em", maxWidth: "100%" }}>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          sx={{ padding: { xs: "2em", md: "5em" }, maxWidth: "100%" }}
+        >
           <img src={chart} alt="foo" style={{ width: "100%" }}></img>
         </Grid>
         {/* <Grid item xs={6} sx={{ padding: "5em", textAlign: "left" }}>

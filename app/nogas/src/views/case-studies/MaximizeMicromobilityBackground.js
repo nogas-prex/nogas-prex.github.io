@@ -3,10 +3,11 @@ import { Grid } from "@mui/material";
 import CaseStudyStat from "../../components/caseStudies/background/backgroundStat";
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
-
+import ResponsiveAppBar from "../../components/AppBar";
 export default function MaximizeMicromobilityBackground() {
   return (
     <div id="mm-background">
+      <ResponsiveAppBar />
       <CaseStudyBackgroundLanding
         image={
           "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/2_Background/1_Background+Page/0_Cover/1.png"

@@ -99,10 +99,30 @@ const ResponsiveAppBar = () => {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
-            >            
+            >
+              {Object.keys(pages).map((page) => (
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: "black",
+                    display: "block",
+                    textDecoration: "none",
+                    fontWeight: 600,
+                  }}
+                >
+                  <HashLink
+                    to={pages[page]}
+                    style={{ color: "black", textDecoration: "none" }}
+                  >
+                    {page}
+                  </HashLink>
+                </Button>
+              ))}
             </Menu>
           </Box>
-          
+
           <Typography
             variant="h5"
             noWrap

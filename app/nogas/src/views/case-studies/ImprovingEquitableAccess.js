@@ -153,7 +153,7 @@ for the elderly and people with disabilities who can’t drive.`,
                 item
                 xs={12}
                 md={6}
-                sx={{ padding: "7em", textAlign: "left" }}
+                sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
                 <Typography variant="sectionTitle">
                   {" "}
@@ -194,7 +194,12 @@ for the elderly and people with disabilities who can’t drive.`,
             justifyContent="center"
             alignContent="center"
             direction="column"
-            sx={{ marginLeft: "25%", marginRight: "25%", width: "50%", paddingBottom:'2em' }}
+            // sx={{ marginLeft: {xs:'2em',md:"25%"}, marginRight: {xs:'2em',md:"25%"}, width: {xs:'75%',md:"50%"}, paddingBottom:'2em' }}
+            sx={{
+              paddingLeft: { xs: "2em", md: "25%" },
+              paddingRight: { xs: "2em", md: "25%" },
+              marginBottom:'2em'
+            }}
           >
             <Grid item xs={12} md={6} elevation={5}>
               <Typography variant="sectionSubtitle">
@@ -224,7 +229,7 @@ for the elderly and people with disabilities who can’t drive.`,
               {" "}
             </Grid>
           </Grid>
-        </Grid>       
+        </Grid>
       </div>
     );
 }

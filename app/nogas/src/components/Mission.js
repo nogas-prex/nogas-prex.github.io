@@ -18,7 +18,7 @@ export default function Mission() {
       id="mission"
     >
       {" "}
-      <Box sx={{ width: "50%", margin: "8em" }}>
+      <Box sx={{ width: {xs:'90%', md:"50%"}, margin: {xs:'0', md:"8em"}, padding:{xs:'2em', md:'0'} }}>
         <Typography
           variant="sectionTitleUnderlineWhite"
           sx={{ color: "white" }}

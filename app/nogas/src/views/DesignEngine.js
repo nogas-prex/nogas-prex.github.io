@@ -30,7 +30,7 @@ export default function DesignEngine() {
       <div id="design-engine-landing">
         <CaseStudyLanding
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/8_Design+Engine+Home+Page/Cover.png"
+            "https://nogas-swar.s3.amazonaws.com/img/8_Design+Engine+Home+Page/Cover_Fixed.png"
           }
           title="NOGAS DESIGN ENGINE"
           subtitle="Tools for Practitioners"
@@ -99,7 +99,7 @@ export default function DesignEngine() {
         <Grid
           sx={{ color: "white" }}
           direction="row"
-            container
+          container
           alignItems="center"
           justifyContent="center"
           textAlign={"center"}
@@ -114,7 +114,6 @@ export default function DesignEngine() {
           </Grid>
         </Grid>
       </Grid>
-      
     </div>
   );
 }

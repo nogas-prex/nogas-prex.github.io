@@ -18,8 +18,8 @@ export default function IncrementalProgres() {
           marginTop: "2em",
         }}
       >
-        <Grid item sx={{ margin: "8em", width: "50vw" }}>
-          <Box sx={{ margin: "0em", width: "50vw" }}>
+        <Grid item sx={{ margin: {xs:'0',md:"8em"}, width: {xs:'90%', md:"50%"}, padding:{xs:'2em', md:'0'} }}>
+          <Box sx={{ margin: "0em",  }}>
             <Typography variant="sectionTitleUnderline">
               MODELING INCREMENTAL PROGRESS
             </Typography>

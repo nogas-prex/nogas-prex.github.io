@@ -109,7 +109,7 @@ infrastructure and improved access to environmental system services.`,
                 item
                 xs={12}
                 md={6}
-                sx={{ padding: "7em", textAlign: "left" }}
+                sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
                 <Typography variant="sectionTitle">
                   {" "}
@@ -156,7 +156,7 @@ infrastructure and improved access to environmental system services.`,
               />
             </Grid>
           </Grid>
-        </Grid>       
+        </Grid>
       </div>
     );
 }

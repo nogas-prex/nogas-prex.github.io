@@ -17,9 +17,9 @@ export default function CaseStudyBackgroundLanding(props) {
       justifyContent="center"
       sx={{
         width: "100vw",
-        height: "100vh",
+        // height: "100vh",
         backgroundImage: `url(${image})`,
-        backgroundSize: "100vw",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
     >
@@ -28,9 +28,12 @@ export default function CaseStudyBackgroundLanding(props) {
         xs={12}
         md={6}
         sx={{
+          paddingLeft: { xs: "2em", sm: "2em", md: "2em", lg: "5em" },
+          paddingRight: { xs: "2em", lg: "0" },
           textAlign: "left",
-          paddingLeft: "5em",
           backgroundColor: "rgba(255,255,255,0.5)",
+          marginTop: "5em",
+          marginBottom: "2em",
         }}
       >
         <Typography variant="sectionTitle">{title}</Typography>
@@ -52,7 +55,7 @@ export default function CaseStudyBackgroundLanding(props) {
           }}
           startIcon={<ArrowBack />}
         >
-          <HashLink to='/case-studies'>Back to Case Studies page</HashLink>
+          <HashLink to="/case-studies">Back to Case Studies page</HashLink>
         </Button>
       </Grid>
       <Grid item md={6}></Grid>

@@ -15,6 +15,7 @@ import FutureOfWorkBackground from "./views/case-studies/FutureOfWorkBackground"
 import OASIS from "./views/OASIS";
 import MIRAGE from "./views/MIRAGE";
 import DesignEngine from "./views/DesignEngine";
+import EmailContactForm from "./views/Contact";
 
 export default function Urls() { 
     
@@ -27,6 +28,8 @@ export default function Urls() {
           <Route exact path="/design-engine" element={<DesignEngine />} />
           <Route exact path="/oasis" element={<OASIS />} />
           <Route exact path="/mirage" element={<MIRAGE />} />
+          <Route exact path="/mirage" element={<MIRAGE />} />
+          <Route exact path='contact' element={<EmailContactForm />}></Route>
 
           <Route
             exact

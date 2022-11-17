@@ -3,10 +3,11 @@ import { Grid } from "@mui/material";
 import CaseStudyStat from "../../components/caseStudies/background/backgroundStat";
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
-
+import ResponsiveAppBar from "../../components/AppBar";
 export default function LayeringSustainabilityBackground() {
   return (
     <div id="ls-background">
+      <ResponsiveAppBar />
       <CaseStudyBackgroundLanding
         image={
           "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/0_Cover/1.png"

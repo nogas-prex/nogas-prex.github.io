@@ -32,7 +32,8 @@ const Img = styled("img")({
           item
           xs={6}
           sx={{
-            height: "60vh",
+            // height: "60vh",
+            paddingBottom: "2em",
           }}
         >
           {/* <Card
@@ -56,7 +57,8 @@ const Img = styled("img")({
           item
           xs={6}
           sx={{
-            height: "60vh",
+            // height: "60vh",
+            paddingBottom: "2em",
           }}
         >
           <Button variant="outlined">

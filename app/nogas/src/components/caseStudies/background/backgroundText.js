@@ -13,11 +13,12 @@ export default function CaseStudyBackgroundText(props) {
         textAlign={"left"}
         justifyContent="center"
         sx={{
-          width: "80vw",
+          width: {xs:'100vw',md:"80vw"},
           marginBottom: "5em",
           marginTop: "5em",
-          marginLeft: "10vw",
-          paddingLeft: "8em",
+          marginLeft: {xs:'0',md:"10vw"},
+          paddingLeft: { xs: '2em', md: "8em" },
+          paddingRight:{xs:'2em'}
         }}
         spacing={0}
       >

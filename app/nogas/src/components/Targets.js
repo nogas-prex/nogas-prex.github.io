@@ -54,7 +54,14 @@ export default function Targets() {
           marginTop: "2em",
         }}
       >
-        <Grid item sx={{ margin: "8em", width: "50vw" }}>
+        <Grid
+          item
+          sx={{
+            margin: { xs: "0", md: "8em" },
+            width: { xs: "90%", md: "50%" },
+            padding: { xs: "2em", md: "0" },
+          }}
+        >
           <Typography variant="sectionTitleUnderline">NOGAS TARGETS</Typography>{" "}
           <br></br>
           <br></br>
@@ -71,6 +78,7 @@ export default function Targets() {
           {targets.map((target) => (
             <Box sx={{ margin: "1em" }}>
               <TextCard
+                key={target.title}
                 title={target.title}
                 text={target.text}
                 icon={target.icon}
@@ -78,13 +86,7 @@ export default function Targets() {
               />
             </Box>
           ))}
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          
+        
         </Grid>
       </Grid>
     );

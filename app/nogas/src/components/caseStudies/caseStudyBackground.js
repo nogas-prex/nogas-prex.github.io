@@ -23,7 +23,13 @@ export default function CaseStudyBackground(props) {
         direction="row"
         alignItems="center"
         justifyContent="center"
-        sx={{ width: "100vw", backgroundColor: "white", height: "100vh" }}
+        sx={{
+          width: "100vw",
+          backgroundColor: "white",
+          paddingTop: { xs: "0", md: "5em" },
+          paddingBottom: { xs: "0", md: "5em" },
+          height:'100%'
+        }}
       >
         <Grid
           item
@@ -32,30 +38,45 @@ export default function CaseStudyBackground(props) {
           sx={{
             // paddingRight: "3em",
             paddingRight: { xs: "0", sm: "0", md: "3em" },
+            height:'100%'
           }}
         >
           <Card
             // backgroundImage={`url(${metricAgingImage})`}
             sx={{
               minHeight: { xs: "100%", sm: "100%", md: "100%" },
-              height: { xs: "100%", sm: "100%", md: "34vw" },
+              height: { xs: "100vw", sm: "100vw", md: "34vw" },
               backgroundImage: `url(${image})`,
               backgroundSize: "100%",
               backgroundRepeat: "no-repeat",
             }}
-            elevation={10}
+            elevation={0}
           >
-            <CardHeader sx={{ height: { xs: "100%", md: "70%" } }}></CardHeader>
-            <CardContent sx={{ color: "white" }}>
+            <CardHeader
+              sx={{
+                // height: { xs: "20%", md: "35%", lg: "20vw" },
+                height: { xs: "35%", sm: "35%", md: "45%", lg: "65%" },
+                padding: "0",
+                boxSizing: "box-border",
+              }}
+            ></CardHeader>
+            <CardContent
+              sx={{
+                color: "white",
+                boxSizing: "box-border",
+                textAlign: "center",
+              }}
+            >
               <Grid
                 container
                 direction="row"
                 alignItems="bottom"
                 justifyContent="bottom"
-                spacing={3}
+                // spacing={3}
+                // sx={{ marginBottom:'2em'}}
               >
                 {stats.map((stat) => (
-                  <Grid item xs={4} sx={{ marginBottom: "3vw" }}>
+                  <Grid item xs={4} sx={{ height: "100%" }}>
                     <Typography variant="mdStat">{stat.pct}</Typography>
                     <br></br>
                     <Typography variant="mdStatText">{stat.text}</Typography>
@@ -65,7 +86,12 @@ export default function CaseStudyBackground(props) {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item sx={{ textAlign: "left" }} xs={12} md={5}>
+        <Grid
+          item
+          sx={{ textAlign: "left", padding: { xs: "2em" } }}
+          xs={12}
+          md={5}
+        >
           <Typography variant="sectionTitle">{title}</Typography>
           <br></br>
           <Typography variant="sectionSubtitle">{subtitle}</Typography>

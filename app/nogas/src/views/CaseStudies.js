@@ -2,6 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import CaseStudyGrid from "../components/CaseStudyGrid";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ResponsiveAppBar from "../components/AppBar";
+import { HashLink } from "react-router-hash-link";
 
 export default function CaseStudies() {
     return (
@@ -17,7 +18,7 @@ export default function CaseStudies() {
             width: "100vw",
             height: "100vh",
             backgroundImage: `url(https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/0_Cover.png)`,
-            backgroundSize: "100vw",
+            backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
           id="case-studies"
@@ -30,7 +31,8 @@ export default function CaseStudies() {
               justifyContent: "left",
               alignItems: "left",
               textAlign: "left",
-              paddingLeft: "19em",
+              paddingLeft: { xs: "2em", md: "19em" },
+              paddingRight: { xs: "2em" },
             }}
             id="featured-case-studies"
           >
@@ -148,18 +150,25 @@ export default function CaseStudies() {
             backgroundColor: "#EC008C",
           }}
         >
+          <Grid item xs={1}></Grid>
           <Grid item xs={10}>
             <Typography
               sx={{
                 paddingTop: "85px",
-                paddingLeft: "50px",
+                // paddingLeft: "50px",
                 alignItems: "center",
                 justifyContent: "center",
+                alignText: "center",
+                color: "black",
+                fontWeight:'bold'
               }}
             >
-              Click here to schedule a workshop with NOGAS <ArrowForwardIcon />
+              <HashLink to="/contact" sx={{}}>
+                Click here to schedule a workshop with NOGAS
+              </HashLink>
             </Typography>
           </Grid>
+          <Grid item xs={1}></Grid>
           {/* <Grid item xs={2} sx={{ paddingTop: "85px", paddingLeft: "50px" }}>
             <ArrowForwardIcon />
           </Grid> */}

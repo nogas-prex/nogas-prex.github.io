@@ -156,7 +156,7 @@ micromobility options to grant residents greater access to services and amenitie
                 item
                 xs={12}
                 md={6}
-                sx={{ padding: "7em", textAlign: "left" }}
+                sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
                 <Typography variant="sectionTitle">
                   {" "}
@@ -223,7 +223,7 @@ micromobility options to grant residents greater access to services and amenitie
               item
               xs={12}
               md={6}
-              sx={{ padding: "7em", textAlign: "left" }}
+              sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
             >
               <Typography variant="sectionTitle">
                 {" "}
@@ -270,7 +270,11 @@ micromobility options to grant residents greater access to services and amenitie
             justifyContent="center"
             alignContent="center"
             direction="column"
-            sx={{ marginLeft: "25%", marginRight: "25%", width: "50%", paddingBottom:'2em' }}
+            sx={{
+              paddingLeft: { xs: "2em", md: "25%" },
+              paddingRight: { xs: "2em", md: "25%" },
+              marginBottom: "2em",
+            }}
           >
             <Grid item xs={12} md={6} elevation={5}>
               <Typography variant="sectionSubtitle">
@@ -301,7 +305,7 @@ micromobility options to grant residents greater access to services and amenitie
               {" "}
             </Grid>
           </Grid>
-        </Grid>      
+        </Grid>
       </div>
     );
 }

@@ -82,7 +82,10 @@ degradation.`,
           ]}
           link={"/case-studies/future-of-work-background/#fow-background"}
         />
-        <Grid container sx={{ width: "100vw", height: '100%',overflowY: "hidden" }}>
+        <Grid
+          container
+          sx={{ width: "100vw", height: "100%", overflowY: "hidden" }}
+        >
           <ImageSlider
             leftImage={
               "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/3_Vision/Slider_Before.png"
@@ -124,7 +127,7 @@ parking can be further reduced or even eliminated.`,
                 item
                 xs={12}
                 md={6}
-                sx={{ padding: "7em", textAlign: "left" }}
+                sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
                 <Typography variant="sectionTitle">
                   {" "}
@@ -163,12 +166,16 @@ parking can be further reduced or even eliminated.`,
             justifyContent="center"
             alignContent="center"
             direction="column"
-            sx={{ marginLeft: "25%", marginRight: "25%", width: "50%" }}
+            sx={{
+              paddingLeft: { xs: "2em", md: "25%" },
+              paddingRight: { xs: "2em", md: "25%" },
+              marginBottom: "2em",
+            }}
           >
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "75vw" }}
+                sx={{ maxWidth: "100%" }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />
@@ -190,23 +197,6 @@ parking can be further reduced or even eliminated.`,
             </Grid>
           </Grid>
         </Grid>
-        <CaseStudySummary
-          text={``}
-          icons={[
-            { img: "", pct: "50%", text: "Reduction of vehicle tripps" },
-            {
-              img: "",
-              pct: "60%",
-              text: "Increase in pedestrian accessibility",
-            },
-            {
-              img: "",
-              pct: "80%",
-              text: "Reduction of impervious surface cover",
-            },
-            { img: "", pct: "60%", text: "Increase in tree canopy" },
-          ]}
-        />{" "}
       </div>
     );
 }

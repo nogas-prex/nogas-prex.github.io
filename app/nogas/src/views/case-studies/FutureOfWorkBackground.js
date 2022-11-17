@@ -3,10 +3,11 @@ import { Grid } from "@mui/material";
 import CaseStudyStat from "../../components/caseStudies/background/backgroundStat";
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
-
+import ResponsiveAppBar from "../../components/AppBar";
 export default function FutureOfWorkBackground(props) {
   return (
     <div id="fow-background">
+      <ResponsiveAppBar />
       <CaseStudyBackgroundLanding
         image={
           "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/0_Cover/1.jpg"

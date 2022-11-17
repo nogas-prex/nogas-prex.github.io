@@ -9,15 +9,16 @@ import AdjustRoundedIcon from "@mui/icons-material/AdjustRounded";
 import { Grid } from "@mui/material";
 import useWindowDimensions from "./windowWidth";
 import { HashLink } from "react-router-hash-link";
+import reactDom from "react-dom";
 export default function TextCard(props) {
     const icon = props.icon
     const title = props.title
   const text = props.text
   const [width, setWidth] = React.useState()
-  
+  React.useEffect(() => {setWidth(window.innerWidth) },[])
   window.addEventListener('resize', () => {
     setWidth(window.innerWidth)
-  console.log(width);})
+  console.log(width)})
   return (
     <div>
       {width < 1600 ? (
