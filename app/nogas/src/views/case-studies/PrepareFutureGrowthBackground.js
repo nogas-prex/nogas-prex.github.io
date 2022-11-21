@@ -33,6 +33,10 @@ if a two-car garage is included).`,
           "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/1_Chart/1.png"
         }
         orient="img-chart"
+        chart_citation={[
+          `Mather, Mark, Kelvin Pollard, and Linda A. Jacobsen. Bureau of the Census. 2011. First Results from the 2010 Census. July. (http://www.prb.org/pdf11/
+reports-on-america-2010-census.pdf) (Projections based on 2000-2010 growth rates)`,
+        ]}
       />
       <CaseStudyBackgroundText
         title={"LAND COVER SURVEY"}
@@ -58,7 +62,7 @@ associated with single-family residential land use.`,
           <img
             alt="foo"
             src={
-              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/2_Land+Cover+Survey/Metrics.png"
+              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/2_Land+Cover+Survey/Metrics+for+case+study+02+background+land+use+survey.png"
             }
             style={{ width: "80%" }}
           ></img>

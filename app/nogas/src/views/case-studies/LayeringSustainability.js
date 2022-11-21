@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import {
     CardContent,
     CardHeader,
@@ -154,6 +155,84 @@ infrastructure and improved access to environmental system services.`,
                 }
                 style={{ width: "80%" }}
               />
+            </Grid>
+            <Grid item sx={{ textAlign: "left", padding: "2em" }}>
+              <Typography>
+                1. Li, H., J. Harvey, T. J. Holland, and M. Kayhanian. 2013.
+                “The Use of Reflective and Permeable Pavements as a Potential
+                Practice for Heat Island Mitigation and Stormwater Management.”
+                Environmental Research Letters. Vol. 8, No. 01. IOP Publishing,
+                Ltd., Bristol, UK. | Toussaint, K. (2020, September 8). When
+                roads heat up during the summer, the asphalt poisons urban air.
+                Fast Company.
+                <Link
+                  href="https://www.fastcompany.com/90547098/when-roads-heat-up-during-the-summer-they-poison-urban-air"
+                  color="#000"
+                  target="_blank"
+                >
+                  https://www.fastcompany.com/90547098/when-roads-heat-up-during-the-summer-they-poison-urban-air
+                </Link>
+              </Typography>
+              <Typography>
+                2. The Trust for Public Land, “The Heat is On: A Special Report”
+                (August 5, 2020),{" "}
+                <Link
+                  href="https://www.tpl.org/the-heat-is-on"
+                  color="#000"
+                  target="_blank"
+                >
+                  https://www.tpl.org/the-heat-is-on
+                </Link>
+              </Typography>
+              <Typography>
+                3. Akbari, H., D. Kurn, et al. 1997. Peak power and cooling
+                energy savings of shade trees. Energy and Buildings 25:139–148.
+              </Typography>
+              <Typography>
+                4. Goel M.K. (2011) Runoff Coefficient. In: Singh V.P., Singh
+                P., Haritashya U.K. (eds) Encyclopedia of Snow, Ice and
+                Glaciers. Encyclopedia of Earth Sciences Series. Springer,
+                Dordrecht.
+                <Link
+                  href="https://doi.org/10.1007/978-90-481-2642-2_456"
+                  color="#000"
+                  target="_blank"
+                >
+                  https://doi.org/10.1007/978-90-481-2642-2_456
+                </Link>
+              </Typography>
+              <Typography>
+                5. Chow, V., Maidment, D. and Mays, L. (1988) Applied Hydrology.
+                McGraw-Hill Book Company, New York.
+              </Typography>
+              <Typography>
+                6. Khare, Machesky, J., Soto, R., He, M., Presto, A. A., &
+                Gentner, D. R. (2020). Asphalt-related emissions are a major
+                missing nontraditional source of secondary organic aerosol
+                precursors. Science Advances., 6(36).
+                <Link
+                  href="https://doi.org/10.1126/sciadv.abb9785"
+                  color="#000"
+                  target="_blank"
+                >
+                  https://doi.org/10.1126/sciadv.abb9785
+                </Link>
+              </Typography>
+              <Typography>
+                7. Lal, R., Smith, P., Jungkunst, H.F., Mitsch, W.J., Lehmann,
+                J., Nair, P.K.R., McBratney, A.B., de Moraes Sá, J.C.,
+                Schneider, J., Zinn, Y.L., Skorupa, A.L.A., Zhang, H.-L.,
+                Minasny, B., Srinivasrao, C., Ravindranath, N.H., 2018. The
+                carbon sequestration potential of terrestrial ecosystems.
+                Journal of Soil and Water Conservation 73, 145A-152A.
+                <Link
+                  href="https://doi.org/10.2489/jswc.73.6.145A"
+                  color="#000"
+                  target="_blank"
+                >
+                  https://doi.org/10.2489/jswc.73.6.145A
+                </Link>
+              </Typography>
             </Grid>
           </Grid>
         </Grid>

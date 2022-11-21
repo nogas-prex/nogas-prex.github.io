@@ -1,9 +1,10 @@
 import { Grid } from "@mui/material";
-
+import { Typography } from "@mui/material";
 import CaseStudyStat from "../../components/caseStudies/background/backgroundStat"
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 import ResponsiveAppBar from "../../components/AppBar";
+import { Link } from "@mui/material";
 export default function ImprovingEquitableAccessBackground() { 
 
 return (
@@ -58,6 +59,7 @@ focuses on best practices for mobility-challenged users.`,
       chart={
         "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/2_Background/1_Background+Page/1_Chart/1.png"
       }
+      chart_citation={['Data Source: US Census Bureau, Population Estimates and Projections'] }
       orient="img-text"
     />
     <CaseStudyBackgroundText
@@ -85,6 +87,142 @@ baseline for further design generation and optimization.`,
           }
           style={{ width: "80%" }}
         ></img>
+      </Grid>
+      <Grid item sx={{ textAlign: "left", padding: "2em" }}>
+        <Typography>
+          1) Bohannon, R. W. (1997). Comfortable and maximum walking speed of
+          adults aged 20—79 years: Reference values and determinants. Age and
+          Ageing, 26(1), 15–19.{" "}
+          <Link
+            href="https://doi.org/10.1093/ageing/26.1.15"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.1093/ageing/26.1.15
+          </Link>
+        </Typography>
+        <Typography>
+          2) Schimpl, M., Moore, C., Lederer, C., Neuhaus, A., Sambrook, J.,
+          Danesh, J., Ouwehand, W., & Daumer, M. (2011). Association between
+          Walking Speed and Age in Healthy, Free-Living Individuals Using Mobile
+          Accelerometry—A Cross-Sectional Study. PLoS ONE, 6(8), e23299.
+          <Link
+            href="https://doi.org/10.1371/journal.pone.0023299"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.1371/journal.pone.0023299
+          </Link>
+        </Typography>
+        <Typography>
+          3) Kawai, H., Obuchi, S., Watanabe, Y., Hirano, H., Fujiwara, Y.,
+          Ihara, K., Kim, H., Kobayashi, Y., Mochimaru, M., Tsushima, E., &
+          Nakamura, K. (2020). Association between Daily Living Walking Speed
+          and Walking Speed in Laboratory Settings in Healthy Older Adults.
+          International Journal of Environmental Research and Public Health,
+          17(8), 2707.{" "}
+          <Link
+            href="https://doi.org/10.3390/ijerph17082707"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.3390/ijerph17082707
+          </Link>
+        </Typography>
+        <Typography>
+          4) Ikeda, H., Mihoshi, A., Nomura, T., & Ishibashi, T. (2003).
+          Comparison of electric and manual wheelchairs using an
+          electrocardiogram. Journal of Asian Electric Vehicles, 1(2), 449-452.
+        </Typography>
+        <Typography>
+          5) Sonenblum, S. E., Sprigle, S., & Lopez, R. A. (2012). Manual
+          wheelchair use: bouts of mobility in everyday life. Rehabilitation
+          research and practice, 2012, 753165.
+          <Link
+            href="https://doi.org/10.1155/2012/753165"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.1155/2012/753165
+          </Link>
+        </Typography>
+        <Typography>
+          6) Cooper, R. A., Tolerico, M., Kaminski, B. A., Spaeth, D., Ding, D.,
+          & Cooper, R. (2008). Quantifying wheelchair activity of children: a
+          pilot study. American journal of physical medicine & rehabilitation,
+          87(12), 977–983.{" "}
+          <Link
+            href="https://doi.org/10.1097/PHM.0b013e31818dfe74"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.1097/PHM.0b013e31818dfe74
+          </Link>
+        </Typography>
+        <Typography>
+          7) Karmarkar, A. M., Collins, D. M., Kelleher, A., Ding, D., Oyster,
+          M., & Cooper, R. A. (2010). Manual wheelchair-related mobility
+          characteristics of older adults in nursing homes. Disability and
+          rehabilitation. Assistive technology, 5(6), 428–437.
+        </Typography>
+        <Typography>
+          8) Levy, C. E., Buman, M. P., Chow, J. W., Tillman, M. D., Fournier,
+          K. A., & Giacobbi, P., Jr (2010). Use of power assist wheels results
+          in increased distance traveled compared with conventional manual
+          wheeling. American journal of physical medicine & rehabilitation,
+          89(8), 625–634.{" "}
+          <Link
+            href="https://doi.org/10.1097/PHM.0b013e3181e72286"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.1097/PHM.0b013e3181e72286
+          </Link>
+        </Typography>
+        <Typography>
+          9) Oyster, M. L., Karmarkar, A. M., Patrick, M., Read, M. S.,
+          Nicolini, L., & Boninger, M. L. (2011). Investigation of factors
+          associated with manual wheelchair mobility in persons with spinal cord
+          injury. Archives of physical medicine and rehabilitation, 92(3),
+          484–490.{" "}
+          <Link
+            href="https://doi.org/10.1016/j.apmr.2010.09.025"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.1016/j.apmr.2010.09.025
+          </Link>
+        </Typography>
+        <Typography>
+          10) Tolerico, M. L., Ding, D., Cooper, R. A., Spaeth, D. M.,
+          Fitzgerald, S. G., Cooper, R., Kelleher, A., & Boninger, M. L. (2007).
+          Assessing mobility characteristics and activity levels of manual
+          wheelchair users. Journal of rehabilitation research and development,
+          44(4), 561–571.{" "}
+          <Link
+            href="https://doi.org/10.1682/jrrd.2006.02.0017"
+            color="#000"
+            target="_blank"
+          >
+            https://doi.org/10.1682/jrrd.2006.02.0017
+          </Link>
+        </Typography>
+        <Typography>
+          11) Ikeda, H. (2009). Comparison of Simulated Physical Load of
+          Sidewalk Curb for Electric, Manual Wheelchair Users and Visually
+          Impaired People. Journal of Asian electric vehicles, 7(1), 1251-1256.
+        </Typography>
+        <Typography>
+          12) Dernayka, A., Amorim, M. A., Leroux, R., Bogaert, L., & Farcy, R.
+          (2021). Tom Pouce III, an Electronic White Cane for Blind People:
+          Ability to Detect Obstacles and Mobility Performances. Sensors,
+          21(20), 6854.
+        </Typography>
+        <Typography>
+          13) Clark-Carter, D. D., Heyes, A. D., & Howarth, C. I. (1986). The
+          efficiency and walking speed of visually impaired people. Ergonomics,
+          29(6), 779-789.
+        </Typography>
       </Grid>
     </Grid>
   </div>

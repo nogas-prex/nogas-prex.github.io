@@ -36,6 +36,9 @@ campuses and those designed 70 years ago.`,
           "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/1_Chart/1.png"
         }
         orient="img-text"
+        chart_citation={[
+          `Source: Nina Leen/ Time & Life Pictures/Getty Images)`,
+        ]}
       />
       <CaseStudyBackgroundText
         title={"LAND COVER SURVEY"}
@@ -61,7 +64,7 @@ further design generation and optimization.`,
           <img
             alt=""
             src={
-              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Metrics.png"
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Metrics+for+case+study+05+background+land+use+survey.png"
             }
             style={{ width: "80%" }}
           ></img>
@@ -70,7 +73,7 @@ further design generation and optimization.`,
           <img
             alt=""
             src={
-              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Survey+Drawing.png"
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Survey+Drawing+for+case+study+05+background+land+use+survey.png"
             }
             style={{ width: "80%", padding: "5em" }}
           ></img>

@@ -1,7 +1,9 @@
 import { createTheme, MuiCssBaseline } from '@mui/material';
 // import CssBaseline from "@material-ui/core/CssBaseline";
 import AtlasGroteskBold from "./fonts/AtlasGroteskBold.otf";
+import EquinoxBold from "./fonts/Equinox Bold.otf";
 import AtlasGroteskRegular from './fonts/AtlasGrotesk-Regular.otf'
+import { formatMuiErrorMessage } from '@mui/utils';
 
 const atlasGroteskBold = {
     src: `
@@ -9,6 +11,34 @@ const atlasGroteskBold = {
     url(${AtlasGroteskBold}) format('otf')
   `,
 };
+
+const equinoxBold = {
+  src: `
+    local('Equinox Bold'),
+    url(${EquinoxBold}) format('otf')
+    `,
+};
+
+export const EquinoxTheme = createTheme({
+  typography: {
+        fontFamily: ['Equinox', 
+            'sans serif'
+        ].join(","),
+    landingTitle: {
+      fontWeight: 700,
+      fontSize: "18vw",
+      color: "#00a360",
+      textShadow: "15px 15px #ccc",
+      letterSpacing: "0.25em",
+    },
+
+    landingSubtitle: {
+      textTransform: "uppercase",
+      color: "#ccc",
+      fontSize: "4vw",
+    },
+  },
+});
 
 export const NOGASTheme = createTheme({
     palette: {
@@ -29,13 +59,14 @@ export const NOGASTheme = createTheme({
             fontSize: "18vw",
             color: "#00a360",
             textShadow: "15px 15px #ccc",
-            letterSpacing: '0.25em',            
-
+            letterSpacing: '0.25em',                 
         },
+        
         landingSubtitle: {
             textTransform: "uppercase",
-            color: "#ccc",
+            color: "#000",
             fontSize: "4vw",
+            fontFamily: `Equinox, sans-sarif `
         },
         sectionTitle: {
             fontSize: "2.3rem",

@@ -56,9 +56,7 @@ export default function Mission() {
         <Typography variant="landingBodyWhite">
           Since 2018, the NOGAS project has been informed by collaborations and
           partnerships with municipal planning agencies, private developers, and
-          urban research institutions. NOGAS is a research project of the MIT
-          Norman B. Leventhal Center for Advanced Urbanism and P-REXlab at MIT
-          in collaboration with Toyota Mobility Foundation.
+          urban research institutions. 
         </Typography>
         <Grid
           container

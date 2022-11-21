@@ -20,7 +20,7 @@ const pages = {
   Mission: "/#mission",
   "Case Studies": "/case-studies#case-studies",
   Methodology: "/design-engine#design-engine-landing",
-  Contact: "",
+  Contact: "/contact",
 };
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

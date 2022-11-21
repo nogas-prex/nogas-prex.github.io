@@ -8,7 +8,7 @@ import IncrementalProgres from "../components/IncrementalProgress";
 
 export default function Home() { 
     return (
-      <div>
+      <div sx={{width:'100vw', }}>
         <ResponsiveAppBar />
         <PageTitle />
         <Mission />

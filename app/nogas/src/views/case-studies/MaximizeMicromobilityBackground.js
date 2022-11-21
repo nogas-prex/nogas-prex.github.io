@@ -4,6 +4,7 @@ import CaseStudyStat from "../../components/caseStudies/background/backgroundSta
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 import ResponsiveAppBar from "../../components/AppBar";
+import { Typography } from "@mui/material";
 export default function MaximizeMicromobilityBackground() {
   return (
     <div id="mm-background">
@@ -28,14 +29,27 @@ more cars on the road), its also wastes valuable land resources.`,
         body={[
           `The U.S. has among the highest vehicle miles traveled (VMT) in
 the world. On average, the distance traveled by drivers in the U.S. is as much as
-3.5 times greater than in other countries. While it has long been thought that
+3.5 times greater than in other countries [1]. While it has long been thought that
 per capita automobile usage drops off exponentially with rising population
-density, density alone explains only a small fraction of VMT.`,
+density, density alone explains only a small fraction of VMT [2-3].`,
         ]}
         chart={
           "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/2_Background/1_Background+Page/1_Chart/1.png"
         }
         orient="img-text"
+        chart_citation={[
+          `Data Source: U.S. Energy Information Administration, International Energy Outlook, Bureau of Transportation Statistics, National Transportation Statistics`,
+        ]}
+        text_citation={[
+          `1. Liisa Ecola, Charlene Rohr, Johanna Zmud Tobias Kuhnimhof, Peter Phleps (2014). The Future of Driving in Developing Countries. The RAND
+Corporation
+`,
+          `2. Boarnet, M. and Sarmiento, S. 1998. Can land-use policy really affect travel behavior? A study of the link between non-work travel and land-use
+characteristics. Urban Studies 35, 1155-1169.
+`,
+          `3. Ewing, Hamidi, S., Tian, G., Proffitt, D., Tonin, S., & Fregolent, L. (2018). Testing Newman and Kenworthy’s Theory of Density and Automobile
+Dependence. Journal of Planning Education and Research, 38(2), 167–182. https://doi.org/10.1177/0739456X16688767`,
+        ]}
       />
       <CaseStudyBackgroundText
         title={"CARBON MITIGATION"}
@@ -51,7 +65,7 @@ mitigated.`,
         ]}
       />
       {/* bespoke */}
-      <Grid container>
+      <Grid container sx={{ paddingBottom: "2em" }}>
         <Grid item xs={12}>
           <img
             alt="foo"
@@ -60,6 +74,20 @@ mitigated.`,
             }
             style={{ width: "80%" }}
           ></img>
+        </Grid>
+        <Grid item sx={{ textAlign: "left", padding: "2em" }}>
+          <Typography sx={{ fontSize: "10pt" }}>
+            1. U.S. EPA’s Inventory of U.S. Greenhouse Gas Emissions and Sinks
+            1990 -2020
+          </Typography>
+          <Typography sx={{ fontSize: "10pt" }}>
+            2. U.S. EPA. (2020) Fast Fact-U.S. Transportation Sector Greenhouse
+            Gas Emissions 1990-2020
+          </Typography>
+          <Typography sx={{ fontSize: "10pt" }}>
+            3. Federal Highway Administration. (2017). 2017 National Household
+            Travel Survey, U.S. Department of Transportation, Washington, DC.
+          </Typography>
         </Grid>
       </Grid>
     </div>

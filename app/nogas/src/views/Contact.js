@@ -112,7 +112,10 @@ export default function Contact() {
                   or other inqueries, feel free to send us a message. The
                   submitted message will be sent to nogas@mit.edu. We will
                   respond as soon as possible.
-                </Typography>
+                  </Typography>
+                  <Typography color='red'>
+                    Note: the information provided on this site if for informational purposes only.
+                  </Typography>
                 <Box
                   component="form"
                   sx={{

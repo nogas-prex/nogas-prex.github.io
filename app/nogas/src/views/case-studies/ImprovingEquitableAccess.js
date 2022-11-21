@@ -214,7 +214,7 @@ for the elderly and people with disabilities who can’t drive.`,
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "100%" }}
+                sx={{ maxWidth: "100%", maxHeight:'500px', objectFit:'fill' }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />

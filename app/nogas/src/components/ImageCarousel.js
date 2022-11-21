@@ -16,16 +16,12 @@ export function ImageItem(props) {
         <CardMedia
           component="img"
           src={props.image}
-                sx={{ height: "500px", width: "auto" }}
+                sx={{ height: "inherit", width: "auto", objectFit:'fill' }}
                 title={props.name}
         ></CardMedia>
         <CardContent sx={{ marginBottom: "1em" }}>
           <Typography variant='h5'>{props.name}</Typography>
         </CardContent>
       </Card>
-      // <Paper>
-      //   <img src={props.image}></img>
-      // </Paper>
-      
     );
 }

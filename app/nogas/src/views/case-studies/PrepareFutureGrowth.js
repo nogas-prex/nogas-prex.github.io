@@ -39,7 +39,34 @@ export default function PrepareFutureGrowth() {
         name: "Landscape analysis",
         img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/03_SFH_AD2_TREE.png",
       },
-    ];
+  ];
+  
+  const luCarouselItems = [
+    {
+      name: "",
+      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing.jpg",
+    },
+    {
+      name: "",
+      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing2.jpg",
+    },
+    {
+      name: "",
+      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing3.jpg",
+    },
+    {
+      name: "",
+      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing4.jpg",
+    },
+    {
+      name: "",
+      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing5.jpg",
+    },
+    {
+      name: "",
+      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing6.jpg",
+    },
+  ];
     return (
       <div id="pfg-main">
         <ResponsiveAppBar />
@@ -199,25 +226,46 @@ micromobility options to grant residents greater access to services and amenitie
               </Grid>
             </Grid>
           </Grid>
-          <Grid container justifyContent="center">
-            <Grid item xs={0} md={2} />
-            <Grid item xs={12} md={8}>
-              <img
-                src={
-                  "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Panel+Place+Holder.png"
-                }
-                style={{ width: "100%" }}
-              />
-              <Typography>
+          <Grid
+            container
+            justifyContent="center"
+            alignContent="center"
+            direction="column"
+            sx={{
+              paddingLeft: { xs: "2em", md: "25%" },
+              paddingRight: { xs: "2em", md: "25%" },
+              marginBottom: "2em",
+            }}
+          >
+            <Grid item xs={12} md={6} elevation={5}>
+              {/* <Typography variant="sectionSubtitle">
+                Residential Block Configuration Optimization
+              </Typography> */}
+              <Typography variant="body2">
                 The land use compatibility optimization tool of OASIS can
                 optimize a typical neighborhood-scale suburban district made up
-                of multiple land uses. Slide the objective control bars above
-                (top-right), to negotiate between various trade-offs and
-                determine the most strategic outcome.
+                of multiple land uses.
               </Typography>
+              <br></br>
             </Grid>
-            <Grid item xs={0} md={2} />
-          </Grid>
+            <Grid item xs={12} md={6} elevation={5}>
+              <Carousel
+                navButtonsAlwaysVisible={true}
+                sx={{ maxWidth: "100%" }}
+              >
+                {luCarouselItems.map((img, i) => (
+                  <ImageItem key={i} image={img.img} name={img.name} />
+                ))}
+              </Carousel>
+            </Grid>{" "}
+            <Grid item xs={0} sm={3}>
+              {" "}
+            </Grid>{" "}
+            <Grid item xs={12} sm={6}></Grid>{" "}
+            <Grid item xs={0} sm={3}>
+              {" "}
+            </Grid>
+          </Grid>         
           <Grid container direction="row">
             <Grid
               item

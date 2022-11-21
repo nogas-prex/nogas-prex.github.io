@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import CaseStudyStat from "../../components/caseStudies/background/backgroundStat";
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
+import { Typography } from "@mui/material";
 import ResponsiveAppBar from "../../components/AppBar";
 export default function LayeringSustainabilityBackground() {
   return (
@@ -37,6 +38,9 @@ frequent flooding.`,
           "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/1_Background+Page/1_Chart/1.png"
         }
         orient="img-text"
+        chart_citation={[
+          `Map Source: Map is converted from Redfin; Data Source: ClimateCheck, county records, U.S. Census Bureau`,
+        ]}
       />
       <CaseStudyBackgroundText
         title={"EXTREME HEAT"}
@@ -61,6 +65,10 @@ than a street with a mature tree canopy.`,
             }
             style={{ width: "80%" }}
           ></img>
+          <Typography sx={{ fontSize: "10pt" }}>
+            Data sources: NOAA. 2021. Climate at a glance.Accessed June 2022.
+            www.ncdc.noaa.gov/cag.
+          </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
           <img
@@ -70,6 +78,11 @@ than a street with a mature tree canopy.`,
             }
             style={{ width: "80%" }}
           ></img>
+          <Typography sx={{ fontSize: "10pt" }}>
+            Date Source: City of Parramatta, Australia Heat Maps.
+            https://parracity.maps.arcgis.com/
+            apps/MapSeries/index.html?appid=922a9042e41841448908cf79db20b9b7
+          </Typography>
         </Grid>
       </Grid>
 
@@ -84,7 +97,7 @@ areas with vast amounts of paved surfaces that can’t absorb the increased
 rainfall. This ultimately causes more frequent and severe urban flooding.`,
         ]}
       />
-      <Grid container>
+      <Grid container sx={{paddingBottom:'2em'}}>
         <Grid item xs={12} md={6}>
           <img
             alt="foo"
@@ -102,6 +115,12 @@ rainfall. This ultimately causes more frequent and severe urban flooding.`,
             }
             style={{ width: "80%" }}
           ></img>
+          <Typography sx={{fontSize:'10pt'}}>
+            Map sources: Bhatia A., Popovich N.(2021). These Maps Tell the Story
+            of Two Americas: One Parched, One Soaked. The New York Times. Data
+            sources: NOAA’s National Centers for Environmental Information.
+            https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals
+          </Typography>
         </Grid>
       </Grid>
     </div>

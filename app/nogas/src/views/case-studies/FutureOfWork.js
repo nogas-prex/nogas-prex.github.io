@@ -21,19 +21,23 @@ export default function FutureOfWork() {
     const carouselItems = [
       {
         name: "Existing",
-        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/00_PC_EXISTING.png",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/0+Employment+Campus_Existing.png",
       },
       {
-        name: "Near Term_mode1",
-        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/01_PC_AD1.png",
+        name: "Near Term",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/1+Employment+Campus_Nearterm.png",
       },
       {
-        name: "Near Term_mode2",
-        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/02_PC_AD2_TREE.png",
+        name: "Between Near Term and Long Term",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/2+Employment+Campus_Between+Nearterm+and+Longterm.png",
       },
       {
-        name: "Long Term_mode1",
-        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/02_PC_AD2.png",
+        name: "Long Term",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/3+Employment+Campus_Longterm.png",
+      },
+      {
+        name: "Long Term [with tree]",
+        img: "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/4_Modular+Workspace/4+Employment+Campus_+Longterm+with+Tree.png",
       },
     ];
 
