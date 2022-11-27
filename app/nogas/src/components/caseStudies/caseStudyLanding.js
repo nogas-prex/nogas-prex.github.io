@@ -8,7 +8,8 @@ export default function CaseStudyLanding(props) {
     const image = props.image
     const title = props.title
     const subtitle = props.subtitle
-    const body = props.body 
+  const body = props.body 
+  const citations = props.citations
     return (
       <Grid
         container
@@ -18,12 +19,9 @@ export default function CaseStudyLanding(props) {
         justifyContent="center"
         sx={{
           width: "100vw",
-          // height: '90vh',
-          // maxHeight: "100vh",
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          // marginBottom:'2em'
         }}
       >
         <Grid
@@ -32,11 +30,11 @@ export default function CaseStudyLanding(props) {
           md={6}
           sx={{
             textAlign: "left",
-            paddingLeft: { xs: '2em', sm:'2em', md:'2em', lg: "5em" },
-            paddingRight: {xs:'2em', lg:'0'},
+            paddingLeft: { xs: "2em", sm: "2em", md: "2em", lg: "5em" },
+            paddingRight: { xs: "2em", lg: "0" },
             backgroundColor: "rgba(255,255,255,0.5)",
-            marginTop: '5em',
-            marginBottom:'2em'
+            marginTop: "5em",
+            marginBottom: "2em",
           }}
         >
           <Typography variant="sectionTitle">{title}</Typography>
@@ -50,9 +48,14 @@ export default function CaseStudyLanding(props) {
               <br></br>
             </div>
           ))}
+          {citations
+            ? citations.map((c) => (
+                <Typography sx={{ fontSize: "10pt" }}>{c}</Typography>
+              ))
+            : null}
           {props.button ? (
             <Button>
-              <a href={props.button.link} target="_blank">
+              <a href={props.button.link} target="_blank" rel='noreferrer'>
                 {props.button.text}
               </a>
             </Button>

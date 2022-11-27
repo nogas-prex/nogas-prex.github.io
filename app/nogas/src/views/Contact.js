@@ -114,7 +114,7 @@ export default function Contact() {
                   respond as soon as possible.
                   </Typography>
                   <Typography color='red'>
-                    Note: the information provided on this site if for informational purposes only.
+                    Note: the information provided on this site is for informational purposes only.
                   </Typography>
                 <Box
                   component="form"

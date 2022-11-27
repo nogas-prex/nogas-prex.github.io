@@ -4,6 +4,10 @@ import CaseStudyStat from "../../components/caseStudies/background/backgroundSta
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 import ResponsiveAppBar from "../../components/AppBar";
+
+import { ArrowBack } from "@mui/icons-material";
+import { Button } from "@mui/material";
+import { HashLink } from "react-router-hash-link";
 export default function FutureOfWorkBackground(props) {
   return (
     <div id="fow-background">
@@ -16,21 +20,25 @@ export default function FutureOfWorkBackground(props) {
         subtitle={"Land Use Study"}
         body={[
           `The design of suburban campuses themselves hasn’t evolved
-much over the past several decades. The footprint of parking lots designed to
-support these campuses is often several times larger than the office buildings,
-which not only wastes valuable land, but also causes larger-scale environmental
-degradation.`,
+          much over the past several decades. The footprint of parking lots designed to
+          support these campuses is often several times larger than the office buildings,
+          which not only wastes valuable land, but also causes larger-scale environmental
+          degradation.`,
         ]}
+        parent="future-of-work/#fow-main"
       />
       <CaseStudyStat
         title={"A FOREFRONT OF INNOVATION?"}
         body={[
           `Since its first appearance in the 1940s, the suburban employment
-campus has been imagined as an expression of architectural and design
-innovation. The photograph on the left shows a 1950s employment campus
-design exhibited during a conference about the future of city planning. This
-picture shows that there is little difference between today’s employment
-campuses and those designed 70 years ago.`,
+          campus has been imagined as an expression of architectural and design
+          innovation.[1] The photograph on the left shows a 1950s employment campus
+          design exhibited during a conference about the future of city planning. This
+          picture shows that there is little difference between today’s employment
+          campuses and those designed 70 years ago.`,
+        ]}
+        text_citation={[
+          `[1] Mozingo, L. A. (2016). Pastoral capitalism: A history of suburban corporate landscapes. MIT Press.`,
         ]}
         chart={
           "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/1_Chart/1.png"
@@ -77,6 +85,20 @@ further design generation and optimization.`,
             }
             style={{ width: "80%", padding: "5em" }}
           ></img>
+        </Grid>
+        <Grid item xs={12} sx={{ padding: "2em" }}>
+          <Button
+            variant="outlined"
+            style={{
+              color: "#EC008C",
+              borderColor: "#EC008C",
+            }}
+            startIcon={<ArrowBack />}
+          >
+            <HashLink to={`/case-studies/future-of-work/#fow-main`}>
+              Back to Case Study page
+            </HashLink>
+          </Button>
         </Grid>
       </Grid>
     </div>

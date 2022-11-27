@@ -5,6 +5,11 @@ import CaseStudyBackgroundText from "../../components/caseStudies/background/bac
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 import ResponsiveAppBar from "../../components/AppBar";
 import { Link } from "@mui/material";
+
+
+import { ArrowBack } from "@mui/icons-material";
+import { Button } from "@mui/material";
+import { HashLink } from "react-router-hash-link";
 export default function ImprovingEquitableAccessBackground() { 
 
 return (
@@ -19,47 +24,61 @@ return (
       body={[
         `Today, nearly 55 million Americans are over age 65. By 2060, this
         number is expected to increase to 95 million, jumping from 16 percent to 23
-        percent of the total U.S. population. This aging of the population will create
+        percent of the total U.S. population.[1] This aging of the population will create
         major challenges for ensuring equitable access to mobility, especially since older
         individuals are more likely to have physical difficulty driving because of changes
-        in hearing, eyesight, and other physical factors. In the suburbs, where car travel
+        in hearing, eyesight, and other physical factors.[2] In the suburbs, where car travel
         is often the only reliable daily transportation option, this presents major
         obstacles for transportation planners.`,
       ]}
+      citations={[
+        `[1] Vespa, J., Medina, L., & Armstrong., D.M. (2020). Demographic Turning Points for the United States: Population Projections for 2020 to 2060. Population Estimates and Projections. U.S. Census Bureau. P25-1144. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1144.pdf`,
+        `[2] Winick, B., & Jaffe, M. (2015). Planning Aging-supportive Communities. American Planning Association. https://www.planning.org/publications/report/9026902/`,
+      ]}
+      parent="improving-equitable-access/#iea-main"
     />
     <CaseStudyStat
-      title={"GROWING AGING AND DISABLED POPULATIONS IN U.S."}
+      title={"GROWING, AGING AND DISABLED POPULATIONS IN U.S."}
       body={[
         `Planners and designers need to consider the significant impacts
         AVs could have on communities, and include these in their planning. AV
         technologies and expanded micromobility offerings are poised to dramatically
         increase independence and mobility among the nearly 26 million Americans
-        who experience travel-limiting disabilities and the estimated 600,000 older
-        adults who stop driving every year. However, without adequate foresight, these
+        who experience travel-limiting disabilities [1] and the estimated 600,000 older
+        adults who stop driving every year.[2] However, without adequate foresight, these
         technologies may prove to be unworkable for the very people who would
-        benefit most from them.`,
+        benefit most from them.[3]`,
         `Academics and industry leaders acknowledge that technology alone will not be
-enough to facilitate an inclusive transition to the next generation of
-autonomous mobility. Innovative approaches to land use planning and urban
-design will be especially important for ensuring that this transition does not
-create additional problems for people with disabilities and the elderly.`,
+        enough to facilitate an inclusive transition to the next generation of
+        autonomous mobility.[3] Innovative approaches to land use planning and urban
+        design will be especially important for ensuring that this transition does not
+        create additional problems for people with disabilities and the elderly.`,
         `To date, most local land use codes and the Americans with Disabilities Act have
-not been sufficiently updated to meet the anticipated autonomous mobility
-transition. This is an especially important concern considering that one out of
-every five people in the U.S. has a disability, and many of these people rely on
-modes of transportation that are not specifically designed for their needs. This
-has resulted in people with disabilities making 28 percent fewer trips per day on
-average than those without disabilities. Furthermore, studies show that those
-who are poorly served by current transportation systems — particularly in areas
-outside the reach of urban transit networks — may have the most to gain from
-fully autonomous/driverless mobility services. To date, there has been very little
-research at the intersection of autonomous mobility and urban design that
-focuses on best practices for mobility-challenged users.`,
+        not been sufficiently updated to meet the anticipated autonomous mobility
+        transition. This is an especially important concern considering that one out of
+        every five people in the U.S. has a disability, and many of these people rely on
+        modes of transportation that are not specifically designed for their needs.[4] This
+        has resulted in people with disabilities making 28 percent fewer trips per day on
+        average than those without disabilities.[1] Furthermore, studies show that those
+        who are poorly served by current transportation systems — particularly in areas
+        outside the reach of urban transit networks — may have the most to gain from
+        fully autonomous/driverless mobility services.[5] To date, there has been very little
+        research at the intersection of autonomous mobility and urban design that
+        focuses on best practices for mobility-challenged users.`,
+      ]}
+      text_citation={[
+        `[1] Brumbaugh, S. (2018). Travel Patterns of American Adults with Disabilities. U.S. Department of Transportation, Bureau of Transportation Statistics. https://www.bts.gov/sites/bts.dot.gov/files/2022-01/travel-patterns-american-adults-disabilities-updated-01-03-22.pdf`,
+        `[2] Foley, D. J., Heimovitz, H. K., Guralnik, J. M., & Brock, D. B. (2002). Driving life expectancy of persons aged 70 years and older in the United States. American Journal of Public Health, 92, 1284-1289.`,
+        `[3] William, R., & Anurag, P. (2021). Gaps and Opportunities in Accessibility Policy for Autonomous Vehicles. Mineta Transportation Institute, Project 2106. https://scholarworks.sjsu.edu/mti_publications/369/ || Bayless, S. H., & Davidson, S. (2019). Driverless cars and accessibility: Designing the future of transportation for people with disabilities. The Intelligent Transportation Society of America (ITS America). Access (08/02/2022): https://naricspotlight.files.wordpress.com/2019/06/23acc-itsamerica_driverlesscarsaccessiblitymobility_april2019.pdf`,
+        `[4] U.S. Centers for Disease Control and Prevention. Disability Impacts All of Us. Access (08/02/2022): https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html`,
+        `[5?] Jonah feels free to add citations here`,
       ]}
       chart={
         "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/2_Background/1_Background+Page/1_Chart/1.png"
       }
-      chart_citation={['Data Source: US Census Bureau, Population Estimates and Projections'] }
+      chart_citation={[
+        "Data Source: US Census Bureau, Population Estimates and Projections",
+      ]}
       orient="img-text"
     />
     <CaseStudyBackgroundText
@@ -223,6 +242,20 @@ baseline for further design generation and optimization.`,
           efficiency and walking speed of visually impaired people. Ergonomics,
           29(6), 779-789.
         </Typography>
+      </Grid>
+      <Grid item xs={12} sx={{ padding: "2em" }}>
+        <Button
+          variant="outlined"
+          style={{
+            color: "#EC008C",
+            borderColor: "#EC008C",
+          }}
+          startIcon={<ArrowBack />}
+        >
+          <HashLink to={`/case-studies/improving-equitable-access/#iea-main`}>
+            Back to Case Study page
+          </HashLink>
+        </Button>
       </Grid>
     </Grid>
   </div>

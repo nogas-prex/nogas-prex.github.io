@@ -16,7 +16,7 @@ export function ImageItem(props) {
         <CardMedia
           component="img"
           src={props.image}
-                sx={{ height: "inherit", width: "auto", objectFit:'fill' }}
+                sx={{ height: "100%", width: "100%", objectFit:'fill' }}
                 title={props.name}
         ></CardMedia>
         <CardContent sx={{ marginBottom: "1em" }}>

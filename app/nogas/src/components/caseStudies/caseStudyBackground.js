@@ -7,6 +7,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { HashLink } from "react-router-hash-link";
 
@@ -16,7 +17,7 @@ export default function CaseStudyBackground(props) {
     const subtitle = props.subtitle
     const body = props.body; 
     const stats = props.stats
-
+  const citations = props.citations
     return (
       <Grid
         container
@@ -28,7 +29,7 @@ export default function CaseStudyBackground(props) {
           backgroundColor: "white",
           paddingTop: { xs: "0", md: "5em" },
           paddingBottom: { xs: "0", md: "5em" },
-          height:'100%'
+          height: "100%",
         }}
       >
         <Grid
@@ -38,7 +39,7 @@ export default function CaseStudyBackground(props) {
           sx={{
             // paddingRight: "3em",
             paddingRight: { xs: "0", sm: "0", md: "3em" },
-            height:'100%'
+            height: "100%",
           }}
         >
           <Card
@@ -76,11 +77,13 @@ export default function CaseStudyBackground(props) {
                 // sx={{ marginBottom:'2em'}}
               >
                 {stats.map((stat) => (
-                  <Grid item xs={4} sx={{ height: "100%" }}>
-                    <Typography variant="mdStat">{stat.pct}</Typography>
-                    <br></br>
-                    <Typography variant="mdStatText">{stat.text}</Typography>
-                  </Grid>
+                  <Tooltip title={stat.citation}>
+                    <Grid item xs={4} sx={{ height: "100%" }}>
+                      <Typography variant="mdStat">{stat.pct}</Typography>
+                      <br></br>
+                      <Typography variant="mdStatText">{stat.text}</Typography>
+                    </Grid>
+                  </Tooltip>
                 ))}
               </Grid>
             </CardContent>
@@ -101,6 +104,13 @@ export default function CaseStudyBackground(props) {
           ))}
           <br></br>
           <br></br>
+          {citations
+            ? citations.map((c) => (
+                <Typography sx={{ fontSize: "10pt" }}>{c}</Typography>
+              ))
+            : null}
+          <br></br>
+
           <Button
             variant="outlined"
             style={{

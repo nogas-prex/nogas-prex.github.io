@@ -26,12 +26,12 @@ export default function CaseStudies() {
           <Grid
             item
             xs={12}
-            md={6}
+            md={8}
             sx={{
               justifyContent: "left",
               alignItems: "left",
               textAlign: "left",
-              paddingLeft: { xs: "2em", md: "19em" },
+              paddingLeft: { xs: "2em", sm:'2em', },
               paddingRight: { xs: "2em" },
             }}
             id="featured-case-studies"
@@ -61,7 +61,7 @@ export default function CaseStudies() {
           direction="row"
           alignItems="center"
           justifyContent="center"
-          sx={{ width: "100vw", backgroundColor: "#00A360", height: "80vh" }}
+          sx={{ width: "100vw", backgroundColor: "#00A360",  }}
         >
           <Grid item xs={12} md={6}>
             <img
@@ -72,7 +72,7 @@ export default function CaseStudies() {
             ></img>
           </Grid>
           <Grid item md={1}></Grid>
-          <Grid item md={4}>
+          <Grid item md={4} sx={{padding:'2em'}}>
             <Typography variant="sectionTitleUnderlineWhite">
               WELCOME TO THE NEXT OPTIMIZED GENERATION OF AUTONOMOUS SUBURBS
             </Typography>
@@ -99,7 +99,7 @@ export default function CaseStudies() {
           />
           <CaseStudyGrid
             title="Preparing for Future Growth"
-            subtitle="Land Use Optimization"
+            subtitle="Optimizing Residential Land Use"
             text={`Using an algorithm-based land use optimization model, this project identifies district-scale strategies for future neighborhood development.`}
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/3_Preparing+Future+Growth.png"
@@ -169,16 +169,7 @@ export default function CaseStudies() {
             </Typography>
           </Grid>
           <Grid item xs={1}></Grid>
-          {/* <Grid item xs={2} sx={{ paddingTop: "85px", paddingLeft: "50px" }}>
-            <ArrowForwardIcon />
-          </Grid> */}
         </Grid>
       </div>
-
-      // case studies header
-      // video
-      // lr sequence
-      // button
-      // footer
     );
 }

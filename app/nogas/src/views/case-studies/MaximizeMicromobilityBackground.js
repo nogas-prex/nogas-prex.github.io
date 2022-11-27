@@ -5,6 +5,10 @@ import CaseStudyBackgroundText from "../../components/caseStudies/background/bac
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
 import ResponsiveAppBar from "../../components/AppBar";
 import { Typography } from "@mui/material";
+
+import { ArrowBack } from "@mui/icons-material";
+import { Button } from "@mui/material";
+import { HashLink } from "react-router-hash-link";
 export default function MaximizeMicromobilityBackground() {
   return (
     <div id="mm-background">
@@ -19,8 +23,12 @@ export default function MaximizeMicromobilityBackground() {
           `The average width of an American residential street is 55 feet,
 which is three times the average street width in many other countries. This car-
 based street design not only leads to more car accidents (because there are
-more cars on the road), its also wastes valuable land resources.`,
+more cars on the road), its also wastes valuable land resources.[1]`,
         ]}
+        citations={[
+          `[1] Millard-Ball, Adam. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.`,
+        ]}
+        parent="maximize-micromobility/#mm-main"
       />
       <CaseStudyStat
         title={
@@ -29,9 +37,9 @@ more cars on the road), its also wastes valuable land resources.`,
         body={[
           `The U.S. has among the highest vehicle miles traveled (VMT) in
 the world. On average, the distance traveled by drivers in the U.S. is as much as
-3.5 times greater than in other countries [1]. While it has long been thought that
+3.5 times greater than in other countries.[1] While it has long been thought that
 per capita automobile usage drops off exponentially with rising population
-density, density alone explains only a small fraction of VMT [2-3].`,
+density, density alone explains only a small fraction of VMT.[2-3]`,
         ]}
         chart={
           "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/2_Background/1_Background+Page/1_Chart/1.png"
@@ -88,6 +96,20 @@ mitigated.`,
             3. Federal Highway Administration. (2017). 2017 National Household
             Travel Survey, U.S. Department of Transportation, Washington, DC.
           </Typography>
+        </Grid>
+        <Grid item xs={12} sx={{ padding: "2em" }}>
+          <Button
+            variant="outlined"
+            style={{
+              color: "#EC008C",
+              borderColor: "#EC008C",
+            }}
+            startIcon={<ArrowBack />}
+          >
+            <HashLink to={`/case-studies/maximize-micromobility/#mm-main`}>
+              Back to Case Study page
+            </HashLink>
+          </Button>
         </Grid>
       </Grid>
     </div>

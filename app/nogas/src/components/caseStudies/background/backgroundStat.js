@@ -62,16 +62,17 @@ return (
           <Typography variant="bodyWhite">{b}</Typography>
           <br></br>
           <br></br>
-          {textCitations
-            ? textCitations.map((tc) => (
-                <Typography color="#fff" sx={{ fontSize: "10pt" }}>
-                  {tc}
-                </Typography>
-              ))
-            : null}
+
           <br></br>
         </div>
       ))}
+      {textCitations
+        ? textCitations.map((tc) => (
+            <Typography color="#fff" sx={{ fontSize: "10pt" }}>
+              {tc}
+            </Typography>
+          ))
+        : null}
     </Grid>
   </Grid>
 );

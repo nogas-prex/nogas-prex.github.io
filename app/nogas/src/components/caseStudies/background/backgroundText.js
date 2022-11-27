@@ -3,7 +3,8 @@ import { Grid, Typography } from "@mui/material";
 export default function CaseStudyBackgroundText(props) {
     const title = props.title
     const subtitle = props.subtitle
-    const text = props.body 
+  const text = props.body 
+  const citations = props.citations
   return (
     <div>
       <Grid
@@ -13,12 +14,12 @@ export default function CaseStudyBackgroundText(props) {
         textAlign={"left"}
         justifyContent="center"
         sx={{
-          width: {xs:'100vw',md:"80vw"},
+          width: { xs: "100vw", md: "80vw" },
           marginBottom: "5em",
           marginTop: "5em",
-          marginLeft: {xs:'0',md:"10vw"},
-          paddingLeft: { xs: '2em', md: "8em" },
-          paddingRight:{xs:'2em'}
+          marginLeft: { xs: "0", md: "10vw" },
+          paddingLeft: { xs: "2em", md: "8em" },
+          paddingRight: { xs: "2em" },
         }}
         spacing={0}
       >
@@ -35,6 +36,13 @@ export default function CaseStudyBackgroundText(props) {
               <br></br>
             </div>
           ))}
+          {citations
+            ? citations.map((tc) => (
+                <Typography color="#000" sx={{ fontSize: "10pt" }}>
+                  {tc}
+                </Typography>
+              ))
+            : null}
         </Grid>
       </Grid>
     </div>

@@ -77,20 +77,24 @@ export default function PrepareFutureGrowth() {
           title="PREPARING FOR FUTURE GROWTH"
           subtitle="Single Family Residential Land Use Optimization"
           body={[
-            `Today, around 75 percent of residential suburban areas are zoned for single-family housing. This
-has resulted in highly standardized, car-dependent districts, and exclusive enclaves comprised of
-large contiguous residential islands with minimal distribution of public open space, bounded by
-high-volume, commercial and retail corridors. This configuration increases the burden on
-municipal infrastructure and often requires the construction of costly transportation systems
-and other utilities to support population growth.`,
+            `Today, around 75 percent of residential suburban areas are zoned for single-family housing.[1] This
+            has resulted in highly standardized, car-dependent districts, and exclusive enclaves comprised of
+            large contiguous residential islands with minimal distribution of public open space, bounded by
+            high-volume, commercial and retail corridors. This configuration increases the burden on
+            municipal infrastructure and often requires the construction of costly transportation systems
+            and other utilities to support population growth.`,
             `Three major forces are determining the need for radically new types of suburban form: the
-proliferation of alternative energy vehicles, the rapid adoption of post-COVID-19 work-from-
-home scenarios, and the massive population of new millennial homebuyers. Together, these
-three forces are likely to upend many of the fundamental assumptions that have guided
-suburban land use planning over the past century. New residential planning principles aimed at
-increasing social equity, environmental performance, health benefits, and overall access to new
-mobility paradigms are desperately needed. 
+            proliferation of alternative energy vehicles, the rapid adoption of post-COVID-19 work-from-
+            home scenarios, and the massive population of new millennial homebuyers. Together, these
+            three forces are likely to upend many of the fundamental assumptions that have guided
+            suburban land use planning over the past century. New residential planning principles aimed at
+            increasing social equity, environmental performance, health benefits, and overall access to new
+            mobility paradigms are desperately needed. 
             `,
+          ]}
+          citations={[
+            `[1] Planetizen. What is Single-Family Zoning? Access (11/20/2022): https://www.planetizen.com/definition/single-family-zoning || Badger, E., Bui, Q. (2019). Cities Start to Question an American Ideal: A House With a Yard on Every Lot. The New York Times. Access (11/20/2022): https://www.nytimes.com/interactive/2019/06/18/upshot/cities-across-america-question-single-family-zoning.html`,
+        
           ]}
         />
         <CaseStudyBackground
@@ -114,12 +118,21 @@ mobility paradigms are desperately needed.
             {
               pct: ">1800",
               text: "household vehicle trips are made each year",
+              citation:
+                "Federal Highway Administration. (2017). 2017 National Household Travel Survey, U.S. Department of Transportation, Washington, DC.",
             },
             {
               pct: ">25%",
               text: "of residential land is devoted to vehicular use",
+              citation:
+                "Akbari,H., Rose, L.S., & Taha,H. (2003). Analyzing The Land Cover Of An Urban Environment Using High-Resolution Orthophotos. Landscape and Urban Planning 63, no. 1 (2003), 1–14.",
             },
-            { pct: ">35%", text: "GHG Emissions Reduction Potential" },
+            // {
+            //   pct: ">35%",
+            //   text: "GHG Emissions Reduction Potential",
+            //   citation:
+            //     "Hernandez, D., Lister, M., & Suarez, C. (2011). Location Efficiency and Housing Type Boiling it Down to BTUs. Jonathan Rose Companies & Wallace Roberts Todd, LLC. For US EPA’s Smart Growth Program, #GS-10F-0410R.",
+            // },
           ]}
           link={
             "/case-studies/preparing-future-growth-background/#pfg-background"
@@ -204,12 +217,12 @@ micromobility options to grant residents greater access to services and amenitie
                 </Typography>
                 <br></br>
                 <br></br>
-                <Typography variant="bodyBlack">
+                {/* <Typography variant="bodyBlack">
                   OASIS can optimize a typical neighborhood-scale suburban
                   district made up of multiple land uses. Slide the objective
                   control bars above (top right), to negotiate between various
                   trade-offs and determine the most strategic outcome.
-                </Typography>
+                </Typography> */}
                 <br></br>
                 <br></br>
                 <Button
@@ -238,13 +251,11 @@ micromobility options to grant residents greater access to services and amenitie
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
-              {/* <Typography variant="sectionSubtitle">
-                Residential Block Configuration Optimization
-              </Typography> */}
+              <Typography variant="sectionSubtitle">
+                Identifying Trade-Offs with OASIS
+              </Typography>
               <Typography variant="body2">
-                The land use compatibility optimization tool of OASIS can
-                optimize a typical neighborhood-scale suburban district made up
-                of multiple land uses.
+                Click through the analysis of various scenarios below to explore potential trade-offs and determine the optimal outcome
               </Typography>
               <br></br>
             </Grid>
@@ -265,7 +276,7 @@ micromobility options to grant residents greater access to services and amenitie
             <Grid item xs={0} sm={3}>
               {" "}
             </Grid>
-          </Grid>         
+          </Grid>
           <Grid container direction="row">
             <Grid
               item
@@ -287,13 +298,6 @@ micromobility options to grant residents greater access to services and amenitie
                 developers optimize block-scale configurations. The MIRAGE
                 toolbox can optimize residential block layout to meet the
                 demands of future growth.
-              </Typography>
-              <br></br>
-              <br></br>
-              <Typography variant="bodyBlack">
-                Click through the various scenarios below to see how the MIRAGE
-                toolbox can optimize an existing single-family residential block
-                to be compatible with a fully AV-integrated future.
               </Typography>
               <br></br>
               <br></br>

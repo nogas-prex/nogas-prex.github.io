@@ -35,11 +35,10 @@ export default function DesignEngine() {
           title="NOGAS DESIGN ENGINE"
           subtitle="Tools for Practitioners"
           body={[
-            `The cutting-edge design engine behind NOGAS relies on advanced computational
-            design and optimization algorithms, which are customized for suburban context.
-            Through this dedicated design engine, NOGAS is able to achieve the best practice in
-            a more efficient and scientific way. Click button below to download tutorial for detail
-            information of our powerful design engine.`,
+            `The cutting-edge design engine behind NOGAS relies on advanced
+             computational design and optimization algorithms, which are
+              customized for the suburban context. Click the button below to
+               download tutorials, and explore NOGAS further.`,
           ]}
           button={{
             text: "Browse Tutorials",

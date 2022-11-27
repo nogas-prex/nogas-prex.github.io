@@ -18,7 +18,7 @@ export default function TextCard(props) {
   React.useEffect(() => {setWidth(window.innerWidth) },[])
   window.addEventListener('resize', () => {
     setWidth(window.innerWidth)
-  console.log(width)})
+  })
   return (
     <div>
       {width < 1600 ? (

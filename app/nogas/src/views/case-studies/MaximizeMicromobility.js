@@ -50,15 +50,19 @@ export default function MaximizingMicromobility() {
         subtitle="Streetscape Adaption"
         body={[
           `In the U.S., only about 5 percent of the working population uses public transit to get to work,
-and this percentage has changed little since 1995. In many regions, where suburb-to-suburb
-commute patterns are steadily replacing their suburb-to-urban core precursors, public transit
-has become increasingly outmoded.`,
+          and this percentage has changed little since 1995.[1] In many regions, where suburb-to-suburb
+          commute patterns are steadily replacing their suburb-to-urban core precursors, public transit
+          has become increasingly outmoded.[2]`,
           `According to the latest National Household Travel Survey (2017), around 60 percent of domestic
-light-duty vehicle trips are shorter than 6 miles. These short trips represent a huge potential for
-reducing vehicular dependence in suburban areas, if more micromobility options are
-
-implemented. However, current standards and design guidelines for suburban streets typically
-lack the essential infrastructure to accommodate large-scale micromobility development.`,
+          light-duty vehicle trips are shorter than 6 miles.[3] These short trips represent a huge potential for
+          reducing vehicular dependence in suburban areas, if more micromobility options are
+          implemented. However, current standards and design guidelines for suburban streets typically
+          lack the essential infrastructure to accommodate large-scale micromobility development.`,
+        ]}
+        citations={[
+          `[1] Burrows, M., Burd, C., & McKenzie, B. (2021). Commuting by Public Transportation in the United States: 2019. American Community Survey Reports ACS-48. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-48.pdf`,
+          `[2] Polzin, S.E., Pisarski, A.E., Spear, B., Long, L., & McGuckin, N. (2015). Commuting in America 2013: Brief 15. Commuting Flow Patterns. American Association of State Highway and Transportation Officials. https://www.ecodestreet.com/product/Commuting-in-America-2013-Brief-15- Commuting-Flow-Patterns/`,
+          `[3] Federal Highway Administration. (2017). 2017 National Household Travel Survey, U.S. Department of Transportation, Washington, DC.`,
         ]}
       />
       <CaseStudyBackground
@@ -70,15 +74,30 @@ lack the essential infrastructure to accommodate large-scale micromobility devel
         body={[
           `The average width of an American residential street is 55 feet, which is three times the average street 
                 width in many other countries. This car-based street design not only leads to more car accidents (because 
-                there are more cars on the road), its also wastes valuable land resources.`,
+                there are more cars on the road), its also wastes valuable land resources.[1]`,
+        ]}
+        citations={[
+          `[1] Millard-Ball, Adam. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.`,
         ]}
         stats={[
-          { pct: "55ft", text: "Average Width of Residential Street" },
+          {
+            pct: "55ft",
+            text: "Average Width of Residential Street",
+            citation:
+              "Millard-Ball, Adam. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.",
+          },
           {
             pct: "19642",
             text: "miles Annual VMT per Household",
+            citation:
+              "Federal Highway Administration. (2017). 2017 National Household Travel Survey, U.S. Department of Transportation, Washington, DC.",
           },
-          { pct: "85%+", text: "Workers Drive to Work" },
+          {
+            pct: "85%+",
+            text: "Workers Drive to Work",
+            citation:
+              "Burrows, M., Burd, C., & McKenzie, B. (2021). Commuting by Public Transportation in the United States: 2019. American Community Survey Reports ACS-48. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-48.pdf",
+          },
         ]}
         link={"/case-studies/maximize-micromobility-background/#mm-background"}
       />

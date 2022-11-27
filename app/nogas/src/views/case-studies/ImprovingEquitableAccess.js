@@ -13,7 +13,7 @@ import CaseStudyBackground from "../../components/caseStudies/caseStudyBackgroun
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
 // import ImageCarousel from "../../components/ImageCarousel";
-
+import { HashLink } from "react-router-hash-link";
 const metricStyle = {
     backgroundColor: "#00A360",
     alignItems: "center",
@@ -53,18 +53,24 @@ export default function ImprovingEquitableAccess() {
           subtitle="Neighborhood Retrofit"
           body={[
             `Since 1925, the number of car-owning households in the United States has skyrocketed from 17
-percent to more than 93 percent. In the suburbs, where less than five percent of the U.S.
-workforce uses public transit to get to work, the configuration of the built environment is
-designed to prioritize cars. These car-centric communities create distinct burdens for an
-increasing percentage of the suburban population who are elderly, disabled, or otherwise
-unable to drive. And the emphasis on monofunctional vehicular infrastructure often makes it
-difficult for pedestrians and those using existing micromobililty offerings, such as bicycles and
-scooters.`,
+            percent to more than 91.6 percent.[1] In the suburbs, where less than five percent of the U.S.
+            workforce uses public transit to get to work, the configuration of the built environment is
+            designed to prioritize cars.[2] These car-centric communities create distinct burdens for an
+            increasing percentage of the suburban population who are elderly, disabled, or otherwise
+            unable to drive.[3] And the emphasis on monofunctional vehicular infrastructure often makes it
+            difficult for pedestrians and those using existing micromobililty offerings, such as bicycles and
+            scooters.[4]`,
             `In the near-term, the proliferation of autonomous vehicles (AVs) may offer a path forward for
-mobility-challenged people, enabling them to use vehicular infrastructure without driving a car.
-Eventually, widespread adoption of autonomous transportation systems and new land use
-patterns that include expanded micromobility options could pave the way for radically new
-suburban configurations that prioritize equitable mobility for all. `,
+            mobility-challenged people, enabling them to use vehicular infrastructure without driving a car.
+            Eventually, widespread adoption of autonomous transportation systems and new land use
+            patterns that include expanded micromobility options could pave the way for radically new
+            suburban configurations that prioritize equitable mobility for all. `,
+          ]}
+          citations={[
+            `[1] U.S. Census Bureau (2022). 2020 American Community Survey 5-year Estimates Data. Access (11/20/2022): https://data.census.gov/table?tid=ACSDP5Y2020.DP04`,
+            `[2] Burrows, M., Burd, C., & McKenzie, B. (2021). Commuting by Public Transportation in the United States: 2019. American Community Survey Reports ACS-48. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-48.pdf`,
+            `[3] Hermann, A. (2019). More Older Adults are Living in Lower-density Neighborhoods. Joint Center for Housing Studies of Harvard University. Access (11/20/2022): https://www.jchs.harvard.edu/blog/more-older-adults-are-living-in-lower-density-neighborhoods`,
+            `[4] Soto, G. W., Whitfield, G. P., Webber, B. J., Omura, J. D., Chen, T. J., Zaganjor, H., & Rose, K. (2022). Traffic as a barrier to walking safely in the United States: Perceived reasons and potential mitigation strategies. Preventive medicine reports, 30, 102003. https://doi.org/10.1016/j.pmedr.2022.102003 || The center for cycling education. Barriers to cycling to work. https://thecce.org/barriers-to-cycling-to-work/ || Fowler, S. L., Berrigan, D., & Pollack, K. M. (2017). Perceived barriers to bicycling in an urban US environment. Journal of Transport & Health, 6, 474-480.`,
           ]}
         />
         <CaseStudyBackground
@@ -76,23 +82,36 @@ suburban configurations that prioritize equitable mobility for all. `,
           body={[
             `Today, nearly 55 million Americans are over age 65. 
                 By 2060, this number is expected to increase to 95 million, 
-                jumping from 16 percent to 23 percent of the total U.S. population. 
+                jumping from 16 percent to 23 percent of the total U.S. population. [1]
                 This aging of the population will create major challenges for 
                 ensuring equitable access to mobility, especially since older 
                 individuals are more likely to have physical difficulty driving 
-                because of changes in hearing, eyesight, and other physical factors. 
+                because of changes in hearing, eyesight, and other physical factors. [2]
                 In the suburbs, where car travel is often the only reliable daily 
                 transportation option, this presents major obstacles for transportation planners.`,
           ]}
+          citations={[
+            `[1] Vespa, J., Medina, L., & Armstrong., D.M. (2020). Demographic Turning Points for the United States: Population Projections for 2020 to 2060. Population Estimates and Projections. U.S. Census Bureau. P25-1144. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1144.pdf`,
+            `[2] Winick, B., & Jaffe, M. (2015). Planning Aging-supportive Communities. American Planning Association. https://www.planning.org/publications/report/9026902/`,
+          ]}
           stats={[
-            { pct: "25%", text: " of adults have at least one disability" },
+            {
+              pct: "25%",
+              text: " of adults have at least one disability",
+              citation:
+                "U.S. Centers for Disease Control and Prevention. Disability Impacts All of Us. Access (08/02/2022): https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html",
+            },
             {
               pct: ">25%",
               text: "Fewer daily trips are made by people with disabilities",
+              citation:
+                "Brumbaugh, S. (2018). Travel Patterns of American Adults with Disabilities. U.S. Department of Transportation, Bureau of Transportation Statistics. https://www.bts.gov/sites/bts.dot.gov/files/2022-01/travel-patterns-american-adults-disabilities-updated-01-03-22.pdf",
             },
             {
               pct: "14%",
               text: "of disabled adults experience mobility limitations",
+              citation:
+                "U.S. Centers for Disease Control and Prevention. Disability Impacts All of Us. Access (08/02/2022): https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html",
             },
           ]}
           link={
@@ -184,7 +203,7 @@ for the elderly and people with disabilities who can’t drive.`,
                   }}
                   endIcon={<ArrowForwardIcon />}
                 >
-                  Learn more about OASIS
+                  <HashLink to={"/oasis"}>Learn more about OASIS</HashLink>
                 </Button>
               </Grid>
             </Grid>
@@ -198,7 +217,7 @@ for the elderly and people with disabilities who can’t drive.`,
             sx={{
               paddingLeft: { xs: "2em", md: "25%" },
               paddingRight: { xs: "2em", md: "25%" },
-              marginBottom:'2em'
+              marginBottom: "2em",
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
@@ -214,7 +233,7 @@ for the elderly and people with disabilities who can’t drive.`,
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "100%", maxHeight:'500px', objectFit:'fill' }}
+                sx={{ maxWidth: "100%", maxHeight: "500px", objectFit: "fill" }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />

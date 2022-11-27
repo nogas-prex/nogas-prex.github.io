@@ -7,7 +7,8 @@ export default function CaseStudyBackgroundLanding(props) {
   const title = props.title;
   const subtitle = props.subtitle;
   const body = props.body;
-
+  const citations = props.citations
+  const parent = props.parent
   return (
     <Grid
       container
@@ -47,6 +48,12 @@ export default function CaseStudyBackgroundLanding(props) {
             <br></br>
           </div>
         ))}
+        {citations
+          ? citations.map((c) => (
+              <Typography sx={{ fontSize: "10pt" }}>{c}</Typography>
+            ))
+          : null}        
+        <br></br>
         <Button
           variant="outlined"
           style={{
@@ -55,7 +62,7 @@ export default function CaseStudyBackgroundLanding(props) {
           }}
           startIcon={<ArrowBack />}
         >
-          <HashLink to="/case-studies">Back to Case Studies page</HashLink>
+          <HashLink to={`/case-studies/${parent}`}>Back to Case Study page</HashLink>
         </Button>
       </Grid>
       <Grid item md={6}></Grid>

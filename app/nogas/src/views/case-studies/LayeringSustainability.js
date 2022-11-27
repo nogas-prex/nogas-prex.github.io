@@ -28,12 +28,16 @@ export default function LayeringSustability() {
           subtitle="Landscape Optimization"
           body={[
             `Today, metropolitan areas are increasingly experiencing the effects of climate change, including
-extreme heat, drought, flooding, and wildfire. Meanwhile, the intensification of rural land use
-and the addition of impervious surfaces – both intrinsic to the process of urbanization itself –
-are further exacerbating these environmental risks.`,
+            extreme heat, drought, flooding, and wildfire.[1] Meanwhile, the intensification of rural land use
+            and the addition of impervious surfaces – both intrinsic to the process of urbanization itself –
+            are further exacerbating these environmental risks.[2]`,
             `The widespread adoption of autonomous mobility services may be an opportunity to break this
-disastrous cycle by reducing the size of vehicle fleets and transforming massive networks of
-roadways and other impervious surfaces into multi-functional green infrastructure.`,
+            disastrous cycle by reducing the size of vehicle fleets and transforming massive networks of
+            roadways and other impervious surfaces into multi-functional green infrastructure.`,
+          ]}
+          citations={[
+            `[1] NOAA. (2022). 2021 U.S. billion-dollar weather and climate disasters in historical context. https://www.climate.gov/news-features/blogs/beyond-data/2021-us-billion-dollar-weather-and-climate-disasters-historical`,
+            `[2] Schueler T.R. (1994). The importance of imperviousness. Watershed Protection Techniques, v. 1, no. 3: 100-111. || Klein, R.D. (1979). Urbanization and stream water quality impairment. Water Resources Bulletin v. 15, no. 4: 948-63.`,
           ]}
         />
         <CaseStudyBackground
@@ -44,20 +48,37 @@ roadways and other impervious surfaces into multi-functional green infrastructur
           }
           body={[
             `Today, communities around the world are facing the dramatic
-effects of climate change. In 2021, more than 80 percent of Americans
-experienced at least one heat wave, which were the primary cause of more than
-1,300 deaths that year in the U.S. Along with these extreme heat events,
-drought and wildfire are threatening millions of lives and properties.
-Meanwhile, increased precipitation intensity, along with sea-level rise, is
-causing a sustained increase in billion-dollar flood events each decade.`,
+            effects of climate change. In 2021, more than 80 percent of Americans
+            experienced at least one heat wave, [1] which were the primary cause of more than
+            1,300 deaths that year in the U.S.[2] Along with these extreme heat events,
+            drought and wildfire are threatening millions of lives and properties.
+            Meanwhile, increased precipitation intensity, along with sea-level rise, is
+            causing a sustained increase in billion-dollar flood events each decade.[3]`,
+          ]}
+          citations={[
+            `[1] Kaplan, S., Tran, A.B. (2022). More than 40 percent of Americans live in counties hit by climate disasters in 2021. The Washington Post.  https://www.washingtonpost.com/climate-environment/2022/01/05/climate-disasters-2021-fires/`,
+            `[2] Sarofim, M.C., S. Saha, M.D. Hawkins, D.M. Mills, J. Hess, R. Horton, P. Kinney, J. Schwartz, and A. St. Juliana. 2016. Chapter 2: Temperature-related death and illness. In: The impacts of climate change on human health in the United States: A scientific assessment. U.S. Global Change Research Program. https://health2016.globalchange.gov/`,
+            `[3] NOAA. (2022). 2021 U.S. billion-dollar weather and climate disasters in historical context. https://www.climate.gov/news-features/blogs/beyond-data/2021-us-billion-dollar-weather-and-climate-disasters-historical`,
           ]}
           stats={[
-            { pct: "1300+", text: "Heat-related Death per year in U.S." },
+            {
+              pct: "1300+",
+              text: "Heat-related Death per year in U.S.",
+              citation:
+                "Sarofim, M.C., S. Saha, M.D. Hawkins, D.M. Mills, J. Hess, R. Horton, P. Kinney, J. Schwartz, and A. St. Juliana. 2016. Chapter 2: Temperature-related death and illness. In: The impacts of climate change on human health in the United States: A scientific assessment. U.S. Global Change Research Program. https://health2016.globalchange.gov/",
+            },
             {
               pct: "80%+",
               text: "Americans Experienced a Heat Wave in 2021",
+              citation:
+                "Kaplan, S., Tran, A.B. (2022). More than 40 percent of Americans live in counties hit by climate disasters in 2021. The Washington Post.  https://www.washingtonpost.com/climate-environment/2022/01/05/climate-disasters-2021-fires/",
             },
-            { pct: "20°F+", text: "Cooler Temperature under Tree Shade" },
+            {
+              pct: "20°F+",
+              text: "Cooler Temperature under Tree Shade",
+              citation:
+                "Akbari, H., Kurn, D. M., Bretz, S. E., & Hanford, J. W. (1997). Peak power and cooling energy savings of shade trees. Energy and buildings, 25(2), 139-148.",
+            },
           ]}
           link={
             "/case-studies/layering-sustainability-background/#ls-background"
@@ -148,7 +169,10 @@ infrastructure and improved access to environmental system services.`,
             </Grid>
           </Grid>
           <Grid container>
-            <Grid item sx={{ paddingBottom: "3em" }}>
+            <Grid item sx={{ paddingBottom: "3em", textAlign: "center" }}>
+              <Typography variant="sectionSubtitle">
+                Landscape Benefits for Suburban Communities
+              </Typography>
               <img
                 src={
                   "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/4_Green+Space+Comtiguity/Case+Study+03+Green+Space+Contiguity.jpg"

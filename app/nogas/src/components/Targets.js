@@ -70,7 +70,7 @@ export default function Targets() {
             With the adoption of distributed, on-demand autonomous mobility
             services, many of the standardized land use and development patterns
             that have typified suburban form since the early 20th century have
-            become redundant or will be obsolete within the next twenty years.
+            become redundant or will be obsolete within the next thirty years.
             These disruptions will present significant opportunities for
             optimizing the suburban environment to address several distinct
             challenges:

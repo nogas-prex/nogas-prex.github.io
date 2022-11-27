@@ -52,15 +52,20 @@ export default function FutureOfWork() {
           subtitle="Employment Campus Evolution"
           body={[
             `Since the birth of the suburban employment campus in the 1940s, these developments have
-provided large, high-quality, efficient workspaces for big corporations. Today, according to the
-U.S. Bureau of Labor Statistics, 32 percent of U.S. employment is in the suburbs of large
-metropolitan areas. However, as people and jobs continue to suburbanize, the distance
-between people and jobs is growing, and the geography between people and jobs is changing.`,
+            provided large, high-quality, efficient workspaces for big corporations. Today, according to the
+            U.S. Bureau of Labor Statistics, 32 percent of U.S. employment is in the suburbs of large
+            metropolitan areas.[1] However, as people and jobs continue to suburbanize, the distance
+            between people and jobs is growing, and the geography between people and jobs is changing.[2]`,
             `The future of work is less certain than ever since the COVID-19 pandemic disrupted
-conventional working modes. Remote working or working from home is becoming more popular
-and necessary than ever. The suburb-to-suburb commuting challenge, the evolving remote work
-options, and proliferation of autonomous mobility and micromobility provide a key opportunity
-to reimagine the typical suburban employment campus.`,
+            conventional working modes. Remote working or working from home is becoming more popular
+            and necessary than ever.[3] The suburb-to-suburb commuting challenge, the evolving remote work
+            options, and proliferation of autonomous mobility and micromobility provide a key opportunity
+            to reimagine the typical suburban employment campus.`,
+          ]}
+          citations={[
+            `[1] U.S. Bureau of Labor Statistics. (2019). Quarterly Census of Employment and Wages. https://www.bls.gov/cew/ || Kolko, J. (2019). Suburban Jobs Are Growing Fastest, But Urban Jobs Pay More. Bloomberg. https://www.bloomberg.com/news/articles/2019-12-09/why-the-suburban-job-surge-might-not-last#:~:text=According%20to%20the%20U.S.%20Bureau,at%20least%201%20million%20people.`,
+            `[2] Kneebone, E., & Holmes, N. (2015). The growing distance between people and jobs in metropolitan America. Brookings Institute. https://www.brookings.edu/wp-content/uploads/2016/07/srvy_jobsproximity.pdf`,
+            `[3] Parker, K., Horowitz, J.M., & Minkin, R. (2022). COVID-19 Pandemic Continues To Reshape Work in America. Pew Research Center. https://www.pewresearch.org/social-trends/2022/02/16/covid-19-pandemic-continues-to-reshape-work-in-america/`,
           ]}
         />
         <CaseStudyBackground
@@ -77,12 +82,22 @@ which not only wastes valuable land, but also causes larger-scale environmental
 degradation.`,
           ]}
           stats={[
-            { pct: "30%+", text: "U.S. Employments is in Suburbs" },
+            {
+              pct: "30%+",
+              text: "U.S. Employments is in Suburbs",
+              citation:
+                "U.S. Bureau of Labor Statistics. (2019). Quarterly Census of Employment and Wages. https://www.bls.gov/cew/ || Kolko, J. (2019). Suburban Jobs Are Growing Fastest, But Urban Jobs Pay More. Bloomberg. https://www.bloomberg.com/news/articles/2019-12-09/why-the-suburban-job-surge-might-not-last#:~:text=According%20to%20the%20U.S.%20Bureau,at%20least%201%20million%20people.",
+            },
             {
               pct: "50%+",
               text: "Campus Land Devoted to Vehicular Surfaces",
+              citation: "Based on our land use survey.",
             },
-            { pct: "0", text: "Walkable Access to Public Transit" },
+            {
+              pct: "Limited",
+              text: "Walkable Access to Public Transit",
+              citation: "Based on our land use survey.",
+            },
           ]}
           link={"/case-studies/future-of-work-background/#fow-background"}
         />
