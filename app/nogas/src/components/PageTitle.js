@@ -16,7 +16,7 @@ export default function PageTitle() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           width: "100vw",
-          marginTop: { xs: "5vh", md: "10vh" },
+          marginTop: { xs: "5vh", md: "5vh" },
         }}
       >
         <Box
@@ -26,10 +26,12 @@ export default function PageTitle() {
             paddingLeft: { xs: "5vw", md: "10vw" },
             alignItems: "center",
             padding: "2em",
+            height:'100vh',
+            paddingTop:'5em'
           }}
         >
           <img src={LogoImage}></img>
-          <br></br>
+          {/* <br></br> */}
           <Typography variant="landingSubtitle">
             Next Optimized Generation of Autonomous Suburbs
           </Typography>
@@ -40,11 +42,11 @@ export default function PageTitle() {
           ></hr>
         </Box>
 
+        {/* <br></br>
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
+        <br></br> */}
       </Box>
     </div>
   );

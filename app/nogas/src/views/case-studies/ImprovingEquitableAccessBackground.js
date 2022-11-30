@@ -59,7 +59,7 @@ return (
         every five people in the U.S. has a disability, and many of these people rely on
         modes of transportation that are not specifically designed for their needs.[4] This
         has resulted in people with disabilities making 28 percent fewer trips per day on
-        average than those without disabilities.[1] Furthermore, studies show that those
+        average than those without disabilities.[1] Furthermore, those
         who are poorly served by current transportation systems — particularly in areas
         outside the reach of urban transit networks — may have the most to gain from
         fully autonomous/driverless mobility services.[5] To date, there has been very little
@@ -71,7 +71,6 @@ return (
         `[2] Foley, D. J., Heimovitz, H. K., Guralnik, J. M., & Brock, D. B. (2002). Driving life expectancy of persons aged 70 years and older in the United States. American Journal of Public Health, 92, 1284-1289.`,
         `[3] William, R., & Anurag, P. (2021). Gaps and Opportunities in Accessibility Policy for Autonomous Vehicles. Mineta Transportation Institute, Project 2106. https://scholarworks.sjsu.edu/mti_publications/369/ || Bayless, S. H., & Davidson, S. (2019). Driverless cars and accessibility: Designing the future of transportation for people with disabilities. The Intelligent Transportation Society of America (ITS America). Access (08/02/2022): https://naricspotlight.files.wordpress.com/2019/06/23acc-itsamerica_driverlesscarsaccessiblitymobility_april2019.pdf`,
         `[4] U.S. Centers for Disease Control and Prevention. Disability Impacts All of Us. Access (08/02/2022): https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html`,
-        `[5?] Jonah feels free to add citations here`,
       ]}
       chart={
         "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/2_Background/1_Background+Page/1_Chart/1.png"

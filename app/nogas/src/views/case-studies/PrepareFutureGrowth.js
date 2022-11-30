@@ -72,7 +72,7 @@ export default function PrepareFutureGrowth() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/0_Cover/1.png"
+            "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/0_Cover/1_Small.jpg"
           }
           title="PREPARING FOR FUTURE GROWTH"
           subtitle="Single Family Residential Land Use Optimization"
@@ -94,7 +94,6 @@ export default function PrepareFutureGrowth() {
           ]}
           citations={[
             `[1] Planetizen. What is Single-Family Zoning? Access (11/20/2022): https://www.planetizen.com/definition/single-family-zoning || Badger, E., Bui, Q. (2019). Cities Start to Question an American Ideal: A House With a Yard on Every Lot. The New York Times. Access (11/20/2022): https://www.nytimes.com/interactive/2019/06/18/upshot/cities-across-america-question-single-family-zoning.html`,
-        
           ]}
         />
         <CaseStudyBackground
@@ -255,14 +254,15 @@ micromobility options to grant residents greater access to services and amenitie
                 Identifying Trade-Offs with OASIS
               </Typography>
               <Typography variant="body2">
-                Click through the analysis of various scenarios below to explore potential trade-offs and determine the optimal outcome
+                Click through the analysis of various scenarios below to explore
+                potential trade-offs and determine the optimal outcome
               </Typography>
               <br></br>
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "100%" }}
+                sx={{ maxWidth: "100%", minHeight: "500px" }}
               >
                 {luCarouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />
@@ -342,7 +342,7 @@ micromobility options to grant residents greater access to services and amenitie
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "100%" }}
+                sx={{ maxWidth: "100%", minHeight: "500px" }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />

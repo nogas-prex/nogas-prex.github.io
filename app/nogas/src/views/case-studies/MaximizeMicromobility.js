@@ -44,7 +44,7 @@ export default function MaximizingMicromobility() {
       <ResponsiveAppBar />
       <CaseStudyLanding
         image={
-          "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/0_Cover/1.png"
+          "https://nogas-swar.s3.amazonaws.com/img/6_Case+Study+04_+Maximizing+Micro-mobility/0_Cover/1_Small.jpg"
         }
         title="MAXIMIZING MICRO-MOBILITY"
         subtitle="Streetscape Adaption"
@@ -77,14 +77,14 @@ export default function MaximizingMicromobility() {
                 there are more cars on the road), its also wastes valuable land resources.[1]`,
         ]}
         citations={[
-          `[1] Millard-Ball, Adam. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.`,
+          `[1] Millard-Ball, A. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.`,
         ]}
         stats={[
           {
             pct: "55ft",
             text: "Average Width of Residential Street",
             citation:
-              "Millard-Ball, Adam. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.",
+              "Millard-Ball, A. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.",
           },
           {
             pct: "19642",
@@ -196,7 +196,10 @@ trips.`,
           }}
         >
           <Grid item xs={12} md={6} elevation={5}>
-            <Carousel navButtonsAlwaysVisible={true} sx={{ maxWidth: "100%" }}>
+            <Carousel
+              navButtonsAlwaysVisible={true}
+              sx={{ maxWidth: "100%", minHeight: "500px" }}
+            >
               {carouselItems.map((img, i) => (
                 <ImageItem key={i} image={img.img} name={img.name} />
               ))}

@@ -22,7 +22,7 @@ export default function LayeringSustability() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/0_Cover/1.png"
+            "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/0_Cover/1_Small.jpg"
           }
           title="LAYERING SUSTAINABILITY"
           subtitle="Landscape Optimization"

@@ -73,8 +73,7 @@ export default function CaseStudyBackground(props) {
                 direction="row"
                 alignItems="bottom"
                 justifyContent="bottom"
-                // spacing={3}
-                // sx={{ marginBottom:'2em'}}
+                sx={{ backgroundColor: "rgba(0,0,0,0.5)" }}
               >
                 {stats.map((stat) => (
                   <Tooltip title={stat.citation}>

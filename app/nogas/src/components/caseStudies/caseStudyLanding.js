@@ -19,6 +19,7 @@ export default function CaseStudyLanding(props) {
         justifyContent="center"
         sx={{
           width: "100vw",
+          height:'100vh',
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

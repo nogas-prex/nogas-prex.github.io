@@ -49,10 +49,10 @@ density, density alone explains only a small fraction of VMT.[2-3]`,
           `Data Source: U.S. Energy Information Administration, International Energy Outlook, Bureau of Transportation Statistics, National Transportation Statistics`,
         ]}
         text_citation={[
-          `1. Liisa Ecola, Charlene Rohr, Johanna Zmud Tobias Kuhnimhof, Peter Phleps (2014). The Future of Driving in Developing Countries. The RAND
+          `1. Ecola, L.  Rohr, C.,  Zmud, J., Kuhnimhof, T., Phleps, P. (2014). The Future of Driving in Developing Countries. The RAND
 Corporation
 `,
-          `2. Boarnet, M. and Sarmiento, S. 1998. Can land-use policy really affect travel behavior? A study of the link between non-work travel and land-use
+          `*** update order ***2. Boarnet, M. and Sarmiento, S. 1998. Can land-use policy really affect travel behavior? A study of the link between non-work travel and land-use
 characteristics. Urban Studies 35, 1155-1169.
 `,
           `3. Ewing, Hamidi, S., Tian, G., Proffitt, D., Tonin, S., & Fregolent, L. (2018). Testing Newman and Kenworthy’s Theory of Density and Automobile

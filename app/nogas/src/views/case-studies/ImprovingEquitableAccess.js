@@ -47,7 +47,7 @@ export default function ImprovingEquitableAccess() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/0_Cover/1.png"
+            "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/0_Cover/1_Small.jpg"
           }
           title="IMPROVING EQUITABLE ACCESS"
           subtitle="Neighborhood Retrofit"
@@ -233,7 +233,7 @@ for the elderly and people with disabilities who can’t drive.`,
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "100%", maxHeight: "500px", objectFit: "fill" }}
+                sx={{ maxWidth: "100%", minHeight: "600px", objectFit: "fill" }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />

@@ -3,7 +3,8 @@ import CaseStudyGrid from "../components/CaseStudyGrid";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ResponsiveAppBar from "../components/AppBar";
 import { HashLink } from "react-router-hash-link";
-
+import YouTube from 'react-youtube'
+import { height } from "@mui/system";
 export default function CaseStudies() {
     return (
       <div>
@@ -17,7 +18,7 @@ export default function CaseStudies() {
           sx={{
             width: "100vw",
             height: "100vh",
-            backgroundImage: `url(https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/0_Cover.png)`,
+            backgroundImage: `url(https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/0_Small.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
@@ -31,7 +32,7 @@ export default function CaseStudies() {
               justifyContent: "left",
               alignItems: "left",
               textAlign: "left",
-              paddingLeft: { xs: "2em", sm:'2em', },
+              paddingLeft: { xs: "2em", sm: "2em" },
               paddingRight: { xs: "2em" },
             }}
             id="featured-case-studies"
@@ -61,18 +62,20 @@ export default function CaseStudies() {
           direction="row"
           alignItems="center"
           justifyContent="center"
-          sx={{ width: "100vw", backgroundColor: "#00A360",  }}
+          sx={{ width: "100vw", backgroundColor: "#00A360" }}
         >
           <Grid item xs={12} md={6}>
-            <img
-              src={
-                "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/Landing_Video_AdobeExpress_lg.gif"
-              }
-              style={{ width: "100%" }}
-            ></img>
+            <YouTube
+              videoId="RbQvexq9UMo"
+              opts={{
+                height: "370",
+                width: "640",
+                playerVars: { autoplay: 1 },
+              }}
+            />
           </Grid>
           <Grid item md={1}></Grid>
-          <Grid item md={4} sx={{padding:'2em'}}>
+          <Grid item md={4} sx={{ padding: "2em" }}>
             <Typography variant="sectionTitleUnderlineWhite">
               WELCOME TO THE NEXT OPTIMIZED GENERATION OF AUTONOMOUS SUBURBS
             </Typography>
@@ -160,7 +163,7 @@ export default function CaseStudies() {
                 justifyContent: "center",
                 alignText: "center",
                 color: "black",
-                fontWeight:'bold'
+                fontWeight: "bold",
               }}
             >
               <HashLink to="/contact" sx={{}}>

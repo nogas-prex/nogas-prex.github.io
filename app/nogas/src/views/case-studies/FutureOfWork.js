@@ -46,7 +46,7 @@ export default function FutureOfWork() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/0_Cover/1.png"
+            "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/0_Cover/1_Small.jpg"
           }
           title="DESIGNING THE FUTURE OF WORK"
           subtitle="Employment Campus Evolution"
@@ -194,7 +194,10 @@ parking can be further reduced or even eliminated.`,
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={true}
-                sx={{ maxWidth: "100%" }}
+                sx={{
+                  maxWidth: "100%",
+                  minHeight: { xs: "250px", sm: "750px" },
+                }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />
