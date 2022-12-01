@@ -70,7 +70,7 @@ const ResponsiveAppBar = () => {
           >
             NOGAS
           </Typography>
-
+{/* <Typography>Beta</Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -141,6 +141,7 @@ const ResponsiveAppBar = () => {
           >
             NOGAS
           </Typography>
+          <Typography> Beta</Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {Object.keys(pages).map((page) => (
               <Button
