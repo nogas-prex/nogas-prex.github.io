@@ -80,12 +80,12 @@ associated with single-family residential land use.`,
           <img
             alt="foo"
             src={
-              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/2_Land+Cover+Survey/Survey+Drawing.png"
+              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/1_Background+Page/2_Land+Cover+Survey/Case+Study+02_Prepare+Future+Growth_Background+Land+Use+Survey.png"
             }
             style={{ width: "80%", padding: "5em" }}
           ></img>
         </Grid>
-        <Grid item xs={12} sx={{padding:'2em'}}>
+        <Grid item xs={12} sx={{ padding: "2em" }}>
           <Button
             variant="outlined"
             style={{
@@ -97,7 +97,7 @@ associated with single-family residential land use.`,
             <HashLink to={`/case-studies/preparing-future-growth/#pfg-main`}>
               Back to Case Study page
             </HashLink>
-          </Button>          
+          </Button>
         </Grid>
       </Grid>
     </div>

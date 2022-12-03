@@ -21,7 +21,7 @@ export default function MIRAGE() {
       <ResponsiveAppBar />
       <CaseStudyLanding
         image={
-          "https://nogas-swar.s3.amazonaws.com/img/10_MIRAGE/0_Cover/1.png"
+          "https://nogas-swar.s3.amazonaws.com/img/10_MIRAGE/0_Cover/MIRAGECOVER.png"
         }
         title="MIRAGE"
         subtitle="Multi-Indicator Relation Assesment Generation Engine"

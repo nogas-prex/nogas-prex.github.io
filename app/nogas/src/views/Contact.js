@@ -62,8 +62,8 @@ export default function Contact() {
           );
     };
     return (
-        <>
-            <ResponsiveAppBar />
+      <>
+        <ResponsiveAppBar />
         <Grid
           container
           direction="row"
@@ -83,8 +83,8 @@ export default function Contact() {
               alignSelf: "center",
             }}
           >
-                    <img
-                        alt='nogas-grid'
+            <img
+              alt="nogas-grid"
               src={
                 "https://nogas-swar.s3.amazonaws.com/img/11_Contact+Page/1.png"
               }
@@ -109,13 +109,14 @@ export default function Contact() {
               <>
                 <Typography>
                   If you want to contact us for more information, collaboration,
-                  or other inqueries, feel free to send us a message. The
+                  or other inquiries, feel free to send us a message. The
                   submitted message will be sent to nogas@mit.edu. We will
                   respond as soon as possible.
-                  </Typography>
-                  <Typography color='red'>
-                    Note: the information provided on this site is for informational purposes only.
-                  </Typography>
+                </Typography>
+                <Typography color="red">
+                  Note: the information provided on this site is for
+                  informational purposes only.
+                </Typography>
                 <Box
                   component="form"
                   sx={{

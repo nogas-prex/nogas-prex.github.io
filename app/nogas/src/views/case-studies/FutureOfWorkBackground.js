@@ -81,7 +81,7 @@ further design generation and optimization.`,
           <img
             alt=""
             src={
-              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Survey+Drawing+for+case+study+05+background+land+use+survey.png"
+              "https://nogas-swar.s3.amazonaws.com/img/7_Case+Study+05_+Designing+the+Future+of+Work/2_Background/1_Background+Page/2_Land+Cover+Survey/Case+Study+05_Employment+Campus_Background+Land+Use+Survey.png"
             }
             style={{ width: "80%", padding: "5em" }}
           ></img>

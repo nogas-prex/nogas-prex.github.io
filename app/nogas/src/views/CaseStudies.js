@@ -50,7 +50,7 @@ export default function CaseStudies() {
               Since 2018, the NOGAS project has been informed by collaboration
               and partnerships with municipal planning agencies, private
               developers, and urban research institutions. This page highlights
-              several case studies that explore optomisation scenarios for
+              several case studies that explore optimization scenarios for
               various communities in the United States.
             </Typography>
           </Grid>
