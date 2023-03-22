@@ -13,69 +13,47 @@ import { HashLink } from 'react-router-hash-link';
 
 
 export default function CardNavigation(props) { 
-const Img = styled("img")({
-  margin: "auto",
-  display: "block",
-  maxWidth: "100%",
-  maxHeight: "100%",
-});  
-    return (
-      <Grid
-        container
-        direction={"row"}
-        alignItems="center"
-        justifyContent="center"
-        // spacing={3}
-        sx={{ width: "100vw" }}
-      >
-        <Grid
-          item
-          xs={6}
-          sx={{
-            // height: "60vh",
-            paddingBottom: "2em",
-          }}
-        >
-          {/* <Card
-            sx={{
-              height: "500px",
-              backgroundImage: `url(${props.imgs[1]})`,
-              backgroundSize: "100%",
-              backgroundRepeat: "no-repeat",
-            }}
-            elevation={1}
-          >
-            <CardHeader sx={{ height: "70%" }}>shiiii</CardHeader>
-          </Card> */}
-          <Button variant="outlined">
-            {/* <Link to={{ pathname: "case-studies" }}>Case Studies</Link> */}
-            <HashLink to="case-studies/#case-studies">Case Studies</HashLink>
-          </Button>
-          {/* <img src={beforeImage} style={{width: '100%'}}></img> */}
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          sx={{
-            // height: "60vh",
-            paddingBottom: "2em",
-          }}
-        >
-          <Button variant="outlined">
-            <HashLink to="/design-engine/#design-engine-landing">
-              Design Engine
-            </HashLink>
-          </Button>
-          {/* <div
-            style={{
-              height: "100%",
-              backgroundImage:
-                "../img/2_Incremental Progress/Slider_Before.png",
-            }}
-          >
-            
-          </div> */}
-        </Grid>
+  console.log(props)
+
+  return (
+    <Grid container direction={"column"} spacing={0} sx={{ textAlign: "left", width:'100vw', alignItems:'center' }}>
+      <Grid item xs={12} sx={{ margin: "2em" }}>
+        <Link to="design-engine" style={{ textDecoration: "none" }}>
+          <Card sx={{ maxWidth: "500" }} elevation={0}>
+            <CardMedia
+              height="350"
+              component="img"
+              image={`${props.imgs[1]}`}
+            />
+            <CardContent>
+              <Typography variant="h1">NOGAS TOOLKIT</Typography>
+              <Typography
+                variant="h5"
+                sx={{ textDecoration: "none", textDecorationThickness: 0 }}
+              >
+                LEARN WHAT'S BEHIND THE NOGAS TOOLKIT
+              </Typography>
+            </CardContent>
+          </Card>
+        </Link>
       </Grid>
-    );
+      <Grid item xs={12} sx={{ margin: "2em" }}>
+        <Link to="applications" style={{ textDecoration: "none" }}>
+          <Card sx={{ maxWidth: "500" }} elevation={0}>
+            <CardMedia
+              height="350"
+              component="img"
+              image={`${props.imgs[0]}`}
+            />
+            <CardContent>
+              <Typography variant="h1">APPLICATIONS</Typography>
+              <Typography variant="h5">
+                SEE HOW THE TOOLKIT CAN BE APPLIED{" "}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Link>
+      </Grid>
+    </Grid>
+  );
 }

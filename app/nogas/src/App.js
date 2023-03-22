@@ -5,7 +5,7 @@ import {NOGASTheme} from './Theme';
 import Urls from './Urls';
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <ThemeProvider theme={NOGASTheme}>
         <Urls />
       </ThemeProvider>

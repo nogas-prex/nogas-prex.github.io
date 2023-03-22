@@ -155,7 +155,7 @@ causing a sustained increase in billion-dollar flood events each decade.[3]`,
             }}
             startIcon={<ArrowBack />}
           >
-            <HashLink to={`/case-studies/layering-sustainability/#ls-main`}>
+            <HashLink to={`/applications/layering-sustainability/#ls-main`}>
               Back to Case Study page
             </HashLink>
           </Button>

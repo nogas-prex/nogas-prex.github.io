@@ -22,7 +22,7 @@ export default function CaseStudies() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-          id="case-studies"
+          id="applications"
         >
           <Grid
             item
@@ -35,7 +35,7 @@ export default function CaseStudies() {
               paddingLeft: { xs: "2em", sm: "2em" },
               paddingRight: { xs: "2em" },
             }}
-            id="featured-case-studies"
+            id="featured-applications"
           >
             <Typography variant="sectionTitle">
               FEATURED CASE STUDIES

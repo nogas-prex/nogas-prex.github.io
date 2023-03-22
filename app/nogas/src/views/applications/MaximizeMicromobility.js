@@ -99,7 +99,7 @@ export default function MaximizingMicromobility() {
               "Burrows, M., Burd, C., & McKenzie, B. (2021). Commuting by Public Transportation in the United States: 2019. American Community Survey Reports ACS-48. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-48.pdf",
           },
         ]}
-        link={"/case-studies/maximize-micromobility-background/#mm-background"}
+        link={"/applications/maximize-micromobility-background/#mm-background"}
       />
       <Grid
         container

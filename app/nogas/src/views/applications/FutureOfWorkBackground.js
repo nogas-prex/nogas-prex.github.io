@@ -95,7 +95,7 @@ further design generation and optimization.`,
             }}
             startIcon={<ArrowBack />}
           >
-            <HashLink to={`/case-studies/future-of-work/#fow-main`}>
+            <HashLink to={`/applications/future-of-work/#fow-main`}>
               Back to Case Study page
             </HashLink>
           </Button>

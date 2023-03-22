@@ -81,7 +81,7 @@ export default function LayeringSustability() {
             },
           ]}
           link={
-            "/case-studies/layering-sustainability-background/#ls-background"
+            "/applications/layering-sustainability-background/#ls-background"
           }
         />
         <Grid

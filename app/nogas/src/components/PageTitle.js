@@ -22,12 +22,14 @@ export default function PageTitle() {
         <Box
           sx={{
             // height: { xs: "50vh", sm: "100vh" },
-            width: { xs: "90vw", md: "80vw" },
-            paddingLeft: { xs: "5vw", md: "10vw" },
+            width: { xs: "90vw", md: "50vw" },
+            // paddingLeft: { xs: "5vw", md: "10vw" },
             alignItems: "center",
-            padding: "2em",
+            // padding: "4em",
             height:'100vh',
-            paddingTop:'5em'
+            // paddingTop: '5em',
+            textAlign: 'left',
+            transform:'translatex(50%) translatey(25%)'
           }}
         >
           <img src={LogoImage}></img>

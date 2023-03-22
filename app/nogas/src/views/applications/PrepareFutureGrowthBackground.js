@@ -94,7 +94,7 @@ associated with single-family residential land use.`,
             }}
             startIcon={<ArrowBack />}
           >
-            <HashLink to={`/case-studies/preparing-future-growth/#pfg-main`}>
+            <HashLink to={`/applications/preparing-future-growth/#pfg-main`}>
               Back to Case Study page
             </HashLink>
           </Button>

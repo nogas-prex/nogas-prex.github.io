@@ -99,7 +99,7 @@ degradation.`,
               citation: "Based on our land use survey.",
             },
           ]}
-          link={"/case-studies/future-of-work-background/#fow-background"}
+          link={"/applications/future-of-work-background/#fow-background"}
         />
         <Grid
           container

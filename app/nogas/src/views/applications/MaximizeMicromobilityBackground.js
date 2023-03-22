@@ -106,7 +106,7 @@ mitigated.`,
             }}
             startIcon={<ArrowBack />}
           >
-            <HashLink to={`/case-studies/maximize-micromobility/#mm-main`}>
+            <HashLink to={`/applications/maximize-micromobility/#mm-main`}>
               Back to Case Study page
             </HashLink>
           </Button>

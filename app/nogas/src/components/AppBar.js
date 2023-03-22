@@ -17,10 +17,10 @@ import { Link } from '@mui/material';
 import { HashLink } from 'react-router-hash-link';
 
 const pages = {
-  Mission: "/#mission",
-  "Case Studies": "/case-studies#case-studies",
+  About: "/#about",
   Methodology: "/design-engine#design-engine-landing",
-  Contact: "/contact",
+  Applications: "/applications#applications",
+  Download: "/contact",
 };
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

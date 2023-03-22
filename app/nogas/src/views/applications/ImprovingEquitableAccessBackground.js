@@ -251,7 +251,7 @@ baseline for further design generation and optimization.`,
           }}
           startIcon={<ArrowBack />}
         >
-          <HashLink to={`/case-studies/improving-equitable-access/#iea-main`}>
+          <HashLink to={`/applications/improving-equitable-access/#iea-main`}>
             Back to Case Study page
           </HashLink>
         </Button>

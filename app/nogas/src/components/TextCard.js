@@ -31,7 +31,7 @@ export default function TextCard(props) {
               alignItems="center"
             >
               <Grid item xs={2}>
-                <AdjustRoundedIcon sx={{ fontSize: "8em" }} />
+                <img alt="img-icon" src={icon} style={{ width: "100px" }} />
               </Grid>
               <Grid item xs={2}>
                 <Typography variant="h6" sx={{ textAlign: "left" }}>
@@ -62,7 +62,7 @@ export default function TextCard(props) {
               alignItems="center"
             >
               <Grid item xs={2}>
-                <AdjustRoundedIcon sx={{ fontSize: "8em" }} />
+                <img alt="img-icon" src={icon} style={{ width: "100px" }} />
               </Grid>
               <Grid item xs={2}>
                 <Typography variant="h6" sx={{ textAlign: "left" }}>

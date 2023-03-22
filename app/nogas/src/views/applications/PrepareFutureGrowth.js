@@ -134,7 +134,7 @@ export default function PrepareFutureGrowth() {
             // },
           ]}
           link={
-            "/case-studies/preparing-future-growth-background/#pfg-background"
+            "/applications/preparing-future-growth-background/#pfg-background"
           }
         />
         <Grid

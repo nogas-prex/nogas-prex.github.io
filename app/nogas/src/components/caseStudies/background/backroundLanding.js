@@ -62,7 +62,7 @@ export default function CaseStudyBackgroundLanding(props) {
           }}
           startIcon={<ArrowBack />}
         >
-          <HashLink to={`/case-studies/${parent}`}>Back to Case Study page</HashLink>
+          <HashLink to={`/applications/${parent}`}>Back to Case Study page</HashLink>
         </Button>
       </Grid>
       <Grid item md={6}></Grid>

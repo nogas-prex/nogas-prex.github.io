@@ -115,7 +115,7 @@ export default function ImprovingEquitableAccess() {
             },
           ]}
           link={
-            "/case-studies/improving-equitable-access-background/#iea-background"
+            "/applications/improving-equitable-access-background/#iea-background"
           }
         />
         <Grid

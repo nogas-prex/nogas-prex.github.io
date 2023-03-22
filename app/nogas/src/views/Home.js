@@ -8,12 +8,13 @@ import IncrementalProgres from "../components/IncrementalProgress";
 
 export default function Home() { 
     return (
-      <div sx={{width:'100vw', }}>
+      <div style={{ width: "100vw", xOverflow:'hidden'}}>
         <ResponsiveAppBar />
         <PageTitle />
         <Mission />
-        <IncrementalProgres />
+
         <Targets />
+        <IncrementalProgres />
         <CardNavigation
           imgs={[
             "https://nogas-swar.s3.amazonaws.com/img/01_Landing/Case+Study.png",

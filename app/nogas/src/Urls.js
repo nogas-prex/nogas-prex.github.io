@@ -1,17 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './views/Home'
 import CaseStudies from "./views/CaseStudies";
-import ImprovingEquitableAccess from './views/case-studies/ImprovingEquitableAccess'
-import PrepareFutureGrowth from "./views/case-studies/PrepareFutureGrowth";
-import LayeringSustability from "./views/case-studies/LayeringSustainability";
-import MaximizingMicromobility from "./views/case-studies/MaximizeMicromobility";
-import FutureOfWork from "./views/case-studies/FutureOfWork";
+import ImprovingEquitableAccess from './views/applications/ImprovingEquitableAccess'
+import PrepareFutureGrowth from "./views/applications/PrepareFutureGrowth";
+import LayeringSustability from "./views/applications/LayeringSustainability";
+import MaximizingMicromobility from "./views/applications/MaximizeMicromobility";
+import FutureOfWork from "./views/applications/FutureOfWork";
 
-import ImprovingEquitableAccessBackground from "./views/case-studies/ImprovingEquitableAccessBackground";
-import PrepareFutureGrowthBackground from "./views/case-studies/PrepareFutureGrowthBackground";
-import LayeringSustainabilityBackground from "./views/case-studies/LayeringSustainabilityBackground";
-import MaximizeMicromobilityBackground from "./views/case-studies/MaximizeMicromobilityBackground";
-import FutureOfWorkBackground from "./views/case-studies/FutureOfWorkBackground";
+import ImprovingEquitableAccessBackground from "./views/applications/ImprovingEquitableAccessBackground";
+import PrepareFutureGrowthBackground from "./views/applications/PrepareFutureGrowthBackground";
+import LayeringSustainabilityBackground from "./views/applications/LayeringSustainabilityBackground";
+import MaximizeMicromobilityBackground from "./views/applications/MaximizeMicromobilityBackground";
+import FutureOfWorkBackground from "./views/applications/FutureOfWorkBackground";
 import OASIS from "./views/OASIS";
 import MIRAGE from "./views/MIRAGE";
 import DesignEngine from "./views/DesignEngine";
@@ -24,7 +24,7 @@ export default function Urls() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
-          <Route exact path="/case-studies" element={<CaseStudies />} />
+          <Route exact path="/applications" element={<CaseStudies />} />
           <Route exact path="/design-engine" element={<DesignEngine />} />
           <Route exact path="/oasis" element={<OASIS />} />
           <Route exact path="/mirage" element={<MIRAGE />} />
@@ -33,52 +33,52 @@ export default function Urls() {
 
           <Route
             exact
-            path="/case-studies/improving-equitable-access"
+            path="/applications/improving-equitable-access"
             element={<ImprovingEquitableAccess />}
           />
           <Route
             exact
-            path="/case-studies/improving-equitable-access-background"
+            path="/applications/improving-equitable-access-background"
             element={<ImprovingEquitableAccessBackground />}
           />
           <Route
             exact
-            path="/case-studies/preparing-future-growth"
+            path="/applications/preparing-future-growth"
             element={<PrepareFutureGrowth />}
           />
           <Route
             exact
-            path="/case-studies/preparing-future-growth-background"
+            path="/applications/preparing-future-growth-background"
             element={<PrepareFutureGrowthBackground />}
           />
           <Route
             exact
-            path="/case-studies/layering-sustainability"
+            path="/applications/layering-sustainability"
             element={<LayeringSustability />}
           />
           <Route
             exact
-            path="/case-studies/layering-sustainability-background"
+            path="/applications/layering-sustainability-background"
             element={<LayeringSustainabilityBackground />}
           />
           <Route
             exact
-            path="/case-studies/maximize-micromobility"
+            path="/applications/maximize-micromobility"
             element={<MaximizingMicromobility />}
           />
           <Route
             exact
-            path="/case-studies/maximize-micromobility-background"
+            path="/applications/maximize-micromobility-background"
             element={<MaximizeMicromobilityBackground />}
           />
           <Route
             exact
-            path="/case-studies/future-of-work"
+            path="/applications/future-of-work"
             element={<FutureOfWork />}
           />
           <Route
             exact
-            path="/case-studies/future-of-work-background"
+            path="/applications/future-of-work-background"
             element={<FutureOfWorkBackground />}
           />
         </Routes>
