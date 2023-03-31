@@ -34,11 +34,12 @@ export default function CaseStudies() {
               textAlign: "left",
               paddingLeft: { xs: "2em", sm: "2em" },
               paddingRight: { xs: "2em" },
+              backgroundColor: '#ffffff99',              
             }}
             id="featured-applications"
           >
             <Typography variant="sectionTitle">
-              FEATURED CASE STUDIES
+              FEATURED APPLICATIONS
             </Typography>
             <br></br>
             <Typography variant="sectionSubtitle">
@@ -50,13 +51,13 @@ export default function CaseStudies() {
               Since 2018, the NOGAS project has been informed by collaboration
               and partnerships with municipal planning agencies, private
               developers, and urban research institutions. This page highlights
-              several case studies that explore optimization scenarios for
+              several projects that explore optimization scenarios for
               various communities in the United States.
             </Typography>
           </Grid>
           <Grid item md={6}></Grid>
         </Grid>
-        <Grid
+        {/* <Grid
           container
           xs={12}
           direction="row"
@@ -80,7 +81,7 @@ export default function CaseStudies() {
               WELCOME TO THE NEXT OPTIMIZED GENERATION OF AUTONOMOUS SUBURBS
             </Typography>
           </Grid>
-        </Grid>
+        </Grid> */}
         <Grid
           container
           xs={12}

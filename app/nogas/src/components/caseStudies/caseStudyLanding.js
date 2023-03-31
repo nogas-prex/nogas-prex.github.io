@@ -33,7 +33,7 @@ export default function CaseStudyLanding(props) {
             textAlign: "left",
             paddingLeft: { xs: "2em", sm: "2em", md: "2em", lg: "5em" },
             paddingRight: { xs: "2em", lg: "0" },
-            backgroundColor: "rgba(255,255,255,0.5)",
+            backgroundColor: "rgba(255,255,255,0.7)",
             marginTop: "5em",
             marginBottom: "2em",
           }}

@@ -93,6 +93,15 @@ export default function DesignEngine() {
                 <HashLink to="/mirage/#mirage-main">Learn More</HashLink>
               </Button>
             </Grid>
+            <Grid item sx={{ height: "33%", color: "white" }}>
+              <Typography variant="h3">DESIGN ITERATION & OUTPUTS</Typography>
+              <Typography>
+                Based on the optimized exports from OASIS and MIRAGE, urban
+                design proposals are developed to communicate key social,
+                spatial, and material strategies that respond to stakeholder
+                objectives.
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
         <Grid
@@ -103,14 +112,14 @@ export default function DesignEngine() {
           justifyContent="center"
           textAlign={"center"}
         >
-          <Grid item>
+          {/* <Grid item>
             <Typography variant="h3">DESIGN ITERATION & OUTPUTS</Typography>
             <Typography>
               Based on the optimized exports from OASIS and MIRAGE, urban design
               proposals are developed to communicate key social, spatial, and
               material strategies that respond to stakeholder objectives.
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Grid>
     </div>

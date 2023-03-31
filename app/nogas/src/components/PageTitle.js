@@ -7,7 +7,7 @@ import backgroundImage from '../img/background-v2.jpg'
 export default function PageTitle() {
     
   return (
-    <div style={{ width: '100vw' }}>
+    <div style={{ width: "100vw" }}>
       <Box
         xs={12}
         // md={12}
@@ -22,20 +22,24 @@ export default function PageTitle() {
         <Box
           sx={{
             // height: { xs: "50vh", sm: "100vh" },
-            width: { xs: "90vw", md: "50vw" },
-            // paddingLeft: { xs: "5vw", md: "10vw" },
+            width: { xs: "90vw", md: "40vw" },
+            paddingLeft: { xs: "5vw", md: "5vw" },
             alignItems: "center",
             // padding: "4em",
-            height:'100vh',
+            height: "100vh",
             // paddingTop: '5em',
-            textAlign: 'left',
-            transform:'translatex(50%) translatey(25%)'
+            textAlign: "left",
+            transform: "translatex(50%) translatey(25%)",
           }}
         >
           <img src={LogoImage}></img>
           {/* <br></br> */}
           <Typography variant="landingSubtitle">
             Next Optimized Generation of Autonomous Suburbs
+          </Typography>
+          <Typography variant='h5'>
+            A new digital toolkit for guiding development in transition to
+            autonomous mobility
           </Typography>
           <hr
             width="10%"

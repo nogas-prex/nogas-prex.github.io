@@ -42,7 +42,7 @@ export default function TextCard(props) {
                 <Typography variant="body3">{text}</Typography>
                 <HashLink to={props.caseStudy}>
                   <Typography sx={{ fontWeight: "700" }}>
-                    See case study.
+                    See project
                   </Typography>
                 </HashLink>{" "}
               </Grid>
@@ -73,7 +73,7 @@ export default function TextCard(props) {
                 <Typography variant="body3">{text}</Typography>
                 <HashLink to={props.caseStudy}>
                   <Typography sx={{ fontWeight: "700" }}>
-                    See case study.
+                    See project
                   </Typography>
                 </HashLink>
               </Grid>

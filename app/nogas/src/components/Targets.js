@@ -25,13 +25,13 @@ export default function Targets() {
         caseStudy: "/applications/improving-equitable-access/#iea-main",
       },
       {
-        title: "Regional Connectivity",
+        title: "Workplace Connectivity",
         text: "Suburban communities are no longer tethered to a central business district for employment, entertainment, or social services. How will new approaches to land use along with new mobility offerings, and expanded Work From Home (WFH) employment scenarios create implementable frameworks for the 15-minute suburb? ",
         icon: connectivityImg,
         caseStudy: "/applications/future-of-work/#fow-main",
       },
       {
-        title: "Walkability and Accessibility",
+        title: "Mobility and Access",
         text: "One in four adults in the U.S. have at least one disability, making them less likely to operate a traditional vehicle. How can emerging mobility paradigms be leveraged to help improve universal access and barrier-free walkability? ",
         icon: accessibilityImg,
         caseStudy: "/applications/maximize-micromobility/#mm-main",

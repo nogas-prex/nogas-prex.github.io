@@ -18,7 +18,7 @@ import { HashLink } from 'react-router-hash-link';
 
 const pages = {
   About: "/#about",
-  Methodology: "/design-engine#design-engine-landing",
+  Toolkit: "/design-engine#design-engine-landing",
   Applications: "/applications#applications",
   Download: "/contact",
 };
@@ -59,7 +59,7 @@ const ResponsiveAppBar = () => {
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              // mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
@@ -70,8 +70,15 @@ const ResponsiveAppBar = () => {
           >
             NOGAS
           </Typography>
-{/* <Typography>Beta</Typography> */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Typography
+            sx={{
+              mr: {xs:0, md: 2},
+              display: { xs: "none", md: "flex" },
+            }}
+          >
+            Beta
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: "contents", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -131,7 +138,8 @@ const ResponsiveAppBar = () => {
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
-              flexGrow: 1,
+              // flexGrow: 1,
+              textAlign:'left',
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -141,7 +149,16 @@ const ResponsiveAppBar = () => {
           >
             NOGAS
           </Typography>
-          <Typography> Beta</Typography>
+          <Typography
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              // flexGrow: 0,
+            }}
+          >
+            {" "}
+            Beta
+          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {Object.keys(pages).map((page) => (
               <Button
