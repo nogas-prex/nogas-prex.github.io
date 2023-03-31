@@ -112,14 +112,6 @@ export default function DesignEngine() {
           justifyContent="center"
           textAlign={"center"}
         >
-          {/* <Grid item>
-            <Typography variant="h3">DESIGN ITERATION & OUTPUTS</Typography>
-            <Typography>
-              Based on the optimized exports from OASIS and MIRAGE, urban design
-              proposals are developed to communicate key social, spatial, and
-              material strategies that respond to stakeholder objectives.
-            </Typography>
-          </Grid> */}
         </Grid>
       </Grid>
     </div>
