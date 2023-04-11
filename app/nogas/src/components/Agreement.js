@@ -58,7 +58,7 @@ const handleFormSubmit = (e) => {
   
   emailjs
     .send(
-      "service_93jr4sa",
+      "service_czzax59",
       "template_7nfkd5o",
       templateParams,
       "D2n3EELGlTLPxhE6j"
