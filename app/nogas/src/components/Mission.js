@@ -103,7 +103,7 @@ export default function Mission() {
           <Button
             variant="filled"
             sx={{ backgroundColor: "#ec008c", color: "white!important" }}
-            href={"/contact"}
+            href={"/download"}
           >
             <Typography>Download NOGAS Toolkit (beta)</Typography>
           </Button>

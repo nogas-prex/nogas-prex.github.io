@@ -20,7 +20,7 @@ const pages = {
   About: "/#about",
   Toolkit: "/design-engine#design-engine-landing",
   Applications: "/applications#applications",
-  Download: "/contact",
+  Download: "/download",
 };
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

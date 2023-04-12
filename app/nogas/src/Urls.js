@@ -29,7 +29,7 @@ export default function Urls() {
           <Route exact path="/oasis" element={<OASIS />} />
           <Route exact path="/mirage" element={<MIRAGE />} />
           <Route exact path="/mirage" element={<MIRAGE />} />
-          <Route exact path='/contact' element={<EmailContactForm />}></Route>
+          <Route exact path='/download' element={<EmailContactForm />}></Route>
 
           <Route
             exact

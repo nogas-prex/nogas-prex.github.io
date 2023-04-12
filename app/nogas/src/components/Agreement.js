@@ -15,6 +15,13 @@ export default function Agreement() {
   const [submit, setSubmit] = useState(false);
   const [organization, setOrganization] = useState('')
   const [buttonDisabled, setButtonDisabled] = useState(true);
+  const [orgName, setOrgName] = useState()
+  const [orgAddress, setOrgAddress] = useState()
+  const [orgCity, setOrgCity] = useState()
+  const [orgState, setOrgState] = useState()
+  const [orgZip, setOrgZip] = useState()
+  const [orgPhone, setOrgPhone] = useState()
+  
 const form = useRef();
 const handleNameChange = (event) => {
   setName(event.target.value);
@@ -32,6 +39,27 @@ const handleMessageChange = (event) => {
   setMessage(event.target.value);
 };
 
+  const handleOrgNameChange = (e) => {
+    setOrgName(e.target.value);
+  };
+  const handleOrgAddressChange = (e) => {
+    setOrgAddress(e.target.value);
+  };
+
+  const handleOrgCityChange = (e) => {
+    setOrgCity(e.target.value);
+  };
+
+  const handleOrgStateChange = (e) => {
+  setOrgState(e.target.value);
+};
+  const handleOrgZipChange = (e) => {
+    setOrgZip(e.target.value);
+  };
+  const handleOrgPhoneChange = (e) => { 
+    setOrgPhone(e.target.value)
+  }
+  
 function resetStates() {
   setName();
   setEmail();
@@ -43,29 +71,29 @@ function resetStates() {
     if (name.length > 0 && organization.length > 0 && email.length > 7) {
       setButtonDisabled(false)
     } else { 
-      console.log(name, organization, email)
+      // console.log(name, organization, email)
     }
    }, [name, email, organization])
   
 const handleFormSubmit = (e) => {
   e.preventDefault(); // prevents the page from reloading when you hit “Send”
   var templateParams = {
-    name: name,
-    email: 'mariogiampieri@gmail.com',
+    to_name: name,
+    to_email: 'mariogiampieri@gmail.com',
     title: title,
     message: message,
   };
   
   emailjs
     .send(
-      "service_czzax59",
-      "template_7nfkd5o",
+      "service_r8f5ogf",
+      "template_r1o247a",
       templateParams,
       "D2n3EELGlTLPxhE6j"
     )
     .then(
       (res) => {
-        console.log(res.status, res.text);
+        // console.log(res.status, res.text);
         setSubmit(true);
       },
       (err) => {
@@ -412,20 +440,20 @@ const handleFormSubmit = (e) => {
                         institution or organization.
                       </Typography>
                       <TextField
-                        onChange={handleNameChange}
-                        id="contact-name"
+                        onChange={handleOrgNameChange}
+                        id="org-name"
                         placeholder="Name"
                         fullWidth
                         variant="standard"
-                        value={"foo"}
+                        value={"Institution Name"}
                         required
                       />
                       <br></br>
                       <TextField
-                        onChange={handleEmailChange}
-                        id="contact-email"
+                        onChange={handleOrgAddressChange}
+                        id="org-address"
                         placeholder="Address"
-                        value={"foo"}
+                        value={"Institution Address"}
                         fullWidth
                         variant="standard"
                         required
@@ -435,37 +463,37 @@ const handleFormSubmit = (e) => {
                       <br></br>
 
                       <TextField
-                        onChange={handleEmailChange}
-                        id="contact-email"
+                        onChange={handleOrgCityChange}
+                        id="org-city"
                         placeholder="City"
-                        value={"foo"}
+                        value={"City"}
                         fullWidth
                         variant="standard"
                         required
                       />
                       <TextField
-                        onChange={handleEmailChange}
-                        id="contact-email"
+                        onChange={handleOrgStateChange}
+                        id="org-state"
                         placeholder="State"
-                        value={"foo"}
+                        value={"State"}
                         fullWidth
                         variant="standard"
                         required
                       />
                       <TextField
-                        onChange={handleEmailChange}
-                        id="contact-email"
+                        onChange={handleOrgZipChange}
+                        id="org-zip-code"
                         placeholder="Zip"
-                        value={"foo"}
+                        value={"Zip Code"}
                         fullWidth
                         variant="standard"
                         required
                       />
                       <TextField
-                        onChange={handleEmailChange}
-                        id="contact-email"
+                        onChange={handleOrgPhoneChange}
+                        id="org-phone"
                         placeholder="Telephone"
-                        value={"foo"}
+                        value={"Telephone"}
                         fullWidth
                         variant="standard"
                         required
