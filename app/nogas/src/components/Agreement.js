@@ -79,7 +79,7 @@ const handleFormSubmit = (e) => {
   e.preventDefault(); // prevents the page from reloading when you hit “Send”
   var templateParams = {
     to_name: name,
-    to_email: 'mariogiampieri@gmail.com',
+    to_email: email,
     title: title,
     message: message,
   };
