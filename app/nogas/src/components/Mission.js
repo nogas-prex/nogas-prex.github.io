@@ -92,7 +92,7 @@ export default function Mission() {
             WHAT IS NOGAS
           </legend>
           <Typography variant="landingBodyWhite">
-            The NOGAS project uses a unique scenario-based modeling workflow to
+            The NOGAS toolkit uses a unique scenario-based modeling workflow to
             generate optimized suburban land use patterns, mobility frameworks,
             and urban design for a future when autonomous mobility options are
             ubiquitous. The software tools invented as part of NOGAS can be used

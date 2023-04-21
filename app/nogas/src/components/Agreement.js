@@ -93,7 +93,6 @@ const handleFormSubmit = (e) => {
     )
     .then(
       (res) => {
-        // console.log(res.status, res.text);
         setSubmit(true);
       },
       (err) => {

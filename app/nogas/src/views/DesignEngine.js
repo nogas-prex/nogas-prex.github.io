@@ -32,13 +32,13 @@ export default function DesignEngine() {
           image={
             "https://nogas-swar.s3.amazonaws.com/img/8_Design+Engine+Home+Page/Cover_Fixed.png"
           }
-          title="NOGAS DESIGN ENGINE"
+          title="NOGAS TOOLKIT"
           subtitle="Tools for Practitioners"
           body={[
             `The cutting-edge design engine behind NOGAS relies on advanced
-             computational design and optimization algorithms, which are
-              customized for the suburban context. Click the button below to
-               download tutorials, and explore NOGAS further.`,
+            computational design and optimization algorithms, which are
+            customized for the suburban context. Click the button below to
+            download tutorials, and explore NOGAS further.`,
           ]}
           button={{
             text: "Browse Tutorials",

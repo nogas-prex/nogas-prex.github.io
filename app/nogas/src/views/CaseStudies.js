@@ -48,7 +48,7 @@ export default function CaseStudies() {
             <br></br>
             <hr color="#EC008C"></hr>
             <Typography variant="bodyBlack">
-              Since 2018, the NOGAS project has been informed by collaboration
+              Since 2018, the NOGAS toolkit has been informed by collaboration
               and partnerships with municipal planning agencies, private
               developers, and urban research institutions. This page highlights
               several projects that explore optimization scenarios for
@@ -167,8 +167,8 @@ export default function CaseStudies() {
                 fontWeight: "bold",
               }}
             >
-              <HashLink to="/contact" sx={{}}>
-                Click here to schedule a workshop with NOGAS
+              <HashLink to="/download" sx={{}}>
+                Click here to download NOGAS toolkit (beta)
               </HashLink>
             </Typography>
           </Grid>

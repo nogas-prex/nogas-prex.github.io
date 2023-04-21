@@ -29,7 +29,7 @@ export default function IncrementalProgres() {
             <Typography variant="landingBody">
               The transition to an autonomous future for the suburbs is already
               underway, but a complete transition will require communities to
-              plan for incremental change. The NOGAS project identifies
+              plan for incremental change. The NOGAS toolkit identifies
               opportunities for both short-term and long-term objectives to be
               established, providing end-users with a wide range of
               scenario-based insights.
