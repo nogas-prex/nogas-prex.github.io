@@ -167,8 +167,8 @@ export default function CaseStudies() {
                 fontWeight: "bold",
               }}
             >
-              <HashLink to="/download" sx={{}}>
-                Click here to download NOGAS toolkit (beta)
+              <HashLink to="/download" style={{color:'black'}}>
+                Click here to download the NOGAS toolkit (beta)
               </HashLink>
             </Typography>
           </Grid>
