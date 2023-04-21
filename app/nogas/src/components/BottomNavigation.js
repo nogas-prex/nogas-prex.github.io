@@ -16,9 +16,17 @@ export default function CardNavigation(props) {
   console.log(props)
 
   return (
-    <Grid container direction={"column"} spacing={0} sx={{ textAlign: "left", width:'100vw', alignItems:'center' }}>
+    <Grid
+      container
+      direction={"column"}
+      spacing={0}
+      sx={{ textAlign: "left", width: "100vw", alignItems: "center" }}
+    >
       <Grid item xs={12} sx={{ margin: "2em" }}>
-        <Link to="design-engine" style={{ textDecoration: "none" }}>
+        <HashLink
+          to="design-engine/#design-engine-landing"
+          style={{ textDecoration: "none" }}
+        >
           <Card sx={{ maxWidth: "500" }} elevation={0}>
             <CardMedia
               height="350"
@@ -35,10 +43,10 @@ export default function CardNavigation(props) {
               </Typography>
             </CardContent>
           </Card>
-        </Link>
+        </HashLink>
       </Grid>
       <Grid item xs={12} sx={{ margin: "2em" }}>
-        <Link to="applications" style={{ textDecoration: "none" }}>
+        <HashLink to="applications/#applications" style={{ textDecoration: "none" }}>
           <Card sx={{ maxWidth: "500" }} elevation={0}>
             <CardMedia
               height="350"
@@ -52,7 +60,7 @@ export default function CardNavigation(props) {
               </Typography>
             </CardContent>
           </Card>
-        </Link>
+        </HashLink>
       </Grid>
     </Grid>
   );
