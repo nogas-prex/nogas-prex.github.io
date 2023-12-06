@@ -338,6 +338,7 @@ micromobility options to grant residents greater access to services and amenitie
                 residential block to be compatible with the autonomous needs of
                 the future.
               </Typography>
+              
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
@@ -355,6 +356,25 @@ micromobility options to grant residents greater access to services and amenitie
             <Grid item xs={12} sm={6}></Grid>{" "}
             <Grid item xs={0} sm={3}>
               {" "}
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <Typography variant="sectionSubtitle">
+                In October 2023, as part of a three-day symposium on the future
+                of master planned communities,Jonah Susskind and Southstar Communities
+                CEO Thad Rutherford presented ongoing collaborative uses of the NOGAS
+                toolkit for optimizing residential development. Their presentation
+                demonstrated findings from two ongoing projects in Texas. Download
+                their presentation {" "}
+                <a href="https://www.dropbox.com/scl/fi/nhmrbrstkvsxi25gcgx6r/Susskind_Rutherford_Future-Cities-Slides.pdf?rlkey=knqhp2tpakobuo49gqphkq3w6&dl=0" style={{ color: "black" }} alt="">
+                here
+                </a>{" "}, and read {" "}
+                <a href="https://www.builderonline.com/land/planning/southstar-communities-drives-toward-more-optimized-neighborhoods_o" style={{ color: "black" }} alt="">
+                this
+                </a>{" "} interview to learn more.
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
