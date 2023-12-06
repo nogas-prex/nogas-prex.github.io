@@ -41,11 +41,11 @@ export default function PageTitle() {
             A new digital toolkit for guiding development in transition to
             autonomous mobility
           </Typography>
-          <hr
+          {/*<hr
             width="10%"
             color="00a360"
             style={{ borderBottomWidth: "15px" }}
-          ></hr>
+          ></hr>*/}
         </Box>
 
         {/* <br></br>
