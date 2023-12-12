@@ -362,6 +362,11 @@ micromobility options to grant residents greater access to services and amenitie
               <br></br>
               <br></br>
               <Typography variant="sectionSubtitle">
+              Related News
+              </Typography>
+              <br></br>
+              <br></br>
+              <Typography variant="bodyBlack">
                 In October 2023, as part of a three-day symposium on the future
                 of master planned communities,Jonah Susskind and Southstar Communities
                 CEO Thad Rutherford presented ongoing collaborative uses of the NOGAS
