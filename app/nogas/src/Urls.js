@@ -16,6 +16,9 @@ import OASIS from "./views/OASIS";
 import MIRAGE from "./views/MIRAGE";
 import DesignEngine from "./views/DesignEngine";
 import EmailContactForm from "./views/Contact";
+import AutonomousUniversalAccess from "./views/applications/AutonomousUniversalAccess";
+import AutonomousUniversalAccessBackground from "./views/applications/AutonomousUniversalAccessBackground";
+import CurbToKitchen from "./views/applications/CurbtoKitchen";
 
 export default function Urls() { 
     
@@ -80,6 +83,26 @@ export default function Urls() {
             exact
             path="/applications/future-of-work-background"
             element={<FutureOfWorkBackground />}
+          />
+          <Route
+            exact
+            path="/applications/curb-to-kitchen"
+            element={<CurbToKitchen />}
+          />
+          <Route
+            exact
+            path="/applications/curb-to-kitchen-background"
+            element={<CurbToKitchen />}
+          />
+          <Route
+            exact
+            path="/applications/autonomous-universal-access"
+            element={<AutonomousUniversalAccess />}
+          />
+          <Route
+            exact
+            path="/applications/autonomous-universal-access-background"
+            element={<AutonomousUniversalAccessBackground />}
           />
         </Routes>
       </BrowserRouter>

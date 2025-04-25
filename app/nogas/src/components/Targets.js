@@ -19,10 +19,10 @@ export default function Targets() {
         caseStudy: "/applications/layering-sustainability/#ls-main",
       },
       {
-        title: "Social Equity",
+        title: "Reparative Zoning",
         text: "Historically, non-white and working class communities have been disproportionately restricted from suburban homeownership. How can new approaches to zoning, and community revitalization repair these legacies of generational disinvestment and catalyze lasting social agency? ",
         icon: equityImg,
-        caseStudy: "/applications/improving-equitable-access/#iea-main",
+        caseStudy: "https://nogas.mit.edu/oasis",
       },
       {
         title: "Workplace Connectivity",
@@ -31,7 +31,7 @@ export default function Targets() {
         caseStudy: "/applications/future-of-work/#fow-main",
       },
       {
-        title: "Mobility and Access",
+        title: "Target Mobility",
         text: "One in four adults in the U.S. have at least one disability, making them less likely to operate a traditional vehicle. How can emerging mobility paradigms be leveraged to help improve universal access and barrier-free walkability? ",
         icon: accessibilityImg,
         caseStudy: "/applications/maximize-micromobility/#mm-main",
@@ -40,7 +40,19 @@ export default function Targets() {
         title: "Climate Mitigation",
         text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design position the suburbs as key regional carbon sinks? ",
         icon: climateImg,
-        caseStudy: "/applications/layering-sustainability/#ls-main",
+        caseStudy: "/applications/preparing-future-growth/#pfg-main",
+      },
+      {
+        title: "Curb-to-Kitchen",
+        text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design position the suburbs as key regional carbon sinks? ",
+        icon: climateImg,
+        caseStudy: "/applications/curb-to-kitchen/#c2k-main",
+      },
+      {
+        title: "AUA",
+        text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design position the suburbs as key regional carbon sinks? ",
+        icon: climateImg,
+        caseStudy: "/applications/autonomous-universal-access/#aua-main",
       },
     ];
 

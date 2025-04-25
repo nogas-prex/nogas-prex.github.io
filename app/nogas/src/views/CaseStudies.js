@@ -142,6 +142,16 @@ export default function CaseStudies() {
             dir="img-txt"
             navLink={"future-of-work/#fow-main"}
           />
+          <CaseStudyGrid
+            title="Curb-to-Kitchen"
+            subtitle="Beyond the Last Mile"
+            text={`Curb-to-Kitchen (C2K) explores on of the great unsolved challenges of the autonomous mobility transition: what happens after drop-off. As AVs, delivery bots, and low-speed micro-mobility systems reshape how people move, little attention has been paid to the last-meter connection between curb and destination.`}
+            image={
+              "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/6_Designing+the+Future+of+Work.png"
+            }
+            navLink={"curb-to-kitchen/#c2k-main"}
+            // dir="img-txt"
+          />
         </Grid>
         <Grid
           xs={12}
