@@ -24,21 +24,17 @@ import { HashLink } from "react-router-hash-link";
 export default function AutonomousUniversalAccess() {
     const carouselItems = [
       {
-        name: "Typical configuration",
-        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/00_SFH_EXISTING.png",
+        name: "Challenges of Existing Standards",
+        img: "https://dl.dropboxusercontent.com/scl/fi/mtadt0zgsj6hrke1axl65/AUA-Diagrams.jpg?rlkey=vrig34wxby5ui1ld7navprflh&st=lcpyczvx&dl=0",
       },
       {
-        name: "Optimized configuration",
-        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/01_SFH_AD1.png",
+        name: "AUA Design Recommendations",
+        img: "https://dl.dropboxusercontent.com/scl/fi/ygmp64jrxqe2dcmfd5g1o/AUA-Diagrams2.jpg?rlkey=sa4tmt1voz479vl416zxxwh9r&st=jivsbtm0&dl=0",
       },
       {
-        name: "Connectivity Analysis",
-        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/02_SFH_AD2.png",
-      },
-      {
-        name: "Landscape analysis",
-        img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/5_Compatible+Residential/03_SFH_AD2_TREE.png",
-      },
+        name: "AUA Design Recommendations",
+        img: "https://dl.dropboxusercontent.com/scl/fi/eou58bya1qufeaik1wzzh/AUA-Diagrams3.jpg?rlkey=1c97e76djfx0lwumhpdew3gva&st=woviqikt&dl=0",
+      }
   ];
   
   const luCarouselItems = [
@@ -291,13 +287,11 @@ export default function AutonomousUniversalAccess() {
           >
             <Grid item xs={12} md={6} elevation={5}>
               <Typography variant="sectionSubtitle">
-                Residential Block Configuration Optimization
               </Typography>
               <Typography variant="body2">
-                Click through the various scenarios above to see how block
-                layout optimization tool can transform an existing single-family
-                residential block to be compatible with the autonomous needs of
-                the future.
+                Click through the various scenarios above to see how existing
+                codes for accessible pathways can be transformed and enhanced
+                through the integration of autonomous mobility technologies.
               </Typography>
               
             </Grid>

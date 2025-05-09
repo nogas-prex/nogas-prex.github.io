@@ -88,7 +88,8 @@ export default function CaseStudies() {
           direction="column"
           alignItems="center"
           justifyContent="center"
-          sx={{ marginTop: "5em" }}
+          sx={{ marginTop: "5em", marginBottom: { xs: "10em", md: "5em" },}}
+          id="case-study-parent"
           //   spacing={3}
         >
           <CaseStudyGrid
