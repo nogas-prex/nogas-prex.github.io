@@ -16,6 +16,10 @@ a{
   color:'black' !important;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'Equinox';
   src: url('./fonts/Equinox-Bold.otf');

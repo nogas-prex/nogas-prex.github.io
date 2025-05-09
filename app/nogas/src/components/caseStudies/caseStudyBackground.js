@@ -110,7 +110,7 @@ export default function CaseStudyBackground(props) {
             : null}
           <br></br>
 
-          <Button
+         {props.link && <Button
             variant="outlined"
             style={{
               color: "#EC008C",
@@ -119,7 +119,7 @@ export default function CaseStudyBackground(props) {
             endIcon={<ArrowForwardIcon />}
           >
             <HashLink to={`${props.link}`}>Learn More</HashLink>
-          </Button>
+          </Button>}
         </Grid>
       </Grid>
     );

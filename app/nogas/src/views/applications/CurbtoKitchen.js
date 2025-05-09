@@ -37,23 +37,23 @@ export default function CurbToKitchen() {
   const luCarouselItems = [
     {
       name: "",
-      img: "https://dl.dropboxusercontent.com/scl/fi/kqidqokyjpg3kztbncy9i/Step1-03.jpg?rlkey=q6eqsz3exia454sb9mw30k0pl&st=0y28i9o1&dl=0",
+      img: "https://dl.dropboxusercontent.com/scl/fi/d4dbxbly730v1v2upe76w/Step1.jpg?rlkey=xm02zr3jayvj50la3xju28h1i&st=wjsd6vn2&dl=0",
     },
     {
       name: "",
-      img: "https://dl.dropboxusercontent.com/scl/fi/daewd961zotythzrepd80/Step2-03.jpg?rlkey=4b6a0em1rsxcv7iqate72qnqz&st=665iy0ld&dl=0",
+      img: "https://dl.dropboxusercontent.com/scl/fi/7yjcv5u5nlh9pvy09wsgr/Step2.jpg?rlkey=jx3b51zpljlbceunu3867rf2g&st=kd6k0ugb&dl=0",
     },
     {
       name: "",
-      img: "https://dl.dropboxusercontent.com/scl/fi/3h4j3vv92luf2hdotjyy1/Step3-03.jpg?rlkey=8iau8z10650l37142zz5w2gsh&st=b68nwdsa&dl=0",
+      img: "https://dl.dropboxusercontent.com/scl/fi/sc1sdxhfq5io8g3l4jg5d/Step3.jpg?rlkey=82t92uv8e54dz057ga7jskjbt&st=ajxw5xoj&dl=0",
     },
     {
       name: "",
-      img: "https://dl.dropboxusercontent.com/scl/fi/qjar1k69lq9hn2odywuxf/Step4-03.jpg?rlkey=ftk8wl1djw9h7ucxt6kp816a6&st=836f4lr4&dl=0",
+      img: "https://dl.dropboxusercontent.com/scl/fi/jkyux5ykgsmsafwwb3hvs/Step4.jpg?rlkey=vkmh9wlo0ljjffgqc5348a7hr&st=xv7d6k67&dl=0",
     },
     {
       name: "",
-      img: "https://dl.dropboxusercontent.com/scl/fi/o5dm7atacx48nypowttbs/Step5-03.jpg?rlkey=wyel9kohbb8o4w5rxflcdqtud&st=tc2jnqsa&dl=0",
+      img: "https://dl.dropboxusercontent.com/scl/fi/h2fcbflww15jd1i1p0jgu/Step5.jpg?rlkey=zgvdzm4ks4lk35d7qpet5fqy5&st=xptf7bg9&dl=0",
     },
   ];
     return (
@@ -242,7 +242,7 @@ export default function CurbToKitchen() {
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
-                navButtonsAlwaysVisible={true}
+                navButtonsAlwaysVisible={false}
                 sx={{ maxWidth: "100%", minHeight: "500px" }}
               >
                 {luCarouselItems.map((img, i) => (
@@ -321,7 +321,7 @@ export default function CurbToKitchen() {
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
-                navButtonsAlwaysVisible={true}
+                navButtonsAlwaysVisible={false}
                 sx={{ maxWidth: "100%", minHeight: "500px" }}
               >
                 {carouselItems.map((img, i) => (

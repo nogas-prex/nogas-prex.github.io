@@ -72,8 +72,7 @@ export default function AutonomousUniversalAccess() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/0_Cover/1_Small.jpg"
-          }
+            "https://dl.dropboxusercontent.com/scl/fi/4uz5yloj330m1hcbeujwd/Cover-Image.png?rlkey=mootcp8oi62xuy9v649zq6muc&st=rnnjnhaq&dl=0"          }
           title="AUTONOMOUS UNIVERSAL ACCESS"
           subtitle="A Conceptual Framework to Rethink Future Codes"
           body={[
@@ -90,14 +89,13 @@ export default function AutonomousUniversalAccess() {
             mobility into the built environment.`,
           ]}
           citations={[
-            `[1] Planetizen. What is Single-Family Zoning? Access (11/20/2022): https://www.planetizen.com/definition/single-family-zoning || Badger, E., Bui, Q. (2019). Cities Start to Question an American Ideal: A House With a Yard on Every Lot. The New York Times. Access (11/20/2022): https://www.nytimes.com/interactive/2019/06/18/upshot/cities-across-america-question-single-family-zoning.html`,
           ]}
         />
         <CaseStudyBackground
           title="BACKGROUND"
           subtitle="The Lag in Policies"
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/2_Background/0_Cover/1.jpg"
+            "https://dl.dropboxusercontent.com/scl/fi/zjdi6jzaolqs25zcg2hxt/Background-Cover.jpg?rlkey=902zt7gq221iprs083f7hfr2v&st=u7txwwsf&dl=0"
           }
           body={[
             `As technological advancements outpace the evolution
@@ -111,18 +109,6 @@ export default function AutonomousUniversalAccess() {
             access to these new mobility options.`,
           ]}
           stats={[
-            {
-              pct: ">1800",
-              text: "household vehicle trips are made each year",
-              citation:
-                "Federal Highway Administration. (2017). 2017 National Household Travel Survey, U.S. Department of Transportation, Washington, DC.",
-            },
-            {
-              pct: ">25%",
-              text: "of residential land is devoted to vehicular use",
-              citation:
-                "Akbari,H., Rose, L.S., & Taha,H. (2003). Analyzing The Land Cover Of An Urban Environment Using High-Resolution Orthophotos. Landscape and Urban Planning 63, no. 1 (2003), 1–14.",
-            },
             // {
             //   pct: ">35%",
             //   text: "GHG Emissions Reduction Potential",
@@ -130,9 +116,6 @@ export default function AutonomousUniversalAccess() {
             //     "Hernandez, D., Lister, M., & Suarez, C. (2011). Location Efficiency and Housing Type Boiling it Down to BTUs. Jonathan Rose Companies & Wallace Roberts Todd, LLC. For US EPA’s Smart Growth Program, #GS-10F-0410R.",
             // },
           ]}
-          link={
-            "/applications/autonomous-universal-access-background/#aua-background"
-          }
         />
         <Grid
           container
@@ -140,10 +123,10 @@ export default function AutonomousUniversalAccess() {
         >
           <ImageSlider
             leftImage={
-              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/3_Vision/Slider_Before.png"
+              "https://dl.dropboxusercontent.com/scl/fi/qpcx8ewjflvcm1ifj5mkg/A9ub6qcj_1g8umc_m24.jpg?rlkey=47mi1x9g5v6yne3yul4dgs3bs&st=beuiqxka&dl=0"
             }
             rightImage={
-              "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/3_Vision/Slider_After.png"
+              "https://dl.dropboxusercontent.com/scl/fi/9vocsxtadg46pc4hqx0fh/A91to6szo_1g8ume_m24.jpg?rlkey=qhhasyg5vqbhzkjjd3yhahyvs&st=rnklefzc&dl=0"
             }
           />{" "}
         </Grid>{" "}
@@ -151,20 +134,26 @@ export default function AutonomousUniversalAccess() {
           title="VISION"
           subtitle="Five Principles of AUA"
           body={[
-            `Principle 1: Fairness through Form
-             Prioritize the equitable distribution, configuration, and alignment of mobility services and resources.`,
-
-            `Principle 2: Flatten the Field
-            Prioritize the uninterrupted and unrestricted free flow of all people and goods without compromising environmental systems.`,
-
-            `Principle 3: Minimums to Multiples
-            Prioritize heterogeneous outcomes that provide users with multiple options.`,
-
-            `Principle 4: Anticipate Obsolescence 
-            Prioritize flexible outcomes that can successfully be altered or amended to support future needs.`,
-
-            `Principle 5: Standards across Sectors
-            Prioritize solutions that are most likely to be applied across both public and private sites/land uses.`,
+            <>
+            <strong>Principle 1: Fairness through Form</strong><br />
+            Prioritize the equitable distribution, configuration, and alignment of mobility services and resources.
+            </>,
+            <>
+            <strong>Principle 2: Flatten the Field</strong>
+            Prioritize the uninterrupted and unrestricted free flow of all people and goods without compromising environmental systems.
+            </>,
+            <>
+            <strong>Principle 3: Minimums to Multiples</strong>
+            Prioritize heterogeneous outcomes that provide users with multiple options.
+            </>,
+            <>
+            <strong>Principle 4: Anticipate Obsolescence </strong>
+            Prioritize flexible outcomes that can successfully be altered or amended to support future needs.
+            </>,
+            <>
+            <strong>Principle 5: Standards across Sectors</strong>
+            Prioritize solutions that are most likely to be applied across both public and private sites/land uses.
+            </>
           ]}
           icons={[
             {
@@ -199,20 +188,17 @@ export default function AutonomousUniversalAccess() {
               >
                 <Typography variant="sectionTitle">
                   {" "}
-                  LAND USE COMPATIBILITY{" "}
+                  AUA-INFORMED DEVELOPMENT{" "}
                 </Typography>
                 <br></br>
                 <Typography variant="sectionSubtitle">
-                  Neighborhood Optimization with OASIS
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                  OASIS is a parametric toolbox that can help planners and
-                  developers optimize neighborhood- scale land use and mobility
-                  frameworks. The land use compatibility optimization tool of
-                  OASIS can analyze and optimize the compatibility index of a
-                  given land use plan to generate optimal scenarios for future
-                  growth.
+                  By evaluating the existing ADA standards for accessible
+                  routes through the AUA framework, several violations
+                  were identified. In response, recommendations based
+                  on AUA principles were developed.
                 </Typography>
                 <br></br>
                 <br></br>
@@ -223,18 +209,6 @@ export default function AutonomousUniversalAccess() {
                   trade-offs and determine the most strategic outcome.
                 </Typography> */}
                 <br></br>
-                <br></br>
-                <Button
-                  variant="outlined"
-                  style={{
-                    color: "#EC008C",
-                    borderColor: "#EC008C",
-                    marginTop: "3em",
-                  }}
-                  endIcon={<ArrowForwardIcon />}
-                >
-                  <HashLink to={"/oasis"}>Learn more about OASIS</HashLink>
-                </Button>
               </Grid>
             </Grid>
           </Grid>
@@ -249,19 +223,18 @@ export default function AutonomousUniversalAccess() {
               marginBottom: "2em",
             }}
           >
-            <Grid item xs={12} md={6} elevation={5}>
+            <Grid item xs={12} md={6} elevation={5} >
               <Typography variant="sectionSubtitle">
-                Identifying Trade-Offs with OASIS
+               
               </Typography>
               <Typography variant="body2">
-                Click through the analysis of various scenarios below to explore
-                potential trade-offs and determine the optimal outcome
+              Click through to see how block optimization can transform an existing neighborhood. 
               </Typography>
               <br></br>
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
-                navButtonsAlwaysVisible={true}
+                navButtonsAlwaysVisible={false}
                 sx={{ maxWidth: "100%", minHeight: "500px" }}
               >
                 {luCarouselItems.map((img, i) => (
@@ -286,32 +259,20 @@ export default function AutonomousUniversalAccess() {
             >
               <Typography variant="sectionTitle">
                 {" "}
-                COMPATIBLE RESIDENTIAL BLOCK LAYOUT{" "}
+                 CODE RECOMMENDATIONS{" "}
               </Typography>
               <br></br>
               <Typography variant="sectionSubtitle">
-                Block Optimization with MIRAGE
               </Typography>
               <hr color="EC008C"></hr>
               <Typography variant="bodyBlack">
-                MIRAGE is a parametric toolbox that can help planners and
-                developers optimize block-scale configurations. The MIRAGE
-                toolbox can optimize residential block layout to meet the
-                demands of future growth.
+                  By evaluating the existing ADA standards for accessible
+                  routes through the AUA framework, several violations
+                  were identified. In response, recommendations based
+                  on AUA principles were developed.
               </Typography>
               <br></br>
               <br></br>
-              <Button
-                variant="outlined"
-                style={{
-                  color: "#EC008C",
-                  borderColor: "#EC008C",
-                  marginTop: "3em",
-                }}
-                endIcon={<ArrowForwardIcon />}
-              >
-                <HashLink to={"/mirage"}>Learn more about MIRAGE</HashLink>
-              </Button>
             </Grid>
             <Grid item xs={0} md={6}>
               {" "}
@@ -342,7 +303,7 @@ export default function AutonomousUniversalAccess() {
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
-                navButtonsAlwaysVisible={true}
+                navButtonsAlwaysVisible={false}
                 sx={{ maxWidth: "100%", minHeight: "500px" }}
               >
                 {carouselItems.map((img, i) => (
@@ -361,25 +322,6 @@ export default function AutonomousUniversalAccess() {
               <br></br>
               <br></br>
               <br></br>
-              <Typography variant="sectionSubtitle">
-              Related News
-              </Typography>
-              <br></br>
-              <br></br>
-              <Typography variant="bodyBlack">
-                In October 2023, as part of a three-day symposium on the future
-                of master planned communities,Jonah Susskind and Southstar Communities
-                CEO Thad Rutherford presented ongoing collaborative uses of the NOGAS
-                toolkit for optimizing residential development. Their presentation
-                demonstrated findings from two ongoing projects in Texas. Download
-                their presentation {" "}
-                <a href="https://www.dropbox.com/scl/fi/nhmrbrstkvsxi25gcgx6r/Susskind_Rutherford_Future-Cities-Slides.pdf?rlkey=knqhp2tpakobuo49gqphkq3w6&dl=0" style={{ color: "black" }} alt="">
-                here
-                </a>{" "}, and read {" "}
-                <a href="https://www.builderonline.com/land/planning/southstar-communities-drives-toward-more-optimized-neighborhoods_o" style={{ color: "black" }} alt="">
-                this
-                </a>{" "} interview to learn more.
-              </Typography>
             </Grid>
           </Grid>
         </Grid>
