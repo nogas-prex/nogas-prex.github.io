@@ -76,7 +76,7 @@ export default function AutonomousUniversalAccess() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://dl.dropboxusercontent.com/scl/fi/4uz5yloj330m1hcbeujwd/Cover-Image.png?rlkey=mootcp8oi62xuy9v649zq6muc&st=rnnjnhaq&dl=0"          }
+            ""          }
           title="AUTONOMOUS UNIVERSAL ACCESS (AUA)"
           subtitle="Planning For Inclusive Autonomy"
           body={[
