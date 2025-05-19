@@ -24,43 +24,51 @@ import { HashLink } from "react-router-hash-link";
 export default function AutonomousUniversalAccess() {
     const carouselItems = [
       {
-        name: "Challenges of Existing Standards",
-        img: "https://dl.dropboxusercontent.com/scl/fi/mtadt0zgsj6hrke1axl65/AUA-Diagrams.jpg?rlkey=vrig34wxby5ui1ld7navprflh&st=lcpyczvx&dl=0",
+        name: "",
+        img: "https://dl.dropboxusercontent.com/scl/fi/ft0160s26u6n22fd443jc/Block-Scale-Diagrams.jpg?rlkey=2863qzb6ifxktvl86z352d1e3&st=smvpuobp&dl=0",
       },
       {
-        name: "AUA Design Recommendations",
-        img: "https://dl.dropboxusercontent.com/scl/fi/ygmp64jrxqe2dcmfd5g1o/AUA-Diagrams2.jpg?rlkey=sa4tmt1voz479vl416zxxwh9r&st=jivsbtm0&dl=0",
+        name: "",
+        img: "https://dl.dropboxusercontent.com/scl/fi/w59uo9b0070wfxkjcqu6g/Block-Scale-Diagrams2.jpg?rlkey=t9twsmduxnk3xnb9a5dgf3hdd&st=n6vp1x5z&dl=0",
       },
       {
-        name: "AUA Design Recommendations",
-        img: "https://dl.dropboxusercontent.com/scl/fi/eou58bya1qufeaik1wzzh/AUA-Diagrams3.jpg?rlkey=1c97e76djfx0lwumhpdew3gva&st=woviqikt&dl=0",
+        name: "",
+        img: "https://dl.dropboxusercontent.com/scl/fi/szej0vzkxd57h24iztkjd/Block-Scale-Diagrams3.jpg?rlkey=o2bx0270tq013wr2r6zt82giu&st=gaifsfyf&dl=0",
+      },
+      {
+        name: "",
+        img: "https://dl.dropboxusercontent.com/scl/fi/rswnpsswgzc6yk67smnwx/Block-Scale-Diagrams4.jpg?rlkey=s9vvnj1r0e31phaogmfss5ujb&st=vqtpc9kd&dl=0",
+      },
+      {
+        name: "",
+        img: "https://dl.dropboxusercontent.com/scl/fi/mhp85ty6ismurptkrhz7s/Block-Scale-Diagrams5.jpg?rlkey=e04q4jqadkn5r6k9zvb4decml&st=lttnigni&dl=0",
+      },
+      {
+        name: "",
+        img: "https://dl.dropboxusercontent.com/scl/fi/8bc50kjkm4eyl64ivpf01/Block-Scale-Diagrams6.jpg?rlkey=4zzvcq4s2459huuaftxe1w0ht&st=2lsp5iww&dl=0",
       }
   ];
   
   const luCarouselItems = [
     {
       name: "",
-      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing.jpg",
+      img: "https://dl.dropboxusercontent.com/scl/fi/ayc809fkg8wry2ualnyct/District-Scale-Diagrams.jpg?rlkey=c61bt9rmzd3cape3oxlvdhumc&st=h2to7l7v&dl=0",
     },
     {
       name: "",
-      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing2.jpg",
+      img: "https://dl.dropboxusercontent.com/scl/fi/fol306jjw1souh3i1y9wk/District-Scale-Diagrams2.jpg?rlkey=ommylhd8gx9imipew0ekq5cv7&st=b1fbi91n&dl=0",
     },
     {
       name: "",
-      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing3.jpg",
+      img: "https://dl.dropboxusercontent.com/scl/fi/2tie06f87g7k00jwit9uc/District-Scale-Diagrams3.jpg?rlkey=q9oq8it2bawufwcjpi7hk8rw3&st=odmnd3bq&dl=0",
     },
     {
       name: "",
-      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing4.jpg",
+      img: "https://dl.dropboxusercontent.com/scl/fi/gdhxokd8e2py0b3qzxw1e/District-Scale-Diagrams4.jpg?rlkey=azc75l9ss1b9y4dkuhr9ficd5&st=3jedao1i&dl=0",
     },
     {
       name: "",
-      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing5.jpg",
-    },
-    {
-      name: "",
-      img: "https://nogas-swar.s3.amazonaws.com/img/4_Case+Study+02_+Preparing+for+Future+Growth/4_Land+Use+Compatibility/Land+Use_Existing6.jpg",
+      img: "https://dl.dropboxusercontent.com/scl/fi/g1b6anf99yayfa8i1pb8f/District-Scale-Diagrams5.jpg?rlkey=h4ma56fcgatmhnq5hszu6pyl2&st=tcarcngh&dl=0",
     },
   ];
     return (
@@ -93,20 +101,21 @@ export default function AutonomousUniversalAccess() {
         />
         <CaseStudyBackground
           title="BACKGROUND"
-          subtitle="The Lag in Policies"
+          subtitle="Policy Lag and Built Enviornment Inertia"
           image={
             "https://dl.dropboxusercontent.com/scl/fi/zjdi6jzaolqs25zcg2hxt/Background-Cover.jpg?rlkey=902zt7gq221iprs083f7hfr2v&st=u7txwwsf&dl=0"
           }
           body={[
-            `As technological advancements outpace the evolution
-            of both the existing suburban built environment and 
-            conventional development patterns, current policies and 
-            standards are increasingly inadequate for integrating
-            new autonomous mobility technologies. This lag in
-            policies hinders both the creation of new development
-            patterns that could shape future suburban built
-            environments to support and take advantage of universal
-            access to these new mobility options.`,
+            `While autonomous technologies rapidly advance, accessibility policies and design standards 
+            remain anchored in legacy assumptions. The Americans with Disabilities Act (ADA) and related 
+            codes have made great strides in promoting access—but they were not written with autonomous 
+            delivery bots, robotic wheelchairs, or shared AV fleets in mind. Meanwhile, most suburban 
+            environments continue to be shaped by zoning codes and infrastructure guidelines that 
+            prioritize cars over people. This disconnect leaves entire populations under-served by both 
+            current systems and future ones. Without updated planning tools and regulatory frameworks, 
+            the benefits of emerging technologies may bypass those who need them most. AUA addresses this 
+            policy lag by proposing spatial principles and actionable strategies that bridge the gap 
+            between innovation and implementation—particularly in aging, auto-oriented communities.`,
           ]}
           stats={[
             // {
@@ -134,6 +143,12 @@ export default function AutonomousUniversalAccess() {
           title="VISION"
           subtitle="Five Principles of AUA"
           body={[
+            <>
+            At the heart of AUA is a design and planning ethos—a set of principles that can inform both new 
+            development and retrofits of existing neighborhoods. These five principles offer a practical, 
+            policy-guiding framework for shaping the mobility systems and built environments of the 
+            autonomous future:
+            <br></br></>,
             <>
             <strong>Principle 1: Fairness through Form</strong><br />
             Prioritize the equitable distribution, configuration, and alignment of mobility services and resources.
@@ -195,10 +210,11 @@ export default function AutonomousUniversalAccess() {
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack">
-                  By evaluating the existing ADA standards for accessible
-                  routes through the AUA framework, several violations
-                  were identified. In response, recommendations based
-                  on AUA principles were developed.
+                  By applying AUA principles, we design modifications can improve
+                  circulation for disabled users, reduced travel distances, and 
+                  enhanced safety at shared mobility interfaces. These interventions
+                  demonstrate how <strong>universal access can become a design driver</strong> at 
+                  every scale, from parcel layout to district mobility planning.
                 </Typography>
                 <br></br>
                 <br></br>
@@ -228,7 +244,9 @@ export default function AutonomousUniversalAccess() {
                
               </Typography>
               <Typography variant="body2">
-              Click through to see how block optimization can transform an existing neighborhood. 
+              Click through the images below to explore several OASIS Modules 
+              that were developed to analyze key performance objectives related 
+              to resource distribution at the district scale.  
               </Typography>
               <br></br>
             </Grid>
@@ -266,10 +284,18 @@ export default function AutonomousUniversalAccess() {
               </Typography>
               <hr color="EC008C"></hr>
               <Typography variant="bodyBlack">
-                  By evaluating the existing ADA standards for accessible
-                  routes through the AUA framework, several violations
-                  were identified. In response, recommendations based
-                  on AUA principles were developed.
+                  <>These parameters can be translated through policy and code recommendations designed 
+                  to help bring autonomous universal access into mainstream planning and development practice. 
+                  These include:</>
+                  <br></br>
+                  <br></br>
+                  <>1: New definitions and dimensional standards for accessible routes between buildings 
+                  and other local destinations.</>
+                  <br></br>
+                  <>2: Expanded accessibility criteria for private land uses, including detached housing 
+                  and small-scale retail.</>
+                  <br></br>
+                  <>3: Performance-based metrics for shade distribution and thermal comfort provisions.</>
               </Typography>
               <br></br>
               <br></br>
@@ -293,9 +319,8 @@ export default function AutonomousUniversalAccess() {
               <Typography variant="sectionSubtitle">
               </Typography>
               <Typography variant="body2">
-                Click through the various scenarios above to see how existing
-                codes for accessible pathways can be transformed and enhanced
-                through the integration of autonomous mobility technologies.
+                Click through the images below to explore several key parameters that can be used 
+                to support higher levels of accessibility and environmental performance at the block scale.
               </Typography>
               
             </Grid>
