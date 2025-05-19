@@ -69,20 +69,24 @@ export default function AutonomousUniversalAccess() {
         <CaseStudyLanding
           image={
             "https://dl.dropboxusercontent.com/scl/fi/4uz5yloj330m1hcbeujwd/Cover-Image.png?rlkey=mootcp8oi62xuy9v649zq6muc&st=rnnjnhaq&dl=0"          }
-          title="AUTONOMOUS UNIVERSAL ACCESS"
-          subtitle="A Conceptual Framework to Rethink Future Codes"
+          title="AUTONOMOUS UNIVERSAL ACCESS (AUA)"
+          subtitle="Planning For Inclusive Autonomy"
           body={[
-            `Older adults and individuals with disabilities increasingly rely on their 
-            neighborhood environments for essential activities. However, in U.S. car-dependent 
-            neighborhoods, where many older adults reside, mobility options are often inadequate, 
-            especially for those with disabilities. Emerging autonomous mobility technologies, 
-            such as autonomous vehicles, autonomous electric-powered wheelchairs, autonomous 
-            motorized scooters, and autonomous deliver robots offer potential new solutions. 
-            Yet, current policies and regulations, like the Americans with Disabilites Act (ADA) 
-            standards for accessible design, lag these technological advancements. This project 
-            proposes a new conceptual framework, termed "Autonomous Universal Access (AUA)," to 
-            support updating existing accessibility policies for better integrating autonomous 
-            mobility into the built environment.`,
+            <>As our mobility systems evolve, so too must the codes, policies, and design 
+            standards that shape the built environment. <strong>Autonomous Universal Access (AUA)</strong> 
+            is a forward-looking framework for ensuring that autonomous mobility 
+            technologies—ranging from AVs and robotic delivery to powered wheelchairs and 
+            micromobility—are fully integrated into the physical and regulatory fabric of 
+            future communities.</>,
+            <>Developed in response to the limitations of current accessibility policies, 
+            AUA emphasizes the need to align emerging technologies with human-centered design. 
+            It recognizes that car-dependent suburban environments, where many older adults and 
+            people with disabilities reside, often fail to provide safe, seamless, and dignified 
+            access. As AVs become more common, new statutory guidance is needed to shape 
+            mobility infrastructure, land use planning, and site design for all. AUA positions 
+            accessibility as a generative force in urban form, calling on designers, planners, 
+            policymakers, and developers to reimagine the codes and standards that govern 
+            mobility and access.</>,
           ]}
           citations={[
           ]}
