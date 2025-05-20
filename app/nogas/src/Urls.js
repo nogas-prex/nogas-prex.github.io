@@ -22,88 +22,74 @@ import CurbToKitchen from "./views/applications/CurbtoKitchen";
 export default function Urls() { 
     
     return (
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
-          <Route exact path="/applications" element={<CaseStudies />} />
-          <Route exact path="/design-engine" element={<DesignEngine />} />
-          <Route exact path="/oasis" element={<OASIS />} />
-          <Route exact path="/mirage" element={<MIRAGE />} />
-          <Route exact path="/mirage" element={<MIRAGE />} />
-          <Route exact path='/download' element={<EmailContactForm />}></Route>
+          <Route  path="/" element={<Home />} />
+          <Route  path="/home" element={<Home />} />
+          <Route  path="/applications" element={<CaseStudies />} />
+          <Route  path="/design-engine" element={<DesignEngine />} />
+          <Route  path="/oasis" element={<OASIS />} />
+          <Route  path="/mirage" element={<MIRAGE />} />
+          <Route  path="/mirage" element={<MIRAGE />} />
+          <Route  path='/download' element={<EmailContactForm />}></Route>
 
           <Route
-            exact
             path="/applications/improving-equitable-access"
             element={<ImprovingEquitableAccess />}
           />
           <Route
-            exact
             path="/applications/improving-equitable-access-background"
             element={<ImprovingEquitableAccessBackground />}
           />
           <Route
-            exact
             path="/applications/preparing-future-growth"
             element={<PrepareFutureGrowth />}
           />
           <Route
-            exact
             path="/applications/preparing-future-growth-background"
             element={<PrepareFutureGrowthBackground />}
           />
           <Route
-            exact
             path="/applications/layering-sustainability"
             element={<LayeringSustability />}
           />
           <Route
-            exact
             path="/applications/layering-sustainability-background"
             element={<LayeringSustainabilityBackground />}
           />
           <Route
-            exact
             path="/applications/maximize-micromobility"
             element={<MaximizingMicromobility />}
           />
           <Route
-            exact
             path="/applications/maximize-micromobility-background"
             element={<MaximizeMicromobilityBackground />}
           />
           <Route
-            exact
             path="/applications/future-of-work"
             element={<FutureOfWork />}
           />
           <Route
-            exact
             path="/applications/future-of-work-background"
             element={<FutureOfWorkBackground />}
           />
           <Route
-            exact
             path="/applications/curb-to-kitchen"
             element={<CurbToKitchen />}
           />
           <Route
-            exact
             path="/applications/curb-to-kitchen-background"
             element={<CurbToKitchen />}
           />
           <Route
-            exact
             path="/applications/autonomous-universal-access"
             element={<AutonomousUniversalAccess />}
           />
           <Route
-            exact
             path="/applications/autonomous-universal-access-background"
             element={<AutonomousUniversalAccessBackground />}
           />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     );
 }
