@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -16,9 +17,6 @@ a{
   color:'black' !important;
 }
 
-body{
-  overflow-x: hidden;
-}
 
 @font-face {
   font-family: 'Equinox';

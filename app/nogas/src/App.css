@@ -24,6 +24,10 @@
   color: white;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .App-link {
   color: #61dafb;
 }

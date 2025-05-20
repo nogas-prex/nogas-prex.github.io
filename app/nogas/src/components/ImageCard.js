@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 export default function ImageCard(props) {
     const img = props.image
   return (
-    <Card sx={{ width: '25%', borderRadius:'10px' }}>
+    <Card sx={{ width: '25%', borderRadius:'50px',  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", }}>
       <CardMedia
         component="img"
         height="140"

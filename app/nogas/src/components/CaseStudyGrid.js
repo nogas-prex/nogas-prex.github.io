@@ -67,7 +67,7 @@ export default function CaseStudyGrid(props) {
       spacing={7}
     >
       <Grid item sx={12} md={6}>
-        <img src={image} style={{ width: "100%" }}></img>
+        <img src={image} style={{ width: "100%", borderRadius: "30px",  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", }}></img>
       </Grid>
       <Grid item sx={12} md={6}>
         <Typography variant="sectionTitle">{title}</Typography>

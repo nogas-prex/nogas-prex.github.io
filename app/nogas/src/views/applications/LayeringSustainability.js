@@ -35,10 +35,6 @@ export default function LayeringSustability() {
             disastrous cycle by reducing the size of vehicle fleets and transforming massive networks of
             roadways and other impervious surfaces into multi-functional green infrastructure.`,
           ]}
-          citations={[
-            `[1] NOAA. (2022). 2021 U.S. billion-dollar weather and climate disasters in historical context. https://www.climate.gov/news-features/blogs/beyond-data/2021-us-billion-dollar-weather-and-climate-disasters-historical`,
-            `[2] Schueler T.R. (1994). The importance of imperviousness. Watershed Protection Techniques, v. 1, no. 3: 100-111. || Klein, R.D. (1979). Urbanization and stream water quality impairment. Water Resources Bulletin v. 15, no. 4: 948-63.`,
-          ]}
         />
         <CaseStudyBackground
           title="BACKGROUND"
@@ -54,11 +50,6 @@ export default function LayeringSustability() {
             drought and wildfire are threatening millions of lives and properties.
             Meanwhile, increased precipitation intensity, along with sea-level rise, is
             causing a sustained increase in billion-dollar flood events each decade.[3]`,
-          ]}
-          citations={[
-            `[1] Kaplan, S., Tran, A.B. (2022). More than 40 percent of Americans live in counties hit by climate disasters in 2021. The Washington Post.  https://www.washingtonpost.com/climate-environment/2022/01/05/climate-disasters-2021-fires/`,
-            `[2] Sarofim, M.C., S. Saha, M.D. Hawkins, D.M. Mills, J. Hess, R. Horton, P. Kinney, J. Schwartz, and A. St. Juliana. 2016. Chapter 2: Temperature-related death and illness. In: The impacts of climate change on human health in the United States: A scientific assessment. U.S. Global Change Research Program. https://health2016.globalchange.gov/`,
-            `[3] NOAA. (2022). 2021 U.S. billion-dollar weather and climate disasters in historical context. https://www.climate.gov/news-features/blogs/beyond-data/2021-us-billion-dollar-weather-and-climate-disasters-historical`,
           ]}
           stats={[
             {

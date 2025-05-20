@@ -17,7 +17,7 @@ export default function CaseStudies() {
           justifyContent="center"
           sx={{
             width: "100vw",
-            height: "100vh",
+            height: "60vh",
             backgroundImage: `url(https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/0_Small.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -34,6 +34,8 @@ export default function CaseStudies() {
               textAlign: "left",
               paddingLeft: { xs: "2em", sm: "2em" },
               paddingRight: { xs: "2em" },
+              paddingBottom: { xs: "2em" },
+              paddingTop: { xs: "2em" },
               backgroundColor: '#ffffff99',              
             }}
             id="featured-applications"
@@ -97,7 +99,7 @@ export default function CaseStudies() {
             subtitle="A Conceptual Framework to Rethink Future Codes"
             text={`Emerging autonomous mobility technologies, such as autonomous vehicles, autonomous electric-powered wheelchairs, autonomous motorized scooters, and autonomous delivery robots, offer potential new solutions to the growing number of adults and individuals living with disabilities in limited mobility neighborhoods.`}
             image={
-              "https://dl.dropboxusercontent.com/scl/fi/gn63phb9xtiypm70bo7q8/7.2_C2K-01.png?rlkey=88cogz7cv4iny406wxyeqd2l7&st=xs3o84sd&dl=0"
+              "https://dl.dropboxusercontent.com/scl/fi/olfbnq88exj5v3aqgp64r/8_AUA-01.png?rlkey=ggigdhd66gt097mguua2enw5g&st=8ji6jnv0&dl=0"
             }
             dir="img-txt"
             navLink={"autonomous-universal-access/#aua-main"}
@@ -139,6 +141,7 @@ export default function CaseStudies() {
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/3_Preparing+Future+Growth.png"
             }
+            dir="img-txt"
             navLink={"preparing-future-growth/#pfg-main"}
           />
           <CaseStudyGrid
@@ -148,7 +151,6 @@ export default function CaseStudies() {
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/6_Designing+the+Future+of+Work.png"
             }
-            dir="img-txt"
             navLink={"future-of-work/#fow-main"}
             // dir="img-txt"
           />
@@ -159,8 +161,8 @@ export default function CaseStudies() {
             image={
               "https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/2_Improving+Equitable+Access.png"
             }
-            dir="img-txt"
             navLink={"improving-equitable-access/#iea-main"}
+            dir="img-txt"
           />
         </Grid>
         <Grid

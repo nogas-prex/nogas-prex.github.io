@@ -13,16 +13,34 @@ import sustainabilityImg from '../img/icons/Environmental Sustainability.png'
 export default function Targets() { 
     var targets = [
       {
-        title: "Environmental Sustainability",
+        title: "Autonomous Universal Access",
+        text: "Emerging autonomous mobility technologies, such as autonomous vehicles, autonomous electric-powered wheelchairs, autonomous motorized scooters, and autonomous delivery robots, offer potential new solutions to the growing number of adults and individuals living with disabilities in limited mobility neighborhoods. ",
+        icon: climateImg,
+        caseStudy: "/applications/autonomous-universal-access/#aua-main",
+      },
+      {
+        title: "Curb-to-Kitchen",
+        text: "Curb-to-Kitchen (C2K) explores on of the great unsolved challenges of the autonomous mobility transition: what happens after drop-off. As AVs, delivery bots, and low-speed micro-mobility systems reshape how people move, little attention has been paid to the last-meter connection between curb and destination. ",
+        icon: climateImg,
+        caseStudy: "/applications/curb-to-kitchen/#c2k-main",
+      },
+      {
+        title: "Landscape Performance",
         text: "Over the past century, suburban development has eroded natural landscapes, damaged ecosystems, and accelerated biodiversity loss. How can new approaches to suburban development mitigate environmental risks, improve ecosystem services, and expand native habitat areas? ",
         icon: sustainabilityImg,
         caseStudy: "/applications/layering-sustainability/#ls-main",
       },
       {
-        title: "Reparative Zoning",
-        text: "Historically, non-white and working class communities have been disproportionately restricted from suburban homeownership. How can new approaches to zoning, and community revitalization repair these legacies of generational disinvestment and catalyze lasting social agency? ",
-        icon: equityImg,
-        caseStudy: "https://nogas.mit.edu/oasis",
+        title: "Streetscape Adaptation",
+        text: "In partnership with a major university campus planning committee, this project identifies spatial frameworks for achieving both short-term and long-term autonomous and micro-mobility goals.",
+        icon: accessibilityImg,
+        caseStudy: "/applications/maximize-micromobility/#mm-main",
+      },
+      {
+        title: "Near-Zero Carbonization",
+        text: "Using an algorithm-based land use optimization model, this project identifies district-scale strategies for future neighborhood development.",
+        icon: climateImg,
+        caseStudy: "/applications/preparing-future-growth/#pfg-main",
       },
       {
         title: "Workplace Connectivity",
@@ -31,28 +49,10 @@ export default function Targets() {
         caseStudy: "/applications/future-of-work/#fow-main",
       },
       {
-        title: "Target Mobility",
-        text: "One in four adults in the U.S. have at least one disability, making them less likely to operate a traditional vehicle. How can emerging mobility paradigms be leveraged to help improve universal access and barrier-free walkability? ",
-        icon: accessibilityImg,
-        caseStudy: "/applications/maximize-micromobility/#mm-main",
-      },
-      {
-        title: "Climate Mitigation",
-        text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design position the suburbs as key regional carbon sinks? ",
-        icon: climateImg,
-        caseStudy: "/applications/preparing-future-growth/#pfg-main",
-      },
-      {
-        title: "Curb-to-Kitchen",
-        text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design position the suburbs as key regional carbon sinks? ",
-        icon: climateImg,
-        caseStudy: "/applications/curb-to-kitchen/#c2k-main",
-      },
-      {
-        title: "AUA",
-        text: "How will new mobility paradigms in combination with low-carbon technologies and better neighborhood design position the suburbs as key regional carbon sinks? ",
-        icon: climateImg,
-        caseStudy: "/applications/autonomous-universal-access/#aua-main",
+        title: "Reparative Zoning",
+        text: "Historically, non-white and working class communities have been disproportionately restricted from suburban homeownership. How can new approaches to zoning, and community revitalization repair these legacies of generational disinvestment and catalyze lasting social agency? ",
+        icon: equityImg,
+        caseStudy: "https://nogas.mit.edu/oasis",
       },
     ];
 

@@ -106,6 +106,13 @@ const ResponsiveAppBar = () => {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
+              paperProps={{
+                sx: {
+                  width: "100vw",
+                  maxWidth: "100vw",
+                  overflowX: "hidden",
+                }
+              }}
             >
               {Object.keys(pages).map((page) => (
                 <Button

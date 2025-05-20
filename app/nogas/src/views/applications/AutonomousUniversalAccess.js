@@ -76,7 +76,7 @@ export default function AutonomousUniversalAccess() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            ""          }
+            "https://dl.dropboxusercontent.com/scl/fi/kwyx2pfsfvhedzyblysjs/Cover-Image.png?rlkey=s5vmtpl5ad0zx9rpncmy5pjwp&st=os4logce&dl=0"          }
           title="AUTONOMOUS UNIVERSAL ACCESS (AUA)"
           subtitle="Planning For Inclusive Autonomy"
           body={[
@@ -132,7 +132,7 @@ export default function AutonomousUniversalAccess() {
         >
           <ImageSlider
             leftImage={
-              "https://dl.dropboxusercontent.com/scl/fi/qpcx8ewjflvcm1ifj5mkg/A9ub6qcj_1g8umc_m24.jpg?rlkey=47mi1x9g5v6yne3yul4dgs3bs&st=beuiqxka&dl=0"
+              "https://dl.dropboxusercontent.com/scl/fi/qfvmb9sk3jzqngb8cxrqb/2_1.png?rlkey=4smpogvovfm3xsalo0c288212&st=k0eah59o&dl=0"
             }
             rightImage={
               "https://dl.dropboxusercontent.com/scl/fi/9vocsxtadg46pc4hqx0fh/A91to6szo_1g8ume_m24.jpg?rlkey=qhhasyg5vqbhzkjjd3yhahyvs&st=rnklefzc&dl=0"
@@ -150,23 +150,23 @@ export default function AutonomousUniversalAccess() {
             autonomous future:
             <br></br></>,
             <>
-            <strong>Principle 1: Fairness through Form</strong><br />
+            <strong>Principle 1: Fairness through Form</strong><br></br>
             Prioritize the equitable distribution, configuration, and alignment of mobility services and resources.
             </>,
             <>
-            <strong>Principle 2: Flatten the Field</strong>
+            <strong>Principle 2: Flatten the Field</strong><br></br>
             Prioritize the uninterrupted and unrestricted free flow of all people and goods without compromising environmental systems.
             </>,
             <>
-            <strong>Principle 3: Minimums to Multiples</strong>
+            <strong>Principle 3: Minimums to Multiples</strong><br></br>
             Prioritize heterogeneous outcomes that provide users with multiple options.
             </>,
             <>
-            <strong>Principle 4: Anticipate Obsolescence </strong>
+            <strong>Principle 4: Anticipate Obsolescence </strong><br></br>
             Prioritize flexible outcomes that can successfully be altered or amended to support future needs.
             </>,
             <>
-            <strong>Principle 5: Standards across Sectors</strong>
+            <strong>Principle 5: Standards across Sectors</strong><br></br>
             Prioritize solutions that are most likely to be applied across both public and private sites/land uses.
             </>
           ]}

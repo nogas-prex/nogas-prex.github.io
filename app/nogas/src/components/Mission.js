@@ -51,7 +51,7 @@ export default function Mission() {
               width: "max-content",
               padding: "0 0.15em",
               color: "white",
-              fontSize: "2em",
+              fontSize: "1.5em",
             }}
           >
             BACKGROUND
@@ -86,7 +86,7 @@ export default function Mission() {
               width: "max-content",
               padding: "0 0.15em",
               color: "white",
-              fontSize: "2em",
+              fontSize: "1.5em",
             }}
           >
             WHAT IS NOGAS
@@ -125,7 +125,7 @@ export default function Mission() {
               width: "max-content",
               padding: "0 0.15em",
               color: "white",
-              fontSize: "2em",
+              fontSize: "1.5em",
             }}
           >
             COLLABORATIONS
