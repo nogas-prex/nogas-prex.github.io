@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './views/Home'
 import CaseStudies from "./views/CaseStudies";
 import ImprovingEquitableAccess from './views/applications/ImprovingEquitableAccess'
