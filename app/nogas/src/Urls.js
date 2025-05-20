@@ -1,4 +1,4 @@
-import { HashRouter as BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from './views/Home'
 import CaseStudies from "./views/CaseStudies";
 import ImprovingEquitableAccess from './views/applications/ImprovingEquitableAccess'
@@ -22,7 +22,7 @@ import CurbToKitchen from "./views/applications/CurbtoKitchen";
 export default function Urls() { 
     
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route  path="/" element={<Home />} />
           <Route  path="/home" element={<Home />} />
@@ -90,6 +90,6 @@ export default function Urls() {
             element={<AutonomousUniversalAccessBackground />}
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     );
 }
