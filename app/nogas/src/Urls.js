@@ -22,7 +22,7 @@ import CurbToKitchen from "./views/applications/CurbtoKitchen";
 export default function Urls() { 
     
     return (
-      <HashRouter basename="/applications">
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route  path="/" element={<Home />} />
           <Route  path="/home" element={<Home />} />
@@ -82,11 +82,11 @@ export default function Urls() {
             element={<CurbToKitchen />}
           />
           <Route
-            path="/autonomous-universal-access"
+            path="/applications/autonomous-universal-access"
             element={<AutonomousUniversalAccess />}
           />
           <Route
-            path="/autonomous-universal-access-background"
+            path="/applications/autonomous-universal-access-background"
             element={<AutonomousUniversalAccessBackground />}
           />
         </Routes>
