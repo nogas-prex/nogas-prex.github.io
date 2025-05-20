@@ -6,7 +6,6 @@ import PrepareFutureGrowth from "./views/applications/PrepareFutureGrowth";
 import LayeringSustability from "./views/applications/LayeringSustainability";
 import MaximizingMicromobility from "./views/applications/MaximizeMicromobility";
 import FutureOfWork from "./views/applications/FutureOfWork";
-
 import ImprovingEquitableAccessBackground from "./views/applications/ImprovingEquitableAccessBackground";
 import PrepareFutureGrowthBackground from "./views/applications/PrepareFutureGrowthBackground";
 import LayeringSustainabilityBackground from "./views/applications/LayeringSustainabilityBackground";
@@ -23,7 +22,7 @@ import CurbToKitchen from "./views/applications/CurbtoKitchen";
 export default function Urls() { 
     
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
@@ -105,6 +104,6 @@ export default function Urls() {
             element={<AutonomousUniversalAccessBackground />}
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     );
 }
