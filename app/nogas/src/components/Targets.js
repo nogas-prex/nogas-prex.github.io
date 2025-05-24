@@ -94,7 +94,7 @@ export default function Targets() {
             <Grid container>
               {targets.map((target) => (
                 
-                <Box sx={{ margin: "1em" }}>
+                <Box sx={{ margin: "1em" }} key={`${target.title}-box`}>
                   <TextCard
                     key={target.title}
                     title={target.title}
