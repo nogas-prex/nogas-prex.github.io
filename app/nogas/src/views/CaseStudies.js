@@ -109,7 +109,7 @@ export default function CaseStudies() {
             subtitle="Beyond the Last Mile"
             text={`Curb-to-Kitchen (C2K) explores on of the great unsolved challenges of the autonomous mobility transition: what happens after drop-off. As AVs, delivery bots, and low-speed micro-mobility systems reshape how people move, little attention has been paid to the last-meter connection between curb and destination.`}
             image={
-              "https://dl.dropboxusercontent.com/scl/fi/5p27fiu1ldr80kw9uktwq/7.1_C2K-01.png?rlkey=4sp4vj5dclminionrxt2ppu8t&st=abozv5y0&dl=0"
+              "https://dl.dropboxusercontent.com/scl/fi/ocbbknq5e6ekabnsk7gya/7.1_C2K-01-01.png?rlkey=i7bckfpb9dkynug9ba912j0gu&st=b69u2wja&dl=0"
             }
             navLink={"curb-to-kitchen/#c2k-main"}
             // dir="img-txt"

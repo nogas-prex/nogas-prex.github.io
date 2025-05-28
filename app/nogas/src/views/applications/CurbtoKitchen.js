@@ -61,7 +61,7 @@ export default function CurbToKitchen() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://dl.dropboxusercontent.com/scl/fi/p2pscsrqt31b89z4cp2bv/Drone-Delivery.jpg?rlkey=lg0bghx48mqhj0pj7eitw77nq&st=gxm4d3t3&dl=0"
+            "https://dl.dropboxusercontent.com/scl/fi/4e3g0v941w0bq24no2jf6/Drone-Delivery-cover.png?rlkey=w5fdpe41r2go9nd1un94imvzo&st=w8gs6gut&dl=0"
           }
           title="CURB-TO-KITCHEN"
           subtitle="Beyond The Last Mile"
