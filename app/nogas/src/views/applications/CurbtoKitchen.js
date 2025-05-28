@@ -144,7 +144,6 @@ export default function CurbToKitchen() {
             must be radically rethought.
             
 
-
             C2K challenges conventional frameworks that end access at
             the driveway or sidewalk. C2K strategies demonstrate how
             spatial changes—like widened setbacks, shared drop-off
