@@ -62,11 +62,6 @@ export default function FutureOfWork() {
             options, and proliferation of autonomous mobility and micromobility provide a key opportunity
             to reimagine the typical suburban employment campus.`,
           ]}
-          citations={[
-            `[1] U.S. Bureau of Labor Statistics. (2019). Quarterly Census of Employment and Wages. https://www.bls.gov/cew/ || Kolko, J. (2019). Suburban Jobs Are Growing Fastest, But Urban Jobs Pay More. Bloomberg. https://www.bloomberg.com/news/articles/2019-12-09/why-the-suburban-job-surge-might-not-last#:~:text=According%20to%20the%20U.S.%20Bureau,at%20least%201%20million%20people.`,
-            `[2] Kneebone, E., & Holmes, N. (2015). The growing distance between people and jobs in metropolitan America. Brookings Institute. https://www.brookings.edu/wp-content/uploads/2016/07/srvy_jobsproximity.pdf`,
-            `[3] Parker, K., Horowitz, J.M., & Minkin, R. (2022). COVID-19 Pandemic Continues To Reshape Work in America. Pew Research Center. https://www.pewresearch.org/social-trends/2022/02/16/covid-19-pandemic-continues-to-reshape-work-in-america/`,
-          ]}
         />
         <CaseStudyBackground
           title="BACKGROUND"
@@ -148,16 +143,37 @@ parking can be further reduced or even eliminated.`,
                 md={6}
                 sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
-                <Typography variant="sectionTitle">
+                <Typography variant="sectionTitle"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "1.6rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+                >
                   {" "}
                   MODULAR WORKSPACE{" "}
                 </Typography>
                 <br></br>
-                <Typography variant="sectionSubtitle">
+                <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "1.2rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+                >
                   Block Optimization with MIRAGE
                 </Typography>
                 <hr color="EC008C"></hr>
-                <Typography variant="bodyBlack">
+                <Typography variant="bodyBlack"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "1rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+                >
                   MIRAGE is a parametric toolbox that can help planners and
                   developers optimize block-scale configurations. The modular
                   block layout optimization tool can optimize any given block
@@ -208,14 +224,20 @@ parking can be further reduced or even eliminated.`,
               {" "}
             </Grid>{" "}
             <Grid item xs={12} sm={6}>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: ".65rem",
+                              lineHeight: 1.2,
+                              padding: ".5rem 4rem",
+                              justifyContent: "right",
+                              },
+                            })}
+              >
                 Click through the various scenarios above to see how an existing
                 suburban employment campus can be transformed to meet the
                 demands of a future employment campus.
               </Typography>
-            </Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
             </Grid>
           </Grid>
         </Grid>

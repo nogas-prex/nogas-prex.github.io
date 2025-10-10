@@ -1,23 +1,6 @@
 import { createTheme, MuiCssBaseline } from '@mui/material';
 // import CssBaseline from "@material-ui/core/CssBaseline";
-import AtlasGroteskBold from "./fonts/AtlasGroteskBold.otf";
-import EquinoxBold from "./fonts/Equinox Bold.otf";
-import AtlasGroteskRegular from './fonts/AtlasGrotesk-Regular.otf'
-import { formatMuiErrorMessage } from '@mui/utils';
 
-const atlasGroteskBold = {
-    src: `
-    local('AtlasGroteskBold'),
-    url(${AtlasGroteskBold}) format('otf')
-  `,
-};
-
-const equinoxBold = {
-  src: `
-    local('Equinox Bold'),
-    url(${EquinoxBold}) format('otf')
-    `,
-};
 
 export const EquinoxTheme = createTheme({
   typography: {

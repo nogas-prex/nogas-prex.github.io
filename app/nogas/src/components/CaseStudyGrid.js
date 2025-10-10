@@ -31,12 +31,41 @@ export default function CaseStudyGrid(props) {
       sx={{ width: "80vw", marginBottom: "5em" }}
       spacing={7}
     >
+    {/* Application Texts */}
       <Grid item sx={12} md={6}>
-        <Typography variant="sectionTitle">{title}</Typography>
+        <Typography 
+          variant="sectionTitle"
+          sx={(t) => ({
+            [t.breakpoints.down("sm")]: {
+              fontSize: "1.6rem",
+              lineHeight: 1.2,
+              },
+            })}
+          >
+            {title}
+        </Typography>
         <br></br>
-        <Typography variant="sectionSubtitle">{subtitle}</Typography>
+        <Typography 
+          variant="sectionSubtitle"
+          sx={(t) => ({
+            [t.breakpoints.down("sm")]: {
+              fontSize: "1.2rem",
+              lineHeight: 1.2,
+              },
+            })}
+          >
+          {subtitle}
+        </Typography>
         <hr color="#EC008C"></hr>
-        <Typography variant="bodyBlack">{text}</Typography>
+        <Typography 
+          variant="bodyBlack"
+          sx={(t) => ({
+            [t.breakpoints.down("sm")]: {
+              fontSize: "1rem",
+              lineHeight: 1.2,
+              },
+            })}
+          >{text}</Typography>
         <br></br>
 
         <Button
@@ -53,7 +82,7 @@ export default function CaseStudyGrid(props) {
       </Grid>
 
       <Grid item sx={12} md={6}>
-        <img src={image} style={{ width: "100%" }}></img>
+        <img src={image} style={{ width: "100%", borderRadius: "30px", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)" }}></img>
       </Grid>
     </Grid>
   ) : dir === "img-txt" ? (
@@ -67,7 +96,7 @@ export default function CaseStudyGrid(props) {
       spacing={7}
     >
       <Grid item sx={12} md={6}>
-        <img src={image} style={{ width: "100%", borderRadius: "30px",  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", }}></img>
+        <img src={image} style={{ width: "100%", borderRadius: "60px",  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", }}></img>
       </Grid>
       <Grid item sx={12} md={6}>
         <Typography variant="sectionTitle">{title}</Typography>
@@ -102,9 +131,29 @@ export default function CaseStudyGrid(props) {
       spacing={7}
     >
       <Grid item sx={12} md={6}>
-        <Typography variant="sectionTitle">{title}</Typography>
+        <Typography 
+          variant="sectionTitle"
+          sx={(t) => ({
+            [t.breakpoints.down("sm")]: {
+              fontSize: "1.6rem",
+              lineHeight: 1.2,
+              },
+            })}
+          >
+            {title}
+        </Typography>
         <br></br>
-        <Typography variant="sectionSubtitle">{subtitle}</Typography>
+        <Typography 
+        variant="sectionSubtitle"
+          sx={(t) => ({
+            [t.breakpoints.down("sm")]: {
+              fontSize: "1.6rem",
+              lineHeight: 1.2,
+              },
+            })}
+          >
+            {subtitle}
+        </Typography>
         <hr color="#EC008C"></hr>
         <Typography variant="bodyBlack">{text}</Typography>
         <br></br>

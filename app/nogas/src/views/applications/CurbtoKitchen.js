@@ -184,16 +184,37 @@ export default function CurbToKitchen() {
                 md={6}
                 sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
-                <Typography variant="sectionTitle">
+                <Typography variant="sectionTitle"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "1.6rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+                >
                   {" "}
                   FROM NEIGHBORHOODS TO NETWORKS{" "}
                 </Typography>
                 <br></br>
-                <Typography variant="sectionSubtitle">
+                <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+                >
                   A Framework For Micromobility
                 </Typography>
                 <hr color="EC008C"></hr>
-                <Typography variant="bodyBlack">
+                <Typography variant="bodyBlack"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+                >
                 One of C2K’s key contributions is its rethinking of parcel delivery systems in
                 the context of autonomous mobility. As AV technology matures, the project
                 anticipates a shift away from conventional vehicle drop-off toward hybrid and
@@ -226,14 +247,30 @@ export default function CurbToKitchen() {
             sx={{
               paddingLeft: { xs: "2em", md: "25%" },
               paddingRight: { xs: "2em", md: "25%" },
-              marginBottom: "2em",
+              marginBottom: "1em",
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+              >
                 Generation Method
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: ".65rem",
+                              lineHeight: 1.2,
+                              padding: ".5rem 4rem",
+                              justifyContent: "right",
+                              },
+                            })}
+              >
               Click through the diagrams below to explore the generational method
               for creating neighborhood-scale multi-modal networks.
               </Typography>
@@ -249,13 +286,6 @@ export default function CurbToKitchen() {
                 ))}
               </Carousel>
             </Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
-            </Grid>{" "}
-            <Grid item xs={12} sm={6}></Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
-            </Grid>
           </Grid>
           <Grid container direction="row">
             <Grid
@@ -264,16 +294,37 @@ export default function CurbToKitchen() {
               md={6}
               sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
             >
-              <Typography variant="sectionTitle">
+              <Typography variant="sectionTitle"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.6rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+              >
                 {" "}
                 THE CURB, REIMAGINED{" "}
               </Typography>
               <br></br>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+              >
                 Design Recommendations For A More Connected Future
               </Typography>
               <hr color="EC008C"></hr>
-              <Typography variant="bodyBlack">
+              <Typography variant="bodyBlack"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+              >
               At the heart of C2K is a simple question: What does an accessible 
               autonomous future look like—at the scale of the curb? Today’s 
               accessibility codes were not written for AVs, delivery bots, or low-speed 
@@ -310,10 +361,26 @@ export default function CurbToKitchen() {
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                        sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.6rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+              >
                 Redesigning the Curb
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                        sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: ".65rem",
+                              lineHeight: 1.2,
+                              padding: ".5rem 4rem",
+                              justifyContent: "right",
+                              },
+                            })}
+              >
                 Click through the two scenarios to see how existing ada curb cuts can be retrofitted to incorporate a range of micro-mobility elements.
               </Typography>
               
@@ -327,18 +394,6 @@ export default function CurbToKitchen() {
                   <ImageItem key={i} image={img.img} name={img.name} />
                 ))}
               </Carousel>
-            </Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
-            </Grid>{" "}
-            <Grid item xs={12} sm={6}></Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
             </Grid>
           </Grid>
         </Grid>

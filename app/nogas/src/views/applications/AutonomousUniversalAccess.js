@@ -201,15 +201,27 @@ export default function AutonomousUniversalAccess() {
                 md={6}
                 sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
-                <Typography variant="sectionTitle">
+                <Typography variant="sectionTitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.6rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+                >
                   {" "}
                   AUA-INFORMED DEVELOPMENT{" "}
                 </Typography>
                 <br></br>
-                <Typography variant="sectionSubtitle">
-                </Typography>
                 <hr color="EC008C"></hr>
-                <Typography variant="bodyBlack">
+                <Typography variant="bodyBlack"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+                >
                   By applying AUA principles, we design modifications can improve
                   circulation for disabled users, reduced travel distances, and 
                   enhanced safety at shared mobility interfaces. These interventions
@@ -240,10 +252,16 @@ export default function AutonomousUniversalAccess() {
             }}
           >
             <Grid item xs={12} md={6} elevation={5} >
-              <Typography variant="sectionSubtitle">
-               
-              </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                        sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: ".65rem",
+                              lineHeight: 1.2,
+                              padding: "0 4rem",
+                              justifyContent: "right",
+                              },
+                            })}
+              >
               Click through the images below to explore several OASIS Modules 
               that were developed to analyze key performance objectives related 
               to resource distribution at the district scale.  
@@ -253,15 +271,12 @@ export default function AutonomousUniversalAccess() {
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
                 navButtonsAlwaysVisible={false}
-                sx={{ maxWidth: "100%", minHeight: "500px" }}
+                sx={{ maxWidth: "100%", minHeight: "200px" }}
               >
                 {luCarouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />
                 ))}
               </Carousel>
-            </Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
             </Grid>{" "}
             <Grid item xs={12} sm={6}></Grid>{" "}
             <Grid item xs={0} sm={3}>
@@ -275,15 +290,28 @@ export default function AutonomousUniversalAccess() {
               md={6}
               sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
             >
-              <Typography variant="sectionTitle">
+              <Typography variant="sectionTitle"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.6rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+              >
                 {" "}
                  CODE RECOMMENDATIONS{" "}
               </Typography>
               <br></br>
-              <Typography variant="sectionSubtitle">
-              </Typography>
+          
               <hr color="EC008C"></hr>
-              <Typography variant="bodyBlack">
+              <Typography variant="bodyBlack"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+              >
                   <>These parameters can be translated through policy and code recommendations designed 
                   to help bring autonomous universal access into mainstream planning and development practice. 
                   These include:</>
@@ -316,9 +344,18 @@ export default function AutonomousUniversalAccess() {
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle" >
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: ".65rem",
+                              lineHeight: 1.2,
+                              padding: "0 4rem",
+                              justifyContent: "right",
+                              },
+                            })}
+              >
                 Click through the images below to explore several key parameters that can be used 
                 to support higher levels of accessibility and environmental performance at the block scale.
               </Typography>

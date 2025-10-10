@@ -60,12 +60,6 @@ export default function ImprovingEquitableAccess() {
             patterns that include expanded micromobility options could pave the way for radically new
             suburban configurations that prioritize equitable mobility for all. `,
           ]}
-          citations={[
-            `[1] U.S. Census Bureau (2022). 2020 American Community Survey 5-year Estimates Data. Access (11/20/2022): https://data.census.gov/table?tid=ACSDP5Y2020.DP04`,
-            `[2] Burrows, M., Burd, C., & McKenzie, B. (2021). Commuting by Public Transportation in the United States: 2019. American Community Survey Reports ACS-48. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-48.pdf`,
-            `[3] Hermann, A. (2019). More Older Adults are Living in Lower-density Neighborhoods. Joint Center for Housing Studies of Harvard University. Access (11/20/2022): https://www.jchs.harvard.edu/blog/more-older-adults-are-living-in-lower-density-neighborhoods`,
-            `[4] Soto, G. W., Whitfield, G. P., Webber, B. J., Omura, J. D., Chen, T. J., Zaganjor, H., & Rose, K. (2022). Traffic as a barrier to walking safely in the United States: Perceived reasons and potential mitigation strategies. Preventive medicine reports, 30, 102003. https://doi.org/10.1016/j.pmedr.2022.102003 || The center for cycling education. Barriers to cycling to work. https://thecce.org/barriers-to-cycling-to-work/ || Fowler, S. L., Berrigan, D., & Pollack, K. M. (2017). Perceived barriers to bicycling in an urban US environment. Journal of Transport & Health, 6, 474-480.`,
-          ]}
         />
         <CaseStudyBackground
           title="BACKGROUND"
@@ -83,10 +77,6 @@ export default function ImprovingEquitableAccess() {
                 because of changes in hearing, eyesight, and other physical factors. [2]
                 In the suburbs, where car travel is often the only reliable daily 
                 transportation option, this presents major obstacles for transportation planners.`,
-          ]}
-          citations={[
-            `[1] Vespa, J., Medina, L., & Armstrong., D.M. (2020). Demographic Turning Points for the United States: Population Projections for 2020 to 2060. Population Estimates and Projections. U.S. Census Bureau. P25-1144. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1144.pdf`,
-            `[2] Winick, B., & Jaffe, M. (2015). Planning Aging-supportive Communities. American Planning Association. https://www.planning.org/publications/report/9026902/`,
           ]}
           stats={[
             {
@@ -168,16 +158,36 @@ for the elderly and people with disabilities who can’t drive.`,
                 md={6}
                 sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
-                <Typography variant="sectionTitle">
-                  {" "}
+                <Typography variant="sectionTitle"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "12rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+                >
                   EQUITABLE ACCESS{" "}
                 </Typography>
                 <br></br>
-                <Typography variant="sectionSubtitle">
+                <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "1.2rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+                >
                   Neighborhood Optimization with OASIS
                 </Typography>
                 <hr color="EC008C"></hr>
-                <Typography variant="bodyBlack">
+                <Typography variant="bodyBlack"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "1rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+                >
                   OASIS is a parametric toolbox that can help planners and
                   developers optimize neighborhood- scale land use
                   configurations and mobility networks. The accessibility
@@ -215,10 +225,26 @@ for the elderly and people with disabilities who can’t drive.`,
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+              >
                 Neighborhood Configuration Optimization
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: ".65rem",
+                              lineHeight: 1.2,
+                              padding: ".5rem 1rem",
+                              justifyContent: "right",
+                              },
+                            })}
+              >
                 Click through the various scenarios below to see how OASIS can
                 generate different master plan scenarios to determine an optimal
                 configuration based on predetermined accessibility objectives.
@@ -226,20 +252,13 @@ for the elderly and people with disabilities who can’t drive.`,
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>
               <Carousel
-                navButtonsAlwaysVisible={true}
+                navButtonsAlwaysVisible={false}
                 sx={{ maxWidth: "100%", minHeight: "600px", objectFit: "fill" }}
               >
                 {carouselItems.map((img, i) => (
                   <ImageItem key={i} image={img.img} name={img.name} />
                 ))}
               </Carousel>
-            </Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
-            </Grid>{" "}
-            <Grid item xs={12} sm={6}></Grid>{" "}
-            <Grid item xs={0} sm={3}>
-              {" "}
             </Grid>
           </Grid>
         </Grid>

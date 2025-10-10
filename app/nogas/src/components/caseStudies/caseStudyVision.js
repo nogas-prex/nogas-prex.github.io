@@ -30,13 +30,37 @@ export default function CaseStudyVision(props) {
         xs={12}
       >
       <Grid item xs={12} sm={10} md={6} sx={{ padding: "5%", textAlign: "left" }}>
-          <Typography variant="sectionTitleWhite">{title}</Typography>
+          <Typography 
+            variant="sectionTitleWhite"
+            sx={(t) => ({
+              [t.breakpoints.down("sm")]: {
+                fontSize: "1.6rem",
+                lineHeight: 1.2,
+                },
+              })}
+            >{title}</Typography>
           <br></br>
-          <Typography variant="sectionSubtitleWhite">{subtitle}</Typography>
+          <Typography 
+            variant="sectionSubtitleWhite"
+            sx={(t) => ({
+              [t.breakpoints.down("sm")]: {
+                fontSize: "1.2rem",
+                lineHeight: 1.2,
+                },
+              })}
+            >{subtitle}</Typography>
           <hr color="white"></hr>
           {body.map((b) => (
             <div>
-              <Typography variant="bodyWhite">{b}</Typography>
+              <Typography
+                variant="bodyWhite"
+                sx={(t) => ({
+                  [t.breakpoints.down("sm")]: {
+                    fontSize: "1rem",
+                    lineHeight: 1.2,
+                    },
+                  })}
+                >{b}</Typography>
               <br></br>
               <br></br>
             </div>

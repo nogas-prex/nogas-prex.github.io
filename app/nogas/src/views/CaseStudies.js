@@ -17,7 +17,7 @@ export default function CaseStudies() {
           justifyContent="center"
           sx={{
             width: "100vw",
-            height: "60vh",
+            height: "50vh",
             backgroundImage: `url(https://nogas-swar.s3.amazonaws.com/img/2_Case+Study+Home+Page/0_Small.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -40,16 +40,40 @@ export default function CaseStudies() {
             }}
             id="featured-applications"
           >
-            <Typography variant="sectionTitle">
+            <Typography 
+              variant="sectionTitle"
+              sx={(t) => ({
+                [t.breakpoints.down("sm")]: {
+                  fontSize: "1.6rem",
+                  lineHeight: 1.2,
+                },
+              })}
+              >
               FEATURED APPLICATIONS
             </Typography>
             <br></br>
-            <Typography variant="sectionSubtitle">
+            <Typography 
+              variant="sectionSubtitle"
+              sx={(t) => ({
+                [t.breakpoints.down("sm")]: {
+                  fontSize: "1.2rem",
+                  lineHeight: 1.2,
+                },
+              })}
+              >
               Designing the Next Generation Autonomous Suburbs
             </Typography>
             <br></br>
             <hr color="#EC008C"></hr>
-            <Typography variant="bodyBlack">
+            <Typography 
+              variant="bodyBlack"
+              sx={(t) => ({
+                [t.breakpoints.down("sm")]: {
+                  fontSize: "1rem",
+                  lineHeight: 1.2,
+                },
+              })}
+              >
               Since 2018,  the NOGAS toolkit has been informed by collaboration
               and partnerships with municipal planning agencies, private
               developers, and urban research institutions. This page highlights

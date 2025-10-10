@@ -48,54 +48,75 @@ export default function DesignEngine() {
       </div>
 
       {/* --- DARK SECTION (OASIS / MIRAGE) --- */}
+{/* --- DARK SECTION (OASIS / MIRAGE) --- */}
+<Grid
+  container
+  sx={{
+    bgcolor: "#111120",
+    py: { xs: 3, md: 5 },            // smaller vertical padding
+    px: { xs: 2, md: 4 },
+  }}
+  // center the whole block and cap width so it doesn't sprawl
+  justifyContent="center"
+>
+  <Grid
+    container
+    item
+    xs={12}
+    md={12}
+    lg={10}
+    spacing={4}                     // modest column spacing
+    alignItems="center"
+  >
+    {/* left: image */}
+    <Grid item xs={12} md={6} sx={{ display: "flex", justifyContent: "center" }}>
+      <img
+        src="https://nogas-swar.s3.amazonaws.com/img/8_Design+Engine+Home+Page/Mirage_GIF.gif"
+        alt="MIRAGE"
+        style={{
+          width: "100%",            // fill its column
+          maxWidth: 520,            // but don't get huge
+          borderRadius: 12,
+        }}
+      />
+    </Grid>
+
+    {/* right: text */}
+    <Grid item xs={12} md={6} sx={{ color: "white" }}>
       <Grid
         container
-        direction="row"
-        sx={{
-          bgcolor: "#111120",
-          // don't force full viewport height on phones
-          minHeight: { xs: "auto", md: "100vh" },
-          py: { xs: 4, md: 8 }
-        }}
+        direction="column"
+        alignItems="stretch"
+        // put items at the top with a predictable gap (no space-evenly)
+        sx={{ gap: 3 }}
       >
-        {/* left: image */}
-        <Grid item xs={12} md={8} sx={{ display: "flex", justifyContent: "center" }}>
-          <img
-            src="https://nogas-swar.s3.amazonaws.com/img/8_Design+Engine+Home+Page/Mirage_GIF.gif"
-            alt="MIRAGE"
-            style={{ width: "50%", maxWidth: 520, marginTop: "2rem", paddingBottom: "3rem" }}
-          />
+        <Grid item>
+          <Typography variant="h3" sx={{ mb: 1 }}>
+            OASIS
+          </Typography>
+          <Typography>
+            The Optimized Autonomous Suburban Integration System model (OASIS)
+            uses existing demographic and spatial data to simulate
+            multi-objective neighborhood-scale land use scenarios.
+          </Typography>
+          <Button sx={{ mt: 1 }}><HashLink to="/oasis/#oasis-main">Learn More</HashLink></Button>
         </Grid>
 
-        {/* right: text */}
-        <Grid item xs={12} md={4} sx={{  }}>
-          <Grid
-            container
-            direction="column"
-            justifyContent="space-evenly"
-            alignItems="stretch"
-            textAlign="left"
-            spacing={6}
-            sx={{ px: 3, pb: 3, color: "white" }}
-          >
-            <Grid item>
-              <Typography variant="h3">OASIS</Typography>
-              <Typography sx={{ mt: 1.5 }}>
-                The Optimized Autonomous Suburban Integration System model (OASIS) uses existing demographic and spatial data to simulate multi-objective neighborhood-scale land use scenarios.
-              </Typography>
-              <Button> <HashLink to="/oasis/#oasis-main">Learn More</HashLink> </Button>
-            </Grid>
-
-            <Grid item>
-              <Typography variant="h3">MIRAGE</Typography>
-              <Typography sx={{ mt: 1.5 }}>
-               The Multi-Indicator Relational Assessment Generation Engine model (MIRAGE) takes outputs from OASIS and simulates block-scale optimization scenarios using site-specific
-              </Typography>
-              <Button> <HashLink to="/mirage/#mirage-main">Learn More</HashLink> </Button>
-            </Grid>
-          </Grid>
+        <Grid item>
+          <Typography variant="h3" sx={{ mb: 1 }}>
+            MIRAGE
+          </Typography>
+          <Typography>
+            The Multi-Indicator Relational Assessment Generation Engine model (MIRAGE)
+            takes outputs from OASIS and simulates block-scale optimization scenarios
+            using site-specific objectives and constraints.
+          </Typography>
+          <Button sx={{ mt: 1 }}><HashLink to="/mirage/#mirage-main">Learn More</HashLink></Button>
         </Grid>
       </Grid>
+    </Grid>
+  </Grid>
+</Grid>
       {/* ^^^^^ CLOSE the dark section here */}
 
       {/* --- WHITE SECTION (separate) --- */}

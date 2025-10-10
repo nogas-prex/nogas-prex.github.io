@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Card, CardContent, CardMedia, Grid, Typography, Box } from "@mui/material";
+
+import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 
 export default function CardNavigation({ imgs = [] }) {
