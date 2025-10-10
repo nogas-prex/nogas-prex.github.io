@@ -40,3 +40,13 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 600px) {
+  .about-title  { font-size: 1.8rem !important; line-height: 1.15 !important; }
+
+  .about-legend { font-size: 1.1rem !important; margin-left: 0 !important; }
+
+  .about-copy   { font-size: 0.95rem !important; line-height: 1.45 !important; }
+
+  .about-card   { padding: 0.75rem !important; }
+}

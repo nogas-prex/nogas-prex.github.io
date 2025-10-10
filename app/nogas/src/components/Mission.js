@@ -1,62 +1,61 @@
-import { Button, Grid, TextField,  } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import ImageSlider from "./ImageSlider";
-import { Link } from "react-router-dom";
 import YouTube from "react-youtube";
 
 export default function Mission() {
   return (
     <Grid
       container
-      spacing={0}
       direction="column"
       alignItems="center"
       justifyContent="center"
       sx={{ backgroundColor: "#00A360" }}
-      //   style={{ minHeight: '100vh' }}
       id="about"
     >
-      {" "}
       <Box
         sx={{
-          width: { xs: "90%", md: "50%" },
-          margin: { xs: "0", md: "8em" },
-          padding: { xs: "2em", md: "0" },
+          width: { xs: "92%", md: "50%" },   // desktop width unchanged
+          my: { xs: 4, md: 8 },
+          px: { xs: 2, md: 0 }
         }}
       >
+        {/* ABOUT — desktop uses theme, phones shrink via CSS class */}
         <Typography
           variant="sectionTitleUnderlineWhite"
           sx={{ color: "white" }}
+          className="about-title"
         >
           ABOUT
         </Typography>
-        <br></br>
-        <br></br>
-        <br></br>
 
+        <Box sx={{ my: { xs: 2, md: 4 } }} />
+
+        {/* ===== BACKGROUND ===== */}
         <fieldset
+          className="about-card"
           style={{
             border: "solid",
             borderRadius: "15px",
             padding: "1em",
-            borderColor: "white",
+            borderColor: "white"
           }}
         >
           <legend
+            className="about-legend"
             style={{
               marginLeft: "-35%",
               transform: "translatex(0%)",
               width: "max-content",
               padding: "0 0.15em",
               color: "white",
-              fontSize: "1.5em",
+              fontSize: "1.5em" // desktop size preserved
             }}
           >
             BACKGROUND
           </legend>
-          <Typography variant="landingBodyWhite">
+
+          <Typography variant="landingBodyWhite" className="about-copy">
             Today, suburban areas are home to an ever-increasing majority of the
             global population. Models indicate that the next generation of
             metropolitan growth will rapidly continue outside of urban cores,
@@ -68,30 +67,34 @@ export default function Mission() {
             through innovative planning and design.
           </Typography>
         </fieldset>
-        <br></br>
-        <br></br>
-        <br></br>
+
+        <Box sx={{ my: { xs: 2, md: 3 } }} />
+
+        {/* ===== WHAT IS NOGAS ===== */}
         <fieldset
+          className="about-card"
           style={{
             border: "solid",
             borderRadius: "15px",
             padding: "1em",
-            borderColor: "white",
+            borderColor: "white"
           }}
         >
           <legend
+            className="about-legend"
             style={{
               marginLeft: "-35%",
               transform: "translatex(0%)",
               width: "max-content",
               padding: "0 0.15em",
               color: "white",
-              fontSize: "1.5em",
+              fontSize: "1.5em"
             }}
           >
             WHAT IS NOGAS
           </legend>
-          <Typography variant="landingBodyWhite">
+
+          <Typography variant="landingBodyWhite" className="about-copy">
             The NOGAS toolkit uses a unique scenario-based modeling workflow to
             generate optimized suburban land use patterns, mobility frameworks,
             and urban design for a future when autonomous mobility options are
@@ -100,47 +103,58 @@ export default function Mission() {
             environmental performance benefits using more than 20 distinct
             parameters.
           </Typography>
+
           <Button
             variant="filled"
-            sx={{ backgroundColor: "#ec008c", color: "white!important" }}
+            sx={{
+              backgroundColor: "#ec008c",
+              color: "white!important"
+            }}
             href={"/download"}
           >
-            <Typography>Download NOGAS Toolkit (beta)</Typography>
+            <Typography component="span">
+              Download NOGAS Toolkit (beta)
+            </Typography>
           </Button>
         </fieldset>
-        <br></br>
-        <br></br>
+
+        <Box sx={{ my: { xs: 2, md: 3 } }} />
+
+        {/* ===== COLLABORATIONS ===== */}
         <fieldset
+          className="about-card"
           style={{
             border: "solid",
             borderRadius: "15px",
             padding: "1em",
-            borderColor: "white",
+            borderColor: "white"
           }}
         >
           <legend
+            className="about-legend"
             style={{
               marginLeft: "-35%",
               transform: "translatex(0%)",
               width: "max-content",
               padding: "0 0.15em",
               color: "white",
-              fontSize: "1.5em",
+              fontSize: "1.5em"
             }}
           >
             COLLABORATIONS
           </legend>
-          <Typography variant="landingBodyWhite">
+
+          <Typography variant="landingBodyWhite" className="about-copy">
             The NOGAS toolkit is developed by the{" "}
-            <a href="http://lcau.mit.edu" style={{ color: "white" }} alt="">
+            <a href="http://lcau.mit.edu" style={{ color: "white" }}>
               MIT Norman B. Leventhal Center for Advanced Urbanism
             </a>{" "}
             and{" "}
-            <a href="" alt="" style={{ color: "white" }}>
+            <a href="" style={{ color: "white" }}>
               P-REXlab
             </a>{" "}
             at MIT in collaboration with the{" "}
-            <a href="" alt="" style={{ color: "white" }}>
+            <a href="" style={{ color: "white" }}>
               Toyota Mobility Foundation
             </a>
             . Since 2018, this work has been informed by collaborations and
@@ -148,26 +162,18 @@ export default function Mission() {
             and urban research institutions.
           </Typography>
         </fieldset>
-        <br></br>
-        <br></br>
-        <Grid
-          container
-          spacing={1}
-          direction={"row"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          <Grid item xs={12} md={12}>
-            <YouTube
-              videoId="Ip4teG4-po4"
-              opts={{
-                height: "370",
-                width: "640",
-                playerVars: { autoplay: 1 },
-              }}
-            />
-          </Grid>
-        </Grid>
+
+        {/* Responsive 16:9 video */}
+        <Box sx={{ mt: { xs: 3, md: 4 } }}>
+          <Box sx={{ position: "relative", pt: "56.25%" }}>
+            <Box sx={{ position: "absolute", inset: 0 }}>
+              <YouTube
+                videoId="Ip4teG4-po4"
+                opts={{ width: "100%", height: "100%", playerVars: { autoplay: 1 } }}
+              />
+            </Box>
+          </Box>
+        </Box>
       </Box>
     </Grid>
   );

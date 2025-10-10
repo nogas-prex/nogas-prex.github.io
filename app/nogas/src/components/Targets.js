@@ -77,11 +77,28 @@ export default function Targets() {
             padding: { xs: "2em", md: "0" },
           }}
         >
-          <Typography variant="sectionTitleUnderline">NOGAS TARGETS</Typography>{" "}
+          <Typography variant="sectionTitleUnderline"            
+              sx={(t) => ({
+                [t.breakpoints.down("sm")]: {
+                  fontSize: "1.6rem",
+                  lineHeight: 1.2,
+                },
+              })}
+            >
+              NOGAS TARGETS
+            </Typography>{" "}
           <br></br>
           <br></br>
           <br></br>
-          <Typography variant="landingBody">
+          <Typography 
+              variant="landingBody"         
+              sx={(t) => ({
+              [t.breakpoints.down("sm")]: {
+                fontSize: "1.2rem",
+                lineHeight: 1.45,
+              },
+            })}
+          >
             With the adoption of distributed, on-demand autonomous mobility
             services, many of the standardized land use and development patterns
             that have typified suburban form since the early 20th century have

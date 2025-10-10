@@ -5,6 +5,7 @@ import Mission from "../components/Mission";
 import Targets from "../components/Targets";
 import CardNavigation from "../components/BottomNavigation";
 import IncrementalProgres from "../components/IncrementalProgress";
+import Partners from "../components/Partners";
 
 export default function Home() { 
     return (
@@ -20,7 +21,9 @@ export default function Home() {
             "https://nogas-swar.s3.amazonaws.com/img/01_Landing/Case+Study.png",
             "https://nogas-swar.s3.amazonaws.com/img/01_Landing/Design+Engine.png",
           ]}
+          
         />
+         <Partners />
       </div>
     );
 }

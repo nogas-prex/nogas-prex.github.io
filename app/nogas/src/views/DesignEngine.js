@@ -47,71 +47,86 @@ export default function DesignEngine() {
         />
       </div>
 
+      {/* --- DARK SECTION (OASIS / MIRAGE) --- */}
       <Grid
         container
         direction="row"
-        sx={{ height: "100vh", backgroundColor: "#111120" }}
+        sx={{
+          bgcolor: "#111120",
+          // don't force full viewport height on phones
+          minHeight: { xs: "auto", md: "100vh" },
+          py: { xs: 4, md: 8 }
+        }}
       >
-        <Grid item xs={12} md={8} sx={{ placeSelf: "center" }}>
+        {/* left: image */}
+        <Grid item xs={12} md={8} sx={{ display: "flex", justifyContent: "center" }}>
           <img
-            src={
-              "https://nogas-swar.s3.amazonaws.com/img/8_Design+Engine+Home+Page/Mirage_GIF.gif"
-            }
-            style={{ width: "50%" }}
+            src="https://nogas-swar.s3.amazonaws.com/img/8_Design+Engine+Home+Page/Mirage_GIF.gif"
+            alt="MIRAGE"
+            style={{ width: "50%", maxWidth: 520, marginTop: "2rem", paddingBottom: "3rem" }}
           />
         </Grid>
-        <Grid item xs={12} md={4} sx={{ backgroundColor: "000" }}>
+
+        {/* right: text */}
+        <Grid item xs={12} md={4} sx={{  }}>
           <Grid
             container
             direction="column"
             justifyContent="space-evenly"
             alignItems="stretch"
-            textAlign={"left"}
-            spacing={10}
-            sx={{ padding: "2em", marginTop: "3em" }}
+            textAlign="left"
+            spacing={6}
+            sx={{ px: 3, pb: 3, color: "white" }}
           >
-            <Grid item sx={{ height: "33%", color: "white" }}>
+            <Grid item>
               <Typography variant="h3">OASIS</Typography>
-              <Typography>
-                The Optimized Autonomous Suburban Integration System model
-                (OASIS) uses existing demographic and spatial data to simulate
-                multi-objective neighborhood-scale land use scenarios.
+              <Typography sx={{ mt: 1.5 }}>
+                The Optimized Autonomous Suburban Integration System model (OASIS) uses existing demographic and spatial data to simulate multi-objective neighborhood-scale land use scenarios.
               </Typography>
-              <Button>
-                <HashLink to="/oasis/#oasis-main">Learn More</HashLink>
-              </Button>
+              <Button> <HashLink to="/oasis/#oasis-main">Learn More</HashLink> </Button>
             </Grid>
-            <Grid item sx={{ height: "33%", color: "white" }}>
+
+            <Grid item>
               <Typography variant="h3">MIRAGE</Typography>
-              <Typography>
-                The Multi-Indicator Relational Assessment Generation Engine
-                model (MIRAGE) takes outputs from OASIS and simulates
-                block-scale optimization scenarios using site-specific
-                objectives and constraints.
+              <Typography sx={{ mt: 1.5 }}>
+               The Multi-Indicator Relational Assessment Generation Engine model (MIRAGE) takes outputs from OASIS and simulates block-scale optimization scenarios using site-specific
               </Typography>
-              <Button>
-                <HashLink to="/mirage/#mirage-main">Learn More</HashLink>
-              </Button>
-            </Grid>
-            <Grid item sx={{ height: "33%", color: "white" }}>
-              <Typography variant="h3">DESIGN ITERATION & OUTPUTS</Typography>
-              <Typography>
-                Based on the optimized exports from OASIS and MIRAGE, urban
-                design proposals are developed to communicate key social,
-                spatial, and material strategies that respond to stakeholder
-                objectives.
-              </Typography>
+              <Button> <HashLink to="/mirage/#mirage-main">Learn More</HashLink> </Button>
             </Grid>
           </Grid>
         </Grid>
-        <Grid
-          sx={{ color: "white" }}
-          direction="row"
-          container
-          alignItems="center"
-          justifyContent="center"
-          textAlign={"center"}
-        >
+      </Grid>
+      {/* ^^^^^ CLOSE the dark section here */}
+
+      {/* --- WHITE SECTION (separate) --- */}
+      <Grid
+        container
+        justifyContent="center"
+        textAlign="center"
+        sx={{ bgcolor: "#fff", color: "black", py: { xs: 4, md: 8 } }}
+      >
+        <Grid item xs={12} md={10} lg={8}>
+          <Typography
+            variant="h3"
+            sx={(t) => ({
+              fontWeight: "bold",
+              pb: 1,
+              [t.breakpoints.down("sm")]: { fontSize: "1.3rem", lineHeight: 1.2 }
+            })}
+          >
+            DESIGN ITERATION & OUTPUTS
+          </Typography>
+
+          <Typography
+            variant="body1"
+            sx={(t) => ({
+              [t.breakpoints.down("sm")]: { fontSize: "1rem", lineHeight: 1.4, padding: "0 1rem" }
+            })}
+          >
+            Based on the optimized exports from OASIS and MIRAGE, urban design
+            proposals are developed to communicate key social, spatial, and material
+            strategies that respond to stakeholder objectives.
+          </Typography>
         </Grid>
       </Grid>
     </div>
