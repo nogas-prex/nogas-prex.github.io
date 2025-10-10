@@ -1,6 +1,6 @@
 
 import ResponsiveAppBar from "../../components/AppBar";
-
+import { Grid, Typography } from "@mui/material";
 import ImageSlider from "../../components/ImageSlider";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";

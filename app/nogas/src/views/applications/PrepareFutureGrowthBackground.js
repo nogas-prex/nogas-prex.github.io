@@ -1,6 +1,6 @@
 import ResponsiveAppBar from "../../components/AppBar";
 
-
+import { Grid } from "@mui/material";
 import CaseStudyStat from "../../components/caseStudies/background/backgroundStat";
 import CaseStudyBackgroundText from "../../components/caseStudies/background/backgroundText";
 import CaseStudyBackgroundLanding from "../../components/caseStudies/background/backroundLanding";
