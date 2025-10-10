@@ -164,12 +164,15 @@ export default function Mission() {
         </fieldset>
 
         {/* Responsive 16:9 video */}
-        <Box sx={{ mt: { xs: 3, md: 4 } }}>
-          <Box sx={{ position: "relative", pt: "56.25%" }}>
+        <Box sx={{ mt: { xs: 2, md: 3 } }}>
+          <Box sx={{ position: "relative", width: "100%", maxWidth: 720, mx: "auto", pt: "80%", marginTop: "3rem" }} >
             <Box sx={{ position: "absolute", inset: 0 }}>
               <YouTube
                 videoId="Ip4teG4-po4"
-                opts={{ width: "100%", height: "100%", playerVars: { autoplay: 1 } }}
+                // let the wrapper control the size
+                opts={{ width: "100%", height: "300rem", playerVars: { autoplay: 1, rel: 0 } }}
+                // extra safety: make sure the iframe fills
+                iframeClassName="yt-embed"
               />
             </Box>
           </Box>
