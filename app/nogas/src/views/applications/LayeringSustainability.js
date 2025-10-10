@@ -1,8 +1,5 @@
 import { Link } from "@mui/material";
 import {
-    CardContent,
-    CardHeader,
-    CardMedia,
     Grid,
     Typography,
 } from "@mui/material";
@@ -14,7 +11,7 @@ import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import ImageSlider from "../../components/ImageSlider";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
+
 
 export default function LayeringSustability() {
     return (
@@ -24,6 +21,7 @@ export default function LayeringSustability() {
           image={
             "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/0_Cover/1_Small.jpg"
           }
+          imageAlt="Layering sustainability scenario map"
           title="LAYERING SUSTAINABILITY"
           subtitle="Landscape Optimization"
           body={[
@@ -42,6 +40,7 @@ export default function LayeringSustability() {
           image={
             "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/2_Background/0_Cover/1.png"
           }
+          imageAlt="Layering sustainability scenario map"
           body={[
             `Today, communities around the world are facing the dramatic
             effects of climate change. In 2021, more than 80 percent of Americans
@@ -83,6 +82,7 @@ export default function LayeringSustability() {
             leftImage={
               "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/3_Vision/Slider_Before.png"
             }
+            imageAlt="Layering sustainability scenario map"
             rightImage={
               "https://nogas-swar.s3.amazonaws.com/img/5_Case+Study+03_+Layering+Sustainability/3_Vision/Slider_After.png"
             }

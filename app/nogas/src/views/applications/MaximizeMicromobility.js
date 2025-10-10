@@ -1,7 +1,4 @@
 import {
-    CardContent,
-    CardHeader,
-    CardMedia,
     Grid,
     Typography,
 } from "@mui/material";
@@ -16,7 +13,7 @@ import CaseStudyBackground from "../../components/caseStudies/caseStudyBackgroun
 import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
 import ImageSlider from "../../components/ImageSlider";
-import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
+
 
 export default function MaximizingMicromobility() {
   const carouselItems = [

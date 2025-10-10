@@ -1,7 +1,4 @@
 import {
-    CardContent,
-    CardHeader,
-    CardMedia,
     Grid,
     Typography,
 } from "@mui/material";
@@ -18,7 +15,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Carousel from "react-material-ui-carousel";
 import { ImageItem } from "../../components/ImageCarousel";
 
-import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
+
 import { HashLink } from "react-router-hash-link";
 
 export default function PrepareFutureGrowth() {

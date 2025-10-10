@@ -1,26 +1,20 @@
-import { CardContent, CardHeader, CardMedia, Grid, Typography } from "@mui/material";
+
 import ResponsiveAppBar from "../../components/AppBar";
-import { Card } from "@mui/material";
+
 import ImageSlider from "../../components/ImageSlider";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Carousel from "react-material-ui-carousel";
 import { ImageItem } from '../../components/ImageCarousel'
-import { CardActionArea } from "@mui/material";
+
 
 import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyBackground from "../../components/caseStudies/caseStudyBackground";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
-import CaseStudySummary from "../../components/caseStudies/caseStudySummary";
+
 // import ImageCarousel from "../../components/ImageCarousel";
 import { HashLink } from "react-router-hash-link";
-const metricStyle = {
-    backgroundColor: "#00A360",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    textAlignLast: "center",
-};
+
 export default function ImprovingEquitableAccess() {
 
     const carouselItems = [
