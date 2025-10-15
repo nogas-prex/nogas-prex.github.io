@@ -12,9 +12,9 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          submodules: true
+          node-version: '18'
 
       - name: Build And Deploy
         id: builddeploy
@@ -23,7 +23,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ICY_WAVE_053576A10 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "."                 # repo root (safer than "/")
+          app_location: "app/nogas"                 # repo root (safer than "/")
           output_location: "build"          # CRA output folder
           app_build_command: "CI=false npm run build"
         env:
