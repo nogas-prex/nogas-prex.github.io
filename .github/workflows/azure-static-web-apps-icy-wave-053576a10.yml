@@ -11,7 +11,6 @@ jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
         with:
@@ -24,15 +23,15 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ICY_WAVE_053576A10 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"        # <-- repo root (where package.json lives)
-          output_location: "build" # CRA build folder
+          app_location: "."                 # repo root (safer than "/")
+          output_location: "build"          # CRA output folder
+          app_build_command: "CI=false npm run build"
         env:
-          CI: false                # <-- turn warnings into non-blocking
+          CI: false                         # don’t fail on ESLint warnings
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Close Pull Request Job
     steps:
       - name: Close Pull Request
         id: closepullrequest
