@@ -22,6 +22,7 @@ export default function CaseStudyBackgroundLanding(props) {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        paddingBottom: "5em",
       }}
     >
       <Grid
@@ -34,7 +35,7 @@ export default function CaseStudyBackgroundLanding(props) {
           textAlign: "left",
           backgroundColor: "rgba(255,255,255,0.5)",
           marginTop: "5em",
-          marginBottom: "2em",
+          paddingBottom: "2em",
         }}
       >
         <Typography variant="sectionTitle">{title}</Typography>

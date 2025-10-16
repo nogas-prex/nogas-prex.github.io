@@ -47,13 +47,13 @@ export default function ImprovingEquitableAccess() {
           subtitle="Neighborhood Retrofit"
           body={[
             `Since 1925, the number of car-owning households in the United States has skyrocketed from 17
-            percent to more than 91.6 percent.[1] In the suburbs, where less than five percent of the U.S.
+            percent to more than 91.6 percent. In the suburbs, where less than five percent of the U.S.
             workforce uses public transit to get to work, the configuration of the built environment is
-            designed to prioritize cars.[2] These car-centric communities create distinct burdens for an
+            designed to prioritize cars. These car-centric communities create distinct burdens for an
             increasing percentage of the suburban population who are elderly, disabled, or otherwise
-            unable to drive.[3] And the emphasis on monofunctional vehicular infrastructure often makes it
+            unable to drive. And the emphasis on monofunctional vehicular infrastructure often makes it
             difficult for pedestrians and those using existing micromobililty offerings, such as bicycles and
-            scooters.[4]`,
+            scooters.`,
             `In the near-term, the proliferation of autonomous vehicles (AVs) may offer a path forward for
             mobility-challenged people, enabling them to use vehicular infrastructure without driving a car.
             Eventually, widespread adoption of autonomous transportation systems and new land use
@@ -70,11 +70,11 @@ export default function ImprovingEquitableAccess() {
           body={[
             `Today, nearly 55 million Americans are over age 65. 
                 By 2060, this number is expected to increase to 95 million, 
-                jumping from 16 percent to 23 percent of the total U.S. population. [1]
+                jumping from 16 percent to 23 percent of the total U.S. population. 
                 This aging of the population will create major challenges for 
                 ensuring equitable access to mobility, especially since older 
                 individuals are more likely to have physical difficulty driving 
-                because of changes in hearing, eyesight, and other physical factors. [2]
+                because of changes in hearing, eyesight, and other physical factors. 
                 In the suburbs, where car travel is often the only reliable daily 
                 transportation option, this presents major obstacles for transportation planners.`,
           ]}
@@ -161,7 +161,7 @@ for the elderly and people with disabilities who can’t drive.`,
                 <Typography variant="sectionTitle"
                             sx={(t) => ({
                               [t.breakpoints.down("sm")]: {
-                                fontSize: "12rem",
+                                fontSize: "1.6rem",
                                 lineHeight: 1.2,
                                 },
                               })}

@@ -89,9 +89,7 @@ export default function PrepareFutureGrowth() {
             mobility paradigms are desperately needed. 
             `,
           ]}
-          citations={[
-            `[1] Planetizen. What is Single-Family Zoning? Access (11/20/2022): https://www.planetizen.com/definition/single-family-zoning || Badger, E., Bui, Q. (2019). Cities Start to Question an American Ideal: A House With a Yard on Every Lot. The New York Times. Access (11/20/2022): https://www.nytimes.com/interactive/2019/06/18/upshot/cities-across-america-question-single-family-zoning.html`,
-          ]}
+
         />
         <CaseStudyBackground
           title="BACKGROUND"
@@ -194,16 +192,37 @@ micromobility options to grant residents greater access to services and amenitie
                 md={6}
                 sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
               >
-                <Typography variant="sectionTitle">
+                <Typography variant="sectionTitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.6rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+                >
                   {" "}
                   LAND USE COMPATIBILITY{" "}
                 </Typography>
                 <br></br>
-                <Typography variant="sectionSubtitle">
+                <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+                >
                   Neighborhood Optimization with OASIS
                 </Typography>
                 <hr color="EC008C"></hr>
-                <Typography variant="bodyBlack">
+                <Typography variant="bodyBlack"
+                             sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}               
+                >
                   OASIS is a parametric toolbox that can help planners and
                   developers optimize neighborhood- scale land use and mobility
                   frameworks. The land use compatibility optimization tool of
@@ -247,10 +266,24 @@ micromobility options to grant residents greater access to services and amenitie
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}              
+              >
                 Identifying Trade-Offs with OASIS
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                             sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}               
+              >
                 Click through the analysis of various scenarios below to explore
                 potential trade-offs and determine the optimal outcome
               </Typography>
@@ -281,16 +314,37 @@ micromobility options to grant residents greater access to services and amenitie
               md={6}
               sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
             >
-              <Typography variant="sectionTitle">
+              <Typography variant="sectionTitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.6rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}               
+              >
                 {" "}
                 COMPATIBLE RESIDENTIAL BLOCK LAYOUT{" "}
               </Typography>
               <br></br>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}               
+              >
                 Block Optimization with MIRAGE
               </Typography>
               <hr color="EC008C"></hr>
-              <Typography variant="bodyBlack">
+              <Typography variant="bodyBlack"
+                             sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}               
+              >
                 MIRAGE is a parametric toolbox that can help planners and
                 developers optimize block-scale configurations. The MIRAGE
                 toolbox can optimize residential block layout to meet the
@@ -326,10 +380,24 @@ micromobility options to grant residents greater access to services and amenitie
             }}
           >
             <Grid item xs={12} md={6} elevation={5}>
-              <Typography variant="sectionSubtitle">
-                Residential Block Configuration Optimization
+              <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}                 
+              >
+                <strong>Residential Block Configuration Optimization</strong>
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}               
+              >
                 Click through the various scenarios above to see how block
                 layout optimization tool can transform an existing single-family
                 residential block to be compatible with the autonomous needs of
@@ -354,11 +422,16 @@ micromobility options to grant residents greater access to services and amenitie
             <Grid item xs={0} sm={3}>
               {" "}
               <br></br>
+
               <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                            sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}                 
+              >
                 In October 2023, as part of a three-day symposium on the future
                 of master planned communities,Jonah Susskind and Southstar Communities
                 CEO Thad Rutherford presented ongoing collaborative uses of the NOGAS

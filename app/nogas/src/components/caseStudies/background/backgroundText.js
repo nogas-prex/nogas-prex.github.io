@@ -15,7 +15,7 @@ export default function CaseStudyBackgroundText(props) {
         justifyContent="center"
         sx={{
           width: { xs: "100vw", md: "80vw" },
-          marginBottom: "5em",
+          marginBottom: "2em",
           marginTop: "5em",
           marginLeft: { xs: "0", md: "10vw" },
           paddingLeft: { xs: "2em", md: "8em" },

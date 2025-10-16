@@ -54,11 +54,11 @@ export default function FutureOfWork() {
             `Since the birth of the suburban employment campus in the 1940s, these developments have
             provided large, high-quality, efficient workspaces for big corporations. Today, according to the
             U.S. Bureau of Labor Statistics, 32 percent of U.S. employment is in the suburbs of large
-            metropolitan areas.[1] However, as people and jobs continue to suburbanize, the distance
-            between people and jobs is growing, and the geography between people and jobs is changing.[2]`,
+            metropolitan areas. However, as people and jobs continue to suburbanize, the distance
+            between people and jobs is growing, and the geography between people and jobs is changing.`,
             `The future of work is less certain than ever since the COVID-19 pandemic disrupted
             conventional working modes. Remote working or working from home is becoming more popular
-            and necessary than ever.[3] The suburb-to-suburb commuting challenge, the evolving remote work
+            and necessary than ever. The suburb-to-suburb commuting challenge, the evolving remote work
             options, and proliferation of autonomous mobility and micromobility provide a key opportunity
             to reimagine the typical suburban employment campus.`,
           ]}

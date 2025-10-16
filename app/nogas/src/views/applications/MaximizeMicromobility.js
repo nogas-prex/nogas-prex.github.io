@@ -56,11 +56,6 @@ export default function MaximizingMicromobility() {
           implemented. However, current standards and design guidelines for suburban streets typically
           lack the essential infrastructure to accommodate large-scale micromobility development.`,
         ]}
-        citations={[
-          `[1] Burrows, M., Burd, C., & McKenzie, B. (2021). Commuting by Public Transportation in the United States: 2019. American Community Survey Reports ACS-48. Access (11/20/2022): https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-48.pdf`,
-          `[2] Polzin, S.E., Pisarski, A.E., Spear, B., Long, L., & McGuckin, N. (2015). Commuting in America 2013: Brief 15. Commuting Flow Patterns. American Association of State Highway and Transportation Officials. https://www.ecodestreet.com/product/Commuting-in-America-2013-Brief-15- Commuting-Flow-Patterns/`,
-          `[3] Federal Highway Administration. (2017). 2017 National Household Travel Survey, U.S. Department of Transportation, Washington, DC.`,
-        ]}
       />
       <CaseStudyBackground
         title="BACKGROUND"
@@ -73,9 +68,7 @@ export default function MaximizingMicromobility() {
                 width in many other countries. This car-based street design not only leads to more car accidents (because 
                 there are more cars on the road), its also wastes valuable land resources.[1]`,
         ]}
-        citations={[
-          `[1] Millard-Ball, A. (2022). The width and value of residential streets. Journal of the American Planning Association, 88(1): 30-43.`,
-        ]}
+
         stats={[
           {
             pct: "55ft",
@@ -148,16 +141,37 @@ trips.`,
               md={6}
               sx={{ padding: { xs: "2em", md: "7em" }, textAlign: "left" }}
             >
-              <Typography variant="sectionTitle">
+              <Typography variant="sectionTitle"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.6rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+              >
                 {" "}
                 MICRO-MOBILITY CORRIDOR{" "}
               </Typography>
               <br></br>
-              <Typography variant="sectionSubtitle">
+              <Typography variant="sectionSubtitle"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1.2rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+              >
                 Neighborhood Optimization with OASIS
               </Typography>
               <hr color="EC008C"></hr>
-              <Typography variant="bodyBlack">
+              <Typography variant="bodyBlack"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,                    
+                              },
+                            })}
+              >
                 OASIS is a parametric toolbox that can help planners and
                 developers optimize neighborhood- scale land use and mobility
                 frameworks. The micromobility corridor optimization tool of the
@@ -181,40 +195,24 @@ trips.`,
             </Grid>
           </Grid>
         </Grid>
-        <Grid
-          container
-          justifyContent="center"
-          alignContent="center"
-          direction="column"
-          sx={{
-            paddingLeft: { xs: "2em", md: "25%" },
-            paddingRight: { xs: "2em", md: "25%" },
-            marginBottom: "2em",
-          }}
-        >
-          <Grid item xs={12} md={6} elevation={5}>
-            <Carousel
-              navButtonsAlwaysVisible={true}
-              sx={{ maxWidth: "100%", minHeight: "500px" }}
-            >
-              {carouselItems.map((img, i) => (
-                <ImageItem key={i} image={img.img} name={img.name} />
-              ))}
-            </Carousel>
-          </Grid>{" "}
-          <Grid item xs={0} sm={3}>
-            {" "}
-          </Grid>{" "}
-          <Grid item xs={12} sm={6}>
-            <Typography variant="body2">
+        <Grid container spacing={0}>
+            <Grid item xs={12} sm={6}>
+            <Typography variant="body2" sx={{ mb: 2 }}>
               Click through the various scenarios above to see how the
               micromobility corridor optimization tool can be applied under
               different land use settings to maximize connectivity and
               accessibility.
             </Typography>
-          </Grid>{" "}
-          <Grid item xs={0} sm={3}>
-            {" "}
+          </Grid>
+          <Grid item xs={12} md={6} sx={{ pb: 0 }}>
+            <Carousel
+              navButtonsAlwaysVisible
+              sx={{ mb: 0 }}
+            >
+              {carouselItems.map((img, i) => (
+                <ImageItem key={i} image={img.img} name={img.name} />
+              ))}
+            </Carousel>
           </Grid>
         </Grid>
       </Grid>
