@@ -19,20 +19,20 @@ export default function ImprovingEquitableAccess() {
 
     const carouselItems = [
       {
-        name: "Typical configuration",
-        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Existing+Scenario.png",
+        name: "Existintg Conditions",
+        img: "https://dl.dropboxusercontent.com/scl/fi/ww9qqe58f472cg8umozp1/1.jpg?rlkey=yd54or870gctw7s6wtljp4eg0&dl=0",
       },
       {
-        name: "Optimized configuration",
-        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Proposed+Scenario.png",
+        name: "AD 1",
+        img: "https://dl.dropboxusercontent.com/scl/fi/t376zhn14772ghyphlkzu/2.jpg?rlkey=mu513qrcjvlj3sk72yght1oqh&dl=0",
       },
       {
-        name: "Proximity Analysis",
-        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Proximity+Analysis.png",
+        name: "AD 2.1",
+        img: "https://dl.dropboxusercontent.com/scl/fi/dbq3yjd727otn8vbq8xur/3.jpg?rlkey=uwrpbkvrbakg707xifqc4iy12&dl=0",
       },
       {
-        name: "Multi-modal circulation analysis",
-        img: "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/4_Equitable+Access/Autonomous+Ready.png",
+        name: "AD 2.2",
+        img: "https://dl.dropboxusercontent.com/scl/fi/45ekx5j15svr0g7pkqvef/4.jpg?rlkey=fgcz4iqktfgl6hps11v8ij62a&dl=0",
       },
     ];
 
@@ -46,37 +46,48 @@ export default function ImprovingEquitableAccess() {
           title="IMPROVING EQUITABLE ACCESS"
           subtitle="Neighborhood Retrofit"
           body={[
-            `Since 1925, the number of car-owning households in the United States has skyrocketed from 17
-            percent to more than 91.6 percent. In the suburbs, where less than five percent of the U.S.
-            workforce uses public transit to get to work, the configuration of the built environment is
-            designed to prioritize cars. These car-centric communities create distinct burdens for an
-            increasing percentage of the suburban population who are elderly, disabled, or otherwise
-            unable to drive. And the emphasis on monofunctional vehicular infrastructure often makes it
-            difficult for pedestrians and those using existing micromobililty offerings, such as bicycles and
-            scooters.`,
-            `In the near-term, the proliferation of autonomous vehicles (AVs) may offer a path forward for
-            mobility-challenged people, enabling them to use vehicular infrastructure without driving a car.
-            Eventually, widespread adoption of autonomous transportation systems and new land use
-            patterns that include expanded micromobility options could pave the way for radically new
-            suburban configurations that prioritize equitable mobility for all. `,
+            `Retrofitting legacy suburban districts offers an opportunity to redefine accessibility by 
+            working within the grain of existing neighborhoods rather than replacing them. These community-centered 
+            adaptations build upon the latent spatial features already present—narrow blocks, service alleys, and 
+            variable lot sizes—to create a scalable, phased model of suburban transformation.`,
+
+            `In the near term, interior alleys can be converted into car-free micro-mobility corridors that support safe, 
+            low-speed travel for pedestrians, cyclists, and small electric vehicles. Vacant or oversized lots can be 
+            reprogrammed into shared courtyards and public open spaces, enhancing social and ecological performance while 
+            reducing stormwater runoff and heat accumulation. Mid-block zones may host EV and AEV charging hubs, giving 
+            residents shared access to electric and autonomous vehicle infrastructure.`,
+
+            `Over time, this approach supports incremental infill and densification through accessory dwelling units or small 
+            multifamily housing, expanding access and affordability without displacement. Along arterial edges, “smart stop” 
+            nodes integrate local and regional networks by combining AEV pick-up zones, micro-delivery lockers, and neighborhood-scale 
+            amenities.`,
+
+            `This inside-out block strategy reverses the conventional suburban hierarchy, prioritizing shared mobility and environmental 
+            resilience over private driveways and parking. The outcome is an equity-centered retrofit model that strengthens existing 
+            communities through accessibility, incremental density, and shared open space—transforming suburban blocks into more connected, 
+            flexible, and inclusive environments for the future.
+            `,
           ]}
         />
         <CaseStudyBackground
-          title="BACKGROUND"
-          subtitle="Challenges to Mobility Access"
+          title="BACKGROUND"S
+          subtitle="Challenges to Suburban Mobility"
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/2_Background/0_Cover/1.png"
+            "https://dl.dropboxusercontent.com/scl/fi/jjw7gfgko6emnz6cjhrwj/plan.jpg?rlkey=5hfy1ct5p0azenbtzq2j12kg9&dl=0"
           }
           body={[
-            `Today, nearly 55 million Americans are over age 65. 
-                By 2060, this number is expected to increase to 95 million, 
-                jumping from 16 percent to 23 percent of the total U.S. population. 
-                This aging of the population will create major challenges for 
-                ensuring equitable access to mobility, especially since older 
-                individuals are more likely to have physical difficulty driving 
-                because of changes in hearing, eyesight, and other physical factors. 
-                In the suburbs, where car travel is often the only reliable daily 
-                transportation option, this presents major obstacles for transportation planners.`,
+            `Postwar suburban districts were designed for the automobile, with narrow blocks, small parcels, 
+            and interior alleyways organized around private driveways and garages. While these spatial patterns 
+            once supported single-family lifestyles, they now constrain mobility, limit public space, and contribute 
+            to environmental inefficiencies such as high impervious surface coverage and low walkability.`,
+            <br></br>,
+            <br></br>,
+            `Many mid-century neighborhoods are now underused or partially vacant, creating both challenges and opportunities. 
+            Instead of top-down upzoning that risks displacement, adaptive block-level retrofits leverage existing infrastructure 
+            to achieve equitable transformation. Strategies such as alley conversions, shared AEV hubs, and incremental infill 
+            housing allow communities to evolve over time—enhancing access, reducing stormwater runoff, and improving livability 
+            without erasing local character.
+            `,
           ]}
           stats={[
             {
@@ -117,15 +128,17 @@ export default function ImprovingEquitableAccess() {
         </Grid>
         <CaseStudyVision
           title={"VISION"}
-          subtitle="Autonomous Suburbs for All"
+          subtitle="Equitable Suburban Transformation"
           body={[
-            `The codes, policies, and guidelines used to control suburban form can be expanded to account
-for the potential effects of AVs, and to better accommodate increased micromobility and
-pedestrian modes. New neighborhood land use patterns can ensure equitable access to local
-amenities within a five-minute walkshed of all residents, including those with mobility
-challenges. `,
-            `Additionally, suburban block configurations can be optimized to further improve mobility access
-for the elderly and people with disabilities who can’t drive.`,
+            `Legacy suburban neighborhoods can evolve into inclusive, adaptable, and connected communities by 
+            rethinking how land use, mobility, and infrastructure intersect. Rather than pursuing expansive greenfield 
+            growth, the future lies in retrofitting existing suburban form—transforming alleys, driveways, and excess 
+            pavement into shared corridors for autonomous and micro-mobility modes.`,
+
+            `By updating local codes and design guidelines to anticipate AEV integration, these neighborhoods can balance 
+            accessibility, environmental performance, and affordability. The result is a new suburban model—autonomous, 
+            multimodal, and equitable—that provides safe access to daily needs within a short walk or ride for all residents.
+            `,
           ]}
           icons={[
             {
@@ -146,6 +159,9 @@ for the elderly and people with disabilities who can’t drive.`,
           ]}
         />
         {/* custom stuff */}{" "}
+        
+        
+        
         <Grid container direction="column" sx={{ marginTop: "7vh" }}>
           <Grid item>
             <Grid container direction="row">
@@ -166,7 +182,7 @@ for the elderly and people with disabilities who can’t drive.`,
                                 },
                               })}
                 >
-                  EQUITABLE ACCESS{" "}
+                  ARTERIAL EDGE
                 </Typography>
                 <br></br>
                 <Typography variant="sectionSubtitle"
@@ -177,7 +193,7 @@ for the elderly and people with disabilities who can’t drive.`,
                                 },
                               })}
                 >
-                  Neighborhood Optimization with OASIS
+                  Retrofiting Legacy Single-Family Neighborhoods
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack"
@@ -188,27 +204,23 @@ for the elderly and people with disabilities who can’t drive.`,
                                 },
                               })}
                 >
-                  OASIS is a parametric toolbox that can help planners and
-                  developers optimize neighborhood- scale land use
-                  configurations and mobility networks. The accessibility
-                  optimization components within the OASIS toolbox can be used
-                  to analyze an existing neighborhood master plan and identify
-                  opportunities for optimizing connectivity ratios through
-                  scenario-based modeling.
+                  Legacy single-family neighborhoods are characterized by aging ranch-style homes, 
+                  irregular lots, and interior alleyways that organize each block. Many lots are vacant, 
+                  and the area faces limited transportation access and mobility options, especially for 
+                  lower-income and disabled residents.
+
+                  Near-term adaptations focus on converting alleyways into multi-modal corridors for walking, 
+                  cycling, and small vehicles, while vacant parcels become shared public spaces or EV-charging nodes. 
+                  <br></br>
+                  <br></br>
+                  Over time, older homes will transition to mixed-density infill, increasing green space and 
+                  reducing heat-island effects.
+
+                  At arterial edges, Smart Stops will link neighborhood mobility to larger regional networks—serving 
+                  as community nodes with ride-share hubs, AEV stations, school pickups, and parcel lockers—integrating 
+                  local and regional transportation systems into a cohesive neighborhood framework.
                 </Typography>
-                <br></br>
-                <br></br>
-                <Button
-                  variant="outlined"
-                  style={{
-                    color: "#EC008C",
-                    borderColor: "#EC008C",
-                    marginTop: "3em",
-                  }}
-                  endIcon={<ArrowForwardIcon />}
-                >
-                  <HashLink to={"/oasis"}>Learn more about OASIS</HashLink>
-                </Button>
+
               </Grid>
             </Grid>
           </Grid>
@@ -233,7 +245,7 @@ for the elderly and people with disabilities who can’t drive.`,
                               },
                             })}
               >
-                Neighborhood Configuration Optimization
+                Community Centered Adaptation
               </Typography>
               <Typography variant="body2"
                           sx={(t) => ({
@@ -245,9 +257,9 @@ for the elderly and people with disabilities who can’t drive.`,
                               },
                             })}
               >
-                Click through the various scenarios below to see how OASIS can
-                generate different master plan scenarios to determine an optimal
-                configuration based on predetermined accessibility objectives.
+                Click through to see the transformation of a prototypical suburban block
+                optimized for equitable access using autonomous and micromobility
+                transportation modes.
               </Typography>
             </Grid>
             <Grid item xs={12} md={6} elevation={5}>

@@ -10,6 +10,9 @@ import ResponsiveAppBar from "../../components/AppBar";
 import CaseStudyBackground from "../../components/caseStudies/caseStudyBackground";
 import CaseStudyLanding from "../../components/caseStudies/caseStudyLanding";
 import CaseStudyVision from "../../components/caseStudies/caseStudyVision";
+import Box from "@mui/material/Box";
+
+
 
 
 import ImageSlider from "../../components/ImageSlider";
@@ -123,12 +126,14 @@ export default function CurbToKitchen() {
         />
         <Grid
           container
+          alignItems="center"
+          justifyContent="center"
           sx={{ width: "100vw", height: "100%", overflowY: "hidden" }}
         >
           <img
-          src="https://dl.dropboxusercontent.com/scl/fi/jcb7misru5rmfz5xgkhjd/C2K.jpg?rlkey=5ktab0vlb0qknl6jdmbw61sij&st=babwfpqf&dl=0"
+          src="https://dl.dropboxusercontent.com/scl/fi/7ydyl67nnqtz6liqeo1lw/C2K.jpg?rlkey=stiusitaj4cyy1haq45s7eh0h&dl=0oxusercontent.com/scl/fi/85x1iljxz9ixcmllvwdrg/L2_Micro6_cropped.jpg?rlkey=q5aji0vl46ppb705ndhzxnf2r&dl=0"
           alt="Curb to Kitchen"
-          style={{ width: "100vw", height: "80%", objectFit: "cover" }}
+          style={{ width: "80vw", height: "80%", objectFit: "cover" }}
           />{" "}
         </Grid>{" "}
         <CaseStudyVision
@@ -171,6 +176,55 @@ export default function CurbToKitchen() {
             },
           ]}
         />
+      {/* ---Image Slider --- */}
+      <Grid
+        container
+        direction="column"
+        alignItems="left"
+        justifyContent="left"
+        sx={{
+          backgroundColor: "#fff",
+          px: { xs: "auto", md: "10vw" },
+          my: { xs: "2em", md: "4em" },
+          width: "100%",
+        }}
+      >
+        {/* Title */}
+        <Box sx={{ width: "100%", mb: { xs: 2, md: 3 }, textAlign: "left" }}>
+          <Typography
+            variant="sectionTitle"
+                            sx={(t) => ({
+                              [t.breakpoints.down("sm")]: {
+                                fontSize: "1.6rem",
+                                lineHeight: 1.2,
+                                },
+                              })}
+          >
+            ReImagining Delivery
+          </Typography>
+        </Box>
+
+        {/* Body */}
+        <Box sx={{ width: "100%", mb: { xs: 2, md: 3 }, textAlign: "left" }}>
+          <Typography
+            variant="bodyBlack"
+                          sx={(t) => ({
+                            [t.breakpoints.down("sm")]: {
+                              fontSize: "1rem",
+                              lineHeight: 1.2,
+                              },
+                            })}
+          >
+            Envisioning a future where autonomous delivery systems become integrated into the spatial fabric of suburban living. Here packages arrive at the delivery hub where users can schedule a delivery based on availability of robots or drones. Users can also pick up the packages by themselves at the hub. The optimal route for delivery robots will be assigned based on the principle of minimizing total delivery distance. 
+          </Typography>
+        </Box>
+          <img
+          src="https://dl.dropboxusercontent.com/scl/fi/85x1iljxz9ixcmllvwdrg/L2_Micro6_cropped.jpg?rlkey=q5aji0vl46ppb705ndhzxnf2r&dl=0"
+          alt="Curb to Kitchen"
+          style={{ width: "80vw", height: "80%", objectFit: "cover", justifyContent: "left" }}
+          />{" "}
+
+      </Grid>
         {/* <div> custom stuff </div> */}
         <Grid container direction="column" sx={{ marginTop: "7vh" }}>
           <Grid item>
