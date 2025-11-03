@@ -41,7 +41,7 @@ export default function ImprovingEquitableAccess() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://nogas-swar.s3.amazonaws.com/img/3_Case+Study+01_+Improving+Equitable+Access/0_Cover/1_Small.jpg"
+            "https://dl.dropboxusercontent.com/scl/fi/l0u7807cwe7023ewncjus/suburban-sat.jpg?rlkey=x310oosmj4ablpcqpson7zh41&st=rdy0u98u&dl=0"
           }
           title="IMPROVING EQUITABLE ACCESS"
           subtitle="Neighborhood Retrofit"
@@ -70,10 +70,10 @@ export default function ImprovingEquitableAccess() {
           ]}
         />
         <CaseStudyBackground
-          title="BACKGROUND"S
+          title="Aging Infrastructure, Limited Mobility"
           subtitle="Challenges to Suburban Mobility"
           image={
-            "https://dl.dropboxusercontent.com/scl/fi/jjw7gfgko6emnz6cjhrwj/plan.jpg?rlkey=5hfy1ct5p0azenbtzq2j12kg9&dl=0"
+            "https://dl.dropboxusercontent.com/scl/fi/9a94np07su62biu4c9pm4/L1_AV49.jpg?rlkey=yz7levh08o9i0zp7zb8vdptpm&st=7y7l4xqi&dl=0"
           }
           body={[
             `Postwar suburban districts were designed for the automobile, with narrow blocks, small parcels, 
@@ -182,7 +182,7 @@ export default function ImprovingEquitableAccess() {
                                 },
                               })}
                 >
-                  ARTERIAL EDGE
+                  Legacy Suburbs
                 </Typography>
                 <br></br>
                 <Typography variant="sectionSubtitle"
@@ -193,7 +193,7 @@ export default function ImprovingEquitableAccess() {
                                 },
                               })}
                 >
-                  Retrofiting Legacy Single-Family Neighborhoods
+                  Retrofitting Single-Family Neighborhoods
                 </Typography>
                 <hr color="EC008C"></hr>
                 <Typography variant="bodyBlack"
