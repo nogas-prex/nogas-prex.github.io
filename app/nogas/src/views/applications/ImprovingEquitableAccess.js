@@ -53,18 +53,18 @@ export default function ImprovingEquitableAccess() {
             `In the near term, interior alleys can become car-free micro-mobility corridors supporting safe movement for pedestrians, cyclists, 
             and small electric vehicles. Vacant or oversized lots can be converted into shared courtyards or green spaces, improving social and 
             ecological performance while mitigating stormwater and heat. Mid-block spaces can host shared EV and AEV charging hubs, expanding access 
-            to emerging mobility systems.`,
-
-            `Over time, incremental infill through ADUs and small multifamily housing expands affordability and access without displacing residents. 
+            to emerging mobility systems.Over time, incremental infill through ADUs and small multifamily housing expands affordability and access without displacing residents. 
             Along arterials, “smart stop” nodes can integrate local and regional networks by combining AEV pick-ups, micro-delivery lockers, 
-            and neighborhood amenities.`,
-
-            `This inside-out block strategy flips the suburban hierarchy, prioritizing shared mobility and environmental resilience over private driveways 
+            and neighborhood amenities.This inside-out block strategy flips the suburban hierarchy, prioritizing shared mobility and environmental resilience over private driveways 
             and parking. The result is an equity-focused retrofit model that strengthens existing communities through incremental density, shared open space, 
             and multimodal access—creating more connected, adaptable, and inclusive suburban environments.
             `,
           ]}
         />
+        <Grid
+          container
+          sx={{ width: "100vw", height: "100%", overflowY: "hidden", paddingTop: "4rem"}}
+        >
         <CaseStudyBackground
           title="Aging Infrastructure, Limited Mobility"
           subtitle="Challenges to Suburban Mobility"
@@ -92,6 +92,7 @@ export default function ImprovingEquitableAccess() {
             "/applications/improving-equitable-access-background/#iea-background"
           }
         />
+        </Grid>
         <Grid
           container
           sx={{ width: "100vw", height: "100%", overflowY: "hidden" }}
