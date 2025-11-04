@@ -47,17 +47,15 @@ export default function ImprovingEquitableAccess() {
           subtitle="Neighborhood Retrofit"
           body={[
             `Retrofitting legacy suburban districts offers a chance to reimagine accessibility by working with the grain of existing neighborhoods rather 
-            than replacing them. This approach builds on latent spatial assets—narrow blocks, alleys, and varied lot sizes—to enable scalable, 
-            community-centered transformation.`,
-
-            `In the near term, interior alleys can become car-free micro-mobility corridors supporting safe movement for pedestrians, cyclists, 
-            and small electric vehicles. Vacant or oversized lots can be converted into shared courtyards or green spaces, improving social and 
-            ecological performance while mitigating stormwater and heat. Mid-block spaces can host shared EV and AEV charging hubs, expanding access 
-            to emerging mobility systems.Over time, incremental infill through ADUs and small multifamily housing expands affordability and access without displacing residents. 
-            Along arterials, “smart stop” nodes can integrate local and regional networks by combining AEV pick-ups, micro-delivery lockers, 
-            and neighborhood amenities.This inside-out block strategy flips the suburban hierarchy, prioritizing shared mobility and environmental resilience over private driveways 
-            and parking. The result is an equity-focused retrofit model that strengthens existing communities through incremental density, shared open space, 
-            and multimodal access—creating more connected, adaptable, and inclusive suburban environments.
+            than replacing them. This approach builds on existing assets—narrow blocks, alleys, and varied lot sizes—to enable scalable, community-centered 
+            transformation. Interior alleys can shift into car-free micro-mobility corridors for pedestrians, cyclists, and small electric vehicles, improving 
+            safety and connectivity. Vacant or oversized lots can become shared courtyards and green spaces, strengthening social life, managing stormwater, 
+            and reducing heat. Mid-block zones can host shared EV and AEV charging, expanding access to future mobility options. Over time, incremental 
+            infill—through ADUs and small multifamily housing—supports affordability and gentle density without displacement. Arterial edges can introduce 
+            “smart stop” nodes that link neighborhood mobility to regional systems through AEV pick-ups, micro-delivery, and shared amenities. This inside-out
+            strategy flips the suburban hierarchy, prioritizing shared mobility, open space, and environmental resilience over private driveways and parking. 
+            The result is an equity-focused retrofit model that strengthens existing communities through incremental density, multimodal access, and adaptable 
+            public space.
             `,
           ]}
         />
