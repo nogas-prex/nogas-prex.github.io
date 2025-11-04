@@ -41,31 +41,27 @@ export default function ImprovingEquitableAccess() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://dl.dropboxusercontent.com/scl/fi/l0u7807cwe7023ewncjus/suburban-sat.jpg?rlkey=x310oosmj4ablpcqpson7zh41&st=rdy0u98u&dl=0"
+            "https://dl.dropboxusercontent.com/scl/fi/l0u7807cwe7023ewncjus/suburban-sat.jpg?rlkey=x310oosmj4ablpcqpson7zh41&st=8qtzzjom&dl=0"
           }
           title="IMPROVING EQUITABLE ACCESS"
           subtitle="Neighborhood Retrofit"
           body={[
-            `Retrofitting legacy suburban districts offers an opportunity to redefine accessibility by 
-            working within the grain of existing neighborhoods rather than replacing them. These community-centered 
-            adaptations build upon the latent spatial features already present—narrow blocks, service alleys, and 
-            variable lot sizes—to create a scalable, phased model of suburban transformation.`,
+            `Retrofitting legacy suburban districts offers a chance to reimagine accessibility by working with the grain of existing neighborhoods rather 
+            than replacing them. This approach builds on latent spatial assets—narrow blocks, alleys, and varied lot sizes—to enable scalable, 
+            community-centered transformation.`,
 
-            `In the near term, interior alleys can be converted into car-free micro-mobility corridors that support safe, 
-            low-speed travel for pedestrians, cyclists, and small electric vehicles. Vacant or oversized lots can be 
-            reprogrammed into shared courtyards and public open spaces, enhancing social and ecological performance while 
-            reducing stormwater runoff and heat accumulation. Mid-block zones may host EV and AEV charging hubs, giving 
-            residents shared access to electric and autonomous vehicle infrastructure.`,
+            `In the near term, interior alleys can become car-free micro-mobility corridors supporting safe movement for pedestrians, cyclists, 
+            and small electric vehicles. Vacant or oversized lots can be converted into shared courtyards or green spaces, improving social and 
+            ecological performance while mitigating stormwater and heat. Mid-block spaces can host shared EV and AEV charging hubs, expanding access 
+            to emerging mobility systems.`,
 
-            `Over time, this approach supports incremental infill and densification through accessory dwelling units or small 
-            multifamily housing, expanding access and affordability without displacement. Along arterial edges, “smart stop” 
-            nodes integrate local and regional networks by combining AEV pick-up zones, micro-delivery lockers, and neighborhood-scale 
-            amenities.`,
+            `Over time, incremental infill through ADUs and small multifamily housing expands affordability and access without displacing residents. 
+            Along arterials, “smart stop” nodes can integrate local and regional networks by combining AEV pick-ups, micro-delivery lockers, 
+            and neighborhood amenities.`,
 
-            `This inside-out block strategy reverses the conventional suburban hierarchy, prioritizing shared mobility and environmental 
-            resilience over private driveways and parking. The outcome is an equity-centered retrofit model that strengthens existing 
-            communities through accessibility, incremental density, and shared open space—transforming suburban blocks into more connected, 
-            flexible, and inclusive environments for the future.
+            `This inside-out block strategy flips the suburban hierarchy, prioritizing shared mobility and environmental resilience over private driveways 
+            and parking. The result is an equity-focused retrofit model that strengthens existing communities through incremental density, shared open space, 
+            and multimodal access—creating more connected, adaptable, and inclusive suburban environments.
             `,
           ]}
         />
@@ -90,24 +86,7 @@ export default function ImprovingEquitableAccess() {
             `,
           ]}
           stats={[
-            {
-              pct: "25%",
-              text: " of adults have at least one disability",
-              citation:
-                "U.S. Centers for Disease Control and Prevention. Disability Impacts All of Us. Access (08/02/2022): https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html",
-            },
-            {
-              pct: ">25%",
-              text: "Fewer daily trips are made by people with disabilities",
-              citation:
-                "Brumbaugh, S. (2018). Travel Patterns of American Adults with Disabilities. U.S. Department of Transportation, Bureau of Transportation Statistics. https://www.bts.gov/sites/bts.dot.gov/files/2022-01/travel-patterns-american-adults-disabilities-updated-01-03-22.pdf",
-            },
-            {
-              pct: "14%",
-              text: "of disabled adults experience mobility limitations",
-              citation:
-                "U.S. Centers for Disease Control and Prevention. Disability Impacts All of Us. Access (08/02/2022): https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html",
-            },
+
           ]}
           link={
             "/applications/improving-equitable-access-background/#iea-background"
