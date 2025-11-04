@@ -41,7 +41,7 @@ export default function ImprovingEquitableAccess() {
         <ResponsiveAppBar />
         <CaseStudyLanding
           image={
-            "https://dl.dropboxusercontent.com/scl/fi/l0u7807cwe7023ewncjus/suburban-sat.jpg?rlkey=x310oosmj4ablpcqpson7zh41&st=8qtzzjom&dl=0"
+            "https://dl.dropboxusercontent.com/scl/fi/l0u7807cwe7023ewncjus/suburban-sat.jpg?rlkey=x310oosmj4ablpcqpson7zh41&st=1aspa3mc&dl=0"
           }
           title="IMPROVING EQUITABLE ACCESS"
           subtitle="Neighborhood Retrofit"
